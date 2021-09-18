@@ -345,7 +345,8 @@
   mode: single
 - id: '1631593521972'
   alias: Auto House Guests
-  description: ''
+  description: Automatically Set and Reset (except when manualy set) Guest Mode when
+    Maria or John visiting
   trigger:
   - platform: state
     entity_id: sensor.maria
