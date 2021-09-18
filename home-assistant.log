@@ -19,3 +19,6 @@
 2021-09-18 19:45:47 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
 2021-09-18 19:45:53 WARNING (MainThread) [homeassistant.components.konnected.panel] Exception trying to connect to panel: 
 2021-09-18 19:45:59 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 545f1fa1fae438368623bff7fb7887167898564d6188ed64b343192819dd7141 from 192.168.1.40
+2021-09-18 20:52:49 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2021-09-18 20:52:49 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/sensor.local_ip failed with [Errno -3] Try again
+2021-09-18 20:52:49 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
