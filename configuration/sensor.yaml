@@ -1,0 +1,67 @@
+- platform: rest
+  resource: 
+  name: Zwarteveen Status
+  headers:
+    Authorization: !secret zwarteveen_credentials
+  value_template: >
+    {% if value_json.state == '192.168.0.2' %}
+      Online
+    {% else %}
+      Offline
+    {% endif %}
+- platform: rest
+  resource: https://zwarteveen.duckdns.org/api/states/person.maria
+  name: Maria
+  headers:
+    Authorization: !secret zwarteveen_credentials
+  value_template: '{{ value_json.state }}'
+- platform: rest
+  resource: https://zwarteveen.duckdns.org/api/states/person.john
+  name: John
+  headers:
+    Authorization: !secret zwarteveen_credentials
+  value_template: '{{ value_json.state }}'
+- platform: season
+- platform: rest
+  resource: http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData
+  method: GET
+  name: "Solar Current Power"
+  value_template: >-
+    {{ (value_json.Body.Data.PAC.Value /1000 | float)|round(2) }}
+  unit_of_measurement: 'kW'
+  force_update: true
+- platform: rest
+  resource: http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData
+  method: GET
+  name: "Solar Total Power Today"
+  value_template: >-
+    {{ (value_json.Body.Data.DAY_ENERGY.Value /1000 | float)|round(2) }}
+  unit_of_measurement: 'kWh'
+  force_update: true
+- platform: rest
+  resource: http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData
+  method: GET
+  name: "Solar Total Power This Year"
+  value_template: >-
+    {{ (value_json.Body.Data.YEAR_ENERGY.Value /1000 | float)|round(2) }}
+  unit_of_measurement: 'kWh'
+  force_update: true
+- platform: rest
+  resource: http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData
+  method: GET
+  name: "Solar Total Power Since Installed"
+  value_template: >-
+    {{ (value_json.Body.Data.TOTAL_ENERGY.Value /1000 | float / 1000)|round(2) }}
+  unit_of_measurement: 'MWh'
+  force_update: true
+- platform: uptime
+- platform: systemmonitor
+  resources:
+    - type: last_boot
+    - type: processor_use
+    #- type: processor_temperature
+    - type: memory_use_percent
+    - type: disk_use_percent
+      arg: /
+    - type: disk_free
+      arg: /

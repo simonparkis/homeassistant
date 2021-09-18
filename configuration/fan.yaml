@@ -1,0 +1,40 @@
+#- platform: xiaomi_miio_fan
+#  name: Master Bedroom
+#  host: 192.168.1.6
+#  token: !secret xiaomi_token
+#  model: zhimi.fan.za3
+- platform: template
+  fans:
+    sofia:
+      friendly_name: "Sofia's Fan"
+      value_template: "{{ states('switch.sofia') }}"
+      turn_on:
+        service: switch.turn_on
+        data:
+          entity_id: switch.sofia
+      turn_off:
+        service: switch.turn_off
+        data:
+          entity_id: switch.sofia
+    joseph:
+      friendly_name: "Joseph's Fan"
+      value_template: "{{ states('switch.joseph') }}"
+      turn_on:
+        service: switch.turn_on
+        data:
+          entity_id: switch.joseph
+      turn_off:
+        service: switch.turn_off
+        data:
+          entity_id: switch.joseph
+    theo:
+      friendly_name: "Theo's Fan"
+      value_template: "{{ states('switch.theo') }}"
+      turn_on:
+        service: switch.turn_on
+        data:
+          entity_id: switch.theo
+      turn_off:
+        service: switch.turn_off
+        data:
+          entity_id: switch.theo

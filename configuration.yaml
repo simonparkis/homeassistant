@@ -1,0 +1,146 @@
+homeassistant:
+  name: Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: !secret elevation
+  unit_system: metric
+  time_zone: Australia/Sydney
+  auth_providers:
+    - type: homeassistant
+
+########## CONFIGURATION OPTIONS #############
+media_extractor:
+stream:
+default_config:
+updater:
+system_health:
+conversation:
+history:
+logbook:
+map:
+sun:
+
+############## COMPONENTS ######################
+notify: !include configuration/notify.yaml
+fan: !include configuration/fan.yaml
+climate: !include configuration/climate.yaml
+input_boolean: !include configuration/input_boolean.yaml
+input_datetime: !include configuration/input_datetime.yaml
+input_select: !include configuration/input_select.yaml
+input_number: !include configuration/input_number.yaml
+sensor: !include configuration/sensor.yaml
+binary_sensor: !include configuration/binary_sensor.yaml
+device_tracker: !include configuration/device_tracker.yaml
+camera: !include configuration/camera.yaml
+switch: !include configuration/switch.yaml
+
+group: !include groups.yaml
+
+########### SCRIPTS, AUTOMATIONS & SCENES ################
+script: !include_dir_merge_named scripts
+automation: !include automations.yaml
+automation manual: !include_dir_merge_list automation/
+
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 10.0.0.0/8
+    - 169.254.0.0/16
+    - 172.16.0.0/12
+    - 192.168.0.0/16
+
+spotify:
+  client_id: !secret spotify_client_id
+  client_secret: !secret spotify_client_secret
+
+frontend:
+  themes: !include themes.yaml
+
+lovelace:
+  mode: storage
+  
+homekit:
+  filter:
+    include_domains:
+      - light
+      - cover
+      - switch
+      - media_player
+      - input_boolean
+
+apple_tv:
+  - host: 192.168.1.60
+    login_id: !secret appletv_login_id
+    credentials: !secret appletv_credentials
+    start_off: true
+
+mqtt:
+  discovery: true
+  discovery_prefix: homeassistant
+  broker: 192.168.1.30
+  username: !secret mosquitto_username
+  password: !secret mosquitto_password
+      
+recorder:
+  purge_keep_days: 7
+  purge_interval: 1
+
+tts:
+  - platform: google_translate
+    service_name: google_say
+
+ios:
+  push:
+    categories:
+      - name: Lamp
+        identifier: 'lamp'
+        actions:
+          - identifier: 'LAMP_OFF'
+            title: 'Turn Lamp Off'
+      - name: Garage Open
+        identifier: "garage_open"
+        actions:
+          - identifier: "CLOSE_GARAGE"
+            title: "Close Garage Door"
+
+template:
+  - sensor:
+      - name: "House Status"
+        state: >
+          {% set simon = states('person.simon') %}
+          {% set zoey = states('person.zoey') %}
+          {% set guests = states('input_boolean.house_guests') %}
+          {% if simon == 'home' or zoey == 'home' or guests == 'on' %}
+            Occupied
+          {% else %}
+            Vacant
+          {% endif %}
+      - name: "Computer Zoey"
+        state: >
+          {% if states('binary_sensor.computer_zoey') == 'on' %}
+            In Use
+          {% else %}
+            Standby
+          {% endif %}
+      - name: "Computer Simon"
+        state: >
+          {% if states('binary_sensor.computer_simon') == 'on' %}
+            In Use
+          {% else %}
+            Standby
+          {% endif %}
+      - name: "Garage No Motion"
+        state: '{{ ((as_timestamp(now()) - as_timestamp(states.binary_sensor.motion_garage.last_updated)) / 60) | int}}'
+             
+proximity:
+  home:
+    devices:
+      - person.simon
+      - person.zoey
+    unit_of_measurement: km
+
+panel_iframe:
+  vscode:
+    title: "VSCode"
+    url: !secret vscodeURL
+    icon: mdi:microsoft-visual-studio-code

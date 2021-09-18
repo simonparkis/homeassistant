@@ -1,0 +1,580 @@
+- id: '1630324400777'
+  alias: Buttons - Simon Lamp Toggle
+  description: ''
+  trigger:
+  - device_id: 2c22963379a0ca458aa4467070f57643
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: remote_button_short_press
+  condition: []
+  action:
+  - type: toggle
+    device_id: 9df99d57274abf920f3fa0db25367426
+    entity_id: light.lamp_simon
+    domain: light
+  mode: single
+- id: '1630971499864'
+  alias: Climate - Auto Heater Master Bedroom
+  description: ''
+  use_blueprint:
+    path: auto_heaters.yaml
+    input:
+      climate_entity: climate.master_bedroom
+      time_start: '21:00:00'
+      time_end: 07:30:00
+      house_occupancy: sensor.house_status
+      enable_switch: input_boolean.enable_heater_master
+      smart_plug: switch.master
+      power_meter: sensor.power_master
+      demand_power: 1500
+- id: '1630971683566'
+  alias: Climate - Auto Heater Sofia
+  description: ''
+  use_blueprint:
+    path: auto_heaters.yaml
+    input:
+      climate_entity: climate.sofia_bedroom
+      time_start: '19:00:00'
+      time_end: 07:30:00
+      house_occupancy: sensor.house_status
+      enable_switch: input_boolean.enable_heater_sofia
+      smart_plug: switch.sofia
+      power_meter: sensor.power_sofia
+      demand_power: 800
+- id: '1630971724133'
+  alias: Climate - Auto Heater Joseph
+  description: ''
+  use_blueprint:
+    path: auto_heaters.yaml
+    input:
+      climate_entity: climate.joseph_bedroom
+      house_occupancy: sensor.house_status
+      enable_switch: input_boolean.enable_heater_joseph
+      smart_plug: switch.joseph_heater
+      time_start: '19:00:00'
+      time_end: 07:30:00
+- id: '1630971763040'
+  alias: Climate - Auto Heater Theo
+  description: ''
+  use_blueprint:
+    path: auto_heaters.yaml
+    input:
+      climate_entity: climate.theo_bedroom
+      time_start: '19:00:00'
+      time_end: 07:30:00
+      house_occupancy: sensor.house_status
+      enable_switch: input_boolean.enable_heater_theo
+      smart_plug: switch.theo
+      power_meter: sensor.power_theo
+      demand_power: 1000
+- id: '1631099598325'
+  alias: Silence Doorbell
+  description: ''
+  trigger:
+  - platform: time
+    at: '19:00:00'
+  - platform: time
+    at: 07:00:00
+  - platform: time_pattern
+    minutes: '*'
+  action:
+  - choose:
+      conditions:
+      - condition: time
+        after: input_datetime.doorbell_mute
+        before: input_datetime.doorbell_unmute
+      sequence:
+      - service: switch.turn_off
+        target:
+          entity_id: switch.doorbell_chime
+    default:
+    - service: switch.turn_on
+      target:
+        entity_id: switch.doorbell_chime
+  mode: single
+  max_exceeded: silent
+- id: '1631099793227'
+  alias: Notify - Doorbell
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.doorbell
+    to: 'on'
+  condition: []
+  action:
+  - service: notify.notify
+    data:
+      title: Ding Dong!
+      message: Doorbell Pressed
+      data:
+        push:
+          sound: doorbell.wav
+  mode: single
+- id: '1631102887796'
+  alias: Button - Toggle Garage Door
+  description: ''
+  trigger:
+  - device_id: b8959b35b68ce88450a8f23e653fa5a9
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: remote_button_short_press
+  condition: []
+  action:
+  - service: cover.toggle
+    target:
+      entity_id: cover.garage_door
+  mode: single
+- id: '1631139553218'
+  alias: Modes - Vacation
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.house_status
+    to: Occupied
+  - platform: state
+    entity_id: sensor.house_status
+    to: Vacant
+    for: '16:00:00'
+  - platform: numeric_state
+    entity_id: proximity.home
+    above: '100'
+  action:
+  - choose:
+      conditions:
+      - condition: state
+        entity_id: sensor.house_status
+        state: Vacant
+      sequence:
+      - service: input_boolean.turn_on
+        target:
+          entity_id: input_boolean.vacation_mode
+    default:
+    - service: input_boolean.turn_off
+      target:
+        entity_id: input_boolean.vacation_mode
+  mode: single
+- id: '1631192764512'
+  alias: Auto Lights - Master Bedroom
+  description: ''
+  use_blueprint:
+    path: auto_lights.yaml
+    input:
+      light_entity: light.lamp_simon
+      motion_sensor: binary_sensor.motion_master
+      begin_dim: '21:30:00'
+      end_dim: '23:00:00'
+      no_motion_wait: 120
+      min_brightness: 1
+- id: '1631192884264'
+  alias: Auto Lights - Robe
+  description: ''
+  use_blueprint:
+    path: auto_lights.yaml
+    input:
+      begin_dim: '19:30:00'
+      end_dim: '23:00:00'
+      no_motion_wait: 6
+      light_entity: light.robe
+      motion_sensor: binary_sensor.motion_robe
+      min_brightness: 1
+- id: '1631318144171'
+  alias: Lights - On arrival / transition sunset
+  description: Dim in the lights at sunset or at full brightness if arriving after
+    sunset
+  trigger:
+  - platform: sun
+    event: sunset
+    offset: -00:45:00
+  - platform: state
+    entity_id: sensor.house_status
+    from: Vacant
+    to: Occupied
+  condition:
+  - condition: state
+    entity_id: sensor.house_status
+    state: Occupied
+  action:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ trigger.platform == ''sun'' }}'
+      sequence:
+      - service: light.turn_on
+        data:
+          color_temp: 287
+          brightness_pct: 100
+          effect: none
+          transition: 900
+        target:
+          entity_id: light.lamp, light.bookshelf
+      - service: light.turn_on
+        data:
+          white: 255
+          effect: none
+          transition: 900
+        target:
+          entity_id: light.lamp_sofia, light.lamp_joseph
+    - conditions:
+      - condition: state
+        entity_id: sun.sun
+        state: below_horizon
+      sequence:
+      - service: light.turn_on
+        data:
+          entity_id: light.lamp, light.bookshelf
+          color_temp: 287
+          brightness_pct: 100
+          effect: none
+      - service: light.turn_on
+        data:
+          entity_id: light.lamp_sofia, light.lamp_joseph
+          white: 255
+          effect: none
+    default:
+  mode: single
+- id: '1631361844123'
+  alias: Lights - Off when gone to bed
+  description: ''
+  trigger:
+  - platform: template
+    value_template: '{{ states.binary_sensor | selectattr("attributes.device_class",
+      "eq","motion") | map(attribute="state") | select("eq", "on") | list | length
+      | int > 0 }}'
+  condition:
+  - condition: state
+    entity_id: binary_sensor.motion_master
+    state: 'on'
+  - condition: time
+    after: '20:30:00'
+    before: 09:00:00
+  - condition: state
+    entity_id: sun.sun
+    state: below_horizon
+  - condition: template
+    value_template: '{{ is_state("light.lamp", "on") or is_state("light.bookshelf",
+      "on") }}'
+  - condition: state
+    entity_id:
+    - binary_sensor.livingroom_tv
+    - binary_sensor.frontroom_tv
+    - group.computers
+    state: 'off'
+  action:
+  - wait_for_trigger:
+    - platform: template
+      value_template: '{{ states.binary_sensor | selectattr("attributes.device_class",
+        "eq", "motion") | map(attribute="state") | select("eq", "on") | list | length
+        | int == 0 }}'
+      for: 00:05:00
+    timeout: 02:30:00
+  - service: light.turn_off
+    data:
+      transition: 30
+    target:
+      entity_id:
+      - light.bookshelf
+      - light.lamp
+  mode: restart
+- id: '1631368050042'
+  alias: Auto Lights - Living Room
+  description: ''
+  use_blueprint:
+    path: auto_lights.yaml
+    input:
+      light_entity: light.lamp, light.bookshelf
+      motion_sensor: binary_sensor.motion_living_room
+      begin_dim: '22:30:00'
+      end_dim: '23:59:00'
+      no_motion_wait: 3600
+      min_brightness: 25
+- id: '1631444022649'
+  alias: Button - Sofia Toggle Random RGB
+  description: ''
+  trigger:
+  - device_id: b9136715b05f11f9b46f1c587b8b2f30
+    domain: zha
+    platform: device
+    type: remote_button_double_press
+    subtype: remote_button_double_press
+  action:
+  - choose:
+      conditions:
+      - condition: template
+        value_template: '{{ state_attr("light.lamp_sofia", "color_mode") == "rgb"
+          and state_attr("light.lamp_sofia", "effect") == "Random" }}'
+      sequence:
+      - service: light.turn_on
+        data:
+          white: 255
+          effect: none
+        target:
+          entity_id: light.lamp_sofia
+    default:
+    - service: light.turn_on
+      data:
+        rgb_color:
+        - 255
+        - 255
+        - 255
+        effect: Random
+      target:
+        entity_id: light.lamp_sofia
+  mode: single
+- id: '1631444352803'
+  alias: Button - Sofia Toggle Lamp
+  description: ''
+  trigger:
+  - device_id: b9136715b05f11f9b46f1c587b8b2f30
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: remote_button_short_press
+  action:
+  - service: light.toggle
+    target:
+      entity_id: light.lamp_sofia
+  mode: single
+- id: '1631593521972'
+  alias: Auto House Guests
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.maria
+  - platform: state
+    entity_id: sensor.john
+  action:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ is_state("sensor.maria","parkis") or is_state("sensor.john","parkis")
+          }}'
+      - condition: state
+        entity_id: input_boolean.house_guests
+        state: 'off'
+      sequence:
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.house_guests
+    - conditions:
+      - condition: template
+        value_template: '{{ states.input_boolean.house_guests.context.user_id == None
+          }}'
+      - condition: template
+        value_template: '{{ not (is_state("sensor.maria","parkis") or is_state("sensor.john","parkis"))
+          }}'
+      sequence:
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.house_guests
+  mode: single
+  max_exceeded: silent
+- id: '1631610776168'
+  alias: Button - Joseph Toggle Lamp
+  description: ''
+  trigger:
+  - device_id: 57bdadaa16262393d6ba3c4327241cbc
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: remote_button_short_press
+  condition: []
+  action:
+  - service: light.toggle
+    target:
+      entity_id: light.lamp_joseph
+  mode: single
+- id: '1631610858722'
+  alias: Button - Joseph Toggle Random RGB
+  description: ''
+  trigger:
+  - device_id: 57bdadaa16262393d6ba3c4327241cbc
+    domain: zha
+    platform: device
+    type: remote_button_double_press
+    subtype: remote_button_double_press
+  condition: []
+  action:
+  - choose:
+      conditions:
+      - condition: template
+        value_template: '{{ state_attr("light.lamp_joseph", "color_mode") == "rgb"
+          and state_attr("light.lamp_joseph", "effect") == "Random" }}'
+      sequence:
+      - service: light.turn_on
+        data:
+          white: 255
+          effect: none
+        target:
+          entity_id: light.lamp_joseph
+    default:
+    - service: light.turn_on
+      data:
+        rgb_color:
+        - 255
+        - 255
+        - 255
+        effect: Random
+      target:
+        entity_id: light.lamp_joseph
+  mode: single
+- id: '1631618246753'
+  alias: Kids Lights Off At Sunrise
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunrise
+  condition: []
+  action:
+  - service: light.turn_off
+    target:
+      entity_id:
+      - light.lamp_sofia
+      - light.lamp_joseph
+  mode: single
+- id: '1631706621274'
+  alias: Garage Door - Simon
+  description: ''
+  use_blueprint:
+    path: auto_garage.yaml
+    input:
+      person: person.simon
+      car_tracker: input_select.simon_car_status
+      car: Toyota Camry
+- id: '1631706714864'
+  alias: Garage Door - Zoey
+  description: ''
+  use_blueprint:
+    path: auto_garage.yaml
+    input:
+      person: person.zoey
+      car_tracker: input_select.zoey_car_status
+      car: Ford Escape
+- id: '1631854800555'
+  alias: Grandfather Clock
+  trigger:
+  - platform: time_pattern
+    hours: '*'
+  condition:
+  - condition: state
+    entity_id: sensor.house_status
+    state: Occupied
+  - condition: template
+    value_template: '{{ not is_state(''person.zoey'',''home'') }}'
+  action:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: media_player.kitchen
+        state: 'off'
+      sequence:
+      - service: media_player.volume_set
+        data:
+          entity_id: media_player.kitchen
+          volume_level: 0
+      - service: media_player.turn_on
+        target:
+          entity_id: media_player.kitchen
+      - wait_template: '{{ is_state(''media_player.kitchen'', ''idle'') }}'
+        timeout: 00:00:30
+        continue_on_timeout: false
+      - service: media_player.volume_set
+        data:
+          entity_id: media_player.kitchen
+          volume_level: "{% if (now().strftime(\"%H\") | int) < 8 or (now().strftime(\"\
+            %H\") | int) > 18 %}\n  0.2\n{% else %}\n  0.5\n{% endif %}\n"
+    - conditions:
+      - condition: state
+        entity_id: media_player.kitchen
+        state: idle
+      sequence: []
+    default: []
+  - service: media_player.play_media
+    target:
+      entity_id: media_player.kitchen
+    data:
+      media_content_id: http://192.168.1.110:8123/local/sounds/GrandFatherChime{{now().strftime('%I')}}.wav
+      media_content_type: audio/mp4
+  - wait_template: '{{ is_state(''media_player.kitchen'', ''off'') }}'
+    timeout: 00:06:30
+    continue_on_timeout: false
+  - service: media_player.volume_set
+    data:
+      entity_id: media_player.kitchen
+      volume_level: 0.4
+  mode: restart
+- id: '1631870728951'
+  alias: Auto Close Garage Door
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.motion_garage
+    to: 'off'
+    for: 00:10:00
+  - platform: state
+    entity_id: cover.garage_door
+    to: open
+    for: 00:10:00
+  condition:
+  - condition: state
+    entity_id: cover.garage_door
+    state: open
+  - condition: template
+    value_template: '{{ (states(''sensor.garage_no_motion'') | int) > 9 }}'
+  action:
+  - service: cover.close_cover
+    target:
+      entity_id: cover.garage_door
+  - wait_for_trigger:
+      platform: state
+      entity_id: cover.garage_door
+      to: closed
+    timeout: 00:01:00
+  - choose:
+      conditions:
+      - condition: template
+        value_template: '{{ wait.trigger == none }}'
+      sequence:
+      - service: notify.notify
+        data:
+          message: Garage Door was unable to close automatically
+  mode: single
+- id: '1631939391074'
+  alias: Auto Power/Sleep Apple TV
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.livingroom_tv
+  action:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: binary_sensor.livingroom_tv
+        state: 'on'
+      sequence:
+      - service: media_player.turn_on
+        target:
+          entity_id: media_player.apple_tv
+    - conditions:
+      - condition: state
+        entity_id: binary_sensor.livingroom_tv
+        state: 'off'
+      sequence:
+      - service: remote.send_command
+        data:
+          entity_id: remote.apple_tv
+          command: menu
+      - service: media_player.turn_off
+        target:
+          entity_id: media_player.apple_tv
+  initial_state: true
+  mode: single
+- id: '1631939546843'
+  alias: Set Theme on startup
+  trigger:
+  - platform: homeassistant
+    event: start
+  action:
+  - service: frontend.set_theme
+    data:
+      name: slate
+  initial_state: true
+  mode: single

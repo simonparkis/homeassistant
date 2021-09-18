@@ -1,0 +1,13 @@
+simon_car_status:
+  name: Simon Car Status
+  options:
+    - 'Toyota Camry'
+    - 'Ford Escape'
+    - 'Not Driving'
+
+zoey_car_status:
+  name: Zoey Car Status
+  options:
+    - 'Toyota Camry'
+    - 'Ford Escape'
+    - 'Not Driving'

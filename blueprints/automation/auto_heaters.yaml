@@ -1,0 +1,99 @@
+blueprint:
+  name: Auto Heaters
+  description: Maintatin the temperature for a given room by turning heater on and off based on ambient temperature
+  domain: automation
+  input:
+    climate_entity:
+      name: Climate Entity
+      selector:
+        entity:
+          domain: climate
+    time_start:
+      name: Heating Start Time
+      selector:
+        time:
+    time_end:
+      name: Heating End Time
+      selector:
+        time:
+    house_occupancy:
+      name: House Occupancy Sensor
+      selector:
+        entity:
+          domain: sensor
+    enable_switch:
+      name: Enable Switch
+      selector:
+        entity:
+          domain: input_boolean
+    smart_plug:
+      name: Smart Plug
+      selector:
+        entity: 
+          domain: switch
+    power_meter:
+      name: Power Meter
+      default: {}
+      selector:
+        entity:
+          domain: sensor
+    demand_power:
+      name: Demand Power
+      default: {}
+      selector:
+        number:
+
+variables:
+  smart_plug: !input smart_plug
+  power_meter: !input power_meter
+  demand_power: !input demand_power
+  climate_entity: !input climate_entity
+
+trigger:
+  - platform: state
+    entity_id: !input house_occupancy
+  - platform: state
+    entity_id: !input enable_switch
+  - platform: time_pattern
+    minutes: '*'
+  - platform: template
+    value_template: "{{ is_state_attr('climate.master_bedroom','hvac_action', 'heating') }}"
+action:
+  - choose:
+      - conditions:
+          - condition: template
+            value_template: "{{ power_meter }}"
+          - condition: template
+            value_template: "{{ trigger.platform == 'template' }}"
+        sequence:
+          - wait_template: "{{ (states(power_meter) | int) > demand_power }}"
+            timeout: '00:00:20'
+          - choose:
+              conditions:
+                - condition: template
+                  value_template: "{{ not wait.completed }}"
+              sequence:
+                - service: notify.notify
+                  data:
+                    message: "Check heater settings in {{ area_name(smart_plug) }}"
+            default: []
+      - conditions:
+          - condition: time
+            after: !input time_start
+            before: !input time_end
+          - condition: state
+            entity_id: !input house_occupancy
+            state: "Occupied"
+          - condition: state
+            entity_id: !input enable_switch
+            state: "on"
+        sequence:
+          - service: climate.turn_on
+            target:
+              entity_id: !input climate_entity
+    default:
+      - service: climate.turn_off
+        target:
+          entity_id: !input climate_entity
+      
+mode: queued       

@@ -1,0 +1,15 @@
+- platform: ping
+  host: 142.250.204.3 #google.com.au
+  name: Internet
+  scan_interval: 60
+- platform: ping
+  host: 192.168.1.101
+  name: Laser Printer
+  scan_interval: 60
+- platform: ping
+  host: 192.168.1.76
+  name: Inkjet Printer
+  scan_interval: 60
+- platform: workday
+  country: AU
+  province: NSW
