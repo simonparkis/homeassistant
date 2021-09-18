@@ -421,35 +421,7 @@
                                 {
                                     "entity": "input_boolean.enable_heater_sofia",
                                     "icon": "mdi:fire",
-                                    "name": "Auto Heater",
-                                    "tap_action": {
-                                        "action": "call-service",
-                                        "service": "browser_mod.popup",
-                                        "service_data": {
-                                            "deviceID": "this",
-                                            "title": "Auto Heater Sofia",
-                                            "card": {
-                                                "type": "entities",
-                                                "entities": [
-                                                    {
-                                                        "entity": "input_datetime.start_heater_sofia",
-                                                        "name": "Heating Start Time",
-                                                        "icon": "mdi:clock-outline"
-                                                    },
-                                                    {
-                                                        "entity": "input_datetime.end_heater_sofia",
-                                                        "name": "Heating End Time",
-                                                        "icon": "mdi:clock-outline"
-                                                    },
-                                                    {
-                                                        "entity": "switch.sofia",
-                                                        "name": "Manual Override",
-                                                        "icon": "mdi:power-plug"
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    }
+                                    "name": "Auto Heater"
                                 }
                             ]
                         },
@@ -505,35 +477,7 @@
                                 {
                                     "entity": "input_boolean.enable_heater_joseph",
                                     "icon": "mdi:fire",
-                                    "name": "Auto Heater",
-                                    "tap_action": {
-                                        "action": "call-service",
-                                        "service": "browser_mod.popup",
-                                        "service_data": {
-                                            "deviceID": "this",
-                                            "title": "Auto Heater Joseph",
-                                            "card": {
-                                                "type": "entities",
-                                                "entities": [
-                                                    {
-                                                        "entity": "input_datetime.start_heater_joseph",
-                                                        "name": "Heating Start Time",
-                                                        "icon": "mdi:clock-outline"
-                                                    },
-                                                    {
-                                                        "entity": "input_datetime.end_heater_joseph",
-                                                        "name": "Heating End Time",
-                                                        "icon": "mdi:clock-outline"
-                                                    },
-                                                    {
-                                                        "entity": "switch.joseph_heater",
-                                                        "name": "Manual Override",
-                                                        "icon": "mdi:power-plug"
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    }
+                                    "name": "Auto Heater"
                                 }
                             ]
                         },
@@ -584,35 +528,7 @@
                                 {
                                     "entity": "input_boolean.enable_heater_theo",
                                     "icon": "mdi:fire",
-                                    "name": "Auto Heater",
-                                    "tap_action": {
-                                        "action": "call-service",
-                                        "service": "browser_mod.popup",
-                                        "service_data": {
-                                            "deviceID": "this",
-                                            "title": "Auto Heater Theo",
-                                            "card": {
-                                                "type": "entities",
-                                                "entities": [
-                                                    {
-                                                        "entity": "input_datetime.start_heater_theo",
-                                                        "name": "Heating Start Time",
-                                                        "icon": "mdi:clock-outline"
-                                                    },
-                                                    {
-                                                        "entity": "input_datetime.end_heater_theo",
-                                                        "name": "Heating End Time",
-                                                        "icon": "mdi:clock-outline"
-                                                    },
-                                                    {
-                                                        "entity": "switch.theo",
-                                                        "name": "Manual Override",
-                                                        "icon": "mdi:power-plug"
-                                                    }
-                                                ]
-                                            }
-                                        }
-                                    }
+                                    "name": "Auto Heater"
                                 }
                             ]
                         }
