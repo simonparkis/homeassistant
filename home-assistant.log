@@ -1,28 +1,14 @@
-2021-09-18 21:56:40 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-18 21:56:40 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-18 21:56:40 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-18 21:56:40 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-18 21:56:40 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-18 21:56:40 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:84 is deprecated, please remove it from your configuration
-2021-09-18 21:56:43 ERROR (MainThread) [homeassistant.components.mqtt] Failed to connect to MQTT server due to exception: [Errno 111] Connection refused
-2021-09-18 21:56:48 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
-2021-09-18 21:56:48 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
-2021-09-18 21:56:48 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
-2021-09-18 21:56:48 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
-2021-09-18 21:56:48 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
-2021-09-18 21:56:48 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
-2021-09-18 21:56:48 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
-2021-09-18 21:56:48 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
-2021-09-18 22:00:48 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x7b'
-2021-09-18 22:08:32 WARNING (MainThread) [homeassistant.helpers.script] Error in 'choose[1]' evaluation: In 'state':
-  In 'state' condition: unknown entity sensor.house_status
-2021-09-18 22:08:32 WARNING (MainThread) [homeassistant.helpers.script] Error in 'choose[1]' evaluation: In 'state':
-  In 'state' condition: unknown entity sensor.house_status
-2021-09-18 22:08:32 WARNING (MainThread) [homeassistant.helpers.script] Error in 'choose[1]' evaluation: In 'state':
-  In 'state' condition: unknown entity sensor.house_status
-2021-09-18 22:08:32 WARNING (MainThread) [homeassistant.helpers.script] Error in 'choose[1]' evaluation: In 'state':
-  In 'state' condition: unknown entity sensor.house_status
-2021-09-18 22:13:28 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform rest is taking over 10 seconds.
-2021-09-18 22:13:28 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform rest is taking over 10 seconds.
-2021-09-18 22:13:28 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform rest is taking over 10 seconds.
-2021-09-18 22:13:28 WARNING (MainThread) [homeassistant.components.sensor] Setup of sensor platform rest is taking over 10 seconds.
+2021-09-18 22:40:28 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-18 22:40:28 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-18 22:40:28 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-18 22:40:28 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-18 22:40:28 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-18 22:40:28 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:84 is deprecated, please remove it from your configuration
+2021-09-18 22:40:39 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
+2021-09-18 22:40:39 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
+2021-09-18 22:40:39 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
+2021-09-18 22:40:39 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
+2021-09-18 22:40:39 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-09-18 22:40:39 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-09-18 22:40:39 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
+2021-09-18 22:40:39 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
