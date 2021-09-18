@@ -33,7 +33,7 @@ binary_sensor: !include configuration/binary_sensor.yaml
 device_tracker: !include configuration/device_tracker.yaml
 camera: !include configuration/camera.yaml
 switch: !include configuration/switch.yaml
-
+template: !include configuration/template.yaml
 group: !include groups.yaml
 
 ########### SCRIPTS, AUTOMATIONS & SCENES ################
@@ -88,49 +88,6 @@ recorder:
 tts:
   - platform: google_translate
     service_name: google_say
-
-ios:
-  push:
-    categories:
-      - name: Lamp
-        identifier: 'lamp'
-        actions:
-          - identifier: 'LAMP_OFF'
-            title: 'Turn Lamp Off'
-      - name: Garage Open
-        identifier: "garage_open"
-        actions:
-          - identifier: "CLOSE_GARAGE"
-            title: "Close Garage Door"
-
-template:
-  - sensor:
-      - name: "House Status"
-        state: >
-          {% set simon = states('person.simon') %}
-          {% set zoey = states('person.zoey') %}
-          {% set guests = states('input_boolean.house_guests') %}
-          {% if simon == 'home' or zoey == 'home' or guests == 'on' %}
-            Occupied
-          {% else %}
-            Vacant
-          {% endif %}
-      - name: "Computer Zoey"
-        state: >
-          {% if states('binary_sensor.computer_zoey') == 'on' %}
-            In Use
-          {% else %}
-            Standby
-          {% endif %}
-      - name: "Computer Simon"
-        state: >
-          {% if states('binary_sensor.computer_simon') == 'on' %}
-            In Use
-          {% else %}
-            Standby
-          {% endif %}
-      - name: "Garage No Motion"
-        state: '{{ ((as_timestamp(now()) - as_timestamp(states.binary_sensor.motion_garage.last_updated)) / 60) | int}}'
              
 proximity:
   home:

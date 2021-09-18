@@ -1,5 +1,5 @@
 - platform: rest
-  resource: 
+  resource: !secret zwarteveen_ip
   name: Zwarteveen Status
   headers:
     Authorization: !secret zwarteveen_credentials
@@ -10,13 +10,13 @@
       Offline
     {% endif %}
 - platform: rest
-  resource: https://zwarteveen.duckdns.org/api/states/person.maria
+  resource: !secret sensor_maria
   name: Maria
   headers:
     Authorization: !secret zwarteveen_credentials
   value_template: '{{ value_json.state }}'
 - platform: rest
-  resource: https://zwarteveen.duckdns.org/api/states/person.john
+  resource: !secret sensor_john
   name: John
   headers:
     Authorization: !secret zwarteveen_credentials

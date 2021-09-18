@@ -1,0 +1,13 @@
+  sensor:
+    - name: "House Status"
+      state: >
+        {% set simon = states('person.simon') %}
+        {% set zoey = states('person.zoey') %}
+        {% set guests = states('input_boolean.house_guests') %}
+        {% if simon == 'home' or zoey == 'home' or guests == 'on' %}
+          Occupied
+        {% else %}
+          Vacant
+        {% endif %}
+    - name: "Garage No Motion"
+      state: '{{ ((as_timestamp(now()) - as_timestamp(states.binary_sensor.motion_garage.last_updated)) / 60) | int}}'

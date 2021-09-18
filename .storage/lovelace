@@ -1,0 +1,1186 @@
+{
+    "version": 1,
+    "key": "lovelace",
+    "data": {
+        "config": {
+            "views": [
+                {
+                    "panel": false,
+                    "title": "Home",
+                    "path": "home",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "title": "Presence Detection",
+                            "type": "entities",
+                            "show_header_toggle": false,
+                            "state_color": true,
+                            "entities": [
+                                {
+                                    "entity": "sensor.house_status",
+                                    "icon": "mdi:home",
+                                    "name": "House Status"
+                                },
+                                {
+                                    "entity": "person.simon",
+                                    "icon": "mdi:account",
+                                    "name": "Simon"
+                                },
+                                {
+                                    "entity": "person.zoey",
+                                    "icon": "mdi:account",
+                                    "name": "Zoey"
+                                },
+                                {
+                                    "type": "divider",
+                                    "style": {
+                                        "height": "1px",
+                                        "width": "100%",
+                                        "margin-left": "auto",
+                                        "margin-right": "auto",
+                                        "background": "#CC7C19"
+                                    }
+                                },
+                                {
+                                    "entity": "input_boolean.vacation_mode",
+                                    "icon": "mdi:airplane",
+                                    "name": "Vacation Mode"
+                                },
+                                {
+                                    "entity": "input_boolean.house_guests",
+                                    "icon": "mdi:account-multiple",
+                                    "name": "House Guests"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Access Control",
+                            "type": "entities",
+                            "show_header_toggle": false,
+                            "state_color": true,
+                            "entities": [
+                                {
+                                    "entity": "cover.garage_door"
+                                },
+                                {
+                                    "entity": "binary_sensor.motion_garage",
+                                    "name": "Motion Sensor",
+                                    "icon": "mdi:run-fast"
+                                },
+                                {
+                                    "type": "divider",
+                                    "style": {
+                                        "height": "1px",
+                                        "width": "100%",
+                                        "margin-left": "auto",
+                                        "margin-right": "auto",
+                                        "background": "#CC7C19"
+                                    }
+                                },
+                                {
+                                    "entity": "input_boolean.auto_garage_door",
+                                    "name": "Auto Garage Door",
+                                    "icon": "mdi:car"
+                                },
+                                {
+                                    "entity": "switch.doorbell_chime",
+                                    "name": "Doorbell Chime",
+                                    "icon": "mdi:volume-high"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Living Room",
+                            "type": "entities",
+                            "show_header_toggle": false,
+                            "state_color": true,
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.livingroom_tv",
+                                    "icon": "mdi:television",
+                                    "name": "Television"
+                                },
+                                {
+                                    "entity": "media_player.apple_tv",
+                                    "name": "AppleTV",
+                                    "icon": "mdi:apple"
+                                },
+                                {
+                                    "entity": "light.lamp",
+                                    "icon": "mdi:floor-lamp",
+                                    "name": "Lamp"
+                                },
+                                {
+                                    "type": "conditional",
+                                    "conditions": [
+                                        {
+                                            "entity": "light.lamp_rgb",
+                                            "state": "on"
+                                        }
+                                    ],
+                                    "row": {
+                                        "entity": "light.lamp_rgb",
+                                        "icon": "mdi:floor-lamp",
+                                        "name": "Lamp",
+                                        "tap_action": {
+                                            "action": "call-service",
+                                            "service": "browser_mod.popup",
+                                            "service_data": {
+                                                "deviceID": "this",
+                                                "title": "Lamp",
+                                                "card": {
+                                                    "type": "entities",
+                                                    "state_color": true,
+                                                    "entities": [
+                                                        {
+                                                            "entity": "light.lamp",
+                                                            "name": "Monochrome Lamp",
+                                                            "icon": "mdi:floor-lamp"
+                                                        },
+                                                        {
+                                                            "entity": "light.lamp_rgb",
+                                                            "name": "RGB Lamp",
+                                                            "icon": "mdi:floor-lamp"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "entity": "light.bookshelf",
+                                    "icon": "mdi:wall-sconce-round-variant",
+                                    "name": "Bookshelf Light"
+                                },
+                                {
+                                    "entity": "binary_sensor.motion_living_room",
+                                    "name": "Motion Sensor",
+                                    "icon": "mdi:run-fast"
+                                },
+                                {
+                                    "type": "divider",
+                                    "style": {
+                                        "height": "1px",
+                                        "width": "100%",
+                                        "margin-left": "auto",
+                                        "margin-right": "auto",
+                                        "background": "#CC7C19"
+                                    }
+                                },
+                                {
+                                    "entity": "automation.auto_lights_living_room",
+                                    "name": "Motion Lights",
+                                    "icon": "mdi:exit-run"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Kitchen",
+                            "type": "entities",
+                            "show_header_toggle": false,
+                            "state_color": true,
+                            "entities": [
+                                {
+                                    "entity": "media_player.kitchen",
+                                    "name": "Kitchen Speakers",
+                                    "icon": "mdi:speaker"
+                                },
+                                {
+                                    "type": "divider",
+                                    "style": {
+                                        "height": "1px",
+                                        "width": "100%",
+                                        "margin-left": "auto",
+                                        "margin-right": "auto",
+                                        "background": "#CC7C19"
+                                    }
+                                },
+                                {
+                                    "entity": "automation.grandfather_clock",
+                                    "icon": "mdi:clock-outline"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Study",
+                            "type": "entities",
+                            "show_header_toggle": false,
+                            "state_color": true,
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.macbook_air",
+                                    "name": "MacBook Air",
+                                    "icon": "mdi:laptop"
+                                },
+                                {
+                                    "entity": "binary_sensor.computer_simon",
+                                    "name": "Desktop Simon",
+                                    "icon": "mdi:monitor-dashboard"
+                                },
+                                {
+                                    "entity": "binary_sensor.computer_zoey",
+                                    "name": "Desktop Zoey",
+                                    "icon": "mdi:monitor-dashboard"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Front Room",
+                            "type": "entities",
+                            "show_header_toggle": false,
+                            "state_color": true,
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.frontroom_tv",
+                                    "icon": "mdi:television",
+                                    "name": "Television"
+                                },
+                                {
+                                    "entity": "media_player.front_room",
+                                    "name": "Chromecast",
+                                    "icon": "mdi:google-chrome"
+                                },
+                                {
+                                    "entity": "binary_sensor.motion_front_room",
+                                    "name": "Motion Sensor",
+                                    "icon": "mdi:run-fast"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Bedrooms",
+                    "path": "bedrooms",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "title": "Master Bedroom",
+                            "type": "entities",
+                            "show_header_toggle": false,
+                            "state_color": true,
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.bedroom_tv",
+                                    "name": "Television",
+                                    "icon": "mdi:television"
+                                },
+                                {
+                                    "entity": "media_player.bedroom",
+                                    "name": "Chromecast",
+                                    "icon": "mdi:google-chrome"
+                                },
+                                {
+                                    "entity": "climate.master_bedroom",
+                                    "name": "Climate Control",
+                                    "icon": "mdi:thermometer"
+                                },
+                                {
+                                    "entity": "binary_sensor.motion_master",
+                                    "name": "Motion Sensor",
+                                    "icon": "mdi:run-fast"
+                                },
+                                {
+                                    "entity": "light.lamp_simon",
+                                    "name": "Simon's Lamp",
+                                    "icon": "mdi:floor-lamp"
+                                },
+                                {
+                                    "entity": "light.robe",
+                                    "name": "Walk-in-Robe"
+                                },
+                                {
+                                    "type": "conditional",
+                                    "conditions": [
+                                        {
+                                            "entity": "sensor.season",
+                                            "state_not": "autumn"
+                                        },
+                                        {
+                                            "entity": "sensor.season",
+                                            "state_not": "winter"
+                                        }
+                                    ],
+                                    "row": {
+                                        "entity": "fan.master_bedroom",
+                                        "icon": "mdi:fan",
+                                        "name": "Fan",
+                                        "tap_action": {
+                                            "action": "call-service",
+                                            "service": "browser_mod.popup",
+                                            "service_data": {
+                                                "deviceID": "this",
+                                                "title": "Master Bedroom Fan",
+                                                "card": {
+                                                    "type": "entities",
+                                                    "state_color": true,
+                                                    "entities": [
+                                                        {
+                                                            "entity": "fan.master_bedroom",
+                                                            "name": "Power",
+                                                            "icon": "mdi:power-plug"
+                                                        },
+                                                        {
+                                                            "entity": "input_boolean.master_bedroom_fan_oscillate",
+                                                            "name": "Oscillation",
+                                                            "icon": "mdi:swap-horizontal"
+                                                        },
+                                                        {
+                                                            "entity": "input_select.master_bedroom_fan_angle",
+                                                            "name": "Oscillation Angle",
+                                                            "icon": "mdi:arrow-expand-horizontal"
+                                                        },
+                                                        {
+                                                            "entity": "input_boolean.master_bedroom_fan_natural_mode",
+                                                            "name": "Natural Mode",
+                                                            "icon": "mdi:leaf"
+                                                        },
+                                                        {
+                                                            "entity": "input_number.master_bedroom_fan_speed",
+                                                            "name": "Speed",
+                                                            "icon": "mdi:speedometer"
+                                                        }
+                                                    ]
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "type": "divider",
+                                    "style": {
+                                        "height": "1px",
+                                        "width": "100%",
+                                        "margin-left": "auto",
+                                        "margin-right": "auto",
+                                        "background": "#CC7C19"
+                                    }
+                                },
+                                {
+                                    "entity": "automation.auto_lights_master_bedroom",
+                                    "name": "Motion Lights",
+                                    "icon": "mdi:exit-run"
+                                },
+                                {
+                                    "entity": "input_boolean.enable_heater_master",
+                                    "name": "Auto Heater",
+                                    "icon": "mdi:fire"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Sofia's Room",
+                            "type": "entities",
+                            "show_header_toggle": false,
+                            "state_color": true,
+                            "entities": [
+                                {
+                                    "entity": "climate.sofia_bedroom",
+                                    "icon": "mdi:thermometer",
+                                    "name": "Climate Control"
+                                },
+                                {
+                                    "entity": "light.lamp_sofia",
+                                    "name": "Lamp",
+                                    "icon": "mdi:floor-lamp"
+                                },
+                                {
+                                    "type": "conditional",
+                                    "conditions": [
+                                        {
+                                            "entity": "sensor.season",
+                                            "state_not": "autumn"
+                                        },
+                                        {
+                                            "entity": "sensor.season",
+                                            "state_not": "winter"
+                                        }
+                                    ],
+                                    "row": {
+                                        "entity": "fan.sofia",
+                                        "icon": "mdi:fan",
+                                        "name": "Fan"
+                                    }
+                                },
+                                {
+                                    "type": "divider",
+                                    "style": {
+                                        "height": "1px",
+                                        "width": "100%",
+                                        "margin-left": "auto",
+                                        "margin-right": "auto",
+                                        "background": "#CC7C19"
+                                    }
+                                },
+                                {
+                                    "entity": "input_boolean.nightlight_sofia",
+                                    "name": "Auto Night Light",
+                                    "icon": "mdi:lighthouse-on"
+                                },
+                                {
+                                    "entity": "input_boolean.enable_heater_sofia",
+                                    "icon": "mdi:fire",
+                                    "name": "Auto Heater",
+                                    "tap_action": {
+                                        "action": "call-service",
+                                        "service": "browser_mod.popup",
+                                        "service_data": {
+                                            "deviceID": "this",
+                                            "title": "Auto Heater Sofia",
+                                            "card": {
+                                                "type": "entities",
+                                                "entities": [
+                                                    {
+                                                        "entity": "input_datetime.start_heater_sofia",
+                                                        "name": "Heating Start Time",
+                                                        "icon": "mdi:clock-outline"
+                                                    },
+                                                    {
+                                                        "entity": "input_datetime.end_heater_sofia",
+                                                        "name": "Heating End Time",
+                                                        "icon": "mdi:clock-outline"
+                                                    },
+                                                    {
+                                                        "entity": "switch.sofia",
+                                                        "name": "Manual Override",
+                                                        "icon": "mdi:power-plug"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Joseph's Room",
+                            "type": "entities",
+                            "show_header_toggle": false,
+                            "state_color": true,
+                            "entities": [
+                                {
+                                    "entity": "climate.joseph_bedroom",
+                                    "icon": "mdi:thermometer",
+                                    "name": "Climate Control"
+                                },
+                                {
+                                    "entity": "light.lamp_joseph",
+                                    "name": "Lamp",
+                                    "icon": "mdi:floor-lamp"
+                                },
+                                {
+                                    "type": "conditional",
+                                    "conditions": [
+                                        {
+                                            "entity": "sensor.season",
+                                            "state_not": "autumn"
+                                        },
+                                        {
+                                            "entity": "sensor.season",
+                                            "state_not": "winter"
+                                        }
+                                    ],
+                                    "row": {
+                                        "entity": "fan.joseph",
+                                        "icon": "mdi:fan",
+                                        "name": "Fan"
+                                    }
+                                },
+                                {
+                                    "type": "divider",
+                                    "style": {
+                                        "height": "1px",
+                                        "width": "100%",
+                                        "margin-left": "auto",
+                                        "margin-right": "auto",
+                                        "background": "#CC7C19"
+                                    }
+                                },
+                                {
+                                    "entity": "input_boolean.nightlight_joseph",
+                                    "name": "Auto Night Light",
+                                    "icon": "mdi:lighthouse-on"
+                                },
+                                {
+                                    "entity": "input_boolean.enable_heater_joseph",
+                                    "icon": "mdi:fire",
+                                    "name": "Auto Heater",
+                                    "tap_action": {
+                                        "action": "call-service",
+                                        "service": "browser_mod.popup",
+                                        "service_data": {
+                                            "deviceID": "this",
+                                            "title": "Auto Heater Joseph",
+                                            "card": {
+                                                "type": "entities",
+                                                "entities": [
+                                                    {
+                                                        "entity": "input_datetime.start_heater_joseph",
+                                                        "name": "Heating Start Time",
+                                                        "icon": "mdi:clock-outline"
+                                                    },
+                                                    {
+                                                        "entity": "input_datetime.end_heater_joseph",
+                                                        "name": "Heating End Time",
+                                                        "icon": "mdi:clock-outline"
+                                                    },
+                                                    {
+                                                        "entity": "switch.joseph_heater",
+                                                        "name": "Manual Override",
+                                                        "icon": "mdi:power-plug"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Theo's Room",
+                            "type": "entities",
+                            "show_header_toggle": false,
+                            "state_color": true,
+                            "entities": [
+                                {
+                                    "entity": "climate.theo_bedroom",
+                                    "icon": "mdi:thermometer",
+                                    "name": "Climate Control"
+                                },
+                                {
+                                    "entity": "binary_sensor.motion_theo",
+                                    "name": "Motion Sensor",
+                                    "icon": "mdi:run-fast"
+                                },
+                                {
+                                    "type": "conditional",
+                                    "conditions": [
+                                        {
+                                            "entity": "sensor.season",
+                                            "state_not": "autumn"
+                                        },
+                                        {
+                                            "entity": "sensor.season",
+                                            "state_not": "winter"
+                                        }
+                                    ],
+                                    "row": {
+                                        "entity": "fan.theo",
+                                        "icon": "mdi:fan",
+                                        "name": "Fan"
+                                    }
+                                },
+                                {
+                                    "type": "divider",
+                                    "style": {
+                                        "height": "1px",
+                                        "width": "100%",
+                                        "margin-left": "auto",
+                                        "margin-right": "auto",
+                                        "background": "#CC7C19"
+                                    }
+                                },
+                                {
+                                    "entity": "input_boolean.enable_heater_theo",
+                                    "icon": "mdi:fire",
+                                    "name": "Auto Heater",
+                                    "tap_action": {
+                                        "action": "call-service",
+                                        "service": "browser_mod.popup",
+                                        "service_data": {
+                                            "deviceID": "this",
+                                            "title": "Auto Heater Theo",
+                                            "card": {
+                                                "type": "entities",
+                                                "entities": [
+                                                    {
+                                                        "entity": "input_datetime.start_heater_theo",
+                                                        "name": "Heating Start Time",
+                                                        "icon": "mdi:clock-outline"
+                                                    },
+                                                    {
+                                                        "entity": "input_datetime.end_heater_theo",
+                                                        "name": "Heating End Time",
+                                                        "icon": "mdi:clock-outline"
+                                                    },
+                                                    {
+                                                        "entity": "switch.theo",
+                                                        "name": "Manual Override",
+                                                        "icon": "mdi:power-plug"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "System",
+                    "path": "system",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "title": "System Monitor",
+                            "type": "entities",
+                            "show_header_toggle": false,
+                            "state_color": true,
+                            "entities": [
+                                {
+                                    "entity": "sensor.processor_use_percent",
+                                    "name": "Processor Usage"
+                                },
+                                {
+                                    "entity": "sensor.memory_use_percent",
+                                    "name": "Memory Usage"
+                                },
+                                {
+                                    "entity": "sensor.uptime",
+                                    "name": "Uptime"
+                                },
+                                {
+                                    "type": "divider",
+                                    "style": {
+                                        "height": "1px",
+                                        "width": "100%",
+                                        "margin-left": "auto",
+                                        "margin-right": "auto",
+                                        "background": "#CC7C19"
+                                    }
+                                },
+                                {
+                                    "entity": "sensor.disk_use_percent",
+                                    "name": "Disk Use"
+                                },
+                                {
+                                    "entity": "sensor.disk_free",
+                                    "name": "Free Space"
+                                },
+                                {
+                                    "type": "divider",
+                                    "style": {
+                                        "height": "1px",
+                                        "width": "100%",
+                                        "margin-left": "auto",
+                                        "margin-right": "auto",
+                                        "background": "#CC7C19"
+                                    }
+                                },
+                                {
+                                    "entity": "sensor.speedtest_ping",
+                                    "name": "Ping"
+                                },
+                                {
+                                    "entity": "sensor.speedtest_download",
+                                    "name": "Download Speed"
+                                },
+                                {
+                                    "entity": "sensor.speedtest_upload",
+                                    "name": "Upload Speed"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Connectivity",
+                            "type": "entities",
+                            "show_header_toggle": false,
+                            "state_color": true,
+                            "entities": [
+                                {
+                                    "entity": "binary_sensor.internet",
+                                    "name": "Internet",
+                                    "icon": "mdi:earth"
+                                },
+                                {
+                                    "entity": "binary_sensor.inkjet_printer",
+                                    "name": "Inkjet Printer",
+                                    "icon": "mdi:printer"
+                                },
+                                {
+                                    "entity": "binary_sensor.laser_printer",
+                                    "name": "Laser Printer",
+                                    "icon": "mdi:printer"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "conditional",
+                            "conditions": [
+                                {
+                                    "entity": "sensor.solar_total_power_today",
+                                    "state_not": "unavailable"
+                                }
+                            ],
+                            "card": {
+                                "type": "entities",
+                                "title": "Solar Statistics",
+                                "show_header_toggle": false,
+                                "entities": [
+                                    {
+                                        "entity": "sensor.solar_current_power",
+                                        "name": "Current Power",
+                                        "icon": "mdi:solar-power"
+                                    },
+                                    {
+                                        "entity": "sensor.solar_total_power_today",
+                                        "name": "Total Power Today",
+                                        "icon": "mdi:solar-power"
+                                    },
+                                    {
+                                        "entity": "sensor.solar_total_power_this_year",
+                                        "name": "Total Power This Year",
+                                        "icon": "mdi:solar-power"
+                                    },
+                                    {
+                                        "entity": "sensor.solar_total_power_since_installed",
+                                        "name": "Total Power Since Installed",
+                                        "icon": "mdi:solar-power"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "type": "entity-filter",
+                            "show_empty": false,
+                            "entities": [
+                                "sensor.battery_temp_master",
+                                "sensor.battery_temp_sofia",
+                                "sensor.battery_temp_joseph",
+                                "sensor.battery_temp_theo",
+                                "sensor.battery_button_simon",
+                                "sensor.battery_button_sofia",
+                                "sensor.battery_button_joseph",
+                                "sensor.battery_button_theo"
+                            ],
+                            "state_filter": [
+                                {
+                                    "operator": "<",
+                                    "value": 30
+                                }
+                            ],
+                            "card": {
+                                "title": "Low Batteries",
+                                "type": "entities"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Music",
+                    "path": "music",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "grid",
+                            "columns": 1,
+                            "square": false,
+                            "cards": [
+                                {
+                                    "type": "conditional",
+                                    "conditions": [
+                                        {
+                                            "entity": "media_player.all_chromecasts",
+                                            "state_not": "playing"
+                                        }
+                                    ],
+                                    "card": {
+                                        "type": "entities",
+                                        "name": "Current Audio Zone: Kitchen",
+                                        "entities": [
+                                            "media_player.kitchen"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "conditional",
+                                    "conditions": [
+                                        {
+                                            "entity": "media_player.all_chromecasts",
+                                            "state": "playing"
+                                        }
+                                    ],
+                                    "card": {
+                                        "type": "entities",
+                                        "name": "Current Audio Zone: Everywhere",
+                                        "entities": [
+                                            "media_player.all_chromecasts"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "type": "horizontal-stack",
+                                    "cards": [
+                                        {
+                                            "type": "picture",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.kitchen",
+                                                    "uri": "spotify:playlist:4uf0gphPVNtk4Uu0bxtdGA",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "double_tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.all_chromecasts",
+                                                    "uri": "spotify:playlist:4uf0gphPVNtk4Uu0bxtdGA",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "image": "local/spotify-images/spotify-acoustic-covers-2021.jpeg"
+                                        },
+                                        {
+                                            "type": "picture",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.kitchen",
+                                                    "uri": "spotify:playlist:37i9dQZF1DX6VDO8a6cQME",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "double_tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.all_chromecasts",
+                                                    "uri": "spotify:playlist:37i9dQZF1DX6VDO8a6cQME",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "image": "local/spotify-images/spotify-90s-rnb.jpeg"
+                                        },
+                                        {
+                                            "type": "picture",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.kitchen",
+                                                    "uri": "spotify:playlist:37i9dQZF1DWYmmr74INQlb",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "double_tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.all_chromecasts",
+                                                    "uri": "spotify:playlist:37i9dQZF1DWYmmr74INQlb",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "image": "local/spotify-images/spotify-00s-rnb.jpeg"
+                                        },
+                                        {
+                                            "type": "picture",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.kitchen",
+                                                    "uri": "spotify:playlist:4ARhwf75lsNra3UD9KIYPy",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "double_tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.all_chromecasts",
+                                                    "uri": "spotify:playlist:4ARhwf75lsNra3UD9KIYPy",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "image": "local/spotify-images/spotify-acoustic-hits-2021.jpeg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "horizontal-stack",
+                                    "cards": [
+                                        {
+                                            "type": "picture",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.kitchen",
+                                                    "uri": "spotify:playlist:37i9dQZF1DXaXDsfv6nvZ5",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "double_tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.all_chromecasts",
+                                                    "uri": "spotify:playlist:37i9dQZF1DXaXDsfv6nvZ5",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "image": "local/spotify-images/spotify-soul-coffee.jpeg"
+                                        },
+                                        {
+                                            "type": "picture",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.kitchen",
+                                                    "uri": "spotify:playlist:37i9dQZF1DX2AHwa6tQ2Yy",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "double_tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.all_chromecasts",
+                                                    "uri": "spotify:playlist:37i9dQZF1DX2AHwa6tQ2Yy",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "image": "local/spotify-images/spotify-soulful.jpeg"
+                                        },
+                                        {
+                                            "type": "picture",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.kitchen",
+                                                    "uri": "spotify:playlist:37i9dQZF1DWVYHdtUb7Wil",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "double_tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.all_chromecasts",
+                                                    "uri": "spotify:playlist:37i9dQZF1DWVYHdtUb7Wil",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "image": "local/spotify-images/spotify-chilled-hits.jpeg"
+                                        },
+                                        {
+                                            "type": "picture",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.kitchen",
+                                                    "uri": "spotify:playlist:37i9dQZEVXbJPcfkRz0wJ0",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "double_tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.all_chromecasts",
+                                                    "uri": "spotify:playlist:37i9dQZEVXbJPcfkRz0wJ0",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "image": "local/spotify-images/spotify-top50-australia.jpeg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "horizontal-stack",
+                                    "cards": [
+                                        {
+                                            "type": "picture",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.kitchen",
+                                                    "uri": "spotify:playlist:4Y26qsuqdQtpDjtdik8qg5",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "double_tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.all_chromecasts",
+                                                    "uri": "spotify:playlist:4Y26qsuqdQtpDjtdik8qg5",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "image": "local/spotify-images/spotify-kids-bop-hits.jpeg"
+                                        },
+                                        {
+                                            "type": "picture",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.kitchen",
+                                                    "uri": "spotify:playlist:0b877i6pS3c75uxku1W5gk",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "double_tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.all_chromecasts",
+                                                    "uri": "spotify:playlist:0b877i6pS3c75uxku1W5gk",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "image": "local/spotify-images/spotify-kids-pop-songs.jpeg"
+                                        },
+                                        {
+                                            "type": "picture",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.kitchen",
+                                                    "uri": "spotify:playlist:0rtxhLzn4Uh1J8Z6tkLskS",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "double_tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.all_chromecasts",
+                                                    "uri": "spotify:playlist:0rtxhLzn4Uh1J8Z6tkLskS",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "image": "local/spotify-images/spotify-kids-dance-party-fun.jpeg"
+                                        },
+                                        {
+                                            "type": "picture",
+                                            "tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.kitchen",
+                                                    "uri": "spotify:playlist:37i9dQZF1DX2jdUWwSgTho",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "double_tap_action": {
+                                                "action": "call-service",
+                                                "service": "spotcast.start",
+                                                "service_data": {
+                                                    "entity_id": "media_player.all_chromecasts",
+                                                    "uri": "spotify:playlist:37i9dQZF1DX2jdUWwSgTho",
+                                                    "force_playback": true,
+                                                    "shuffle": true,
+                                                    "random_song": true
+                                                }
+                                            },
+                                            "image": "local/spotify-images/spotify-top-hits-kids.jpeg"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "Data",
+                    "path": "data",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "statistics-graph",
+                            "entities": [
+                                "sensor.speedtest_download",
+                                "sensor.speedtest_upload",
+                                "sensor.speedtest_ping"
+                            ],
+                            "chart_type": "line",
+                            "stat_types": [
+                                "mean"
+                            ],
+                            "title": "Internet Speeds",
+                            "days_to_show": 14
+                        },
+                        {
+                            "type": "statistics-graph",
+                            "title": "Master Bedroom",
+                            "entities": [
+                                {
+                                    "entity": "sensor.temp_master",
+                                    "name": "Temperature"
+                                },
+                                {
+                                    "entity": "sensor.humidity_master",
+                                    "name": "Humidity"
+                                }
+                            ],
+                            "days_to_show": 30,
+                            "stat_types": [
+                                "mean"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

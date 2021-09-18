@@ -1,5 +1,6 @@
 .cloud
-.storage
+.storage/*
+!.storage/lovelace
 .ssh
 home-assistant_v2.db
 home-assistant_v2.db-shm

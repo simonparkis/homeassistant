@@ -76,22 +76,29 @@
     at: '19:00:00'
   - platform: time
     at: 07:00:00
-  - platform: time_pattern
-    minutes: '*'
+  - platform: state
+    entity_id: switch.doorbell_chime
+    from: unavailable
   action:
   - choose:
-      conditions:
+    - conditions:
       - condition: time
-        after: input_datetime.doorbell_mute
-        before: input_datetime.doorbell_unmute
+        after: '19:00:00'
+        before: 07:00:00
       sequence:
       - service: switch.turn_off
         target:
           entity_id: switch.doorbell_chime
-    default:
-    - service: switch.turn_on
-      target:
-        entity_id: switch.doorbell_chime
+    - conditions:
+      - condition: time
+        after: 07:00:00
+        before: '19:00:00'
+      - condition: template
+        value_template: '{{ states.switch.doorbell_chime.context.user_id == None }}'
+      sequence:
+      - service: switch.turn_on
+        target:
+          entity_id: switch.doorbell_chime
   mode: single
   max_exceeded: silent
 - id: '1631099793227'
