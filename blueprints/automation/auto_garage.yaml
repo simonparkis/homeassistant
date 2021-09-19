@@ -21,8 +21,8 @@ blueprint:
       selector:
         select:
           options:
-            - Toyota Camry
-            - Ford Escape
+            - 'Toyota Camry'
+            - 'Ford Escape'
 
 trigger:
   - platform: state
@@ -45,49 +45,33 @@ action:
       - conditions:
           - condition: state
             entity_id: !input person
-            state: home
+            state: 'home'
           - condition: state
             entity_id: cover.garage_door
-            state: closed
+            state: 'closed'
         sequence:
           - service: cover.open_cover
             target:
               entity_id: cover.garage_door
-          - wait_template: "{{ (states('sensor.garage_no_motion') | int) > 2 }}"
-            timeout: '00:08:00'
-            continue_on_timeout: false
+          - wait_for_trigger:
+              platform: state
+              entity_id: binary_sensor.motion_garage
+              to: 'off'
+              for: '00:02:30'
           - service: cover.close_cover
             target:
               entity_id: cover.garage_door
-          - wait_for_trigger:
-              platform: state
-              entity_id: cover.garage_door
-              to: 'closed'
-            timeout: '00:01:00'
       - conditions:
           - condition: state
             entity_id: !input person
-            state: not_home
+            state: 'not_home'
           - condition: state
             entity_id: cover.garage_door
-            state: open
+            state: 'open'
         sequence:
           - wait_template: "{{ (states('sensor.garage_no_motion') | int) > 0 }}"
           - service: cover.close_cover
             target:
               entity_id: cover.garage_door
-          - wait_for_trigger:
-              platform: state
-              entity_id: cover.garage_door
-              to: 'closed'
-            timeout: '00:01:00'
-  - choose:
-      conditions:
-        - condition: template
-          value_template: "{{ wait.trigger == none }}"
-      sequence:
-        - service: notify.notify
-          data:
-            message: "Garage Door Unable to close automatically"
 mode: single
 

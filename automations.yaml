@@ -532,25 +532,14 @@
   - service: cover.close_cover
     target:
       entity_id: cover.garage_door
-  - wait_for_trigger:
-      platform: state
-      entity_id: cover.garage_door
-      to: closed
-    timeout: 00:01:00
-  - choose:
-      conditions:
-      - condition: template
-        value_template: '{{ wait.trigger == none }}'
-      sequence:
-      - service: notify.notify
-        data:
-          message: Garage Door was unable to close automatically
   mode: single
 - id: '1631939391074'
   alias: Auto Power/Sleep Apple TV
   trigger:
   - platform: state
     entity_id: binary_sensor.livingroom_tv
+  - platform: homeassistant
+    event: start
   action:
   - choose:
     - conditions:
@@ -585,4 +574,17 @@
     data:
       name: slate
   initial_state: true
+  mode: single
+- id: '1632024361142'
+  alias: Notify - Garage Door Failure
+  description: Send Mobile notification on failure to close garage door
+  trigger:
+  - platform: state
+    entity_id: cover.garage_door
+    to: closing
+    for: 00:00:30
+  action:
+  - service: notify.notify
+    data:
+      message: Garage Door unable to close automatically
   mode: single
