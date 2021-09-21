@@ -614,3 +614,16 @@
     target:
       entity_id: light.robe
   mode: single
+- id: '1632223944413'
+  alias: Notify - Zwarteveen Server Offline
+  description: ''
+  trigger:
+  - platform: template
+    value_template: '{{ (as_timestamp(now()) - as_timestamp(strptime(states(''sensor.zwarteveen_heartbeat''),
+      ''%Y-%m-%d,%H:%M''))) > 600 }}'
+  condition:
+  action:
+  - service: notify.mobile_app_iphone_xr
+    data:
+      message: Zwarteveen Server Offline
+  mode: single

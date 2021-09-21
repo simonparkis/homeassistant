@@ -1,14 +1,9 @@
 - platform: rest
-  resource: !secret zwarteveen_ip
-  name: Zwarteveen Status
+  resource: !secret zwarteveen_heartbeat
+  name: Zwarteveen HeartBeat
   headers:
     Authorization: !secret zwarteveen_credentials
-  value_template: >
-    {% if value_json.state == '192.168.0.2' %}
-      Online
-    {% else %}
-      Offline
-    {% endif %}
+  value_template: '{{ value_json.state }}'
 - platform: rest
   resource: !secret sensor_maria
   name: Maria

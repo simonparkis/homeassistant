@@ -19,3 +19,8 @@ media_players:
     - media_player.apple_tv
     - media_player.bedroom
     - media_player.front_room
+
+family:
+  entities:
+    - person.simon
+    - person.zoey

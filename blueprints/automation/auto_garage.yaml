@@ -73,5 +73,9 @@ action:
           - service: cover.close_cover
             target:
               entity_id: cover.garage_door
+          - service: notify.mobile_app_iphone_xr
+            data:
+              message: "Garage Door Closing"
+
 mode: single
 
