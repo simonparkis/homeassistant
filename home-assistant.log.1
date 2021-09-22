@@ -1,70 +1,17 @@
-2021-09-21 21:23:31 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-21 21:23:31 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-21 21:23:31 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-21 21:23:31 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-21 21:23:31 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-21 21:23:32 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:84 is deprecated, please remove it from your configuration
-2021-09-21 21:23:33 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140358355622496] Received invalid command: mobile_app/push_notification_channel
-2021-09-21 21:23:40 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
-2021-09-21 21:23:40 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
-2021-09-21 21:23:40 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
-2021-09-21 21:23:40 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
-2021-09-21 21:23:40 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
-2021-09-21 21:23:40 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
-2021-09-21 21:23:40 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
-2021-09-21 21:23:40 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
-2021-09-21 21:24:41 ERROR (Thread-107) [homeassistant.helpers.template] Template variable error: 'sensor' is undefined when rendering '{{ sensor.zwarteveen_heartbeat }}'
-2021-09-21 21:24:45 ERROR (Thread-108) [homeassistant.helpers.template] Template variable error: 'statessensor' is undefined when rendering '{{ statessensor.zwarteveen_heartbeat }}'
-2021-09-21 21:25:16 WARNING (Thread-113) [homeassistant.helpers.template] Template variable warning: 'str object' has no attribute 'strf' when rendering '{{ states('sensor.zwarteveen_heartbeat').strf }}'
-2021-09-21 21:25:16 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'str object' has no attribute 'strf' when rendering '{{ states('sensor.zwarteveen_heartbeat').strf }}'
-2021-09-21 21:25:16 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'str object' has no attribute 'strf' when rendering '{{ states('sensor.zwarteveen_heartbeat').strf }}'
-2021-09-21 21:25:18 WARNING (Thread-114) [homeassistant.helpers.template] Template variable warning: 'str object' has no attribute 'strftime' when rendering '{{ states('sensor.zwarteveen_heartbeat').strftime }}'
-2021-09-21 21:25:18 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'str object' has no attribute 'strftime' when rendering '{{ states('sensor.zwarteveen_heartbeat').strftime }}'
-2021-09-21 21:25:18 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'str object' has no attribute 'strftime' when rendering '{{ states('sensor.zwarteveen_heartbeat').strftime }}'
-2021-09-21 21:25:51 ERROR (Thread-117) [homeassistant.helpers.template] Template variable error: 'str object' has no attribute 'strftime' when rendering '{{ states('sensor.zwarteveen_heartbeat').strftime("%Y") }}'
-2021-09-21 21:26:03 ERROR (Thread-118) [homeassistant.helpers.template] Template variable error: 'asstates' is undefined when rendering '{{ asstates('sensor.zwarteveen_heartbeat').strftime("%Y") }}'
-2021-09-21 21:26:04 ERROR (Thread-119) [homeassistant.helpers.template] Template variable error: 'as_timestapmstates' is undefined when rendering '{{ as_timestapmstates('sensor.zwarteveen_heartbeat').strftime("%Y") }}'
-2021-09-21 21:26:06 ERROR (Thread-120) [homeassistant.helpers.template] Template variable error: 'as_timestamptstates' is undefined when rendering '{{ as_timestamptstates('sensor.zwarteveen_heartbeat').strftime("%Y") }}'
-2021-09-21 21:26:08 ERROR (Thread-121) [homeassistant.helpers.template] Template variable error: 'astates' is undefined when rendering '{{ astates('sensor.zwarteveen_heartbeat').strftime("%Y") }}'
-2021-09-21 21:26:09 ERROR (Thread-122) [homeassistant.helpers.template] Template variable error: 'str object' has no attribute 'strftime' when rendering '{{ states('sensor.zwarteveen_heartbeat').strftime("%Y") }}'
-2021-09-21 21:27:31 ERROR (Thread-136) [homeassistant.helpers.template] Template variable error: 'as_timestapmstrptime' is undefined when rendering '{{ as_timestapmstrptime(states('sensor.zwarteveen_heartbeat'), "%Y-%m-%d, %H:%M") }}'
-2021-09-21 21:27:32 ERROR (Thread-137) [homeassistant.helpers.template] Template variable error: 'as_timestampstrptime' is undefined when rendering '{{ as_timestampstrptime(states('sensor.zwarteveen_heartbeat'), "%Y-%m-%d, %H:%M") }}'
-2021-09-21 21:33:37 WARNING (MainThread) [homeassistant.components.template.trigger] Error initializing 'template' trigger for 'Notify - Zwarteveen Server Offline': TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
-2021-09-21 21:33:37 ERROR (MainThread) [homeassistant.helpers.event] Error while processing template: Template("{{ (as_timestamp(now()) - as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d,%H:%M'))) > 600 }}")
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 394, in async_render
-    render_result = _render_with_context(self.template, compiled, **kwargs)
-  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 1477, in _render_with_context
-    return template.render(**kwargs)
-  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 1304, in render
-    self.environment.handle_exception()
-  File "/usr/local/lib/python3.9/site-packages/jinja2/environment.py", line 925, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File "<template>", line 1, in top-level template code
-TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 510, in async_render_to_info
-    render_info._result = self.async_render(variables, strict=strict, **kwargs)
-  File "/usr/src/homeassistant/homeassistant/helpers/template.py", line 396, in async_render
-    raise TemplateError(err) from err
-homeassistant.exceptions.TemplateError: TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
-2021-09-21 21:33:37 WARNING (MainThread) [homeassistant.components.template.trigger] Error evaluating 'template' trigger for 'Notify - Zwarteveen Server Offline': TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
-2021-09-21 21:59:17 ERROR (MainThread) [zigpy_deconz.uart] Lost serial connection: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
-2021-09-21 21:59:17 WARNING (MainThread) [zigpy_deconz.api] Serial '/dev/ttyACM0' connection lost unexpectedly: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
-2021-09-21 21:59:23 ERROR (MainThread) [zigpy_deconz.uart] Lost serial connection: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
-2021-09-21 21:59:23 WARNING (MainThread) [zigpy_deconz.api] Serial '/dev/ttyACM0' connection lost unexpectedly: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
-2021-09-21 22:00:07 ERROR (MainThread) [zigpy_deconz.uart] Lost serial connection: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
-2021-09-21 22:00:07 WARNING (MainThread) [zigpy_deconz.api] Serial '/dev/ttyACM0' connection lost unexpectedly: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
-2021-09-21 22:00:15 ERROR (MainThread) [zigpy_deconz.uart] Lost serial connection: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
-2021-09-21 22:00:15 WARNING (MainThread) [zigpy_deconz.api] Serial '/dev/ttyACM0' connection lost unexpectedly: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
-2021-09-21 22:01:14 ERROR (MainThread) [zigpy_deconz.uart] Lost serial connection: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
-2021-09-21 22:01:14 WARNING (MainThread) [zigpy_deconz.api] Serial '/dev/ttyACM0' connection lost unexpectedly: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
-2021-09-21 22:05:21 ERROR (MainThread) [zigpy_deconz.uart] Lost serial connection: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
-2021-09-21 22:05:21 WARNING (MainThread) [zigpy_deconz.api] Serial '/dev/ttyACM0' connection lost unexpectedly: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
-2021-09-21 22:05:58 WARNING (MainThread) [zigpy_deconz.zigbee.application] Unexpected transmit confirm for request id 12, Status: TXStatus.NWK_ROUTE_DISCOVERY_FAILED
-2021-09-21 22:06:15 WARNING (MainThread) [zigpy.appdb] Discarding _save_attribute event
-2021-09-21 22:06:20 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:84 is deprecated, please remove it from your configuration
-2021-09-21 22:06:22 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:84 is deprecated, please remove it from your configuration
+2021-09-23 00:06:47 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-23 00:06:47 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-23 00:06:47 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-23 00:06:47 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-23 00:06:47 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-23 00:06:48 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:85 is deprecated, please remove it from your configuration
+2021-09-23 00:06:55 WARNING (MainThread) [zigpy_deconz.zigbee.application] Unexpected transmit confirm for request id 53, Status: TXStatus.MAC_CHANNEL_ACCESS_FAILURE
+2021-09-23 00:06:55 WARNING (MainThread) [zigpy_deconz.zigbee.application] Unexpected transmit confirm for request id 53, Status: TXStatus.MAC_CHANNEL_ACCESS_FAILURE
+2021-09-23 00:06:57 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
+2021-09-23 00:06:57 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
+2021-09-23 00:06:57 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
+2021-09-23 00:06:57 WARNING (MainThread) [homeassistant.components.sensor] Platform rest not ready yet: All connection attempts failed; Retrying in background in 30 seconds
+2021-09-23 00:06:58 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2021-09-23 00:06:58 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-09-23 00:06:58 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-09-23 00:06:58 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
+2021-09-23 00:07:40 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x3F97:11:0x1000]: Couldn't get list of groups: [0x3f97:11:0x1000]: Message send failure

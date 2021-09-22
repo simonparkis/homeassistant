@@ -619,8 +619,12 @@
   description: ''
   trigger:
   - platform: template
-    value_template: '{{ (as_timestamp(now()) - as_timestamp(strptime(states(''sensor.zwarteveen_heartbeat''),
-      ''%Y-%m-%d,%H:%M''))) > 600 }}'
+    value_template: '{% set current_time = as_timestamp(now()) %} {% set heartbeat
+      = as_timestamp(strptime(states(''sensor.zwarteveen_heartbeat''), ''%Y-%m-%d,
+      %H:%M'')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) >
+      (timeout_minutes * 60) }}
+
+      '
   condition:
   action:
   - service: notify.mobile_app_iphone_xr

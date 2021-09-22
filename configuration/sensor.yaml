@@ -1,6 +1,7 @@
 - platform: rest
   resource: !secret zwarteveen_heartbeat
   name: Zwarteveen HeartBeat
+  scan_interval: '00:05:00'
   headers:
     Authorization: !secret zwarteveen_credentials
   value_template: '{{ value_json.state }}'

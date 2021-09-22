@@ -1,0 +1,7 @@
+person.simon:
+  templates:
+    theme: >
+    icon: mdi:account-tie
+    icon_color: >
+      if (state == 'home') return 'rgb(214,119,0)';
+      if (state != 'home') return 'rgb(0,126,188)';
