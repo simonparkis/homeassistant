@@ -1,0 +1,35 @@
+  - type: conditional
+    conditions:
+      - entity: sensor.season
+        state_not: autumn
+      - entity: sensor.season
+        state_not: winter
+    row:
+      entity: fan.master_bedroom
+      icon: mdi:fan
+      name: Fan
+      tap_action:
+        action: call-service
+        service: browser_mod.popup
+        service_data:
+          deviceID: this
+          title: Master Bedroom Fan
+          card:
+            type: entities
+            state_color: true
+            entities:
+              - entity: fan.master_bedroom
+                name: Power
+                icon: mdi:power-plug
+              - entity: input_boolean.master_bedroom_fan_oscillate
+                name: Oscillation
+                icon: mdi:swap-horizontal
+              - entity: input_select.master_bedroom_fan_angle
+                name: Oscillation Angle
+                icon: mdi:arrow-expand-horizontal
+              - entity: input_boolean.master_bedroom_fan_natural_mode
+                name: Natural Mode
+                icon: mdi:leaf
+              - entity: input_number.master_bedroom_fan_speed
+                name: Speed
+                icon: mdi:speedometer

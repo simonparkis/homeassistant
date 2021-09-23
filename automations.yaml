@@ -631,3 +631,48 @@
     data:
       message: Zwarteveen Server Offline
   mode: single
+- id: '1632400430196'
+  alias: Voice & Mobile Notification - Garbage Collection Reminder
+  description: ''
+  trigger:
+  - platform: time
+    at: '17:00:00'
+  - platform: state
+    entity_id: sensor.house_status
+    from: Vacant
+    to: Occupied
+  condition:
+  - condition: template
+    value_template: '{{ is_state(''sensor.rubbish'', ''1'') or is_state(''sensor.recycling'',''1'')
+      }}'
+  - condition: time
+    after: '17:00:00'
+  action:
+  - wait_for_trigger:
+      platform: state
+      entity_id: binary_sensor.motion_living_room
+      to: 'on'
+    timeout: 01:00:00
+    continue_on_timeout: false
+  - service: media_player.volume_set
+    data:
+      entity_id: media_player.kitchen
+      volume_level: 0.5
+  - service: tts.cloud_say
+    data:
+      entity_id: media_player.kitchen
+      message: "{% if is_state('sensor.rubbish','1') and is_state('sensor.recycling','1')\
+        \ %}\n  Waste Collection is tomorrow, both garbage and recycling\n{% elif\
+        \ is_state('sensor.rubbish','1') %}\n  Waste Collection is tomorrow, rubbish\
+        \ only\n{% elif is_state('sensor.recycling','1') %}\n  Waste Collection is\
+        \ tomorrow, recycling only\n{% endif %}\n"
+  - service: notify.notify
+    data:
+      title: Garbage Bins
+      message: "{% if is_state('sensor.rubbish','1') and is_state('sensor.recycling','1')\
+        \ %}\n  Waste Collection is tomorrow, both garbage and recycling\n{% elif\
+        \ is_state('sensor.rubbish','1') %}\n  Waste Collection is tomorrow, rubbish\
+        \ only\n{% elif is_state('sensor.recycling','1') %}\n  Waste Collection is\
+        \ tomorrow, recycling only\n{% endif %}\n"
+  mode: single
+  max_exceeded: silent

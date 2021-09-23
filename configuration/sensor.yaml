@@ -4,7 +4,12 @@
   scan_interval: '00:05:00'
   headers:
     Authorization: !secret zwarteveen_credentials
-  value_template: '{{ value_json.state }}'
+  value_template: >
+   {% if value_json is defined and value_json.state is defined %}
+     {{ value_json.state }}
+   {% else %}
+     {{ states('sensor.zwarteveen_heartbeat') }}
+   {% endif %}
 - platform: rest
   resource: !secret sensor_maria
   name: Maria
@@ -18,38 +23,6 @@
     Authorization: !secret zwarteveen_credentials
   value_template: '{{ value_json.state }}'
 - platform: season
-- platform: rest
-  resource: http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData
-  method: GET
-  name: "Solar Current Power"
-  value_template: >-
-    {{ (value_json.Body.Data.PAC.Value /1000 | float)|round(2) }}
-  unit_of_measurement: 'kW'
-  force_update: true
-- platform: rest
-  resource: http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData
-  method: GET
-  name: "Solar Total Power Today"
-  value_template: >-
-    {{ (value_json.Body.Data.DAY_ENERGY.Value /1000 | float)|round(2) }}
-  unit_of_measurement: 'kWh'
-  force_update: true
-- platform: rest
-  resource: http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData
-  method: GET
-  name: "Solar Total Power This Year"
-  value_template: >-
-    {{ (value_json.Body.Data.YEAR_ENERGY.Value /1000 | float)|round(2) }}
-  unit_of_measurement: 'kWh'
-  force_update: true
-- platform: rest
-  resource: http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData
-  method: GET
-  name: "Solar Total Power Since Installed"
-  value_template: >-
-    {{ (value_json.Body.Data.TOTAL_ENERGY.Value /1000 | float / 1000)|round(2) }}
-  unit_of_measurement: 'MWh'
-  force_update: true
 - platform: uptime
 - platform: systemmonitor
   resources:
@@ -61,3 +34,10 @@
       arg: /
     - type: disk_free
       arg: /
+
+- platform: fronius
+  resource: !secret fronius_url
+  monitored_conditions:
+    - sensor_type: inverter
+      scope: system
+      device: 1

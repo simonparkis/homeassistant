@@ -5,6 +5,7 @@ homeassistant:
   elevation: !secret elevation
   unit_system: metric
   time_zone: Australia/Sydney
+  customize: !include customize.yaml
   auth_providers:
     - type: homeassistant
 
@@ -74,13 +75,6 @@ apple_tv:
     login_id: !secret appletv_login_id
     credentials: !secret appletv_credentials
     start_off: true
-
-#mqtt:
-#  discovery: true
-#  discovery_prefix: homeassistant
-#  broker: 192.168.1.30
-#  username: !secret mosquitto_username
-#  password: !secret mosquitto_password
       
 recorder:
   purge_keep_days: 7

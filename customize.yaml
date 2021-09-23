@@ -1,2 +1,4 @@
 person.simon:
   icon: mdi:account-tie
+sensor.energy_total_fronius_inverter_system_http_192_168_1_80:
+  friendly_name: Total Solar Energy
