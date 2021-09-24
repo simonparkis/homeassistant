@@ -1,46 +1,152 @@
-2021-09-23 22:07:16 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-23 22:07:16 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-23 22:07:16 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-23 22:07:16 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-23 22:07:16 WARNING (SyncWorker_4) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-23 22:07:16 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-23 22:07:16 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
-2021-09-23 22:07:16 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [139865254594880] Received invalid command: mobile_app/push_notification_channel
-2021-09-23 22:07:16 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [139865254594880] Received invalid command: mobile_app/push_notification_channel
-2021-09-23 22:07:16 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [139865254594880] Received invalid command: mobile_app/push_notification_channel
-2021-09-23 22:07:23 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-09-23 22:07:24 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
-2021-09-23 22:07:24 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
-2021-09-23 22:07:24 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
-2021-09-23 22:07:24 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
-2021-09-23 22:19:42 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-09-23 22:24:37 ERROR (Thread-108) [homeassistant.helpers.template] Template variable error: 'sensor' is undefined when rendering ''{{ (sensor.rubbish == 1) or (sensor.recycling == 1) }}''
-2021-09-23 22:24:51 ERROR (Thread-109) [homeassistant.helpers.template] Template variable error: 'statessensor' is undefined when rendering ''{{ (statessensor.rubbish == 1) or (sensor.recycling == 1) }}''
-2021-09-23 22:24:56 ERROR (Thread-110) [homeassistant.helpers.template] Template variable error: 'sensor' is undefined when rendering ''{{ (states('sensor.rubbish') == 1) or (sensor.recycling == 1) }}''
-2021-09-23 22:24:59 ERROR (Thread-111) [homeassistant.helpers.template] Template variable error: 'sensor' is undefined when rendering '{{ (states('sensor.rubbish') == 1) or (sensor.recycling == 1) }}''
-2021-09-23 22:25:02 ERROR (Thread-112) [homeassistant.helpers.template] Template variable error: 'statessensor' is undefined when rendering '{{ (states('sensor.rubbish') == 1) or (statessensor.recycling == 1) }}''
-2021-09-23 22:33:57 ERROR (Thread-7) [homeassistant.components.cast.media_player] Failed to cast media https://www.home-assistant.io/images/cast/splash.png. Please make sure the URL is: Reachable from the cast device and either a publicly resolvable hostname or an IP address
-2021-09-23 22:35:20 ERROR (Thread-7) [homeassistant.components.cast.media_player] Failed to cast media http://192.168.1.110:8123/api/tts_proxy/6f7900eb566aa1cc266bf236cc77c669b801fcd7_en-us_a9c18110b0_cloud.mp3 from internal_url (http://192.168.1.110:8123). Please make sure the URL is: Reachable from the cast device and either a publicly resolvable hostname or an IP address
-2021-09-23 23:39:42 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-09-23 23:53:00 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x84'
-2021-09-24 00:50:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-simon (192.168.1.9): Timeout while waiting for API response!
-2021-09-24 00:53:17 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x0f'
-2021-09-24 00:55:34 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-simon (192.168.1.9): Error connecting to ('192.168.1.9', 6053): [Errno 113] Connect call failed ('192.168.1.9', 6053)
-2021-09-24 00:58:42 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-09-24 02:17:42 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-09-24 02:19:22 WARNING (Thread-82) [pychromecast.socket_client] [Front Room(192.168.1.61):8009] Heartbeat timeout, resetting connection
-2021-09-24 03:22:42 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-24 03:31:58 ERROR (Thread-7) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Error reading from socket.
-2021-09-24 03:31:58 WARNING (Thread-7) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Error communicating with socket, resetting connection
-2021-09-24 03:32:18 WARNING (Thread-6) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Heartbeat timeout, resetting connection
-2021-09-24 04:08:01 WARNING (Thread-41) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Heartbeat timeout, resetting connection
-2021-09-24 04:08:09 ERROR (Thread-41) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
-2021-09-24 04:54:42 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-09-24 04:56:33 ERROR (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Error reading from socket.
-2021-09-24 04:56:33 WARNING (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Error communicating with socket, resetting connection
-2021-09-24 04:56:38 ERROR (Thread-9) [pychromecast.socket_client] [All Chromecasts([::ffff:c0a8:129]):32216] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 32216)), retrying in 5.0s
-2021-09-24 04:57:03 WARNING (Thread-8) [pychromecast.socket_client] [Kitchen Left(192.168.1.41):8009] Heartbeat timeout, resetting connection
-2021-09-24 04:57:08 ERROR (Thread-8) [pychromecast.socket_client] [Kitchen Left([::ffff:c0a8:129]):8009] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 8009)), retrying in 5.0s
-2021-09-24 04:57:15 ERROR (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Error reading from socket.
-2021-09-24 04:57:15 WARNING (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Error communicating with socket, resetting connection
-2021-09-24 04:57:15 ERROR (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32216)), retrying in 5.0s
+2021-09-24 14:04:32 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-24 14:04:32 WARNING (SyncWorker_4) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-24 14:04:32 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-24 14:04:32 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-24 14:04:32 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-24 14:04:32 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-24 14:04:33 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
+2021-09-24 14:04:35 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [139734608706912] Received invalid command: energy/info
+2021-09-24 14:04:35 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [139734608706912] Received invalid command: energy/info
+2021-09-24 14:04:35 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [139734608706912] Received invalid command: energy/info
+2021-09-24 14:04:35 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [139734608706912] Received invalid command: energy/info
+2021-09-24 14:04:35 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [139734608706912] Received invalid command: energy/info
+2021-09-24 14:04:40 ERROR (MainThread) [snitun.client.client_peer] Challenge/Response error with SniTun server
+2021-09-24 14:04:40 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2021-09-24 14:04:49 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-09-24 14:04:49 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2021-09-24 14:04:49 ERROR (MainThread) [snitun.client.client_peer] Challenge/Response error with SniTun server
+2021-09-24 14:04:49 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2021-09-24 14:06:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-09-24 14:38:52 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-sofia (192.168.1.8): Timeout while waiting for API response!
+2021-09-24 15:24:46 WARNING (MainThread) [homeassistant.components.automation.motion_light_walk_in_robe] Motion Light - Walk In Robe: Already running
+2021-09-24 16:16:57 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.90.157
+2021-09-24 16:17:11 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-24 16:17:11 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.90.157
+2021-09-24 16:17:30 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.90.157
+2021-09-24 16:20:23 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-24 16:22:05 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-24 16:47:02 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for garage-door (192.168.1.55): Timeout while waiting for API response!
+2021-09-24 16:55:05 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.90.157
+2021-09-24 16:58:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for gas-meter (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-09-24 16:59:18 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for gas-meter (192.168.1.99): Timeout while waiting for API response!
+2021-09-24 17:01:37 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-09-24 17:03:56 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.90.157
+2021-09-24 17:05:18 WARNING (Thread-301) [homeassistant.helpers.template] Template variable warning: 'None' has no attribute 'entit' when rendering '{{ states.media_player.state.entit | list }}'
+2021-09-24 17:05:18 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'None' has no attribute 'entit' when rendering '{{ states.media_player.state.entit | list }}'
+2021-09-24 17:05:18 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'None' has no attribute 'entit' when rendering '{{ states.media_player.state.entit | list }}'
+2021-09-24 17:05:20 WARNING (Thread-302) [homeassistant.helpers.template] Template variable warning: 'None' has no attribute 'entity_id' when rendering '{{ states.media_player.state.entity_id | list }}'
+2021-09-24 17:05:20 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'None' has no attribute 'entity_id' when rendering '{{ states.media_player.state.entity_id | list }}'
+2021-09-24 17:05:20 WARNING (MainThread) [homeassistant.helpers.template] Template variable warning: 'None' has no attribute 'entity_id' when rendering '{{ states.media_player.state.entity_id | list }}'
+2021-09-24 17:10:49 ERROR (Thread-404) [homeassistant.helpers.template] Template variable error: 'areadstates' is undefined when rendering '{{ areadstates.media_player | list }}'
+2021-09-24 17:10:50 ERROR (Thread-405) [homeassistant.helpers.template] Template variable error: 'areastates' is undefined when rendering '{{ areastates.media_player | list }}'
+2021-09-24 17:10:51 ERROR (Thread-406) [homeassistant.helpers.template] Template variable error: 'area_idstates' is undefined when rendering '{{ area_idstates.media_player | list }}'
+2021-09-24 17:11:04 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 192.168.1.1
+2021-09-24 17:26:38 ERROR (Thread-421) [homeassistant.helpers.template] Template variable error: 'map' is undefined when rendering '{{ states.media_player | area_id(map(attribute='entity_id')) | list }}'
+2021-09-24 17:52:36 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-09-24 17:57:38 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Timeout while connecting to ('192.168.1.111', 6053)
+2021-09-24 17:57:51 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Timeout while connecting to ('192.168.1.70', 6053)
+2021-09-24 18:17:00 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-24 18:58:51 ERROR (Thread-518) [homeassistant.helpers.template] Template variable error: 'group' is undefined when rendering '{{ group.family | list }}'
+2021-09-24 18:58:57 ERROR (Thread-519) [homeassistant.helpers.template] Template variable error: 'groups' is undefined when rendering '{{ groups.family | list }}'
+2021-09-24 19:00:02 ERROR (Thread-520) [homeassistant.helpers.template] Template variable error: 'group' is undefined when rendering '{{ group.family }}'
+2021-09-24 19:00:12 ERROR (Thread-521) [homeassistant.helpers.template] Template variable error: 'group' is undefined when rendering '{{ group.family }}'
+2021-09-24 19:00:19 ERROR (Thread-522) [homeassistant.helpers.template] Template variable error: 'group' is undefined when rendering '{{ group.family  }}'
+2021-09-24 19:00:20 ERROR (Thread-523) [homeassistant.helpers.template] Template variable error: 'group' is undefined when rendering '{{ group.family | list }}'
+2021-09-24 19:10:19 ERROR (Thread-10) [homeassistant.components.cast.media_player] Failed to cast media https://www.home-assistant.io/images/cast/splash.png. Please make sure the URL is: Reachable from the cast device and either a publicly resolvable hostname or an IP address
+2021-09-24 19:38:45 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-24 19:43:18 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Follow Me Audio: Error executing script. Invalid data for call_service at pos 1: extra keys not allowed @ data['target']
+2021-09-24 19:43:18 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Error while executing automation automation.follow_me_audio: extra keys not allowed @ data['target']
+2021-09-24 19:43:31 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Follow Me Audio: Error executing script. Invalid data for call_service at pos 1: extra keys not allowed @ data['target']
+2021-09-24 19:43:31 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Error while executing automation automation.follow_me_audio: extra keys not allowed @ data['target']
+2021-09-24 19:43:37 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Follow Me Audio: Error executing script. Invalid data for call_service at pos 1: extra keys not allowed @ data['target']
+2021-09-24 19:43:37 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Error while executing automation automation.follow_me_audio: extra keys not allowed @ data['target']
+2021-09-24 19:43:49 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Follow Me Audio: Error executing script. Invalid data for call_service at pos 1: extra keys not allowed @ data['target']
+2021-09-24 19:43:49 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Error while executing automation automation.follow_me_audio: extra keys not allowed @ data['target']
+2021-09-24 19:43:59 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Follow Me Audio: Error executing script. Invalid data for call_service at pos 1: extra keys not allowed @ data['target']
+2021-09-24 19:43:59 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Error while executing automation automation.follow_me_audio: extra keys not allowed @ data['target']
+2021-09-24 19:43:59 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Follow Me Audio: Error executing script. Invalid data for call_service at pos 1: extra keys not allowed @ data['target']
+2021-09-24 19:43:59 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Error while executing automation automation.follow_me_audio: extra keys not allowed @ data['target']
+2021-09-24 19:44:16 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Follow Me Audio: Error executing script. Invalid data for call_service at pos 1: extra keys not allowed @ data['target']
+2021-09-24 19:44:16 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Error while executing automation automation.follow_me_audio: extra keys not allowed @ data['target']
+2021-09-24 19:44:26 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Follow Me Audio: Error executing script. Invalid data for call_service at pos 1: extra keys not allowed @ data['target']
+2021-09-24 19:44:26 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Error while executing automation automation.follow_me_audio: extra keys not allowed @ data['target']
+2021-09-24 19:44:42 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Follow Me Audio: Error executing script. Invalid data for call_service at pos 1: extra keys not allowed @ data['target']
+2021-09-24 19:44:42 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Error while executing automation automation.follow_me_audio: extra keys not allowed @ data['target']
+2021-09-24 19:44:52 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Follow Me Audio: Error executing script. Invalid data for call_service at pos 1: extra keys not allowed @ data['target']
+2021-09-24 19:44:52 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Error while executing automation automation.follow_me_audio: extra keys not allowed @ data['target']
+2021-09-24 19:46:04 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Follow Me Audio: Error executing script. Invalid data for call_service at pos 1: extra keys not allowed @ data['target']
+2021-09-24 19:46:04 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Error while executing automation automation.follow_me_audio: extra keys not allowed @ data['target']
+2021-09-24 19:49:01 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Follow Me Audio: Error executing script. Invalid data for call_service at pos 1: extra keys not allowed @ data['target']
+2021-09-24 19:49:01 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Error while executing automation automation.follow_me_audio: extra keys not allowed @ data['target']
+2021-09-24 19:49:35 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Follow Me Audio: Error executing script. Invalid data for call_service at pos 1: extra keys not allowed @ data['target']
+2021-09-24 19:49:35 ERROR (MainThread) [homeassistant.components.automation.follow_me_audio] Error while executing automation automation.follow_me_audio: extra keys not allowed @ data['target']
+2021-09-24 19:50:18 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:50:59 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:51:04 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:51:15 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:51:18 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:51:23 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:52:11 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:52:22 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:53:12 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:54:15 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:54:20 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:54:51 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:55:06 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:55:22 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:55:49 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:55:56 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities media_player.master
+2021-09-24 19:56:45 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities meida_player.bedroom
+2021-09-24 19:56:49 WARNING (MainThread) [homeassistant.helpers.service] Unable to find referenced entities meida_player.bedroom
+2021-09-24 20:02:16 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x96'
+2021-09-24 20:18:08 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-09-24 20:29:48 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-24 20:31:45 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-24 20:33:34 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2021-09-24 20:33:49 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-09-24 20:34:57 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-24 20:52:25 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-24 20:59:01 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-24 21:03:58 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x30'
+2021-09-24 21:04:06 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-24 21:25:08 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [139734042796096] Client unable to keep up with pending messages. Stayed over 512 for 5 seconds
+2021-09-24 21:37:10 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2021-09-24 21:38:16 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
+2021-09-24 21:57:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Timeout while connecting to ('192.168.1.111', 6053)
+2021-09-24 22:10:59 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for 3d-printer (192.168.1.14): Timeout while waiting for API response!
+2021-09-24 22:14:49 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for 3d-printer (192.168.1.14): Timeout while waiting for API response!
+2021-09-24 22:15:36 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for 3d-printer (192.168.1.14): Timeout while waiting for API response!
+2021-09-24 22:16:14 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for doorbell (192.168.1.16): Timeout while waiting for API response!
+2021-09-24 22:16:52 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for garage-door (192.168.1.55): Timeout while waiting for API response!
+2021-09-24 22:18:28 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-sofia (192.168.1.8): Timeout while waiting for API response!
+2021-09-24 22:19:01 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-24 22:19:10 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-switch (192.168.1.86): Timeout while connecting to ('192.168.1.86', 6053)
+2021-09-24 23:07:19 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-24 23:38:24 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-24 23:55:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-simon (192.168.1.9): Timeout while waiting for API response!
+2021-09-25 00:01:33 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-simon (192.168.1.9): Timeout while connecting to ('192.168.1.9', 6053)
+2021-09-25 00:33:55 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-25 00:58:01 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-25 01:45:42 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xdb'
+2021-09-25 01:50:28 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-25 02:17:01 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-25 02:33:43 ERROR (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Error reading from socket.
+2021-09-25 02:33:43 WARNING (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Error communicating with socket, resetting connection
+2021-09-25 02:34:08 WARNING (Thread-9) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2021-09-25 02:57:56 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-25 03:34:15 WARNING (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2021-09-25 03:34:23 ERROR (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2021-09-25 03:36:01 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-25 03:38:24 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-25 03:53:25 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-25 04:12:38 WARNING (Thread-38) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2021-09-25 04:12:45 ERROR (Thread-38) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2021-09-25 04:31:23 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Error reading from socket.
+2021-09-25 04:31:23 WARNING (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Error communicating with socket, resetting connection
+2021-09-25 04:31:26 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 32216)), retrying in 5.0s
+2021-09-25 04:31:53 WARNING (Thread-6) [pychromecast.socket_client] [Kitchen Left(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2021-09-25 04:32:00 ERROR (Thread-6) [pychromecast.socket_client] [Kitchen Left(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
+2021-09-25 04:32:06 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Error reading from socket.
+2021-09-25 04:32:06 WARNING (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Error communicating with socket, resetting connection
+2021-09-25 04:32:06 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32216)), retrying in 5.0s
+2021-09-25 04:55:01 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
