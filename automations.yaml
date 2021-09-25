@@ -468,6 +468,8 @@
     state: Occupied
   - condition: template
     value_template: '{{ not is_state(''person.zoey'',''home'') }}'
+  - condition: template
+    value_template: '{{ not is_state(''media_player.kitchen'', ''playing'') }}'
   action:
   - choose:
     - conditions:
@@ -693,7 +695,7 @@
     value_template: '{{ states.person | map(attribute=''state'') | select(''eq'',''home'')
       | list | count == 1 }}'
   - condition: state
-    entity_id: binary_sensor.house_guests
+    entity_id: input_boolean.house_guests
     state: 'off'
   action:
   - service: media_player.volume_mute
@@ -703,6 +705,7 @@
         {% elif trigger.entity_id == 'binary_sensor.motion_front_room' %}\n  media_player.front_room\n\
         {% elif trigger.entity_id == 'binary_sensor.motion_living_room' %}\n  media_player.kitchen\n\
         {% endif %}\n"
+  - delay: 00:00:01
   - service: media_player.volume_mute
     data_template:
       is_volume_muted: true
@@ -712,3 +715,4 @@
         \ == 'binary_sensor.motion_living_room' %}\n  media_player.bedroom, media_player.front_room\n\
         {% endif %}\n"
   mode: single
+  max_exceeded: silent
