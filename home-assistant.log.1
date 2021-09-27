@@ -1,13 +1,67 @@
-2021-09-26 23:53:22 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-26 23:53:22 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-26 23:53:22 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-26 23:53:22 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-26 23:53:22 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-26 23:53:22 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-26 23:53:22 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
-2021-09-26 23:53:35 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-09-26 23:53:35 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
-2021-09-26 23:53:35 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
-2021-09-26 23:53:35 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
-2021-09-26 23:53:35 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
-2021-09-26 23:53:36 WARNING (MainThread) [homeassistant.components.generic_thermostat.climate] The climate mode is OFF, but the switch device is ON. Turning off device switch.joseph_heater
+2021-09-27 13:10:28 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-27 13:10:28 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-27 13:10:28 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-27 13:10:28 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-27 13:10:28 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration alexa_media which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-27 13:10:28 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-27 13:10:28 WARNING (SyncWorker_4) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-27 13:10:28 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
+2021-09-27 13:10:32 WARNING (MainThread) [alexapy.alexalogin] No access token found; falling back to credential login instead of oauth.
+2021-09-27 13:10:33 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 111] Connect call failed ('192.168.1.70', 6053)
+2021-09-27 13:10:36 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-09-27 13:11:00 ERROR (MainThread) [aiohttp.server] Error handling request
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 999, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 865, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/resolver.py", line 31, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Try again
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/web_protocol.py", line 422, in _handle_request
+    resp = await self._request_handler(request)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/web_app.py", line 499, in _handle
+    resp = await handler(request)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/web_middlewares.py", line 119, in impl
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/security_filter.py", line 60, in security_filter_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/forwarded.py", line 211, in forwarded_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/request_context.py", line 24, in request_context_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/ban.py", line 78, in ban_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/auth.py", line 144, in auth_middleware
+    return await handler(request)
+  File "/usr/src/homeassistant/homeassistant/components/http/view.py", line 135, in handle
+    result = await result
+  File "/usr/src/homeassistant/homeassistant/components/media_player/__init__.py", line 1055, in get
+    data, content_type = await player.async_get_media_image()
+  File "/usr/src/homeassistant/homeassistant/components/media_player/__init__.py", line 497, in async_get_media_image
+    return await self._async_fetch_image_from_cache(url)
+  File "/usr/src/homeassistant/homeassistant/components/media_player/__init__.py", line 969, in _async_fetch_image_from_cache
+    (content, content_type) = await self._async_fetch_image(url)
+  File "/usr/src/homeassistant/homeassistant/components/media_player/__init__.py", line 983, in _async_fetch_image
+    response = await websession.get(url)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/client.py", line 520, in _request
+    conn = await self._connector.connect(
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 535, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 892, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1011, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host is2-ssl.mzstatic.com:443 ssl:default [Try again]
+2021-09-27 13:16:38 WARNING (MainThread) [custom_components.alexa_media.media_player] Sorry, text to speech can only be called with the notify.alexa_media service. Please see the alexa_media wiki for details.https://github.com/custom-components/alexa_media_player/wiki/Configuration%3A-Notification-Component#use-the-notifyalexa_media-service
+2021-09-27 13:22:02 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
