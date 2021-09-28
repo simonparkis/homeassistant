@@ -1,119 +1,73 @@
-2021-09-27 13:22:14 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-27 13:22:14 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-27 13:22:14 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-27 13:22:14 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-27 13:22:14 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-27 13:22:14 WARNING (SyncWorker_4) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-27 13:22:14 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration alexa_media which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-09-27 13:22:14 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
-2021-09-27 13:22:19 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140069494811088] Received invalid command: mobile_app/push_notification_channel
-2021-09-27 13:22:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
-2021-09-27 13:22:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
-2021-09-27 13:40:55 WARNING (MainThread) [homeassistant.components.automation.motion_light_walk_in_robe] Motion Light - Walk In Robe: Already running
-2021-09-27 13:42:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
-2021-09-27 13:50:40 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 14:01:16 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
-2021-09-27 15:26:55 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
-2021-09-27 15:26:55 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
-2021-09-27 17:09:40 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
-2021-09-27 17:11:05 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
-2021-09-27 17:20:14 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 17:28:07 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 17:40:57 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
-2021-09-27 17:40:59 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
-2021-09-27 17:53:18 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
-2021-09-27 17:58:05 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 18:00:17 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 18:02:59 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 18:08:11 WARNING (Thread-9) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Heartbeat timeout, resetting connection
-2021-09-27 18:08:16 WARNING (Thread-8) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Heartbeat timeout, resetting connection
-2021-09-27 18:08:17 ERROR (Thread-8) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
-2021-09-27 18:08:19 ERROR (Thread-9) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32000)), retrying in 5.0s
-2021-09-27 18:13:26 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 18:17:39 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-09-27 18:19:27 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 18:31:51 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 18:41:51 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 18:47:10 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 18:48:51 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 18:56:30 WARNING (Thread-8) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Heartbeat timeout, resetting connection
-2021-09-27 18:56:30 WARNING (Thread-9) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Heartbeat timeout, resetting connection
-2021-09-27 18:56:30 ERROR (Thread-9) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32000)), retrying in 5.0s
-2021-09-27 18:56:30 ERROR (Thread-8) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
-2021-09-27 18:58:25 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 18:59:37 WARNING (Thread-8) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Heartbeat timeout, resetting connection
-2021-09-27 18:59:37 WARNING (Thread-9) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Heartbeat timeout, resetting connection
-2021-09-27 18:59:38 ERROR (Thread-8) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
-2021-09-27 18:59:38 ERROR (Thread-9) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32000)), retrying in 5.0s
-2021-09-27 19:14:49 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 19:38:39 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-09-27 19:57:25 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 20:01:41 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 20:10:17 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 20:11:58 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 20:13:39 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 20:17:52 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 20:30:57 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 20:32:39 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 20:34:12 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x9f'
-2021-09-27 20:47:55 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 20:50:23 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 20:57:39 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-09-27 21:34:46 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xa9'
-2021-09-27 21:40:06 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 21:47:43 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 21:54:34 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 21:58:16 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 22:09:43 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 22:11:54 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 22:20:23 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 22:33:22 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 22:35:10 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x1b'
-2021-09-27 23:24:23 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 23:30:41 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 23:32:23 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 23:34:40 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-09-27 23:35:32 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xa2'
-2021-09-27 23:40:17 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 23:41:58 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 23:48:03 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-27 23:49:45 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 00:21:32 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 00:23:14 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 00:27:59 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 01:15:59 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 01:17:41 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 01:36:31 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x37'
-2021-09-28 01:45:05 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 02:01:17 WARNING (Thread-10) [pychromecast.socket_client] [Front Room(192.168.1.61):8009] Heartbeat timeout, resetting connection
-2021-09-28 02:01:33 ERROR (Thread-10) [pychromecast.socket_client] [Front Room(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
-2021-09-28 02:10:40 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-09-28 02:25:36 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 02:36:45 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 02:36:54 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xd8'
-2021-09-28 02:42:09 ERROR (Thread-12) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Error reading from socket.
-2021-09-28 02:42:09 WARNING (Thread-12) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Error communicating with socket, resetting connection
-2021-09-28 02:42:09 ERROR (Thread-12) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 32216)), retrying in 5.0s
-2021-09-28 02:42:39 WARNING (Thread-11) [pychromecast.socket_client] [Kitchen Left(192.168.1.41):8009] Heartbeat timeout, resetting connection
-2021-09-28 02:42:46 ERROR (Thread-11) [pychromecast.socket_client] [Kitchen Left(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
-2021-09-28 02:42:51 ERROR (Thread-12) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Error reading from socket.
-2021-09-28 02:42:51 WARNING (Thread-12) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Error communicating with socket, resetting connection
-2021-09-28 02:42:54 ERROR (Thread-12) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Failed to connect to service ServiceInfo(type='mdns', data='Google-Cast-Group-A4AAD3F95F1147C9B48ABC17CFE0A057._googlecast._tcp.local.'), retrying in 5.0s
-2021-09-28 03:11:22 WARNING (Thread-7) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Heartbeat timeout, resetting connection
-2021-09-28 03:11:30 ERROR (Thread-7) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
-2021-09-28 03:27:37 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 03:28:40 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-09-28 03:37:16 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x59'
-2021-09-28 03:42:25 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/sensor.date_time failed with [Errno -3] Try again
-2021-09-28 03:42:25 WARNING (MainThread) [homeassistant.components.template.trigger] Error evaluating 'template' trigger for 'Notify - Zwarteveen Server Offline': TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
-2021-09-28 03:43:33 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 03:46:00 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 04:01:08 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 04:04:36 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 04:06:18 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 04:45:56 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
-2021-09-28 04:46:40 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-09-28 04:48:34 ERROR (Thread-9) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Error reading from socket.
-2021-09-28 04:48:34 WARNING (Thread-9) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Error communicating with socket, resetting connection
-2021-09-28 04:49:04 WARNING (Thread-8) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Heartbeat timeout, resetting connection
-2021-09-28 04:55:04 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-09-28 15:21:41 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-28 15:21:41 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-28 15:21:41 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-28 15:21:41 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-28 15:21:41 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-28 15:21:41 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-09-28 15:21:42 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
+2021-09-28 15:21:59 ERROR (MainThread) [snitun.client.client_peer] Challenge/Response error with SniTun server
+2021-09-28 15:21:59 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2021-09-28 15:22:02 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-simon (192.168.1.9): Error connecting to ('192.168.1.9', 6053): [Errno 113] Connect call failed ('192.168.1.9', 6053)
+2021-09-28 15:22:02 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2021-09-28 15:22:02 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-09-28 15:29:34 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2021-09-28 15:29:34 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2021-09-28 17:04:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.maria is taking over 10 seconds
+2021-09-28 17:04:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.john is taking over 10 seconds
+2021-09-28 17:04:39 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with 
+2021-09-28 17:04:39 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with 
+2021-09-28 17:05:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.maria is taking over 10 seconds
+2021-09-28 17:05:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.john is taking over 10 seconds
+2021-09-28 17:05:09 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with 
+2021-09-28 17:05:09 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with 
+2021-09-28 17:06:36 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
+2021-09-28 17:08:53 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-09-28 17:22:01 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-09-28 17:26:44 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-09-28 17:34:37 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-09-28 18:17:18 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-28 18:57:18 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Timeout while connecting to ('192.168.1.111', 6053)
+2021-09-28 19:29:04 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2021-09-28 19:29:04 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2021-09-28 19:29:53 WARNING (Thread-10) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2021-09-28 19:29:53 WARNING (Thread-8) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Heartbeat timeout, resetting connection
+2021-09-28 19:29:56 ERROR (Thread-10) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='mdns', data='Google-Home-Mini-f6c9a37581c84dd2b1d69a6114446f60._googlecast._tcp.local.'), retrying in 5.0s
+2021-09-28 19:29:56 ERROR (Thread-8) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32000)), retrying in 5.0s
+2021-09-28 19:38:18 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-28 19:43:28 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xc0'
+2021-09-28 19:44:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.maria is taking over 10 seconds
+2021-09-28 19:44:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.john is taking over 10 seconds
+2021-09-28 19:44:09 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with 
+2021-09-28 19:44:09 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with 
+2021-09-28 19:44:20 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: Cannot connect to host remotestate.nabucasa.com:443 ssl:default [Try again]
+2021-09-28 19:44:29 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: Cannot connect to host remotestate.nabucasa.com:443 ssl:default [Try again]
+2021-09-28 19:45:46 ERROR (MainThread) [snitun.multiplexer.core] Ping fails, no response from peer
+2021-09-28 20:10:15 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x4e'
+2021-09-28 21:04:35 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2021-09-28 21:04:35 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2021-09-28 21:10:39 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xd0'
+2021-09-28 22:17:03 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-28 23:11:22 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x86'
+2021-09-28 23:36:18 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-28 23:52:12 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xdb'
+2021-09-29 00:55:03 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-29 01:02:41 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 14: The service is currently unavailable.
+2021-09-29 02:12:20 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x1f'
+2021-09-29 02:35:52 WARNING (Thread-9) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2021-09-29 02:35:59 ERROR (Thread-9) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2021-09-29 02:41:57 ERROR (Thread-39) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Error reading from socket.
+2021-09-29 02:41:57 WARNING (Thread-39) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Error communicating with socket, resetting connection
+2021-09-29 02:42:21 WARNING (Thread-83) [pychromecast.socket_client] [Front Room(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2021-09-29 02:42:27 WARNING (Thread-38) [pychromecast.socket_client] [Kitchen Left(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2021-09-29 02:42:32 ERROR (Thread-38) [pychromecast.socket_client] [Kitchen Left([::ffff:c0a8:129]):8009] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 8009)), retrying in 5.0s
+2021-09-29 02:42:40 ERROR (Thread-39) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Error reading from socket.
+2021-09-29 02:42:40 WARNING (Thread-39) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Error communicating with socket, resetting connection
+2021-09-29 02:42:40 ERROR (Thread-39) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32216)), retrying in 5.0s
+2021-09-29 02:52:04 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/sensor.date_time failed with [Errno -3] Try again
+2021-09-29 02:52:04 WARNING (MainThread) [homeassistant.components.template.trigger] Error evaluating 'template' trigger for 'Notify - Zwarteveen Server Offline': TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+2021-09-29 03:32:18 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-29 04:46:17 ERROR (Thread-8) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Error reading from socket.
+2021-09-29 04:46:17 WARNING (Thread-8) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Error communicating with socket, resetting connection
+2021-09-29 04:46:17 ERROR (Thread-8) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32000)), retrying in 5.0s
+2021-09-29 04:46:42 WARNING (Thread-10) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2021-09-29 04:46:58 ERROR (Thread-10) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
