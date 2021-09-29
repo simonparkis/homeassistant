@@ -71,3 +71,90 @@
 2021-09-29 04:46:17 ERROR (Thread-8) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32000)), retrying in 5.0s
 2021-09-29 04:46:42 WARNING (Thread-10) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Heartbeat timeout, resetting connection
 2021-09-29 04:46:58 ERROR (Thread-10) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2021-09-29 07:23:25 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for heater-joseph (192.168.1.17): Timeout while connecting to ('192.168.1.17', 6053)
+2021-09-29 07:39:32 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.120.40
+2021-09-29 07:46:35 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.120.40
+2021-09-29 07:56:38 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.120.40
+2021-09-29 08:02:21 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.120.40
+2021-09-29 09:14:47 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x03'
+2021-09-29 10:23:23 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.120.40
+2021-09-29 10:23:39 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.120.40
+2021-09-29 10:23:55 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.120.40
+2021-09-29 10:23:55 WARNING (MainThread) [homeassistant.components.automation.garage_door_zoey] Garage Door - Zoey: Already running
+2021-09-29 10:37:21 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.24.122
+2021-09-29 10:37:26 WARNING (MainThread) [homeassistant.components.automation.garage_door_zoey] Garage Door - Zoey: Already running
+2021-09-29 13:03:02 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-09-29 13:03:51 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-09-29 13:37:16 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-09-29 14:02:07 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Timeout while connecting to ('192.168.1.111', 6053)
+2021-09-29 14:30:11 ERROR (MainThread) [homeassistant.components.speedtestdotnet] Error fetching speedtestdotnet data: Unable to connect to servers to test latency.
+2021-09-29 15:09:46 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for 3d-printer (192.168.1.14): Timeout while waiting for API response!
+2021-09-29 15:09:58 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Timeout while waiting for API response!
+2021-09-29 15:10:18 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while waiting for API response!
+2021-09-29 15:11:03 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Timeout while waiting for API response!
+2021-09-29 15:11:20 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for garage-door (192.168.1.55): Timeout while waiting for API response!
+2021-09-29 15:11:46 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-09-29 15:12:05 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while waiting for API response!
+2021-09-29 15:12:49 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-joseph (192.168.1.7): Timeout while waiting for API response!
+2021-09-29 15:13:06 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-simon (192.168.1.9): Timeout while waiting for API response!
+2021-09-29 15:13:09 ERROR (MainThread) [homeassistant.components.switch] Platform esphome does not generate unique IDs. ID heater-josephswitchjoseph_heater already exists - ignoring switch.joseph_heater
+2021-09-29 15:13:09 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2021-09-29 15:13:20 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-sofia (192.168.1.8): Timeout while waiting for API response!
+2021-09-29 15:13:38 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-switch (192.168.1.86): Timeout while waiting for API response!
+2021-09-29 15:14:04 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp (192.168.1.87): Timeout while waiting for API response!
+2021-09-29 15:15:34 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while waiting for API response!
+2021-09-29 15:17:38 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Disconnected while waiting for API response!
+2021-09-29 15:19:05 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while waiting for API response!
+2021-09-29 15:20:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for garage-door (192.168.1.55): Timeout while waiting for API response!
+2021-09-29 15:24:47 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-joseph (192.168.1.7): Timeout while waiting for API response!
+2021-09-29 15:26:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-simon (192.168.1.9): Timeout while waiting for API response!
+2021-09-29 15:27:11 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-sofia (192.168.1.8): Timeout while waiting for API response!
+2021-09-29 15:47:04 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/sensor.date_time failed with [Errno -3] Try again
+2021-09-29 15:47:04 WARNING (MainThread) [homeassistant.components.template.trigger] Error evaluating 'template' trigger for 'Notify - Zwarteveen Server Offline': TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+2021-09-29 16:44:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Timeout while connecting to ('192.168.1.70', 6053)
+2021-09-29 17:10:06 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-09-29 17:16:53 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-09-29 17:17:04 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-09-29 17:17:18 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-09-29 17:22:18 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-09-29 17:37:06 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-09-29 17:43:33 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2021-09-29 17:44:22 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-09-29 17:46:12 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-09-29 18:17:19 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-29 18:21:22 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-09-29 19:38:03 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-29 19:43:28 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: 504, message='Invalid response status', url=URL('wss://cloud.nabucasa.com/websocket')
+2021-09-29 20:02:38 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2021-09-29 20:02:38 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2021-09-29 20:57:19 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-29 21:05:08 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2021-09-29 21:05:08 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2021-09-29 21:22:38 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2021-09-29 21:22:38 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2021-09-29 22:16:19 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-30 00:16:42 WARNING (Thread-9) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2021-09-30 00:33:44 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xd4'
+2021-09-30 00:54:20 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-30 02:13:02 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-09-30 02:34:32 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x65'
+2021-09-30 02:41:56 WARNING (Thread-9) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2021-09-30 02:42:03 ERROR (Thread-9) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2021-09-30 03:34:55 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xff'
+2021-09-30 04:12:19 ERROR (Thread-8) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Error reading from socket.
+2021-09-30 04:12:19 WARNING (Thread-8) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Error communicating with socket, resetting connection
+2021-09-30 04:12:49 WARNING (Thread-10) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2021-09-30 04:29:09 ERROR (Thread-9) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Error reading from socket.
+2021-09-30 04:29:09 WARNING (Thread-9) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Error communicating with socket, resetting connection
+2021-09-30 04:35:19 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x69'
+2021-09-30 04:39:04 WARNING (Thread-83) [pychromecast.socket_client] [Front Room(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2021-09-30 04:39:19 ERROR (Thread-83) [pychromecast.socket_client] [Front Room(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2021-09-30 04:44:28 ERROR (Thread-39) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Error reading from socket.
+2021-09-30 04:44:28 WARNING (Thread-39) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Error communicating with socket, resetting connection
+2021-09-30 04:44:31 ERROR (Thread-39) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 32216)), retrying in 5.0s
+2021-09-30 04:44:54 WARNING (Thread-38) [pychromecast.socket_client] [Kitchen Left(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2021-09-30 04:45:09 ERROR (Thread-38) [pychromecast.socket_client] [Kitchen Left(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
+2021-09-30 04:45:11 ERROR (Thread-39) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Error reading from socket.
+2021-09-30 04:45:11 WARNING (Thread-39) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Error communicating with socket, resetting connection
+2021-09-30 04:45:11 ERROR (Thread-39) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32216)), retrying in 5.0s
+2021-09-30 04:50:20 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
