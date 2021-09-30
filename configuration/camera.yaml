@@ -1,0 +1,10 @@
+- platform: generic
+  name: Garage
+  username: !secret camera_username
+  password: !secret camera_password
+  authentication: basic
+  still_image_url: https://192.168.1.150/cgi-bin/currentpic.cgi
+  stream_source: rtsp://192.168.1.150:8554/unicast 
+  framerate: 5
+  verify_ssl: false
+  scan_interval: 5

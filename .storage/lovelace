@@ -607,6 +607,21 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "title": "Cameras",
+                    "path": "cameras",
+                    "badges": [],
+                    "cards": [
+                        {
+                            "type": "picture-entity",
+                            "image": "https://demo.home-assistant.io/stub_config/bedroom.png",
+                            "entity": "camera.garage",
+                            "show_state": false,
+                            "camera_image": "camera.garage",
+                            "show_name": false
+                        }
+                    ]
                 }
             ]
         }

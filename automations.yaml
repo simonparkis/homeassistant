@@ -134,7 +134,7 @@
       entity_id: cover.garage_door
   mode: single
 - id: '1631139553218'
-  alias: Modes - Vacation
+  alias: Modes - Vacation Mode
   description: ''
   trigger:
   - platform: state
@@ -344,7 +344,7 @@
       entity_id: light.lamp_sofia
   mode: single
 - id: '1631593521972'
-  alias: Auto House Guests
+  alias: Modes - Guest Mode
   description: Automatically Set and Reset (except when manualy set) Guest Mode when
     Maria or John visiting
   trigger:
@@ -651,7 +651,7 @@
     value_template: '{{ is_state(''sensor.rubbish'', ''1'') or is_state(''sensor.recycling'',''1'')
       }}'
   - condition: time
-    after: '17:00:00'
+    after: '18:00:00'
   action:
   - wait_for_trigger:
       platform: state
@@ -663,18 +663,18 @@
     data:
       entity_id: media_player.kitchen
       message: "{% if is_state('sensor.rubbish','2') and is_state('sensor.recycling','2')\
-        \ %}\n  Don't forget to take the bins out, both garbage and recycling\n{%\
-        \ elif is_state('sensor.rubbish','1') %}\n  Don't forget to take the bins\
-        \ out, rubbish only\n{% elif is_state('sensor.recycling','1') %}\n  Don't\
-        \ forget to take the bins out, recycling only\n{% endif %}\n"
+        \ %}\n  Don't forget to take the bins out, both red and yellow bins\n{% elif\
+        \ is_state('sensor.rubbish','1') %}\n  Don't forget to take the bins out,\
+        \ red bin only\n{% elif is_state('sensor.recycling','1') %}\n  Don't forget\
+        \ to take the bins out, yellow bin only\n{% endif %}\n"
   - service: notify.mobile_app_iphone_xr
     data:
       title: Garbage Bins
       message: "{% if is_state('sensor.rubbish','1') and is_state('sensor.recycling','1')\
-        \ %}\n  Don't forget to take the bins out, both garbage and recycling\n{%\
-        \ elif is_state('sensor.rubbish','1') %}\n  Don't forget to take the bins\
-        \ out, rubbish only\n{% elif is_state('sensor.recycling','1') %}\n  Don't\
-        \ forget to take the bins out, recycling only\n{% endif %}\n"
+        \ %}\n  Don't forget to take the bins out, both red and yellow bins\n{% elif\
+        \ is_state('sensor.rubbish','1') %}\n  Don't forget to take the bins out,\
+        \ red bin only\n{% elif is_state('sensor.recycling','1') %}\n  Don't forget\
+        \ to take the bins out, yellow bin only\n{% endif %}\n"
   mode: single
   max_exceeded: silent
 - id: '1632476399006'
