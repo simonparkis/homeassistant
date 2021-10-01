@@ -83,8 +83,8 @@ recorder:
 tts:
   - platform: google_translate
     service_name: google_say
-             
-proximity:
+
+proximity
   home:
     devices:
       - person.simon
@@ -96,6 +96,3 @@ panel_iframe:
     title: "VSCode"
     url: !secret vscodeURL
     icon: mdi:microsoft-visual-studio-code
-    
-shell_command:
-  play_doorbell_sound: "paplay /config/www/sounds/GrandFatherChime01.wav"

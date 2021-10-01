@@ -562,3 +562,154 @@ OSError: [Errno 101] Network unreachable
 2021-10-01 03:52:17 ERROR (Thread-36) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Error reading from socket.
 2021-10-01 03:52:17 WARNING (Thread-36) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Error communicating with socket, resetting connection
 2021-10-01 03:52:17 ERROR (Thread-36) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32216)), retrying in 5.0s
+2021-10-01 08:00:45 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-10-01 08:02:31 ERROR (MainThread) [zigpy_deconz.uart] Lost serial connection: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2021-10-01 08:02:31 WARNING (MainThread) [zigpy_deconz.api] Serial '/dev/ttyACM0' connection lost unexpectedly: device reports readiness to read but returned no data (device disconnected or multiple access on port?)
+2021-10-01 08:02:57 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-10-01 08:06:25 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-01 08:13:55 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-01 08:21:25 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-01 08:28:55 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-01 08:36:25 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-01 08:43:55 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-01 08:47:11 ERROR (stream_worker) [libav.NULL] missing picture in access unit with size 66
+2021-10-01 08:47:12 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 08:47:16 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 08:47:25 ERROR (stream_worker) [libav.tcp] Connection to tcp://192.168.1.150:8554?timeout=5000000 failed: Host is unreachable
+2021-10-01 08:47:25 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsp://192.168.1.150:8554/unicast
+2021-10-01 08:47:28 ERROR (stream_worker) [libav.tcp] Connection to tcp://192.168.1.150:8554?timeout=5000000 failed: Host is unreachable
+2021-10-01 08:47:28 ERROR (stream_worker) [homeassistant.components.stream.worker] Error opening stream rtsp://192.168.1.150:8554/unicast
+2021-10-01 08:49:01 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 08:49:40 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 08:50:43 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 08:51:05 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 08:54:00 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 08:54:58 ERROR (stream_worker) [libav.h264] error while decoding MB 58 38, bytestream -13
+2021-10-01 08:55:18 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 08:55:36 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream while finding first packet: 
+2021-10-01 08:56:40 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 08:57:52 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 08:58:22 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 09:00:46 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 09:02:27 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 09:03:41 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 09:13:35 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 09:15:03 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 09:21:03 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
+2021-10-01 09:28:22 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 09:33:38 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-10-01 09:36:44 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 09:48:17 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 09:50:16 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [139935675438992] Disconnected: Did not receive auth message within 10 seconds
+2021-10-01 09:55:32 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 09:55:57 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 09:56:06 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 09:56:59 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 09:58:52 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 09:59:07 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:04:39 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:04:59 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:07:31 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:09:46 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:10:26 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:11:01 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:11:49 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:18:27 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:18:33 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:30:27 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:30:34 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:31:24 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:32:49 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:33:39 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:39:08 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:41:54 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:46:53 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:48:28 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:53:22 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:53:39 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:54:43 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:54:59 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:56:06 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:56:27 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:57:14 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:57:45 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 10:58:04 ERROR (stream_worker) [libav.h264] error while decoding MB 61 33, bytestream -27
+2021-10-01 10:58:20 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream while finding first packet: 
+2021-10-01 10:59:18 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:00:36 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:00:54 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:02:59 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:13:17 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:13:21 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:13:44 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:14:15 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:16:42 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x90'
+2021-10-01 11:20:02 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:21:54 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:26:38 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:26:52 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:27:16 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:27:45 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:28:10 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream while finding first packet: 
+2021-10-01 11:28:40 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:29:11 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:29:47 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:30:26 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:31:11 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:32:04 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:32:39 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:33:39 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:34:34 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:36:23 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:36:32 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:38:20 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:42:42 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 11:43:33 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-01 12:20:46 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.7.230
+2021-10-01 12:22:25 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.7.230
+2021-10-01 12:28:55 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.7.230
+2021-10-01 12:30:45 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.7.230
+2021-10-01 12:37:25 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.7.230
+2021-10-01 12:39:15 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.13.55
+2021-10-01 12:45:55 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.13.55
+2021-10-01 12:47:45 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.13.55
+2021-10-01 13:58:16 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
+2021-10-01 14:01:34 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Timeout while connecting to ('192.168.1.111', 6053)
+2021-10-01 14:18:49 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [139935643379888] Disconnected: Did not receive auth message within 10 seconds
+2021-10-01 16:20:03 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2021-10-01 16:20:03 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2021-10-01 16:57:08 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xf4'
+2021-10-01 17:22:03 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2021-10-01 17:22:03 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2021-10-01 17:31:03 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-01 17:57:25 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xf7'
+2021-10-01 18:21:45 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-01 19:39:50 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-10-01 19:42:45 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-01 20:16:29 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/sensor.date_time failed with [Errno -3] Try again
+2021-10-01 20:16:29 WARNING (MainThread) [homeassistant.components.template.trigger] Error evaluating 'template' trigger for 'Notify - Zwarteveen Server Offline': TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+2021-10-01 21:01:45 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-01 21:58:55 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xfe'
+2021-10-01 22:20:46 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-01 23:52:15 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xcf'
+2021-10-02 00:57:46 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-02 02:12:09 WARNING (Thread-7) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2021-10-02 02:12:17 ERROR (Thread-7) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2021-10-02 02:15:46 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-02 02:36:39 ERROR (Thread-39) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Error reading from socket.
+2021-10-02 02:36:39 WARNING (Thread-39) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Error communicating with socket, resetting connection
+2021-10-02 02:36:39 ERROR (Thread-39) [pychromecast.socket_client] [Kitchen(192.168.1.40):32000] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32000)), retrying in 5.0s
+2021-10-02 02:37:09 WARNING (Thread-38) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2021-10-02 02:37:16 ERROR (Thread-38) [pychromecast.socket_client] [Kitchen Right(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2021-10-02 02:53:28 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xd4'
+2021-10-02 02:59:53 WARNING (Thread-81) [pychromecast.socket_client] [Front Room(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2021-10-02 03:00:00 ERROR (Thread-81) [pychromecast.socket_client] [Front Room(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2021-10-02 03:33:46 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-02 04:11:41 ERROR (Thread-36) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Error reading from socket.
+2021-10-02 04:11:41 WARNING (Thread-36) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32216] Error communicating with socket, resetting connection
+2021-10-02 04:12:11 WARNING (Thread-35) [pychromecast.socket_client] [Kitchen Left(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2021-10-02 04:12:26 ERROR (Thread-36) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Error reading from socket.
+2021-10-02 04:12:26 WARNING (Thread-36) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Error communicating with socket, resetting connection
+2021-10-02 04:12:26 ERROR (Thread-36) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32216] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32216)), retrying in 5.0s
+2021-10-02 04:12:27 ERROR (Thread-35) [pychromecast.socket_client] [Kitchen Left(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='mdns', data='Google-Home-Mini-12115daa4def33801a8ac51fcbccb9d5._googlecast._tcp.local.'), retrying in 5.0s
+2021-10-02 04:51:46 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error

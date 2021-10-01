@@ -716,3 +716,20 @@
         {% endif %}\n"
   mode: single
   max_exceeded: silent
+- id: '1633044713072'
+  alias: Notify - Security System
+  description: ''
+  trigger:
+  - platform: template
+    value_template: '{{ states.binary_sensor | selectattr("attributes.device_class","eq","motion")
+      | map(attribute="state") | select("eq", "on") | list | length | int > 0 }}'
+  condition:
+  - condition: state
+    entity_id: sensor.house_status
+    state: Vacant
+  action:
+  - service: notify.notify
+    data:
+      title: Security System
+      message: Motion has been detected in the house
+  mode: single
