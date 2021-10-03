@@ -471,46 +471,35 @@
   - condition: template
     value_template: '{{ not is_state(''media_player.kitchen'', ''playing'') }}'
   action:
-  - choose:
-    - conditions:
-      - condition: state
-        entity_id: media_player.kitchen
-        state: 'off'
-      sequence:
-      - service: media_player.volume_set
-        data:
-          entity_id: media_player.kitchen
-          volume_level: 0
-      - service: media_player.turn_on
-        target:
-          entity_id: media_player.kitchen
-      - wait_template: '{{ is_state(''media_player.kitchen'', ''idle'') }}'
-        timeout: 00:00:30
-        continue_on_timeout: false
-      - service: media_player.volume_set
-        data:
-          entity_id: media_player.kitchen
-          volume_level: "{% if (now().strftime(\"%H\") | int) < 8 or (now().strftime(\"\
-            %H\") | int) > 18 %}\n  0.2\n{% else %}\n  0.5\n{% endif %}\n"
-    - conditions:
-      - condition: state
-        entity_id: media_player.kitchen
-        state: idle
-      sequence: []
-    default: []
+  - service: automation.turn_off
+    data:
+      entity_id: automation.follow_me_audio
+      stop_actions: true
+  - service: media_player.volume_mute
+    data:
+      is_volume_muted: true
+      entity_id: media_player.all_chromecasts
+  - service: media_player.turn_on
+    entity_id: media_player.all_chromecasts
+  - service: media_player.volume_set
+    data_template:
+      entity_id: media_player.all_chromecasts
+      volume_level: "{% if (now().strftime(\"%H\") | int) < 8 or (now().strftime(\"\
+        %H\") | int) > 18 %}\n  0.2\n{% else %}\n  0.5\n{% endif %}\n"
   - service: media_player.play_media
     target:
-      entity_id: media_player.kitchen
+      entity_id: media_player.all_chromecasts
     data:
       media_content_id: http://192.168.1.110:8123/local/sounds/GrandFatherChime{{now().strftime('%I')}}.wav
       media_content_type: audio/mp4
-  - wait_template: '{{ is_state(''media_player.kitchen'', ''off'') }}'
-    timeout: 00:06:30
-    continue_on_timeout: false
+  - delay: 00:00:01
+  - wait_template: '{{ not is_state("media_player.all_chromecasts", "playing") }}'
   - service: media_player.volume_set
     data:
-      entity_id: media_player.kitchen
+      entity_id: media_player.all_chromecasts
       volume_level: 0.4
+  - service: automation.turn_on
+    entity_id: automation.follow_me_audio
   mode: restart
 - id: '1631870728951'
   alias: Auto Close Garage Door
@@ -705,7 +694,6 @@
         {% elif trigger.entity_id == 'binary_sensor.motion_front_room' %}\n  media_player.front_room\n\
         {% elif trigger.entity_id == 'binary_sensor.motion_living_room' %}\n  media_player.kitchen\n\
         {% endif %}\n"
-  - delay: 00:00:01
   - service: media_player.volume_mute
     data_template:
       is_volume_muted: true
@@ -732,4 +720,17 @@
     data:
       title: Security System
       message: Motion has been detected in the house
+  mode: single
+- id: '1633256768845'
+  alias: Button - Toggle Master Motion Lights
+  description: ''
+  trigger:
+  - device_id: 2c22963379a0ca458aa4467070f57643
+    domain: zha
+    platform: device
+    type: remote_button_double_press
+    subtype: remote_button_double_press
+  action:
+  - service: automation.toggle
+    entity_id: automation.auto_lights_master_bedroom
   mode: single

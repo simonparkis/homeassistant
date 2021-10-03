@@ -1,56 +1,60 @@
-2021-10-02 11:25:26 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-10-02 11:25:26 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-10-02 11:25:26 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-10-02 11:25:26 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-10-02 11:25:26 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-10-02 11:25:26 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-10-02 11:25:26 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
-2021-10-02 11:25:30 ERROR (MainThread) [homeassistant.components.mqtt] Failed to connect to MQTT server due to exception: [Errno 111] Connection refused
-2021-10-02 11:25:34 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
-2021-10-02 11:25:34 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
-2021-10-02 11:25:41 WARNING (MainThread) [homeassistant.components.konnected.panel] Exception trying to connect to panel: Cannot connect to host 192.168.1.79:13880 ssl:default [Connect call failed ('192.168.1.79', 13880)]
-2021-10-02 11:25:49 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Follow Me Audio':
-In 'condition' (item 1 of 3):
-  In 'state':
-    In 'state' condition: unknown entity media_player.all_chromecasts
-2021-10-02 11:25:52 WARNING (MainThread) [homeassistant.components.automation] Error evaluating condition in 'Follow Me Audio':
-In 'condition' (item 1 of 3):
-  In 'state':
-    In 'state' condition: unknown entity media_player.all_chromecasts
-2021-10-02 11:26:01 ERROR (Thread-78) [pychromecast.socket_client] [([::ffff:c0a8:129]):32201] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 32201)), retrying in 5.0s
-2021-10-02 11:51:08 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Timeout while connecting to ('192.168.1.70', 6053)
-2021-10-02 11:57:54 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xc3'
-2021-10-02 12:04:01 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.144.30.24
-2021-10-02 12:07:31 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.144.30.24
-2021-10-02 12:08:51 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.144.30.24
-2021-10-02 13:55:01 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Timeout while connecting to ('192.168.1.111', 6053)
-2021-10-02 14:01:33 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Timeout while connecting to ('192.168.1.111', 6053)
-2021-10-02 14:01:46 WARNING (Thread-111) [pychromecast.socket_client] [(192.168.1.40):8009] Heartbeat timeout, resetting connection
-2021-10-02 14:01:49 ERROR (Thread-111) [pychromecast.socket_client] [(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
-2021-10-02 14:48:19 ERROR (Thread-78) [homeassistant.components.cast.media_player] Failed to cast media https://www.home-assistant.io/images/cast/splash.png. Please make sure the URL is: Reachable from the cast device and either a publicly resolvable hostname or an IP address
-2021-10-02 15:52:31 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.144.30.125
-2021-10-02 16:05:52 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.144.30.125
-2021-10-02 18:21:51 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-10-02 20:04:43 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [140388138271408] Disconnected: Did not receive auth message within 10 seconds
-2021-10-02 20:29:03 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.state }}'
-2021-10-02 20:29:03 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.state }}'
-2021-10-02 21:02:38 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
-2021-10-02 21:02:38 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
-2021-10-02 21:02:51 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-10-02 21:32:38 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
-2021-10-02 21:32:38 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
-2021-10-02 22:14:49 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-joseph (192.168.1.7): Timeout while connecting to ('192.168.1.7', 6053)
-2021-10-02 22:21:37 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-joseph (192.168.1.7): Timeout while connecting to ('192.168.1.7', 6053)
-2021-10-02 23:41:36 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-10-03 00:30:14 ERROR (MainThread) [homeassistant.components.speedtestdotnet] Error fetching speedtestdotnet data: Unable to connect to servers to test latency.
-2021-10-03 01:00:36 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
-2021-10-03 03:00:08 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
-2021-10-03 03:00:08 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
-2021-10-03 03:17:50 WARNING (Thread-109) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Heartbeat timeout, resetting connection
-2021-10-03 03:18:06 ERROR (Thread-109) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
-2021-10-03 04:05:34 WARNING (Thread-108) [pychromecast.socket_client] [(192.168.1.61):8009] Heartbeat timeout, resetting connection
-2021-10-03 04:05:43 ERROR (Thread-108) [pychromecast.socket_client] [(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
-2021-10-03 04:07:38 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
-2021-10-03 04:07:38 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
-2021-10-03 04:33:17 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from iPhone-XR.lan (192.168.1.56). (Mozilla/5.0 (iPhone; CPU iPhone OS 14_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Home Assistant/2021.8 (io.robbie.HomeAssistant; build:2021.216; iOS 14.7.0) Mobile/HomeAssistant, like Safari)
-2021-10-03 04:37:52 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-03 20:04:08 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-10-03 20:04:08 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-10-03 20:04:08 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-10-03 20:04:08 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-10-03 20:04:08 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-10-03 20:04:08 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-10-03 20:04:09 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
+2021-10-03 20:04:16 WARNING (MainThread) [zigpy_deconz.zigbee.application] Unexpected transmit confirm for request id 26, Status: TXStatus.NWK_ROUTE_DISCOVERY_FAILED
+2021-10-03 20:04:18 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-03 20:04:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-joseph (192.168.1.7): Error connecting to ('192.168.1.7', 6053): [Errno 113] Connect call failed ('192.168.1.7', 6053)
+2021-10-03 20:04:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
+2021-10-03 20:04:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-10-03 20:04:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-03 20:04:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for heater-joseph (192.168.1.17): Error connecting to ('192.168.1.17', 6053): [Errno 113] Connect call failed ('192.168.1.17', 6053)
+2021-10-03 20:04:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2021-10-03 20:42:37 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-03 23:14:42 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xf8'
+2021-10-03 23:22:37 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-04 00:15:12 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xf7'
+2021-10-04 00:21:58 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x48'
+2021-10-04 00:42:37 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-04 02:02:21 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-04 02:45:29 WARNING (Thread-78) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2021-10-04 02:45:36 ERROR (Thread-78) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2021-10-04 02:54:48 WARNING (Thread-79) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2021-10-04 02:54:58 ERROR (Thread-79) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2021-10-04 03:21:37 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-04 04:29:06 ERROR (Thread-106) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2021-10-04 04:29:06 WARNING (Thread-106) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2021-10-04 04:29:36 WARNING (Thread-77) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2021-10-04 04:29:49 ERROR (Thread-106) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Error reading from socket.
+2021-10-04 04:29:49 WARNING (Thread-106) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Error communicating with socket, resetting connection
+2021-10-04 04:29:49 ERROR (Thread-106) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32201)), retrying in 5.0s
+2021-10-04 04:35:11 WARNING (Thread-80) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2021-10-04 04:35:18 ERROR (Thread-80) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2021-10-04 04:45:19 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/fronius/sensor.py", line 160, in fetch_data
+    await data_adapter.async_update()
+  File "/usr/src/homeassistant/homeassistant/components/fronius/sensor.py", line 207, in async_update
+    values = await self._update()
+  File "/usr/src/homeassistant/homeassistant/components/fronius/sensor.py", line 262, in _update
+    return await self.bridge.current_system_inverter_data()
+  File "/usr/local/lib/python3.9/site-packages/pyfronius/__init__.py", line 304, in current_system_inverter_data
+    return await self._current_data(
+  File "/usr/local/lib/python3.9/site-packages/pyfronius/__init__.py", line 255, in _current_data
+    res = await self._fetch_solar_api(spec, spec_name, *spec_formattings)
+  File "/usr/local/lib/python3.9/site-packages/pyfronius/__init__.py", line 189, in _fetch_solar_api
+    res = await self._fetch_json("{}{}{}".format(self.url, self.base_url, spec_url))
+  File "/usr/local/lib/python3.9/site-packages/pyfronius/__init__.py", line 124, in _fetch_json
+    async with self._aio_session.get(url) as res:
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/client.py", line 1117, in __aenter__
+    self._resp = await self._coro
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/client.py", line 544, in _request
+    await resp.start(conn)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/client_reqrep.py", line 905, in start
+    self._continue = None
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/helpers.py", line 656, in __exit__
+    raise asyncio.TimeoutError from None
+asyncio.exceptions.TimeoutError
