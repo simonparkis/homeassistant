@@ -237,7 +237,7 @@
                                     "name": "Television"
                                 },
                                 {
-                                    "entity": "media_player.front_room",
+                                    "entity": "media_player.front_room_tv",
                                     "name": "Chromecast",
                                     "icon": "mdi:google-chrome"
                                 },
