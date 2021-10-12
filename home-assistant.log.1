@@ -1,22 +1,268 @@
-2021-10-10 12:08:13 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-10-10 12:08:13 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-10-10 12:08:13 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-10-10 12:08:13 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-10-10 12:08:13 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-10-10 12:08:13 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-10-10 12:08:15 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
-2021-10-10 12:08:15 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
-2021-10-10 12:08:16 WARNING (Recorder) [homeassistant.components.recorder.util] Ended unfinished session (id=250 from 2021-10-09 23:01:43.305166)
-2021-10-10 12:08:24 ERROR (MainThread) [homeassistant.components.mqtt] Failed to connect to MQTT server due to exception: [Errno 111] Connection refused
-2021-10-10 12:08:29 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
-2021-10-10 12:08:29 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
-2021-10-10 12:08:29 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
-2021-10-10 12:08:29 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for heater-joseph (192.168.1.17): Error connecting to ('192.168.1.17', 6053): [Errno 113] Connect call failed ('192.168.1.17', 6053)
-2021-10-10 12:08:29 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
-2021-10-10 12:08:41 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0300]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure')]
-2021-10-10 12:08:42 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0008]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure')]
-2021-10-10 12:09:21 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0006]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure')]
-2021-10-10 12:10:29 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
-2021-10-10 12:11:05 ERROR (Thread-10) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
-2021-10-10 12:11:05 WARNING (Thread-10) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
-2021-10-10 12:11:10 ERROR (Thread-10) [pychromecast.socket_client] [All Chromecasts([::ffff:c0a8:129]):32201] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 32201)), retrying in 5.0s
+2021-10-10 12:14:23 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-10-10 12:14:23 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-10-10 12:14:23 WARNING (SyncWorker_4) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-10-10 12:14:23 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-10-10 12:14:23 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-10-10 12:14:23 WARNING (SyncWorker_5) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-10-10 12:14:25 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
+2021-10-10 12:14:31 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140393206786992] Received invalid command: mobile_app/push_notification_channel
+2021-10-10 12:14:31 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140393206786992] Received invalid command: mobile_app/push_notification_channel
+2021-10-10 12:14:31 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140393206786992] Received invalid command: mobile_app/push_notification_channel
+2021-10-10 12:14:31 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140393206786992] Received invalid command: mobile_app/push_notification_channel
+2021-10-10 12:14:31 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140393206786992] Received invalid command: mobile_app/push_notification_channel
+2021-10-10 12:14:31 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140393206786992] Received invalid command: mobile_app/push_notification_channel
+2021-10-10 12:14:31 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140393206786992] Received invalid command: mobile_app/push_notification_channel
+2021-10-10 12:14:32 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140393206786992] Received invalid command: mobile_app/push_notification_channel
+2021-10-10 12:14:32 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140393206786992] Received invalid command: mobile_app/push_notification_channel
+2021-10-10 12:14:39 ERROR (MainThread) [snitun.client.client_peer] Challenge/Response error with SniTun server (0 bytes read on a total of 32 expected bytes)
+2021-10-10 12:14:39 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2021-10-10 12:14:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-10 12:14:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-10-10 12:14:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for heater-joseph (192.168.1.17): Error connecting to ('192.168.1.17', 6053): [Errno 113] Connect call failed ('192.168.1.17', 6053)
+2021-10-10 12:14:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2021-10-10 12:14:45 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0300]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure')]
+2021-10-10 12:14:45 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0008]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure')]
+2021-10-10 12:14:46 WARNING (MainThread) [homeassistant.components.konnected.panel] Exception trying to connect to panel: Cannot connect to host 192.168.1.79:13880 ssl:default [Connect call failed ('192.168.1.79', 13880)]
+2021-10-10 12:14:53 ERROR (MainThread) [snitun.client.client_peer] Challenge/Response error with SniTun server (0 bytes read on a total of 32 expected bytes)
+2021-10-10 12:14:53 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2021-10-10 12:15:28 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0006]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure')]
+2021-10-10 12:18:24 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 12:23:57 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 12:32:05 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 12:33:23 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 12:39:40 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 12:45:20 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 13:03:44 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 13:09:51 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-10-10 13:15:35 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 5: Requested entity was not found.
+2021-10-10 13:20:42 WARNING (MainThread) [homeassistant.components.automation.motion_light_walk_in_robe] Motion Light - Walk In Robe: Already running
+2021-10-10 13:27:31 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 13:38:32 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 13:50:49 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 13:51:53 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
+2021-10-10 14:00:06 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 14:01:30 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-10-10 14:04:40 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 14:07:09 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 14:07:19 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xb3'
+2021-10-10 14:21:17 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 14:31:06 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Timeout while connecting to ('192.168.1.70', 6053)
+2021-10-10 14:42:33 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2021-10-10 14:57:08 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 14:59:58 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 15:02:19 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 15:03:52 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 15:15:58 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 15:28:57 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 15:29:35 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 15:31:51 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 15:58:45 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 16:01:36 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 16:11:06 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-joseph (192.168.1.7): Timeout while connecting to ('192.168.1.7', 6053)
+2021-10-10 16:12:15 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 16:12:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for lamp-joseph (192.168.1.7): Timeout while connecting to ('192.168.1.7', 6053)
+2021-10-10 16:42:52 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 16:52:44 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 16:54:07 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 16:56:25 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 17:04:07 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 17:06:14 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 17:12:02 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 17:16:39 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 17:22:52 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 17:24:43 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 17:28:45 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 17:29:59 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 17:31:41 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 17:32:58 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 18:01:07 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0008]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure')]
+2021-10-10 18:11:21 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x86'
+2021-10-10 19:05:29 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-10 19:13:59 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-10 19:23:28 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 21:12:12 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xf8'
+2021-10-10 21:42:46 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 21:51:45 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x52'
+2021-10-10 21:52:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-10 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-10 21:30:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-10 21:52:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-10 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-10 23:00:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-10 21:54:59 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-10 22:44:22 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-10 22:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-10 22:30:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-10 22:44:22 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-10 23:59:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-10 23:59:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-10 22:44:37 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-10 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-10 21:30:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-10 22:44:37 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-10 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-10 23:00:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-10 22:51:24 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-10 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-10 21:30:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-10 22:51:24 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-10 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-10 23:00:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-10 23:02:40 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-10 23:57:54 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 00:10:51 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 00:17:08 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x53'
+2021-10-11 00:33:43 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-11 00:39:22 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 01:13:01 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x01'
+2021-10-11 01:17:26 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x40'
+2021-10-11 01:27:17 ERROR (MainThread) [snitun.multiplexer.core] Ping fails, no response from peer
+2021-10-11 01:27:48 ERROR (MainThread) [hass_nabucasa.remote] Timeout connecting to snitun server
+2021-10-11 01:28:30 ERROR (MainThread) [hass_nabucasa.remote] Timeout connecting to snitun server
+2021-10-11 01:52:59 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-11 02:17:54 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xca'
+2021-10-11 02:40:56 WARNING (Thread-8) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2021-10-11 02:41:03 ERROR (Thread-8) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2021-10-11 03:12:00 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-11 03:27:44 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2021-10-11 03:27:44 WARNING (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2021-10-11 03:27:49 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts([::ffff:c0a8:129]):32201] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 32201)), retrying in 5.0s
+2021-10-11 03:28:09 WARNING (Thread-10) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2021-10-11 03:28:24 ERROR (Thread-10) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
+2021-10-11 03:28:27 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Error reading from socket.
+2021-10-11 03:28:27 WARNING (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Error communicating with socket, resetting connection
+2021-10-11 03:28:27 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32201)), retrying in 5.0s
+2021-10-11 03:43:34 WARNING (Thread-7) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2021-10-11 03:43:41 ERROR (Thread-7) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2021-10-11 03:53:29 WARNING (Thread-9) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2021-10-11 04:18:33 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x17'
+2021-10-11 04:30:00 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-11 05:48:44 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-11 07:01:59 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [140392605309392] Disconnected: Did not receive auth message within 10 seconds
+2021-10-11 07:02:01 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140392605479072] Received invalid command
+2021-10-11 07:53:16 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-10-11 07:56:11 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 07:58:01 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-10-11 07:58:42 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 08:03:54 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 08:14:12 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-10-11 08:20:43 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 08:21:31 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x5a'
+2021-10-11 08:25:58 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 08:38:29 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 08:49:12 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 08:49:51 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 08:56:01 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 08:59:27 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 09:17:55 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 09:27:44 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 09:31:31 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 09:34:19 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 09:48:28 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 09:55:32 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 10:00:41 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-10-11 10:15:18 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-10-11 10:17:37 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 10:21:12 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 10:30:35 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 10:34:16 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 11:12:45 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 11:16:44 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xcd'
+2021-10-11 11:23:34 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 11:30:24 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 11:38:15 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 11:56:28 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 11:59:34 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 12:11:06 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 12:13:51 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 12:52:44 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 12:54:44 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 13:01:33 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x40'
+2021-10-11 13:04:26 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 13:06:33 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x89'
+2021-10-11 13:12:56 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 13:17:41 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x29'
+2021-10-11 13:19:19 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 13:22:29 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 13:37:17 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-10-11 14:01:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-10-11 14:13:35 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 14:14:53 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 14:16:01 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 14:17:44 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 14:18:57 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 14:27:38 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 14:42:08 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 14:59:02 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 15:18:20 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 15:29:38 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 15:36:23 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 15:39:08 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 15:46:41 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 15:54:17 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 15:59:56 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:03:55 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:07:53 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:09:53 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:13:39 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:15:25 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:18:03 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:20:17 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:21:55 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:24:01 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:26:02 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:28:50 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:31:20 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:33:48 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:36:45 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:39:35 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:43:42 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:47:04 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:50:28 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 16:58:05 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 17:03:56 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-10-11 17:04:28 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-10-11 17:04:29 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 17:04:39 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-10-11 17:04:51 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-10-11 17:22:28 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-10-11 17:24:41 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for frontroom-tv (192.168.1.70): Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2021-10-11 17:32:38 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-10-11 18:26:32 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 18:29:29 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 18:57:46 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 19:27:01 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-11 19:43:21 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-11 19:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-11 19:30:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-11 19:43:21 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-11 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-11 23:00:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-11 20:47:01 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-11 21:23:39 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 22:06:01 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-11 23:18:32 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-11 23:49:43 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-11 22:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-11 22:30:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-11 23:49:43 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-11 23:59:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-11 23:59:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-11 23:50:15 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-11 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-11 21:30:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-11 23:50:15 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-11 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-11 23:00:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-11 23:50:47 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-11 23:55:37 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-11 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-11 21:30:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-11 23:55:37 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-11 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-11 23:00:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-12 00:06:38 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-12 00:42:43 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-12 00:42:58 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-12 01:44:50 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-10-12 01:50:13 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-10-12 02:01:01 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-12 02:04:38 WARNING (Thread-7) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2021-10-12 02:04:45 ERROR (Thread-7) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2021-10-12 02:06:01 ERROR (MainThread) [homeassistant.components.apple_tv.remote] Unable to send commands, not connected to Apple TV
+2021-10-12 02:21:48 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-12 02:29:41 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-12 03:03:33 WARNING (Thread-8) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2021-10-12 03:03:49 ERROR (Thread-8) [pychromecast.socket_client] [Bedroom(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2021-10-12 03:19:01 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-12 04:20:41 WARNING (Thread-9) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2021-10-12 04:20:48 ERROR (Thread-9) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2021-10-12 04:37:01 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-12 04:39:33 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2021-10-12 04:39:33 WARNING (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2021-10-12 04:40:03 WARNING (Thread-10) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2021-10-12 04:40:17 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Error reading from socket.
+2021-10-12 04:40:17 WARNING (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Error communicating with socket, resetting connection
+2021-10-12 04:40:20 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32201)), retrying in 5.0s
+2021-10-12 04:54:14 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x12'
+2021-10-12 05:55:01 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-12 07:38:29 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-12 07:56:36 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-12 07:58:03 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-10-12 08:09:35 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-12 08:46:05 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-12 08:54:01 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-12 09:24:25 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-12 09:27:30 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-12 09:29:06 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-10-12 09:30:25 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-12 09:43:26 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-12 09:53:42 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
