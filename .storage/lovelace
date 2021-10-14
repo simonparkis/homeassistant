@@ -187,6 +187,10 @@
                                     "icon": "mdi:speaker"
                                 },
                                 {
+                                    "entity": "binary_sensor.motion_kitchen",
+                                    "name": "Motion Sensor"
+                                },
+                                {
                                     "type": "divider",
                                     "style": {
                                         "height": "1px",
