@@ -183,12 +183,8 @@
                             "entities": [
                                 {
                                     "entity": "media_player.kitchen",
-                                    "name": "Kitchen Speakers",
+                                    "name": "Audio",
                                     "icon": "mdi:speaker"
-                                },
-                                {
-                                    "entity": "binary_sensor.motion_kitchen",
-                                    "name": "Motion Sensor"
                                 },
                                 {
                                     "type": "divider",
@@ -246,9 +242,43 @@
                                     "icon": "mdi:google-chrome"
                                 },
                                 {
+                                    "entity": "media_player.front_room",
+                                    "name": "Audio",
+                                    "icon": "mdi:speaker"
+                                },
+                                {
                                     "entity": "binary_sensor.motion_front_room",
                                     "name": "Motion Sensor",
                                     "icon": "mdi:run-fast"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Laundry",
+                            "type": "entities",
+                            "show_header_toggle": false,
+                            "state_color": true,
+                            "entities": [
+                                {
+                                    "entity": "light.laundry",
+                                    "name": "Light"
+                                },
+                                {
+                                    "entity": "binary_sensor.motion_laundry",
+                                    "name": "Motion Sensor"
+                                },
+                                {
+                                    "type": "divider",
+                                    "style": {
+                                        "height": "1px",
+                                        "width": "100%",
+                                        "margin-left": "auto",
+                                        "margin-right": "auto",
+                                        "background": "#CC7C19"
+                                    }
+                                },
+                                {
+                                    "entity": "automation.motion_lights_laundry"
                                 }
                             ]
                         }
@@ -274,6 +304,11 @@
                                     "entity": "media_player.bedroom_tv",
                                     "name": "Chromecast",
                                     "icon": "mdi:google-chrome"
+                                },
+                                {
+                                    "entity": "media_player.bedroom",
+                                    "name": "Audio",
+                                    "icon": "mdi:speaker"
                                 },
                                 {
                                     "entity": "climate.master_bedroom",
@@ -615,7 +650,7 @@
                                     "entity": "media_player.front_room"
                                 },
                                 {
-                                    "entity": "media_player.bedroom_tv"
+                                    "entity": "media_player.bedroom"
                                 }
                             ]
                         }

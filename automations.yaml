@@ -498,6 +498,9 @@
     data:
       entity_id: media_player.all_chromecasts
       volume_level: 0.4
+  - service: media_player.turn_off
+    target:
+      entity_id: media_player.all_chromecasts
   - service: automation.turn_on
     entity_id: automation.follow_me_audio
   mode: restart
@@ -674,8 +677,8 @@
     to: 'on'
     entity_id:
     - binary_sensor.motion_master
+    - binary_sensor.motion_front_room
     - binary_sensor.motion_living_room
-    - binary_sensor.motion_kitchen
   condition:
   - condition: state
     entity_id: media_player.all_chromecasts
@@ -690,17 +693,17 @@
   - service: media_player.volume_mute
     data_template:
       is_volume_muted: false
-      entity_id: "{% if trigger.entity_id == 'binary_sensor.motion_master' %}\n  media_player.bedroom_tv\n\
+      entity_id: "{% if trigger.entity_id == 'binary_sensor.motion_master' %}\n  media_player.bedroom\n\
         {% elif trigger.entity_id == 'binary_sensor.motion_front_room' %}\n  media_player.front_room\n\
-        {% elif trigger.entity_id == 'binary_sensor.motion_kitchen' %}\n  media_player.kitchen\n\
+        {% elif trigger.entity_id == 'binary_sensor.motion_living_room' %}\n  media_player.kitchen\n\
         {% endif %}\n"
   - service: media_player.volume_mute
     data_template:
       is_volume_muted: true
       entity_id: "{% if trigger.entity_id == 'binary_sensor.motion_master' %}\n  media_player.front_room,\
         \ media_player.kitchen\n{% elif trigger.entity_id == 'binary_sensor.motion_front_room'\
-        \ %}\n  media_player.bedroom_tv, media_player.kitchen\n{% elif trigger.entity_id\
-        \ == 'binary_sensor.motion_kitchen' %}\n  media_player.bedroom_tv, media_player.front_room\n\
+        \ %}\n  media_player.bedroom, media_player.kitchen\n{% elif trigger.entity_id\
+        \ == 'binary_sensor.motion_living_room' %}\n  media_player.bedroom, media_player.front_room\n\
         {% endif %}\n"
   mode: single
   max_exceeded: silent
@@ -733,4 +736,28 @@
   action:
   - service: automation.toggle
     entity_id: automation.auto_lights_master_bedroom
+  mode: single
+- id: '1634260556718'
+  alias: Motion Lights Laundry
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.motion_laundry
+    to: 'on'
+  action:
+  - service: light.turn_on
+    target:
+      entity_id: light.laundry
+    data:
+      brightness_pct: 100
+  - wait_for_trigger:
+      platform: state
+      entity_id: binary_sensor.motion_laundry
+      to: 'off'
+      for: 00:00:30
+  - service: light.turn_off
+    target:
+      entity_id: light.laundry
+    data:
+      transition: 0.1
   mode: single
