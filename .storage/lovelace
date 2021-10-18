@@ -278,7 +278,8 @@
                                     }
                                 },
                                 {
-                                    "entity": "automation.motion_lights_laundry"
+                                    "entity": "automation.motion_lights_laundry",
+                                    "name": "Motion Lights"
                                 }
                             ]
                         }
