@@ -196,3 +196,599 @@
 2021-10-26 04:49:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
 2021-10-26 04:49:55 ERROR (Thread-37) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
 2021-10-26 04:57:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 05:00:05 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-26 05:04:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 05:12:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 05:19:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 05:27:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 05:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 05:41:00 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-26 05:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 05:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 05:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 06:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 06:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 06:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 06:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 06:28:31 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xc0'
+2021-10-26 06:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 06:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 06:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 06:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 07:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 07:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 07:16:14 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-26 07:19:41 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-simon (192.168.1.133): Timeout while connecting to ('192.168.1.133', 6053)
+2021-10-26 07:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 07:20:21 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-26 07:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 07:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 07:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 07:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 07:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 08:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 08:09:44 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.45.232
+2021-10-26 08:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 08:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 08:25:28 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.45.232
+2021-10-26 08:26:41 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-26 08:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 08:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 08:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 08:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 08:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 09:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 09:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 09:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 09:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 09:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 09:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 09:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 09:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 10:00:55 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-26 10:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 10:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 10:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 10:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 10:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 10:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 10:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 10:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 11:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 11:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 11:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 11:26:52 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-26 11:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 11:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 11:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 11:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 11:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 12:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 12:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 12:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 12:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 12:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 12:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 12:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 12:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 13:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 13:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 13:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 13:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 13:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 13:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 13:47:13 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: 504, message='Invalid response status', url=URL('wss://cloud.nabucasa.com/websocket')
+2021-10-26 13:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 13:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 14:02:09 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for bedroom-tv (192.168.1.111): Timeout while connecting to ('192.168.1.111', 6053)
+2021-10-26 14:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 14:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 14:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 14:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 14:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 14:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 14:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 14:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 15:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 15:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 15:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 15:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 15:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 15:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 15:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 15:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 16:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 16:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 16:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 16:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 16:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 16:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 16:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 16:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 17:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 17:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 17:19:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 17:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 17:19:59 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 17:21:16 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 17:23:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 17:23:23 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.81.82
+2021-10-26 17:24:43 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.81.82
+2021-10-26 17:24:59 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:26:17 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Error while reading data: [Errno 104] Connection reset by peer
+2021-10-26 17:27:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 17:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 17:27:51 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:28:07 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:29:33 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:30:41 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.81.82
+2021-10-26 17:30:46 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:31:41 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.81.82
+2021-10-26 17:31:53 WARNING (MainThread) [homeassistant.components.automation.garage_door_zoey] Garage Door - Zoey: Already running
+2021-10-26 17:31:55 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.81.82
+2021-10-26 17:32:09 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 17:35:22 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:38:30 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.81.82
+2021-10-26 17:39:04 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:40:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 17:41:03 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 17:42:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 17:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 17:42:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:43:11 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.81.82
+2021-10-26 17:44:57 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:45:53 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 17:47:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:49:12 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Hello timed out
+2021-10-26 17:49:15 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.81.82
+2021-10-26 17:49:19 WARNING (MainThread) [homeassistant.components.automation.garage_door_zoey] Garage Door - Zoey: Already running
+2021-10-26 17:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 17:50:32 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Hello timed out
+2021-10-26 17:51:27 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:52:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 17:52:58 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:55:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:55:50 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:56:12 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 17:56:55 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 17:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 17:59:42 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 17:59:51 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-10-26 18:00:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:02:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 18:04:07 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 18:06:26 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-10-26 18:06:33 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Hello timed out
+2021-10-26 18:07:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:07:33 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-10-26 18:07:54 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:09:13 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout waiting for response for 
+2021-10-26 18:11:31 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 18:14:31 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:15:03 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:16:04 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:17:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 18:18:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 18:18:15 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout waiting for response for 
+2021-10-26 18:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 18:22:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:26:08 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 18:29:56 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 18:30:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:33:16 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 18:34:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 18:34:42 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 18:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 18:35:13 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Hello timed out
+2021-10-26 18:36:24 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:39:54 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 18:43:04 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:43:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:44:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 18:46:12 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-10-26 18:46:18 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 18:46:47 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:47:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 18:48:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 18:49:07 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 18:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 18:49:49 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:51:12 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout waiting for response for 
+2021-10-26 18:55:04 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 18:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 18:58:56 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:00:35 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Hello timed out
+2021-10-26 19:01:03 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 19:01:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:02:17 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 19:03:13 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Hello timed out
+2021-10-26 19:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 19:05:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 19:06:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 19:06:42 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 19:08:11 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-10-26 19:08:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:08:47 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:10:26 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 19:10:59 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error while reading data: [Errno 104] Connection reset by peer
+2021-10-26 19:11:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 19:12:17 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 19:14:56 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 19:16:07 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:16:32 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 19:17:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 19:17:19 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-10-26 19:17:44 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-10-26 19:18:17 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 19:19:29 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 19:21:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:21:32 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 19:22:12 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 19:22:47 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:23:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:25:58 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 19:26:55 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 19:27:17 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 19:28:57 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 19:30:38 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:34:10 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 19:37:08 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-10-26 19:40:16 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 19:41:44 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 19:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 19:43:06 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-26 19:44:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 19:44:51 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 19:46:20 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 19:48:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:48:38 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 19:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 19:50:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 19:51:09 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 19:51:28 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:51:52 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 19:53:26 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 19:53:37 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Hello timed out
+2021-10-26 19:54:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 19:55:13 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 19:55:53 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 19:57:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 19:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 19:59:02 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 20:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 20:06:22 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 20:10:09 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 20:11:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 20:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 20:12:47 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 20:13:47 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 20:14:34 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 20:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 20:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 20:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 20:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 20:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 20:55:42 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 14: The service is currently unavailable.
+2021-10-26 20:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 21:00:32 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 13: Internal error encountered.
+2021-10-26 21:04:07 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-26 21:04:22 WARNING (MainThread) [homeassistant.components.cloud.google_config] Error reporting state - 14: The service is currently unavailable.
+2021-10-26 21:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 21:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 21:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 21:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 21:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 21:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 21:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 21:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 22:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 22:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 22:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 22:24:07 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-26 22:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 22:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 22:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 22:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 22:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 23:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 23:05:51 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-26 22:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-26 22:30:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-26 23:05:51 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-26 23:59:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-26 23:59:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-26 23:06:49 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-26 19:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-26 19:30:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-26 23:06:49 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-10-26 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-10-26 23:00:00', however this template will fail to render in Home Assistant core 2021.12
+2021-10-26 23:07:46 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 23:09:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 23:10:07 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:11:45 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 23:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 23:13:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 23:16:56 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:18:07 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 23:18:48 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 23:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 23:20:05 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:21:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:22:57 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:23:38 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:26:17 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 23:26:55 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 23:27:22 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:29:44 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 23:30:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:31:45 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 23:33:44 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 23:34:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 23:37:22 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:39:22 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:41:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 23:41:53 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 23:45:03 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:49:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 23:49:44 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 23:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 23:50:20 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 23:51:45 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 23:53:34 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-26 23:53:59 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:54:58 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-26 23:55:39 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-26 23:58:49 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-26 23:59:52 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 00:02:49 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 00:05:44 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 00:06:49 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:08:13 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 00:09:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 00:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 00:13:13 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout waiting for response for 
+2021-10-27 00:14:18 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 00:14:48 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:16:13 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 00:17:44 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 00:18:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 00:21:22 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:22:18 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 00:24:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 00:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 00:28:04 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:29:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 00:30:20 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout waiting for response for 
+2021-10-27 00:31:01 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 00:31:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:32:07 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Error while reading data: [Errno 104] Connection reset by peer
+2021-10-27 00:33:13 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 00:34:39 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 00:37:05 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Hello timed out
+2021-10-27 00:37:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:38:22 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:39:44 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 00:40:48 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 00:42:44 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 00:43:22 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:44:24 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:47:13 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 00:47:53 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 00:51:02 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:53:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 00:54:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 00:54:45 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 00:56:18 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Hello timed out
+2021-10-27 00:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 00:57:34 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 00:58:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 00:59:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 01:01:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 01:01:00 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:03:07 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: connection error
+2021-10-27 01:03:44 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 01:04:24 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 01:06:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 01:07:53 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:09:44 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 01:11:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 01:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 01:13:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 01:14:50 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:17:53 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:19:15 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 01:20:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout waiting for response for 
+2021-10-27 01:21:16 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:23:22 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:24:49 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:26:03 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 01:28:07 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:31:45 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 01:33:05 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:34:15 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 01:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 01:35:33 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 01:37:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 01:38:24 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:39:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 01:42:05 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 01:43:01 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 01:43:33 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 01:44:44 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 01:48:09 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:48:37 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 01:49:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 01:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 01:51:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 01:51:54 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:52:12 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 01:53:33 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 01:54:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 01:55:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 01:58:03 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 01:58:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:00:52 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 02:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 02:04:48 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:06:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 02:08:08 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:11:22 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:11:39 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 02:13:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 02:14:33 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 02:15:24 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:17:06 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:18:51 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 02:19:09 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 02:19:52 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 02:19:52 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:20:18 WARNING (Thread-37) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2021-10-27 02:21:18 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 02:22:24 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:25:53 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 02:29:45 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 02:31:58 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 02:32:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:33:37 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 02:34:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 02:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 02:34:49 WARNING (Thread-40) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2021-10-27 02:35:05 ERROR (Thread-40) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2021-10-27 02:35:30 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:38:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:39:43 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 02:41:09 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 02:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 02:45:09 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 02:45:34 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:48:03 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 02:48:27 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 02:51:22 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:51:54 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:53:13 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 02:53:17 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-10-27 02:53:53 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:55:44 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 02:57:03 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 02:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 02:58:49 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:01:18 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:02:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:03:15 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:03:42 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 03:04:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 03:04:57 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:05:48 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:07:45 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 03:09:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 03:10:32 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 03:11:44 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 03:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 03:14:44 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 03:16:30 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 03:16:40 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:19:44 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 03:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 03:20:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 03:23:04 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:24:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 03:26:24 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 03:29:44 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 03:30:47 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:33:04 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 03:35:44 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 03:37:12 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Hello timed out
+2021-10-27 03:39:42 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 03:40:59 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 03:41:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 03:42:49 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:43:45 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 03:44:55 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 03:46:24 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:47:50 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 03:49:18 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 03:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 03:49:56 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:50:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:51:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 03:53:45 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 03:54:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 03:54:51 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 03:56:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Hello timed out
+2021-10-27 03:56:40 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 03:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 03:57:27 WARNING (Thread-34) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2021-10-27 03:57:43 ERROR (Thread-34) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2021-10-27 03:59:40 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:02:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 04:03:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:04:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 04:05:21 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:06:26 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:08:41 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:10:08 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:12:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 04:13:14 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout waiting for response for 
+2021-10-27 04:14:13 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 04:14:26 ERROR (Thread-42) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error reading from socket.
+2021-10-27 04:14:26 WARNING (Thread-42) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error communicating with socket, resetting connection
+2021-10-27 04:14:29 ERROR (Thread-42) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 32201)), retrying in 5.0s
+2021-10-27 04:14:56 WARNING (Thread-41) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
+2021-10-27 04:14:59 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 04:15:03 ERROR (Thread-41) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 8009)), retrying in 5.0s
+2021-10-27 04:15:11 ERROR (Thread-42) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2021-10-27 04:15:11 WARNING (Thread-42) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2021-10-27 04:15:16 ERROR (Thread-42) [pychromecast.socket_client] [All Chromecasts([::ffff:c0a8:129]):32201] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 32201)), retrying in 5.0s
+2021-10-27 04:16:47 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:19:19 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 04:19:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 04:20:09 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:21:14 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Hello timed out
+2021-10-27 04:23:38 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:26:21 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for 
+2021-10-27 04:26:54 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:27:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 04:30:24 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:31:45 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 04:33:13 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Hello timed out
+2021-10-27 04:34:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 04:36:57 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:39:45 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 04:42:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 04:43:41 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:45:56 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 04:46:23 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:47:09 WARNING (Thread-82) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2021-10-27 04:47:14 ERROR (Thread-82) [pychromecast.socket_client] [Front Room([::ffff:c0a8:129]):8009] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 8009)), retrying in 5.0s
+2021-10-27 04:47:45 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 04:49:45 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 04:50:47 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:53:18 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 04:54:52 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Timeout while connecting to ('192.168.1.99', 6053)
+2021-10-27 04:57:15 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-10-27 04:58:26 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-10-27 04:59:36 WARNING (MainThread) [homeassistant.components.esphome] Can't connect to ESPHome API for computer-zoey (192.168.1.99): Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
