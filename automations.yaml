@@ -697,6 +697,8 @@
         {% elif trigger.entity_id == 'binary_sensor.motion_front_room' %}\n  media_player.front_room\n\
         {% elif trigger.entity_id == 'binary_sensor.motion_living_room' %}\n  media_player.kitchen\n\
         {% endif %}\n"
+  - delay:
+      seconds: 0.5
   - service: media_player.volume_mute
     data_template:
       is_volume_muted: true
