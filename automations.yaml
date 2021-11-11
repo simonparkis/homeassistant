@@ -470,6 +470,10 @@
     value_template: '{{ not is_state(''person.zoey'',''home'') }}'
   - condition: template
     value_template: '{{ not is_state(''media_player.kitchen'', ''playing'') }}'
+  - condition: template
+    value_template: '{{ not is_state(''media_player.bedroom'', ''playing'') }}'
+  - condition: template
+    value_template: '{{ not is_state(''media_player.front_room'', ''playing'') }}'
   action:
   - service: automation.turn_off
     data:
@@ -483,9 +487,9 @@
     entity_id: media_player.all_chromecasts
   - service: media_player.volume_set
     data_template:
-      entity_id: media_player.all_chromecasts
+      entity_id: media_player.kitchen, media_player.bedroom, media_player.front_room
       volume_level: "{% if (now().strftime(\"%H\") | int) < 8 or (now().strftime(\"\
-        %H\") | int) > 18 %}\n  0.2\n{% else %}\n  0.5\n{% endif %}\n"
+        %H\") | int) > 18 %}\n  0.2\n{% else %}\n  0.4\n{% endif %}\n"
   - service: media_player.play_media
     target:
       entity_id: media_player.all_chromecasts
@@ -633,7 +637,7 @@
   description: ''
   trigger:
   - platform: time
-    at: '17:00:00'
+    at: '18:00:00'
   - platform: state
     entity_id: sensor.house_status
     from: Vacant
@@ -654,11 +658,11 @@
   - service: tts.cloud_say
     data:
       entity_id: media_player.kitchen
-      message: "{% if is_state('sensor.rubbish','2') and is_state('sensor.recycling','2')\
-        \ %}\n  Don't forget to take the bins out, both red and yellow bins\n{% elif\
-        \ is_state('sensor.rubbish','1') %}\n  Don't forget to take the bins out,\
-        \ red bin only\n{% elif is_state('sensor.recycling','1') %}\n  Don't forget\
-        \ to take the bins out, yellow bin only\n{% endif %}\n"
+      message: "{% if is_state('sensor.rubbish','1') and is_state('sensor.recycling','1')\
+        \ %}\n  Don't forget to take the bins out... both red and yellow bins\n{%\
+        \ elif is_state('sensor.rubbish','1') %}\n  Don't forget to take the bins\
+        \ out... red bin only\n{% elif is_state('sensor.recycling','1') %}\n  Don't\
+        \ forget to take the bins out... yellow bin only\n{% endif %}\n"
   - service: notify.mobile_app_iphone_xr
     data:
       title: Garbage Bins
