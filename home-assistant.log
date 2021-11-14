@@ -252,3 +252,60 @@
 2021-11-14 04:30:44 ERROR (Thread-11) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
 2021-11-14 04:49:32 WARNING (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
 2021-11-14 04:49:37 ERROR (Thread-8) [pychromecast.socket_client] [Front Room([::ffff:c0a8:129]):8009] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 8009)), retrying in 5.0s
+2021-11-14 09:01:16 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-14 09:17:34 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 09:23:16 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 09:23:31 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 09:27:25 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 09:34:58 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 09:36:04 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 09:37:56 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 09:55:28 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 09:56:00 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 09:56:26 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 10:08:59 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 10:55:03 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 10:55:16 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 11:04:58 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 11:18:16 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-11-14 11:18:30 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-11-14 11:38:14 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 12:21:44 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 12:38:03 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-14 13:39:49 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 14:01:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.111 @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-11-14 17:25:03 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 192.168.1.1
+2021-11-14 17:27:39 WARNING (MainThread) [homeassistant.components.automation.motion_light_walk_in_robe] Motion Light - Walk In Robe: Already running
+2021-11-14 17:45:56 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-14 19:50:08 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-14 19:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-14 19:30:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-14 19:50:08 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-14 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-14 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-14 19:58:43 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-14 19:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-14 19:30:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-14 19:58:43 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-14 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-14 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-14 19:59:00 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x62'
+2021-11-14 20:05:17 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-14 21:16:12 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.8 @ 192.168.1.8: Timeout while connecting to ('192.168.1.8', 6053)
+2021-11-14 21:25:17 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-14 22:28:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.111 @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-11-15 00:02:17 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-15 01:03:40 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x09'
+2021-11-15 02:04:01 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xef'
+2021-11-15 02:08:40 WARNING (Thread-7) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2021-11-15 02:08:47 ERROR (Thread-7) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2021-11-15 02:39:17 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-15 03:04:22 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xfa'
+2021-11-15 03:15:37 WARNING (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2021-11-15 03:15:42 ERROR (Thread-8) [pychromecast.socket_client] [Front Room([::ffff:c0a8:129]):8009] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 8009)), retrying in 5.0s
+2021-11-15 03:19:41 WARNING (Thread-12) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2021-11-15 03:19:56 ERROR (Thread-12) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2021-11-15 03:51:23 ERROR (Thread-10) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error reading from socket.
+2021-11-15 03:51:23 WARNING (Thread-10) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error communicating with socket, resetting connection
+2021-11-15 03:51:23 ERROR (Thread-10) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 32201)), retrying in 5.0s
+2021-11-15 03:51:48 WARNING (Thread-9) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
+2021-11-15 03:52:03 ERROR (Thread-9) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 8009)), retrying in 5.0s
+2021-11-15 03:52:07 ERROR (Thread-10) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2021-11-15 03:52:07 WARNING (Thread-10) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2021-11-15 03:52:12 ERROR (Thread-10) [pychromecast.socket_client] [All Chromecasts([::ffff:c0a8:129]):32201] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 32201)), retrying in 5.0s
+2021-11-15 04:04:44 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xd6'
+2021-11-15 04:06:30 WARNING (Thread-11) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2021-11-15 04:06:37 ERROR (Thread-11) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2021-11-15 04:59:42 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.8 @ 192.168.1.8: Timeout while connecting to ('192.168.1.8', 6053)
