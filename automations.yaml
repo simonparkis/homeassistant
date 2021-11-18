@@ -487,7 +487,7 @@
     entity_id: media_player.all_chromecasts
   - service: media_player.volume_set
     data_template:
-      entity_id: media_player.kitchen, media_player.bedroom, media_player.front_room
+      entity_id: media_player.all_chromecasts
       volume_level: "{% if (now().strftime(\"%H\") | int) < 8 or (now().strftime(\"\
         %H\") | int) > 18 %}\n  0.2\n{% else %}\n  0.4\n{% endif %}\n"
   - service: media_player.play_media
@@ -515,13 +515,13 @@
   - platform: state
     entity_id: cover.garage_door
     to: open
-    for: 00:15:00
+    for: 00:10:00
   condition:
   - condition: state
     entity_id: input_boolean.auto_garage_door
     state: 'on'
   action:
-  - wait_template: '{{ ((states(''sensor.garage_no_motion'') | int) > 9) or is_state("cover.garage_door","closed")
+  - wait_template: '{{ ((states(''sensor.garage_no_motion'') | int) > 9) or is_state(''cover.garage_door'',''closed'')
       }}'
   - choose:
       conditions:
@@ -663,7 +663,7 @@
         \ elif is_state('sensor.rubbish','1') %}\n  Don't forget to take the bins\
         \ out... red bin only\n{% elif is_state('sensor.recycling','1') %}\n  Don't\
         \ forget to take the bins out... yellow bin only\n{% endif %}\n"
-  - service: notify.mobile_app_iphone_xr
+  - service: notify.notify
     data:
       title: Garbage Bins
       message: "{% if is_state('sensor.rubbish','1') and is_state('sensor.recycling','1')\
