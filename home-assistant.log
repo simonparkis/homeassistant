@@ -105,3 +105,305 @@
 2021-11-24 04:42:01 ERROR (Thread-8) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
 2021-11-24 04:53:03 WARNING (Thread-7) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
 2021-11-24 04:53:18 ERROR (Thread-7) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2021-11-24 05:10:32 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x21'
+2021-11-24 05:26:05 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-24 05:26:16 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 06:42:05 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 06:47:31 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 07:10:14 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-24 07:21:12 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 07:31:58 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 07:39:05 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-24 07:48:59 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.126.135
+2021-11-24 07:49:16 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.119.65
+2021-11-24 07:49:30 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.119.65
+2021-11-24 07:58:28 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.119.65
+2021-11-24 08:01:46 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.119.65
+2021-11-24 08:11:21 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.119.65
+2021-11-24 08:15:03 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 08:47:38 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 09:02:15 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 09:03:51 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 09:13:58 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xa1'
+2021-11-24 09:15:09 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 09:23:55 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 09:38:57 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 09:59:57 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:03:14 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:04:02 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:09:46 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:14:50 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xa1'
+2021-11-24 10:18:29 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:19:52 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:21:00 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:23:44 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:25:16 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:28:39 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:31:58 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:34:54 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:38:07 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:45:48 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:47:02 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:50:00 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:53:09 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 10:58:05 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 11:05:34 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 11:12:05 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 11:13:57 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 11:17:09 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 11:18:34 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 11:22:54 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 11:24:13 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 11:27:25 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 11:32:27 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 11:40:41 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 11:44:59 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 11:49:27 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 12:03:59 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 12:06:01 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 12:07:12 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 12:09:40 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 12:16:29 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 12:16:33 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x60'
+2021-11-24 12:19:09 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 12:27:19 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 12:31:57 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 12:33:56 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 12:35:41 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 12:42:08 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 12:43:48 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 12:47:45 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 12:49:34 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 12:58:12 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 13:06:33 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 13:12:10 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 13:18:48 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 13:24:36 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 13:40:33 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 13:41:20 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 13:42:39 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 13:59:04 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 14:01:26 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.111 @ 192.168.1.111: Timeout while connecting to ('192.168.1.111', 6053)
+2021-11-24 14:01:32 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 14:02:53 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 14:07:45 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 14:10:15 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 14:17:18 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 14:29:06 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 14:35:39 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 14:44:09 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 14:52:43 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 14:55:47 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 15:09:42 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 15:19:06 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x55'
+2021-11-24 15:19:12 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 15:24:46 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 15:31:57 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 15:38:16 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 15:48:09 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 16:14:52 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-24 16:30:06 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 16:31:20 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 16:33:26 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 16:47:01 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 16:48:07 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 16:53:55 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 17:04:16 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 17:18:44 WARNING (MainThread) [homeassistant.components.automation.motion_light_walk_in_robe] Motion Light - Walk In Robe: Already running
+2021-11-24 17:20:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 17:21:14 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.19.214
+2021-11-24 17:21:16 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x24'
+2021-11-24 17:21:31 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.19.214
+2021-11-24 17:21:36 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 17:21:47 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.19.214
+2021-11-24 17:22:12 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 17:22:16 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 17:25:16 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 17:25:35 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 17:26:11 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2021-11-24 17:26:45 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-11-24 17:27:02 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 17:28:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 17:29:59 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 17:30:02 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.19.214
+2021-11-24 17:30:11 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 17:31:12 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 17:32:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 17:35:16 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 17:35:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 17:36:53 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.19.214
+2021-11-24 17:39:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 17:43:16 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 17:44:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 17:44:44 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-11-24 17:45:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 17:46:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2021-11-24 17:48:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 17:50:15 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.19.214
+2021-11-24 17:50:24 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2021-11-24 17:50:24 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2021-11-24 17:50:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 17:53:53 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.19.214
+2021-11-24 17:55:01 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.19.214
+2021-11-24 17:55:28 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 17:58:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 17:59:15 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 17:59:59 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 18:00:10 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-11-24 18:00:47 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 18:01:01 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-24 18:01:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 18:02:11 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 18:03:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:03:13 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 18:04:22 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 18:05:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 18:06:44 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 18:07:16 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 18:08:45 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-11-24 18:09:16 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 18:10:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:14:25 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 18:14:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:16:37 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 18:16:44 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-11-24 18:17:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 18:17:49 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 18:17:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:18:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 18:18:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:20:42 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 18:21:41 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:22:01 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x39'
+2021-11-24 18:22:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:23:07 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 18:26:44 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-11-24 18:26:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:28:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2021-11-24 18:30:33 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:33:42 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2021-11-24 18:34:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:36:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:36:46 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-11-24 18:37:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 18:38:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:41:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 18:42:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:46:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:47:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 18:47:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:49:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:52:41 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 18:54:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:54:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 18:58:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 19:00:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 19:01:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 19:02:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 19:05:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 19:07:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 19:09:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 19:11:36 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 19:12:16 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 19:12:46 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-11-24 19:14:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 19:15:47 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 19:16:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 19:17:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2021-11-24 19:19:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 19:20:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 19:21:16 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 19:22:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 19:25:26 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 19:26:19 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 19:29:38 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2021-11-24 19:32:06 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 19:33:28 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 19:36:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 19:38:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 19:42:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 19:43:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2021-11-24 19:44:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2021-11-24 19:45:28 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 19:47:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 19:49:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 19:50:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-11-24 19:51:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 19:52:41 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 19:53:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 19:54:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 19:54:40 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 19:58:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 20:00:06 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-24 20:01:38 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-11-24 20:03:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 20:05:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 20:07:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 20:09:39 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 20:11:26 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 20:12:29 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-24 20:12:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2021-11-24 20:13:05 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-24 20:13:39 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-24 20:14:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 20:16:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 20:18:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 20:19:12 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-11-24 20:19:24 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 20:21:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 20:22:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 20:23:31 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x38'
+2021-11-24 20:24:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 20:26:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 20:28:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 20:29:26 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 20:29:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 20:30:38 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 20:32:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-24 20:33:39 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-11-24 20:34:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 20:35:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 20:36:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 20:37:03 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-24 20:37:34 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-11-24 20:38:02 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 20:41:03 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 21:11:07 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-11-24 21:22:07 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-24 21:27:05 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 21:38:57 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-11-24 21:51:39 WARNING (MainThread) [homeassistant.components.automation.garage_door_simon] Garage Door - Simon: Already running
+2021-11-24 22:32:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.9 @ 192.168.1.9: Timeout while connecting to ('192.168.1.9', 6053)
+2021-11-24 22:36:32 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 22:42:51 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-24 22:58:05 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 23:04:27 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 23:13:24 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 23:42:12 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-24 23:52:30 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-25 00:29:17 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-25 01:23:07 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-25 01:26:18 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-25 01:57:48 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-25 02:23:58 WARNING (Thread-9) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2021-11-25 02:24:05 ERROR (Thread-9) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
+2021-11-25 02:43:07 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-25 02:43:35 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-25 03:07:12 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error reading from socket.
+2021-11-25 03:07:12 WARNING (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error communicating with socket, resetting connection
+2021-11-25 03:07:12 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 32201)), retrying in 5.0s
+2021-11-25 03:07:47 WARNING (Thread-12) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
+2021-11-25 03:07:54 ERROR (Thread-12) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 8009)), retrying in 5.0s
+2021-11-25 03:07:59 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2021-11-25 03:07:59 WARNING (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2021-11-25 03:07:59 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 32201)), retrying in 5.0s
+2021-11-25 03:30:51 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-25 04:03:07 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-25 04:17:07 WARNING (Thread-8) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2021-11-25 04:17:22 ERROR (Thread-8) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2021-11-25 04:37:35 WARNING (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2021-11-25 04:37:42 ERROR (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2021-11-25 04:37:48 ERROR (stream_worker) [homeassistant.components.stream.worker] Error demuxing stream: 
+2021-11-25 04:42:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.8 @ 192.168.1.8: Error connecting to ('192.168.1.8', 6053): [Errno 113] Connect call failed ('192.168.1.8', 6053)
+2021-11-25 04:50:22 WARNING (Thread-7) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2021-11-25 04:50:30 ERROR (Thread-7) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
