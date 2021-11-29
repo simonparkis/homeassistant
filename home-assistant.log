@@ -204,3 +204,300 @@
 2021-11-29 04:51:23 WARNING (Thread-7) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
 2021-11-29 04:51:33 ERROR (Thread-7) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
 2021-11-29 04:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 05:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 05:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 05:15:56 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xf7'
+2021-11-29 05:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 05:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 05:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 05:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 05:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 05:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 06:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 06:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 06:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 06:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 06:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 06:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 06:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 06:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 07:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 07:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 07:11:30 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x1497:11:0x0008]: async_initialize: all attempts have failed: [DeliveryError('[0x1497:11:0x0008]: Message send failure'), DeliveryError('[0x1497:11:0x0008]: Message send failure'), DeliveryError('[0x1497:11:0x0008]: Message send failure'), DeliveryError('[0x1497:11:0x0008]: Message send failure')]
+2021-11-29 07:11:30 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x1497:11:0x0006]: async_initialize: all attempts have failed: [DeliveryError('[0x1497:11:0x0006]: Message send failure'), DeliveryError('[0x1497:11:0x0006]: Message send failure'), DeliveryError('[0x1497:11:0x0006]: Message send failure'), DeliveryError('[0x1497:11:0x0006]: Message send failure')]
+2021-11-29 07:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 07:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 07:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 07:34:45 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.39.67
+2021-11-29 07:34:53 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.39.67
+2021-11-29 07:35:08 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.39.67
+2021-11-29 07:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 07:41:54 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.39.67
+2021-11-29 07:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 07:48:22 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.39.67
+2021-11-29 07:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 08:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 08:07:43 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.39.67
+2021-11-29 08:07:53 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [140057465639648] Disconnected: Did not receive auth message within 10 seconds
+2021-11-29 08:07:56 WARNING (MainThread) [homeassistant.components.automation.garage_door_zoey] Garage Door - Zoey: Already running
+2021-11-29 08:07:57 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.39.67
+2021-11-29 08:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 08:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 08:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 08:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 08:34:00 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.39.67
+2021-11-29 08:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 08:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 08:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 09:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 09:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 09:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 09:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 09:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 09:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 09:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 09:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 10:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 10:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 10:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 10:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 10:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 10:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 10:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 10:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 11:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 11:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 11:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 11:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 11:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 11:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 11:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 11:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 12:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 12:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 12:15:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-29 12:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 12:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 12:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 12:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 12:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 12:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 13:03:01 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x4b'
+2021-11-29 13:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 13:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 13:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 13:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 13:31:25 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.49.206
+2021-11-29 13:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 13:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 13:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 13:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 14:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 14:08:24 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.49.206
+2021-11-29 14:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 14:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 14:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 14:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 14:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 14:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 14:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 15:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 15:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 15:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 15:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 15:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 15:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 15:46:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2021-11-29 15:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 15:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 15:59:48 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140057374090048] Received invalid command
+2021-11-29 16:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 16:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 16:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 16:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 16:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 16:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 16:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 16:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 17:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 17:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 17:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 17:20:27 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.49.206
+2021-11-29 17:20:40 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.49.206
+2021-11-29 17:22:13 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.49.206
+2021-11-29 17:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 17:32:10 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-29 17:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 17:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 17:46:17 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.49.206
+2021-11-29 17:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 17:50:54 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.49.206
+2021-11-29 17:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 17:58:14 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: 504, message='Invalid response status', url=URL('wss://cloud.nabucasa.com/websocket')
+2021-11-29 17:58:32 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: 504, message='Invalid response status', url=URL('wss://cloud.nabucasa.com/websocket')
+2021-11-29 18:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 18:05:44 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.49.206
+2021-11-29 18:08:43 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-29 18:08:58 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-29 18:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 18:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 18:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 18:31:37 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-29 18:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 18:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 18:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 18:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 18:56:07 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-29 19:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 19:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 19:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 19:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 19:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 19:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 19:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 19:49:41 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-29 19:50:36 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-11-29 19:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 20:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 20:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 20:15:33 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-29 20:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 20:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 20:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 20:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 20:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 20:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 21:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 21:10:06 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.8 @ 192.168.1.8: Error connecting to ('192.168.1.8', 6053): [Errno 113] Connect call failed ('192.168.1.8', 6053)
+2021-11-29 21:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 21:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 21:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 21:29:21 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 19:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 19:30:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 21:29:21 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 21:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 21:33:47 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 19:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 19:30:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 21:33:47 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 21:34:56 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 21:30:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 21:34:56 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 21:36:33 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-29 21:38:47 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 21:30:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 21:38:47 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 21:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 21:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 21:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 22:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 22:04:42 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 21:30:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 22:04:42 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 22:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 22:14:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 21:30:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 22:14:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 22:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 22:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 22:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 22:40:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 22:48:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 22:55:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 22:56:33 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-29 23:03:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 23:10:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 23:11:39 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 21:30:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 23:11:39 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 23:18:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 23:25:43 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 23:27:01 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 22:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 22:30:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 23:27:01 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-11-29 23:59:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-11-29 23:59:00', however this template will fail to render in Home Assistant core 2022.1
+2021-11-29 23:33:13 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 23:40:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 23:48:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-29 23:55:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 00:03:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 00:10:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 00:16:33 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-30 00:18:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 00:25:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 00:25:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.8 @ 192.168.1.8: Timeout while connecting to ('192.168.1.8', 6053)
+2021-11-30 00:33:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 00:40:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 00:48:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 00:55:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 01:03:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 01:10:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 01:18:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 01:25:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 01:33:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 01:35:33 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-30 01:40:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 01:48:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 01:55:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 02:03:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 02:10:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 02:18:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 02:25:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 02:33:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 02:40:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 02:48:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 02:55:33 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-30 02:55:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 03:03:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 03:10:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 03:16:00 WARNING (Thread-11) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2021-11-30 03:16:07 ERROR (Thread-11) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2021-11-30 03:18:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 03:22:38 WARNING (Thread-7) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2021-11-30 03:22:41 ERROR (Thread-7) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2021-11-30 03:24:14 WARNING (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2021-11-30 03:24:29 ERROR (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
+2021-11-30 03:25:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 03:27:09 WARNING (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2021-11-30 03:27:25 ERROR (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2021-11-30 03:33:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 03:40:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 03:48:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 03:55:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 04:03:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 04:10:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 04:14:33 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-11-30 04:18:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 04:21:11 ERROR (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error reading from socket.
+2021-11-30 04:21:11 WARNING (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error communicating with socket, resetting connection
+2021-11-30 04:21:14 ERROR (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 32201)), retrying in 5.0s
+2021-11-30 04:21:36 WARNING (Thread-12) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
+2021-11-30 04:21:51 ERROR (Thread-12) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 8009)), retrying in 5.0s
+2021-11-30 04:21:56 ERROR (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2021-11-30 04:21:56 WARNING (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2021-11-30 04:21:56 ERROR (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 32201)), retrying in 5.0s
+2021-11-30 04:25:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 04:33:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 04:40:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 04:42:00 ERROR (MainThread) [homeassistant] Error doing job: Future exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/aioesphomeapi/_frame_helper.py", line 68, in write_packet
+    await self._writer.drain()
+  File "/usr/local/lib/python3.9/asyncio/streams.py", line 387, in drain
+    await self._protocol._drain_helper()
+  File "/usr/local/lib/python3.9/asyncio/streams.py", line 190, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/aioesphomeapi/reconnect_logic.py", line 121, in _try_connect
+    await self._cli.connect(on_stop=self._on_disconnect, login=True)
+  File "/usr/local/lib/python3.9/site-packages/aioesphomeapi/client.py", line 173, in connect
+    await self._connection.connect(login=login)
+  File "/usr/local/lib/python3.9/site-packages/aioesphomeapi/connection.py", line 262, in connect
+    await self._connect_hello()
+  File "/usr/local/lib/python3.9/site-packages/aioesphomeapi/connection.py", line 189, in _connect_hello
+    resp = await self.send_message_await_response(hello, HelloResponse)
+  File "/usr/local/lib/python3.9/site-packages/aioesphomeapi/connection.py", line 411, in send_message_await_response
+    res = await self.send_message_await_response_complex(
+  File "/usr/local/lib/python3.9/site-packages/aioesphomeapi/connection.py", line 389, in send_message_await_response_complex
+    await self.send_message(send_msg)
+  File "/usr/local/lib/python3.9/site-packages/aioesphomeapi/connection.py", line 333, in send_message
+    await self._frame_helper.write_packet(
+  File "/usr/local/lib/python3.9/site-packages/aioesphomeapi/_frame_helper.py", line 70, in write_packet
+    raise SocketAPIError(f"Error while writing data: {err}") from err
+aioesphomeapi.core.SocketAPIError: Error while writing data: Connection lost
+2021-11-30 04:48:14 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
+2021-11-30 04:55:44 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
