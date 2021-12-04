@@ -528,6 +528,9 @@
       - condition: state
         entity_id: cover.garage_door
         state: open
+      - condition: state
+        entity_id: input_boolean.auto_garage_door
+        state: 'on'
       sequence:
       - service: cover.close_cover
         target:
