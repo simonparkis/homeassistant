@@ -1,237 +1,38 @@
-2021-12-08 18:48:24 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-08 18:48:24 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-08 18:48:24 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-08 18:48:24 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-08 18:48:24 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-08 18:48:24 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-08 18:48:25 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
-2021-12-08 18:48:37 ERROR (MainThread) [homeassistant.components.mqtt] Failed to connect to MQTT server due to exception: [Errno 113] Host is unreachable
-2021-12-08 18:48:38 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140176750976688] Received invalid command: mobile_app/push_notification_channel
-2021-12-08 18:48:38 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140176750976688] Received invalid command: mobile_app/push_notification_channel
-2021-12-08 18:48:38 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140176750976688] Received invalid command: mobile_app/push_notification_channel
-2021-12-08 18:48:38 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140176750976688] Received invalid command: mobile_app/push_notification_channel
-2021-12-08 18:48:38 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140176750976688] Received invalid command: mobile_app/push_notification_channel
-2021-12-08 18:48:38 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140176750976688] Received invalid command: mobile_app/push_notification_channel
-2021-12-08 18:48:38 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140176750976688] Received invalid command: mobile_app/push_notification_channel
-2021-12-08 18:48:38 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140176750976688] Received invalid command: mobile_app/push_notification_channel
-2021-12-08 18:48:38 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140176750976688] Received invalid command: mobile_app/push_notification_channel
-2021-12-08 18:48:38 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [140176750976688] Received invalid command: mobile_app/push_notification_channel
-2021-12-08 18:48:40 ERROR (MainThread) [zigpy.application] Couldn't start application
-2021-12-08 18:48:40 ERROR (MainThread) [homeassistant.components.zha.core.gateway] Couldn't start deCONZ = dresden elektronik deCONZ protocol: ConBee I/II, RaspBee I/II coordinator
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 322, in open
-    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
-FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/zha/core/gateway.py", line 152, in async_initialize
-    self.application_controller = await app_controller_cls.new(
-  File "/usr/local/lib/python3.9/site-packages/zigpy/application.py", line 69, in new
-    await app.startup(auto_form)
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/zigbee/application.py", line 66, in startup
-    await self._api.connect()
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/api.py", line 245, in connect
-    self._uart = await zigpy_deconz.uart.connect(self._config, self)
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/uart.py", line 142, in connect
-    _, protocol = await serial_asyncio.create_serial_connection(
-  File "/usr/local/lib/python3.9/site-packages/serial_asyncio/__init__.py", line 445, in create_serial_connection
-    serial_instance = serial.serial_for_url(*args, **kwargs)
-  File "/usr/local/lib/python3.9/site-packages/serial/__init__.py", line 90, in serial_for_url
-    instance.open()
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 325, in open
-    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
-serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
-2021-12-08 18:48:40 WARNING (MainThread) [homeassistant.config_entries] Config entry 'ConBee II, s/n: DE2434960 - dresden elektronik ingenieurtechnik GmbH' for zha integration not ready yet: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'; Retrying in background
-2021-12-08 18:48:43 WARNING (MainThread) [homeassistant.components.konnected.panel] Exception trying to connect to panel: Cannot connect to host 192.168.1.79:13880 ssl:default [Connect call failed ('192.168.1.79', 13880)]
-2021-12-08 18:48:43 ERROR (MainThread) [homeassistant.components.automation.buttons_simon_lamp_toggle] Unknown error while setting up trigger (empty result) Buttons - Simon Lamp Toggle
-2021-12-08 18:48:43 ERROR (MainThread) [homeassistant.components.automation.button_toggle_garage_door] Unknown error while setting up trigger (empty result) Button - Toggle Garage Door
-2021-12-08 18:48:43 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Random RGB
-2021-12-08 18:48:43 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Lamp
-2021-12-08 18:48:43 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Lamp
-2021-12-08 18:48:43 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Random RGB
-2021-12-08 18:48:43 ERROR (MainThread) [homeassistant.components.automation.button_toggle_master_motion_lights] Unknown error while setting up trigger (empty result) Button - Toggle Master Motion Lights
-2021-12-08 18:48:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.111 @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
-2021-12-08 18:48:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.17 @ 192.168.1.17: Error connecting to ('192.168.1.17', 6053): [Errno 113] Connect call failed ('192.168.1.17', 6053)
-2021-12-08 18:48:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.70 @ 192.168.1.70: Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
-2021-12-08 18:48:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.9 @ 192.168.1.9: Error connecting to ('192.168.1.9', 6053): [Errno 113] Connect call failed ('192.168.1.9', 6053)
-2021-12-08 18:48:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.8 @ 192.168.1.8: Error connecting to ('192.168.1.8', 6053): [Errno 113] Connect call failed ('192.168.1.8', 6053)
-2021-12-08 18:48:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.133 @ 192.168.1.133: Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
-2021-12-08 18:48:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
-2021-12-08 18:48:45 ERROR (MainThread) [zigpy.application] Couldn't start application
-2021-12-08 18:48:45 ERROR (MainThread) [homeassistant.components.zha.core.gateway] Couldn't start deCONZ = dresden elektronik deCONZ protocol: ConBee I/II, RaspBee I/II coordinator
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 322, in open
-    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
-FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/zha/core/gateway.py", line 152, in async_initialize
-    self.application_controller = await app_controller_cls.new(
-  File "/usr/local/lib/python3.9/site-packages/zigpy/application.py", line 69, in new
-    await app.startup(auto_form)
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/zigbee/application.py", line 66, in startup
-    await self._api.connect()
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/api.py", line 245, in connect
-    self._uart = await zigpy_deconz.uart.connect(self._config, self)
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/uart.py", line 142, in connect
-    _, protocol = await serial_asyncio.create_serial_connection(
-  File "/usr/local/lib/python3.9/site-packages/serial_asyncio/__init__.py", line 445, in create_serial_connection
-    serial_instance = serial.serial_for_url(*args, **kwargs)
-  File "/usr/local/lib/python3.9/site-packages/serial/__init__.py", line 90, in serial_for_url
-    instance.open()
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 325, in open
-    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
-serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
-2021-12-08 18:48:56 WARNING (MainThread) [homeassistant.components.konnected.panel] Exception trying to connect to panel: Cannot connect to host 192.168.1.79:13880 ssl:default [Connect call failed ('192.168.1.79', 13880)]
-2021-12-08 18:48:57 ERROR (MainThread) [zigpy.application] Couldn't start application
-2021-12-08 18:48:57 ERROR (MainThread) [homeassistant.components.zha.core.gateway] Couldn't start deCONZ = dresden elektronik deCONZ protocol: ConBee I/II, RaspBee I/II coordinator
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 322, in open
-    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
-FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/zha/core/gateway.py", line 152, in async_initialize
-    self.application_controller = await app_controller_cls.new(
-  File "/usr/local/lib/python3.9/site-packages/zigpy/application.py", line 69, in new
-    await app.startup(auto_form)
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/zigbee/application.py", line 66, in startup
-    await self._api.connect()
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/api.py", line 245, in connect
-    self._uart = await zigpy_deconz.uart.connect(self._config, self)
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/uart.py", line 142, in connect
-    _, protocol = await serial_asyncio.create_serial_connection(
-  File "/usr/local/lib/python3.9/site-packages/serial_asyncio/__init__.py", line 445, in create_serial_connection
-    serial_instance = serial.serial_for_url(*args, **kwargs)
-  File "/usr/local/lib/python3.9/site-packages/serial/__init__.py", line 90, in serial_for_url
-    instance.open()
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 325, in open
-    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
-serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
-2021-12-08 18:49:17 ERROR (MainThread) [zigpy.application] Couldn't start application
-2021-12-08 18:49:17 ERROR (MainThread) [homeassistant.components.zha.core.gateway] Couldn't start deCONZ = dresden elektronik deCONZ protocol: ConBee I/II, RaspBee I/II coordinator
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 322, in open
-    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
-FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/zha/core/gateway.py", line 152, in async_initialize
-    self.application_controller = await app_controller_cls.new(
-  File "/usr/local/lib/python3.9/site-packages/zigpy/application.py", line 69, in new
-    await app.startup(auto_form)
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/zigbee/application.py", line 66, in startup
-    await self._api.connect()
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/api.py", line 245, in connect
-    self._uart = await zigpy_deconz.uart.connect(self._config, self)
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/uart.py", line 142, in connect
-    _, protocol = await serial_asyncio.create_serial_connection(
-  File "/usr/local/lib/python3.9/site-packages/serial_asyncio/__init__.py", line 445, in create_serial_connection
-    serial_instance = serial.serial_for_url(*args, **kwargs)
-  File "/usr/local/lib/python3.9/site-packages/serial/__init__.py", line 90, in serial_for_url
-    instance.open()
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 325, in open
-    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
-serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
-2021-12-08 18:49:57 ERROR (MainThread) [zigpy.application] Couldn't start application
-2021-12-08 18:49:57 ERROR (MainThread) [homeassistant.components.zha.core.gateway] Couldn't start deCONZ = dresden elektronik deCONZ protocol: ConBee I/II, RaspBee I/II coordinator
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 322, in open
-    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
-FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/zha/core/gateway.py", line 152, in async_initialize
-    self.application_controller = await app_controller_cls.new(
-  File "/usr/local/lib/python3.9/site-packages/zigpy/application.py", line 69, in new
-    await app.startup(auto_form)
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/zigbee/application.py", line 66, in startup
-    await self._api.connect()
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/api.py", line 245, in connect
-    self._uart = await zigpy_deconz.uart.connect(self._config, self)
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/uart.py", line 142, in connect
-    _, protocol = await serial_asyncio.create_serial_connection(
-  File "/usr/local/lib/python3.9/site-packages/serial_asyncio/__init__.py", line 445, in create_serial_connection
-    serial_instance = serial.serial_for_url(*args, **kwargs)
-  File "/usr/local/lib/python3.9/site-packages/serial/__init__.py", line 90, in serial_for_url
-    instance.open()
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 325, in open
-    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
-serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
-2021-12-08 18:50:03 ERROR (MainThread) [zigpy.application] Couldn't start application
-2021-12-08 18:50:03 ERROR (MainThread) [homeassistant.components.zha.core.gateway] Couldn't start deCONZ = dresden elektronik deCONZ protocol: ConBee I/II, RaspBee I/II coordinator
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 322, in open
-    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
-FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/zha/core/gateway.py", line 152, in async_initialize
-    self.application_controller = await app_controller_cls.new(
-  File "/usr/local/lib/python3.9/site-packages/zigpy/application.py", line 69, in new
-    await app.startup(auto_form)
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/zigbee/application.py", line 66, in startup
-    await self._api.connect()
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/api.py", line 245, in connect
-    self._uart = await zigpy_deconz.uart.connect(self._config, self)
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/uart.py", line 142, in connect
-    _, protocol = await serial_asyncio.create_serial_connection(
-  File "/usr/local/lib/python3.9/site-packages/serial_asyncio/__init__.py", line 445, in create_serial_connection
-    serial_instance = serial.serial_for_url(*args, **kwargs)
-  File "/usr/local/lib/python3.9/site-packages/serial/__init__.py", line 90, in serial_for_url
-    instance.open()
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 325, in open
-    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
-serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
-2021-12-08 18:50:03 WARNING (MainThread) [homeassistant.config_entries] Config entry 'ConBee II, s/n: DE2434960 - dresden elektronik ingenieurtechnik GmbH' for zha integration not ready yet: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'; Retrying in background
-2021-12-08 18:50:08 ERROR (MainThread) [zigpy.application] Couldn't start application
-2021-12-08 18:50:08 ERROR (MainThread) [homeassistant.components.zha.core.gateway] Couldn't start deCONZ = dresden elektronik deCONZ protocol: ConBee I/II, RaspBee I/II coordinator
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 322, in open
-    self.fd = os.open(self.portstr, os.O_RDWR | os.O_NOCTTY | os.O_NONBLOCK)
-FileNotFoundError: [Errno 2] No such file or directory: '/dev/ttyACM0'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/src/homeassistant/homeassistant/components/zha/core/gateway.py", line 152, in async_initialize
-    self.application_controller = await app_controller_cls.new(
-  File "/usr/local/lib/python3.9/site-packages/zigpy/application.py", line 69, in new
-    await app.startup(auto_form)
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/zigbee/application.py", line 66, in startup
-    await self._api.connect()
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/api.py", line 245, in connect
-    self._uart = await zigpy_deconz.uart.connect(self._config, self)
-  File "/usr/local/lib/python3.9/site-packages/zigpy_deconz/uart.py", line 142, in connect
-    _, protocol = await serial_asyncio.create_serial_connection(
-  File "/usr/local/lib/python3.9/site-packages/serial_asyncio/__init__.py", line 445, in create_serial_connection
-    serial_instance = serial.serial_for_url(*args, **kwargs)
-  File "/usr/local/lib/python3.9/site-packages/serial/__init__.py", line 90, in serial_for_url
-    instance.open()
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 325, in open
-    raise SerialException(msg.errno, "could not open port {}: {}".format(self._port, msg))
-serial.serialutil.SerialException: [Errno 2] could not open port /dev/ttyACM0: [Errno 2] No such file or directory: '/dev/ttyACM0'
-2021-12-08 18:50:11 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
-2021-12-08 18:50:11 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Invalid trigger configuration. Got OrderedDict([('media_extractor', {}), ('stream', {'ll_hls': False, 'segment_duration': 6.0, 'part_duration': 1.0}), ('default_config', {}), ('updater', {}), ('system_health', {}), ('conversation', {}), ('history', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], 'entities': []}, 'use_include_order': False}), ('logbook', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], .... (See /config/configuration.yaml, line 42). 
-2021-12-08 18:50:11 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Invalid trigger configuration. Got OrderedDict([('media_extractor', {}), ('stream', {'ll_hls': False, 'segment_duration': 6.0, 'part_duration': 1.0}), ('default_config', {}), ('updater', {}), ('system_health', {}), ('conversation', {}), ('history', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], 'entities': []}, 'use_include_order': False}), ('logbook', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], .... (See /config/configuration.yaml, line 42). 
-2021-12-08 18:50:11 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Invalid trigger configuration. Got OrderedDict([('media_extractor', {}), ('stream', {'ll_hls': False, 'segment_duration': 6.0, 'part_duration': 1.0}), ('default_config', {}), ('updater', {}), ('system_health', {}), ('conversation', {}), ('history', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], 'entities': []}, 'use_include_order': False}), ('logbook', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], .... (See /config/configuration.yaml, line 42). 
-2021-12-08 18:50:11 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Invalid trigger configuration. Got OrderedDict([('media_extractor', {}), ('stream', {'ll_hls': False, 'segment_duration': 6.0, 'part_duration': 1.0}), ('default_config', {}), ('updater', {}), ('system_health', {}), ('conversation', {}), ('history', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], 'entities': []}, 'use_include_order': False}), ('logbook', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], .... (See /config/configuration.yaml, line 42). 
-2021-12-08 18:50:11 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Invalid trigger configuration. Got OrderedDict([('media_extractor', {}), ('stream', {'ll_hls': False, 'segment_duration': 6.0, 'part_duration': 1.0}), ('default_config', {}), ('updater', {}), ('system_health', {}), ('conversation', {}), ('history', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], 'entities': []}, 'use_include_order': False}), ('logbook', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], .... (See /config/configuration.yaml, line 42). 
-2021-12-08 18:50:11 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Invalid trigger configuration. Got OrderedDict([('media_extractor', {}), ('stream', {'ll_hls': False, 'segment_duration': 6.0, 'part_duration': 1.0}), ('default_config', {}), ('updater', {}), ('system_health', {}), ('conversation', {}), ('history', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], 'entities': []}, 'use_include_order': False}), ('logbook', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], .... (See /config/configuration.yaml, line 42). 
-2021-12-08 18:50:11 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Invalid trigger configuration. Got OrderedDict([('media_extractor', {}), ('stream', {'ll_hls': False, 'segment_duration': 6.0, 'part_duration': 1.0}), ('default_config', {}), ('updater', {}), ('system_health', {}), ('conversation', {}), ('history', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], 'entities': []}, 'use_include_order': False}), ('logbook', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], .... (See /config/configuration.yaml, line 42). 
-2021-12-08 18:50:11 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+2021-12-10 19:58:22 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-10 19:58:22 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-10 19:58:22 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-10 19:58:22 WARNING (SyncWorker_4) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-10 19:58:22 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-10 19:58:22 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-10 19:58:23 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
+2021-12-10 19:58:34 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 345e86efc7fca1d1c9fb4faf5a8f7557b0fd4b3742056a69696de7acd34923d4 from 192.168.1.56
+2021-12-10 19:58:35 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook 345e86efc7fca1d1c9fb4faf5a8f7557b0fd4b3742056a69696de7acd34923d4 from 192.168.1.56
+2021-12-10 19:58:36 ERROR (MainThread) [snitun.client.client_peer] Challenge/Response error with SniTun server (0 bytes read on a total of 32 expected bytes)
+2021-12-10 19:58:36 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2021-12-10 19:58:39 ERROR (MainThread) [homeassistant.components.automation.buttons_simon_lamp_toggle] Unknown error while setting up trigger (empty result) Buttons - Simon Lamp Toggle
+2021-12-10 19:58:39 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Random RGB
+2021-12-10 19:58:39 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Lamp
+2021-12-10 19:58:39 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Lamp
+2021-12-10 19:58:39 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Random RGB
+2021-12-10 19:58:39 ERROR (MainThread) [homeassistant.components.automation.button_toggle_master_motion_lights] Unknown error while setting up trigger (empty result) Button - Toggle Master Motion Lights
+2021-12-10 19:58:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.9 @ 192.168.1.9: Error connecting to ('192.168.1.9', 6053): [Errno 113] Connect call failed ('192.168.1.9', 6053)
+2021-12-10 19:58:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.70 @ 192.168.1.70: Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2021-12-10 19:58:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.133 @ 192.168.1.133: Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
+2021-12-10 19:58:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-12-10 19:58:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.111 @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-12-10 19:58:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.17 @ 192.168.1.17: Error connecting to ('192.168.1.17', 6053): [Errno 113] Connect call failed ('192.168.1.17', 6053)
+2021-12-10 19:58:50 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x468A:1:0x0006]: async_initialize: all attempts have failed: [DeliveryError('[0x468a:1:0x0006]: Message send failure'), DeliveryError('[0x468a:1:0x0006]: Message send failure'), DeliveryError('[0x468a:1:0x0006]: Message send failure'), DeliveryError('[0x468a:1:0x0006]: Message send failure')]
+2021-12-10 19:58:50 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x1497:11:0x0006]: async_initialize: all attempts have failed: [DeliveryError('[0x1497:11:0x0006]: Message send failure'), DeliveryError('[0x1497:11:0x0006]: Message send failure'), DeliveryError('[0x1497:11:0x0006]: Message send failure'), DeliveryError('[0x1497:11:0x0006]: Message send failure')]
+2021-12-10 19:58:51 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x1497:11:0x0008]: async_initialize: all attempts have failed: [DeliveryError('[0x1497:11:0x0008]: Message send failure'), DeliveryError('[0x1497:11:0x0008]: Message send failure'), DeliveryError('[0x1497:11:0x0008]: Message send failure'), DeliveryError('[0x1497:11:0x0008]: Message send failure')]
+2021-12-10 19:58:56 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0008]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure')]
+2021-12-10 19:58:57 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0006]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure')]
+2021-12-10 19:58:57 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0300]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure')]
+2021-12-10 19:58:58 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xCA33:11:0x0300]: async_initialize: all attempts have failed: [DeliveryError('[0xca33:11:0x0300]: Message send failure'), DeliveryError('[0xca33:11:0x0300]: Message send failure'), DeliveryError('[0xca33:11:0x0300]: Message send failure'), DeliveryError('[0xca33:11:0x0300]: Message send failure')]
+2021-12-10 19:58:58 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xCA33:11:0x0006]: async_initialize: all attempts have failed: [DeliveryError('[0xca33:11:0x0006]: Message send failure'), DeliveryError('[0xca33:11:0x0006]: Message send failure'), DeliveryError('[0xca33:11:0x0006]: Message send failure'), DeliveryError('[0xca33:11:0x0006]: Message send failure')]
+2021-12-10 19:58:58 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xCA33:11:0x0008]: async_initialize: all attempts have failed: [DeliveryError('[0xca33:11:0x0008]: Message send failure'), DeliveryError('[0xca33:11:0x0008]: Message send failure'), DeliveryError('[0xca33:11:0x0008]: Message send failure'), DeliveryError('[0xca33:11:0x0008]: Message send failure')]
+2021-12-10 20:20:32 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.15.70
+2021-12-10 20:26:55 ERROR (MainThread) [homeassistant.components.fronius.sensor] Failed to update: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=System.
+2021-12-10 20:49:43 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/site-packages/aioesphomeapi/client.py", line 167, in _on_stop
     await on_stop()
