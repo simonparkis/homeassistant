@@ -1,5 +1,6 @@
 {
     "version": 1,
+    "minor_version": 1,
     "key": "lovelace",
     "data": {
         "config": {
@@ -315,6 +316,9 @@
                                     "entity": "climate.master_bedroom",
                                     "name": "Climate Control",
                                     "icon": "mdi:thermometer"
+                                },
+                                {
+                                    "entity": "fan.master_bedroom"
                                 },
                                 {
                                     "entity": "binary_sensor.motion_master",
