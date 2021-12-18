@@ -784,3 +784,25 @@
     target:
       entity_id: cover.garage_door
   mode: single
+- id: '1639801985715'
+  alias: Auto Fan Master Bedroom
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.motion_master
+    to: 'on'
+  condition:
+  - condition: numeric_state
+    entity_id: sensor.temp_master
+    above: '25'
+  action:
+  - service: fan.turn_on
+    entity_id: fan.master_bedroom
+  - wait_for_trigger:
+    - platform: state
+      entity_id: binary_sensor.motion_master
+      to: 'off'
+      for: 02:00:00
+  - service: fan.turn_off
+    entity_id: fan.master_bedroom
+  mode: single

@@ -1,150 +1,37 @@
-2021-12-17 16:12:32 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-17 16:12:32 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-17 16:12:32 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-17 16:12:32 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-17 16:12:32 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-17 16:12:32 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-17 16:12:36 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
-2021-12-17 16:12:36 WARNING (Recorder) [homeassistant.components.recorder.util] The system could not validate that the sqlite3 database at //config/home-assistant_v2.db was shutdown cleanly
-2021-12-17 16:12:37 WARNING (Recorder) [homeassistant.components.recorder.util] Ended unfinished session (id=361 from 2021-12-17 05:12:05.761082)
-2021-12-17 16:12:50 WARNING (MainThread) [homeassistant.components.fronius.sensor] Loading Fronius via platform setup is deprecated. Please remove it from your yaml configuration
-2021-12-17 16:12:51 WARNING (MainThread) [homeassistant.config_entries] Config entry 'SolarNet Datalogger at 192.168.1.80' for fronius integration not ready yet: Connection to Fronius device failed at http://192.168.1.80/solar_api/GetAPIVersion.cgi.; Retrying in background
-2021-12-17 16:12:51 ERROR (MainThread) [snitun.client.client_peer] Challenge/Response error with SniTun server (0 bytes read on a total of 32 expected bytes)
-2021-12-17 16:12:51 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
-2021-12-17 16:12:53 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.rubbish (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
-2021-12-17 16:12:53 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.recycling (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
-2021-12-17 16:12:54 WARNING (MainThread) [homeassistant.helpers.entity] Entity calendar.garbage_collection (<class 'custom_components.garbage_collection.calendar.GarbageCollectionCalendar'>) implements device_state_attributes. Please report it to the custom component author.
-2021-12-17 16:12:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.70 @ 192.168.1.70: Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
-2021-12-17 16:12:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.7 @ 192.168.1.7: Error connecting to ('192.168.1.7', 6053): [Errno 113] Connect call failed ('192.168.1.7', 6053)
-2021-12-17 16:12:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.17 @ 192.168.1.17: Error connecting to ('192.168.1.17', 6053): [Errno 113] Connect call failed ('192.168.1.17', 6053)
-2021-12-17 16:12:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.111 @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
-2021-12-17 16:12:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.133 @ 192.168.1.133: Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
-2021-12-17 16:13:00 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0300]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure')]
-2021-12-17 16:13:01 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0008]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure')]
-2021-12-17 16:13:03 WARNING (MainThread) [homeassistant.components.konnected.panel] Exception trying to connect to panel: 
-2021-12-17 16:13:03 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Random RGB
-2021-12-17 16:13:03 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Lamp
-2021-12-17 16:13:03 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Lamp
-2021-12-17 16:13:03 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Random RGB
-2021-12-17 16:13:46 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0006]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure')]
-2021-12-17 16:14:18 WARNING (MainThread) [homeassistant.config_entries] Config entry 'SolarNet Datalogger at 192.168.1.80' for fronius integration not ready yet: Connection to Fronius device failed at http://192.168.1.80/solar_api/GetAPIVersion.cgi.; Retrying in background
-2021-12-17 16:15:29 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
-2021-12-17 16:15:29 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
-2021-12-17 16:16:33 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 16:18:29 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
-2021-12-17 16:18:29 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
-2021-12-17 16:19:18 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 16:21:31 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 16:28:42 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 16:29:13 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x2d'
-2021-12-17 16:37:32 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 16:44:29 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 16:47:32 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2021-12-17 16:48:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
-2021-12-17 16:49:12 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2021-12-17 16:55:26 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 16:57:12 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 16:58:58 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 17:09:00 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
-2021-12-17 17:09:00 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
-2021-12-17 17:12:07 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 17:15:18 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 17:23:12 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 17:40:52 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 17:46:46 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 17:54:06 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.16.248
-2021-12-17 18:01:17 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 18:08:02 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 18:23:07 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 18:32:48 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 18:58:50 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 18:59:32 ERROR (MainThread) [pyatv.dmap] A communication error happened
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/site-packages/pyatv/dmap/__init__.py", line 484, in _poller
-    playstatus = await self._atv.playstatus(use_revision=True, timeout=0)
-  File "/usr/local/lib/python3.9/site-packages/pyatv/dmap/__init__.py", line 200, in playstatus
-    resp = await self.daap.get(cmd_url, timeout=timeout)
-  File "/usr/local/lib/python3.9/site-packages/pyatv/dmap/daap.py", line 114, in get
-    return await self._do(_get_request, is_daap=daap_data)
-  File "/usr/local/lib/python3.9/site-packages/pyatv/dmap/daap.py", line 130, in _do
-    resp, status = await action()
-  File "/usr/local/lib/python3.9/site-packages/pyatv/support/http.py", line 203, in get_data
-    resp = await self._session.get(url, headers=headers, timeout=timeout)
-  File "/usr/local/lib/python3.9/site-packages/aiohttp/client.py", line 559, in _request
-    await resp.start(conn)
-  File "/usr/local/lib/python3.9/site-packages/aiohttp/client_reqrep.py", line 898, in start
-    message, payload = await protocol.read()  # type: ignore[union-attr]
-  File "/usr/local/lib/python3.9/site-packages/aiohttp/streams.py", line 616, in read
-    await self._waiter
-aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
-2021-12-17 18:59:32 WARNING (MainThread) [homeassistant.components.apple_tv] Connection lost to Apple TV "Apple TV"
-2021-12-17 19:00:46 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 19:06:17 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 19:09:41 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 19:10:37 WARNING (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
-2021-12-17 19:10:37 WARNING (DHCPWatcher) [scapy.runtime] Socket <scapy.arch.linux.L2ListenSocket object at 0x7fb2e5d523a0> failed with '[Errno 100] Network is down'. It was closed.
-2021-12-17 19:10:37 WARNING (MainThread) [zeroconf] Error with socket 21 (('192.168.1.110', 5353))): [Errno 101] Network unreachable
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/asyncio/selector_events.py", line 1056, in sendto
-    self._sock.sendto(data, addr)
-OSError: [Errno 101] Network unreachable
-2021-12-17 19:10:37 WARNING (MainThread) [zeroconf] Error with socket 22 (('fe80::e948:8906:95f6:43c', 5353, 0, 2))): [Errno 101] Network unreachable
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/asyncio/selector_events.py", line 1056, in sendto
-    self._sock.sendto(data, addr)
-OSError: [Errno 101] Network unreachable
-2021-12-17 19:10:39 WARNING (Thread-8) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
-2021-12-17 19:10:39 ERROR (Thread-8) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
-2021-12-17 19:10:40 WARNING (Thread-12) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
-2021-12-17 19:10:40 WARNING (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Heartbeat timeout, resetting connection
-2021-12-17 19:10:40 ERROR (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
-2021-12-17 19:10:42 WARNING (Thread-9) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
-2021-12-17 19:10:42 WARNING (Thread-7) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
-2021-12-17 19:11:08 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 19:11:38 ERROR (MainThread) [homeassistant] Error doing job: Fatal write error on serial transport
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 621, in write
-    n = os.write(self.fd, d)
-PermissionError: [Errno 1] Operation not permitted
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/lib/python3.9/site-packages/serial_asyncio/__init__.py", line 260, in _write_ready
-    n = self._serial.write(data)
-  File "/usr/local/lib/python3.9/site-packages/serial/serialposix.py", line 655, in write
-    raise SerialException('write failed: {}'.format(e))
-serial.serialutil.SerialException: write failed: [Errno 1] Operation not permitted
-2021-12-17 19:11:38 ERROR (MainThread) [zigpy_deconz.uart] Lost serial connection: write failed: [Errno 1] Operation not permitted
-2021-12-17 19:11:38 WARNING (MainThread) [zigpy_deconz.api] Serial '/dev/ttyACM0' connection lost unexpectedly: write failed: [Errno 1] Operation not permitted
-2021-12-17 19:11:40 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_request' command with seq id '0xa3'
-2021-12-17 19:13:09 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 19:13:12 WARNING (MainThread) [zigpy_deconz.zigbee.application] No watchdog response
-2021-12-17 19:14:58 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 19:17:36 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 19:18:36 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2021-12-17 19:19:17 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2021-12-17 19:20:43 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 19:27:53 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 19:30:35 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 19:37:57 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 19:45:17 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
-2021-12-17 19:45:17 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
-2021-12-17 19:46:17 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
-2021-12-17 19:46:17 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
-2021-12-17 19:46:23 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 20:14:31 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 20:27:29 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_inverter_1_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData.
-2021-12-17 20:34:28 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
-2021-12-17 20:36:28 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xcb'
-2021-12-17 20:38:01 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-12-17 19:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-12-17 19:30:00', however this template will fail to render in Home Assistant core 2022.1
-2021-12-17 20:38:01 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-12-17 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-12-17 23:00:00', however this template will fail to render in Home Assistant core 2022.1
-2021-12-17 20:40:17 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Invalid trigger configuration. Got OrderedDict([('media_extractor', {}), ('stream', {}), ('default_config', {}), ('updater', {}), ('system_health', {}), ('conversation', {}), ('history', {}), ('logbook', {}), ('map', {}), ('sun', {}), ('notify', {}), ('fan', [OrderedDict([('platform', 'xiaomi_miio_fan'), ('name', 'Master Bedroom'), ('host', '192.168.1.6'), ('token', 'a7609e9182116d65bb094c00297929ce'), ('model', 'zhimi.fan.za3')]), OrderedDict([('platform', 'template'), ('fans', OrderedDict([('sofia', OrderedDict([('friendly_n.... (See /config/configuration.yaml, line 42). 
-2021-12-17 20:40:17 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Invalid trigger configuration. Got OrderedDict([('media_extractor', {}), ('stream', {}), ('default_config', {}), ('updater', {}), ('system_health', {}), ('conversation', {}), ('history', {}), ('logbook', {}), ('map', {}), ('sun', {}), ('notify', {}), ('fan', [OrderedDict([('platform', 'xiaomi_miio_fan'), ('name', 'Master Bedroom'), ('host', '192.168.1.6'), ('token', 'a7609e9182116d65bb094c00297929ce'), ('model', 'zhimi.fan.za3')]), OrderedDict([('platform', 'template'), ('fans', OrderedDict([('sofia', OrderedDict([('friendly_n.... (See /config/configuration.yaml, line 42). 
-2021-12-17 20:40:17 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Invalid trigger configuration. Got OrderedDict([('media_extractor', {}), ('stream', {}), ('default_config', {}), ('updater', {}), ('system_health', {}), ('conversation', {}), ('history', {}), ('logbook', {}), ('map', {}), ('sun', {}), ('notify', {}), ('fan', [OrderedDict([('platform', 'xiaomi_miio_fan'), ('name', 'Master Bedroom'), ('host', '192.168.1.6'), ('token', 'a7609e9182116d65bb094c00297929ce'), ('model', 'zhimi.fan.za3')]), OrderedDict([('platform', 'template'), ('fans', OrderedDict([('sofia', OrderedDict([('friendly_n.... (See /config/configuration.yaml, line 42). 
-2021-12-17 20:40:17 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Invalid trigger configuration. Got OrderedDict([('media_extractor', {}), ('stream', {}), ('default_config', {}), ('updater', {}), ('system_health', {}), ('conversation', {}), ('history', {}), ('logbook', {}), ('map', {}), ('sun', {}), ('notify', {}), ('fan', [OrderedDict([('platform', 'xiaomi_miio_fan'), ('name', 'Master Bedroom'), ('host', '192.168.1.6'), ('token', 'a7609e9182116d65bb094c00297929ce'), ('model', 'zhimi.fan.za3')]), OrderedDict([('platform', 'template'), ('fans', OrderedDict([('sofia', OrderedDict([('friendly_n.... (See /config/configuration.yaml, line 42). 
-2021-12-17 20:40:17 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
-2021-12-17 20:40:17 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+2021-12-18 16:15:45 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-18 16:15:45 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-18 16:15:45 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-18 16:15:45 WARNING (SyncWorker_5) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-18 16:15:45 WARNING (SyncWorker_4) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-18 16:15:45 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-18 16:15:48 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
+2021-12-18 16:15:53 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook f07cad7aeba6255a7386c7c50cff05fb3bad1ddd7d440e8be358734410c60a44 from 192.168.1.56
+2021-12-18 16:15:53 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook f07cad7aeba6255a7386c7c50cff05fb3bad1ddd7d440e8be358734410c60a44 from 192.168.1.56
+2021-12-18 16:15:55 ERROR (MainThread) [homeassistant.components.mqtt] Failed to connect to MQTT server due to exception: [Errno 111] Connection refused
+2021-12-18 16:15:57 WARNING (MainThread) [homeassistant.components.fronius.sensor] Loading Fronius via platform setup is deprecated. Please remove it from your yaml configuration
+2021-12-18 16:15:58 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [139687912649344] Received invalid command: mobile_app/push_notification_channel
+2021-12-18 16:15:58 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.rubbish (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
+2021-12-18 16:15:58 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.recycling (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
+2021-12-18 16:15:58 ERROR (MainThread) [snitun.client.client_peer] Challenge/Response error with SniTun server (0 bytes read on a total of 32 expected bytes)
+2021-12-18 16:15:58 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2021-12-18 16:15:58 WARNING (MainThread) [homeassistant.helpers.entity] Entity calendar.garbage_collection (<class 'custom_components.garbage_collection.calendar.GarbageCollectionCalendar'>) implements device_state_attributes. Please report it to the custom component author.
+2021-12-18 16:16:01 WARNING (MainThread) [homeassistant.components.konnected.panel] Exception trying to connect to panel: Cannot connect to host 192.168.1.79:13880 ssl:default [Connect call failed ('192.168.1.79', 13880)]
+2021-12-18 16:16:01 WARNING (MainThread) [homeassistant.components.konnected.panel] Exception trying to connect to panel: Cannot connect to host 192.168.1.79:13880 ssl:default [Connect call failed ('192.168.1.79', 13880)]
+2021-12-18 16:16:01 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Random RGB
+2021-12-18 16:16:01 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Lamp
+2021-12-18 16:16:01 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Lamp
+2021-12-18 16:16:01 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Random RGB
+2021-12-18 16:16:01 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.70 @ 192.168.1.70: Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2021-12-18 16:16:01 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-12-18 16:16:01 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.133 @ 192.168.1.133: Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
+2021-12-18 16:16:01 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.111 @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-12-18 16:16:01 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.17 @ 192.168.1.17: Error connecting to ('192.168.1.17', 6053): [Errno 113] Connect call failed ('192.168.1.17', 6053)
+2021-12-18 16:16:01 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.8 @ 192.168.1.8: Error connecting to ('192.168.1.8', 6053): [Errno 113] Connect call failed ('192.168.1.8', 6053)
+2021-12-18 16:16:14 WARNING (MainThread) [homeassistant.components.konnected.panel] Exception trying to connect to panel: Cannot connect to host 192.168.1.79:13880 ssl:default [Connect call failed ('192.168.1.79', 13880)]
+2021-12-18 16:16:15 WARNING (MainThread) [homeassistant.components.konnected.panel] Exception trying to connect to panel: Cannot connect to host 192.168.1.79:13880 ssl:default [Connect call failed ('192.168.1.79', 13880)]
+2021-12-18 16:16:15 WARNING (MainThread) [homeassistant.components.konnected.panel] Exception trying to connect to panel: Cannot connect to host 192.168.1.79:13880 ssl:default [Connect call failed ('192.168.1.79', 13880)]
+2021-12-18 16:16:33 WARNING (MainThread) [homeassistant.helpers.entity] Entity fan.master_bedroom (<class 'custom_components.xiaomi_miio_fan.fan.XiaomiFan'>) implements device_state_attributes. Please report it to the custom component author.
+2021-12-18 16:16:45 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
 Traceback (most recent call last):
   File "/usr/local/lib/python3.9/site-packages/aioesphomeapi/client.py", line 170, in _on_stop
     await on_stop()
@@ -156,4 +43,4 @@ Traceback (most recent call last):
     _async_remove_indexed_listeners(
   File "/usr/src/homeassistant/homeassistant/helpers/event.py", line 317, in _async_remove_indexed_listeners
     callbacks[storage_key].remove(job)
-ValueError: list.remove(x): x not in list
+KeyError: 'binary_sensor.api_recovery'
