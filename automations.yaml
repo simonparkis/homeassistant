@@ -805,4 +805,4 @@
       for: 02:00:00
   - service: fan.turn_off
     entity_id: fan.master_bedroom
-  mode: single
+  mode: restart
