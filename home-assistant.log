@@ -1,437 +1,133 @@
-2021-12-28 16:08:18 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-28 16:08:18 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-28 16:08:18 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-28 16:08:18 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-28 16:08:18 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-28 16:08:18 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2021-12-28 16:08:19 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
-2021-12-28 16:08:30 WARNING (MainThread) [homeassistant.components.fronius.sensor] Loading Fronius via platform setup is deprecated. Please remove it from your yaml configuration
-2021-12-28 16:08:31 ERROR (MainThread) [snitun.client.client_peer] Challenge/Response error with SniTun server (0 bytes read on a total of 32 expected bytes)
-2021-12-28 16:08:31 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
-2021-12-28 16:08:31 WARNING (MainThread) [homeassistant.helpers.entity] Entity fan.master_bedroom (<class 'custom_components.xiaomi_miio_fan.fan.XiaomiFan'>) implements device_state_attributes. Please report it to the custom component author.
-2021-12-28 16:08:32 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.rubbish (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
-2021-12-28 16:08:32 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.recycling (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
-2021-12-28 16:08:32 WARNING (MainThread) [homeassistant.helpers.entity] Entity calendar.garbage_collection (<class 'custom_components.garbage_collection.calendar.GarbageCollectionCalendar'>) implements device_state_attributes. Please report it to the custom component author.
-2021-12-28 16:08:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.133 @ 192.168.1.133: Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
-2021-12-28 16:08:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
-2021-12-28 16:08:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.111 @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
-2021-12-28 16:08:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.14 @ 192.168.1.14: Error connecting to ('192.168.1.14', 6053): [Errno 113] Connect call failed ('192.168.1.14', 6053)
-2021-12-28 16:08:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.17 @ 192.168.1.17: Error connecting to ('192.168.1.17', 6053): [Errno 113] Connect call failed ('192.168.1.17', 6053)
-2021-12-28 16:08:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.9 @ 192.168.1.9: Error connecting to ('192.168.1.9', 6053): [Errno 113] Connect call failed ('192.168.1.9', 6053)
-2021-12-28 16:08:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.70 @ 192.168.1.70: Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
-2021-12-28 16:08:37 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Random RGB
-2021-12-28 16:08:37 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Lamp
-2021-12-28 16:08:37 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Lamp
-2021-12-28 16:08:37 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Random RGB
-2021-12-28 16:08:44 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0008]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure')]
-2021-12-28 16:08:44 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0300]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure')]
-2021-12-28 16:08:45 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0006]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure')]
-2021-12-28 16:10:12 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 16:40:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 16:55:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 16:58:59 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2021-12-28 17:02:16 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2021-12-28 17:11:37 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
-2021-12-28 17:11:37 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
-2021-12-28 17:14:54 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2021-12-28 17:15:31 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2021-12-28 17:18:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 17:25:54 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2021-12-28 17:28:38 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.44.186
-2021-12-28 17:41:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 17:56:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 18:12:12 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 18:44:43 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-28 18:44:59 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-28 18:45:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-28 18:57:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 19:43:12 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 19:56:09 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 192.168.1.1
-2021-12-28 19:57:00 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2021-12-28 20:00:25 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2021-12-28 20:03:53 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2021-12-28 20:04:13 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2021-12-28 20:05:22 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2021-12-28 20:13:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 20:18:43 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xdb'
-2021-12-28 20:24:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.8 @ 192.168.1.8: Error connecting to ('192.168.1.8', 6053): [Errno 113] Connect call failed ('192.168.1.8', 6053)
-2021-12-28 20:28:16 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2021-12-28 20:32:30 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-12-28 19:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-12-28 19:30:00', however this template will fail to render in Home Assistant core 2022.1
-2021-12-28 20:32:30 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-12-28 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-12-28 23:00:00', however this template will fail to render in Home Assistant core 2022.1
-2021-12-28 20:36:39 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_inverter_1_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData.
-2021-12-28 20:44:12 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 20:47:32 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.8 @ 192.168.1.8: Timeout while connecting to ('192.168.1.8', 6053)
-2021-12-28 21:08:37 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_logger_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetLoggerInfo.cgi.
-2021-12-28 21:14:42 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 21:25:38 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
-2021-12-28 21:25:38 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
-2021-12-28 22:00:12 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 22:02:07 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-12-28 19:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-12-28 19:30:00', however this template will fail to render in Home Assistant core 2022.1
-2021-12-28 22:02:07 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-12-28 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-12-28 23:00:00', however this template will fail to render in Home Assistant core 2022.1
-2021-12-28 22:12:20 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-12-28 19:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-12-28 19:30:00', however this template will fail to render in Home Assistant core 2022.1
-2021-12-28 22:12:20 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-12-28 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-12-28 23:00:00', however this template will fail to render in Home Assistant core 2022.1
-2021-12-28 22:30:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 22:38:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 22:52:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-28 22:53:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 22:59:27 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.9 @ 192.168.1.9: Timeout while connecting to ('192.168.1.9', 6053)
-2021-12-28 23:01:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 23:13:39 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-28 23:25:20 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-28 23:27:58 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-28 23:28:07 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-28 23:30:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-28 23:30:48 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-28 23:31:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-28 23:31:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-28 23:38:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-28 23:44:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-28 23:44:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-28 23:44:45 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-28 23:45:05 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-28 23:45:15 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-28 23:45:34 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-28 23:45:48 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-28 23:46:07 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-28 23:46:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-28 23:46:42 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-28 23:57:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-28 23:57:37 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-28 23:57:48 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-28 23:58:05 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-28 23:58:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-28 23:58:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-28 23:58:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Error while reading data: 0 bytes read on a total of 1 expected bytes
-2021-12-28 23:59:09 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-28 23:59:31 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-28 23:59:40 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:00:00 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:00:13 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:00:37 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:00:46 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:01:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:01:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:01:40 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:02:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-29 00:02:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:03:45 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:04:08 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 00:04:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:04:33 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:05:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
-2021-12-29 00:05:38 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:05:55 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:06:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:06:28 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:06:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:07:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:07:22 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:07:44 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:08:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:08:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:08:37 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:08:59 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:09:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:09:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-29 00:09:44 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:10:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:10:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:11:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 00:11:20 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:11:39 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:11:49 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:12:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:12:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:12:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:13:13 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:13:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:14:04 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:14:26 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:14:37 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:15:44 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:16:03 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:16:21 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:16:34 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:16:49 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:17:22 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:17:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:18:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:18:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:19:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:19:40 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 00:19:51 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:20:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:20:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:20:43 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:21:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:21:42 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:22:01 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 00:22:16 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:22:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:23:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:23:38 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:24:01 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:24:41 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
-2021-12-29 00:25:07 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:25:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-29 00:25:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:25:49 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:26:09 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:26:26 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:26:47 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:26:59 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:27:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:27:35 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:28:07 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:28:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:28:35 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:28:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:29:07 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:29:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
-2021-12-29 00:30:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:30:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:31:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:31:49 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:32:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:32:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-29 00:34:30 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:34:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 00:35:09 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:35:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:35:40 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:35:59 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:36:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:37:21 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:37:37 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:37:52 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:38:16 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:38:42 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:39:05 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:39:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:39:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:39:46 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:40:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:40:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:40:41 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:41:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:41:33 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 00:41:55 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:42:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:42:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:42:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:43:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:43:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:43:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:43:44 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:44:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
-2021-12-29 00:44:40 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:45:03 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:45:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:45:51 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:46:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:46:31 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:47:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:47:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:47:50 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:48:08 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:48:24 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:49:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
-2021-12-29 00:49:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:49:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:49:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:50:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:51:30 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:51:52 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:52:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:52:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:52:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:53:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:54:03 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:54:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:54:45 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:55:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:55:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:55:45 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:56:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:56:47 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:57:07 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:57:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:57:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:57:47 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 00:58:03 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 00:58:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:58:32 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 00:59:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:00:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:00:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:00:42 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:00:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:01:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:01:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:01:44 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:02:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:02:41 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:03:07 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:03:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-29 01:03:35 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:03:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:04:04 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:04:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:04:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:05:10 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:05:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:05:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:06:09 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
-2021-12-29 01:06:36 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:06:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:07:20 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:07:52 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:08:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:08:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:09:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:09:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:09:33 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:09:42 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:10:06 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:10:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:10:45 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:11:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:11:17 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:11:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
-2021-12-29 01:13:59 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:14:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:16:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:17:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:17:41 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:17:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:18:04 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:18:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:18:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:19:06 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:19:16 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:19:39 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:19:58 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:20:10 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:20:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:20:58 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:21:21 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:21:32 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:21:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 01:22:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:23:16 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:23:52 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:24:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 01:24:38 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:24:57 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:25:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:25:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:25:47 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:26:13 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:26:34 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:27:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:27:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:27:33 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:27:49 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:28:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:28:28 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:28:43 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:29:16 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
-2021-12-29 01:29:34 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:30:05 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:30:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 01:30:36 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:30:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:32:03 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:32:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:32:35 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:32:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:48:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-29 01:52:17 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:52:34 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:52:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 01:53:16 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:53:42 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:54:01 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:54:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:54:32 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 01:55:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:55:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Error while reading data: 0 bytes read on a total of 1 expected bytes
-2021-12-29 01:55:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 01:55:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:56:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 01:56:45 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 01:57:02 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 02:02:45 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 02:03:06 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 02:03:52 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:04:09 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 02:05:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:05:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
-2021-12-29 02:06:46 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:07:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 02:07:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 02:07:40 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 02:09:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:09:31 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 02:10:01 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 02:10:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 02:10:39 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 02:11:10 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:11:33 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 02:11:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-29 02:11:51 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:12:08 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 02:12:35 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:13:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:13:28 WARNING (Thread-7) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
-2021-12-29 02:13:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 02:13:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 02:13:58 ERROR (Thread-7) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
-2021-12-29 02:16:51 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:17:15 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 02:19:45 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:20:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 02:20:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:20:47 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:21:15 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 02:22:58 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:23:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:23:39 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 02:25:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 02:26:11 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 02:27:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:27:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 02:27:53 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:28:12 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 02:28:32 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 02:29:24 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:29:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
-2021-12-29 02:30:39 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
-2021-12-29 02:30:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
-2021-12-29 02:31:06 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 02:31:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 02:31:40 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 02:31:53 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
-2021-12-29 02:42:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-29 03:12:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-29 03:14:12 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
-2021-12-29 03:14:12 WARNING (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
-2021-12-29 03:14:38 WARNING (Thread-10) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
-2021-12-29 03:14:46 ERROR (Thread-10) [pychromecast.socket_client] [Front Room([::ffff:c0a8:129]):8009] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 8009)), retrying in 5.0s
-2021-12-29 03:15:07 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Error reading from socket.
-2021-12-29 03:15:07 WARNING (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Error communicating with socket, resetting connection
-2021-12-29 03:15:07 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Failed to connect to service ServiceInfo(type='mdns', data='Google-Cast-Group-7314C21A2F4E485588E5588AB3EDA6D1-1._googlecast._tcp.local.'), retrying in 5.0s
-2021-12-29 03:20:13 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
-2021-12-29 03:20:13 WARNING (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
-2021-12-29 03:20:21 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts([::ffff:c0a8:129]):32201] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 32201)), retrying in 5.0s
-2021-12-29 03:35:16 WARNING (Thread-8) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
-2021-12-29 03:35:23 ERROR (Thread-8) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
-2021-12-29 03:35:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-29 03:43:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-29 04:13:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-29 04:44:13 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2021-12-29 04:46:48 WARNING (Thread-9) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
-2021-12-29 04:46:55 ERROR (Thread-9) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
-2021-12-29 04:48:48 WARNING (Thread-12) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
-2021-12-29 04:49:04 ERROR (Thread-12) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 8009)), retrying in 5.0s
-2021-12-29 04:51:43 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 18:13:57 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-29 18:13:57 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-29 18:13:57 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-29 18:13:57 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-29 18:13:57 WARNING (SyncWorker_4) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-29 18:13:57 WARNING (SyncWorker_5) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2021-12-29 18:13:58 WARNING (MainThread) [homeassistant.components.recorder] The 'purge_interval' option near /config/configuration.yaml:79 is deprecated, please remove it from your configuration
+2021-12-29 18:14:09 WARNING (MainThread) [homeassistant.components.fronius.sensor] Loading Fronius via platform setup is deprecated. Please remove it from your yaml configuration
+2021-12-29 18:14:09 WARNING (MainThread) [homeassistant.helpers.entity] Entity fan.master_bedroom (<class 'custom_components.xiaomi_miio_fan.fan.XiaomiFan'>) implements device_state_attributes. Please report it to the custom component author.
+2021-12-29 18:14:09 ERROR (MainThread) [snitun.client.client_peer] Challenge/Response error with SniTun server (0 bytes read on a total of 32 expected bytes)
+2021-12-29 18:14:09 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2021-12-29 18:14:10 ERROR (MainThread) [homeassistant.components.websocket_api.http.connection] [139763654515200] Received invalid command: mobile_app/push_notification_channel
+2021-12-29 18:14:10 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.rubbish (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
+2021-12-29 18:14:10 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.recycling (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
+2021-12-29 18:14:10 WARNING (MainThread) [homeassistant.components.konnected.panel] Exception trying to connect to panel: Cannot connect to host 192.168.1.79:13880 ssl:default [Connect call failed ('192.168.1.79', 13880)]
+2021-12-29 18:14:10 WARNING (MainThread) [homeassistant.helpers.entity] Entity calendar.garbage_collection (<class 'custom_components.garbage_collection.calendar.GarbageCollectionCalendar'>) implements device_state_attributes. Please report it to the custom component author.
+2021-12-29 18:14:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.9 @ 192.168.1.9: Error connecting to ('192.168.1.9', 6053): [Errno 113] Connect call failed ('192.168.1.9', 6053)
+2021-12-29 18:14:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.8 @ 192.168.1.8: Error connecting to ('192.168.1.8', 6053): [Errno 113] Connect call failed ('192.168.1.8', 6053)
+2021-12-29 18:14:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.70 @ 192.168.1.70: Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2021-12-29 18:14:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2021-12-29 18:14:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.111 @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2021-12-29 18:14:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.14 @ 192.168.1.14: Error connecting to ('192.168.1.14', 6053): [Errno 113] Connect call failed ('192.168.1.14', 6053)
+2021-12-29 18:14:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.133 @ 192.168.1.133: Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
+2021-12-29 18:14:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.17 @ 192.168.1.17: Error connecting to ('192.168.1.17', 6053): [Errno 113] Connect call failed ('192.168.1.17', 6053)
+2021-12-29 18:14:15 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0008]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure')]
+2021-12-29 18:14:15 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x1497:11:0x0008]: async_initialize: all attempts have failed: [DeliveryError('[0x1497:11:0x0008]: Message send failure'), DeliveryError('[0x1497:11:0x0008]: Message send failure'), DeliveryError('[0x1497:11:0x0008]: Message send failure'), DeliveryError('[0x1497:11:0x0008]: Message send failure')]
+2021-12-29 18:14:15 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0300]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure')]
+2021-12-29 18:14:17 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Random RGB
+2021-12-29 18:14:17 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Lamp
+2021-12-29 18:14:17 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Lamp
+2021-12-29 18:14:17 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Random RGB
+2021-12-29 18:14:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
+2021-12-29 18:14:49 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-12-29 18:14:59 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0006]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure')]
+2021-12-29 18:14:59 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0x1497:11:0x0006]: async_initialize: all attempts have failed: [DeliveryError('[0x1497:11:0x0006]: Message send failure'), DeliveryError('[0x1497:11:0x0006]: Message send failure'), DeliveryError('[0x1497:11:0x0006]: Message send failure'), DeliveryError('[0x1497:11:0x0006]: Message send failure')]
+2021-12-29 18:15:12 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
+2021-12-29 18:18:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 18:20:28 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-12-29 18:20:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
+2021-12-29 18:21:26 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-12-29 18:21:57 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-12-29 18:22:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-12-29 18:22:36 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2021-12-29 18:22:59 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-12-29 18:23:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2021-12-29 18:23:51 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-12-29 18:24:35 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-12-29 18:24:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2021-12-29 18:25:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2021-12-29 18:25:38 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Hello timed out
+2021-12-29 18:26:05 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Connection not done for lamp-switch @ 192.168.1.86!
+2021-12-29 18:52:52 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-12-29 19:03:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 19:13:15 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2021-12-29 19:13:15 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2021-12-29 19:16:18 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2021-12-29 19:19:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 19:21:46 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Error reading from socket.
+2021-12-29 19:21:46 WARNING (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Error communicating with socket, resetting connection
+2021-12-29 19:21:46 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32201)), retrying in 5.0s
+2021-12-29 19:26:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 19:26:56 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-12-29 19:34:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 19:34:25 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-12-29 19:34:42 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-12-29 19:34:53 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-12-29 19:52:01 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-12-29 20:00:57 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x9f'
+2021-12-29 20:04:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 20:14:13 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_logger_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetLoggerInfo.cgi.
+2021-12-29 20:35:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 20:37:27 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_inverter_1_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData.
+2021-12-29 21:28:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 21:28:55 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xdb'
+2021-12-29 21:51:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 21:58:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 22:01:11 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.111 @ 192.168.1.111: Timeout while connecting to ('192.168.1.111', 6053)
+2021-12-29 22:14:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 22:19:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.9 @ 192.168.1.9: Timeout while connecting to ('192.168.1.9', 6053)
+2021-12-29 22:21:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 22:29:16 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xb8'
+2021-12-29 22:30:08 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-12-29 22:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-12-29 22:30:00', however this template will fail to render in Home Assistant core 2022.1
+2021-12-29 22:30:08 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2021-12-29 23:59:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2021-12-29 23:59:00', however this template will fail to render in Home Assistant core 2022.1
+2021-12-29 22:36:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 22:52:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 23:02:00 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x9c'
+2021-12-29 23:15:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 23:22:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-29 23:53:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-30 00:23:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-30 00:30:10 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x3f'
+2021-12-30 01:01:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-30 01:24:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-30 02:00:33 WARNING (Thread-8) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2021-12-30 02:00:40 ERROR (Thread-8) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2021-12-30 02:02:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-30 02:30:53 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x22'
+2021-12-30 02:32:08 WARNING (Thread-11) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2021-12-30 02:32:11 ERROR (Thread-11) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2021-12-30 02:32:26 WARNING (Thread-12) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
+2021-12-30 02:32:33 ERROR (Thread-12) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 8009)), retrying in 5.0s
+2021-12-30 02:32:39 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2021-12-30 02:32:39 WARNING (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2021-12-30 02:32:39 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 32201)), retrying in 5.0s
+2021-12-30 02:33:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-30 02:47:10 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 503, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 02:47:21 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 503, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 02:47:31 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 503, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 02:47:58 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 503, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 02:48:42 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 503, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 02:50:08 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 502, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 02:52:27 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 502, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 02:52:32 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 502, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 02:52:51 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 504, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 02:53:13 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 503, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 02:58:38 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 504, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 02:58:55 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 504, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 02:59:18 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 504, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 02:59:38 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 503, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 03:00:11 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 503, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 03:09:37 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2021-12-30 03:11:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-30 03:41:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-30 04:26:38 WARNING (Thread-10) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2021-12-30 04:26:57 ERROR (Thread-10) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
+2021-12-30 04:27:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2021-12-30 04:32:30 WARNING (Thread-9) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2021-12-30 04:32:45 ERROR (Thread-9) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2021-12-30 04:40:55 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 504, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 04:41:05 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 503, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 04:41:13 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 503, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 04:41:31 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: 503, message='Invalid response status', url=URL('wss://remotestate.nabucasa.com/v1')
+2021-12-30 04:50:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
