@@ -239,3 +239,632 @@
 2022-01-10 04:28:31 WARNING (Thread-8) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
 2022-01-10 04:28:47 ERROR (Thread-8) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 8009)), retrying in 5.0s
 2022-01-10 04:39:23 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 05:09:53 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 05:24:53 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 05:36:26 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x93'
+2022-01-10 05:40:23 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 05:55:23 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 06:25:53 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 06:36:42 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x8b'
+2022-01-10 06:48:54 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 06:56:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 07:05:46 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 07:06:28 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-01-10 07:09:44 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x02'
+2022-01-10 07:11:54 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 07:15:21 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-01-10 07:15:37 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-01-10 07:16:13 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-01-10 07:17:27 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 07:21:04 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-01-10 07:25:39 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-01-10 07:31:37 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-01-10 07:34:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 07:45:19 WARNING (MainThread) [homeassistant.components.automation.motion_light_walk_in_robe] Motion Light - Walk In Robe: Already running
+2022-01-10 07:47:38 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 07:55:41 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.73.141
+2022-01-10 08:05:50 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.73.141
+2022-01-10 08:12:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 08:13:20 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.73.141
+2022-01-10 08:21:30 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.73.141
+2022-01-10 08:35:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 09:13:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 09:37:40 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xcd'
+2022-01-10 09:43:32 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0006]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure')]
+2022-01-10 09:43:33 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0300]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure')]
+2022-01-10 09:43:33 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0008]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure')]
+2022-01-10 09:43:54 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 10:00:29 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 10:29:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 10:52:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 10:54:40 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-01-10 10:54:58 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-01-10 11:22:54 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 11:53:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 12:16:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 12:31:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 12:54:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 13:16:21 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:16:53 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:17:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 13:17:51 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:26:06 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:27:05 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:27:51 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:29:02 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:32:10 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:33:44 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:36:24 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:38:14 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:39:51 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:43:25 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:45:42 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:47:54 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 13:47:56 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:51:45 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 13:54:19 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:00:17 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:01:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.111 @ 192.168.1.111: Timeout while connecting to ('192.168.1.111', 6053)
+2022-01-10 14:02:54 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 14:04:45 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:08:51 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:14:56 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:18:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 14:18:43 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:22:58 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:32:52 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:33:24 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 14:33:45 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:35:32 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:37:54 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:39:51 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:41:26 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:43:16 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:45:17 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:48:11 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:50:32 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:53:03 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 14:56:07 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 15:00:10 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 15:06:12 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 15:08:55 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 15:14:07 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 15:18:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 15:21:20 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 15:26:04 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 15:31:09 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 15:35:10 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 15:40:15 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 15:47:12 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 15:49:25 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 15:52:49 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 15:59:12 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 16:05:54 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 16:11:19 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 16:16:53 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 16:24:21 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 16:27:25 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 16:29:50 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 16:36:24 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 16:42:28 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 16:49:13 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 16:55:46 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 16:57:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 17:03:17 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 17:11:10 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 17:18:33 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 17:20:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 17:25:18 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 17:28:25 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 17:33:13 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 17:40:05 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 17:47:31 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 17:51:25 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 17:55:16 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 18:03:48 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 18:06:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 18:15:51 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 18:17:10 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 18:18:43 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 18:21:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 18:23:56 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 18:28:05 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 18:30:12 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 18:36:07 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 18:37:50 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 18:42:46 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 18:46:36 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 18:49:52 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 18:52:25 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 18:52:59 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 18:55:59 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 19:00:02 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 19:02:52 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 19:06:59 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 19:10:51 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 19:15:04 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 19:21:29 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 19:22:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 19:25:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 19:25:47 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 19:26:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 19:29:07 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 19:29:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 19:30:16 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 19:31:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 19:32:07 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 19:33:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 19:35:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 19:35:32 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 19:36:12 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 19:37:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 19:38:39 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 19:39:03 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-01-10 19:39:54 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-01-10 19:39:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 19:40:20 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 19:41:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 19:42:32 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 19:44:02 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error while reading data: [Errno 104] Connection reset by peer
+2022-01-10 19:44:58 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 19:45:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 19:47:01 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 19:47:29 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 19:47:32 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-01-10 19:51:05 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-10 19:52:01 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 19:53:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 19:53:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 19:53:25 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 19:55:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 19:55:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 19:56:57 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-01-10 19:57:17 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-01-10 19:58:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 20:00:13 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-10 20:00:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 20:00:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 20:01:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-01-10 20:01:20 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-01-10 20:02:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:03:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:04:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:06:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 20:06:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 20:08:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:10:01 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:11:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2022-01-10 20:12:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:13:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-10 20:13:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:15:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:16:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 20:16:42 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 20:16:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 20:16:57 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 19:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 19:30:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 20:16:57 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 20:20:00 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:20:30 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-01-10 20:22:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 20:22:33 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 20:23:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:23:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 20:23:55 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 20:24:00 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 20:26:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 20:28:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:28:59 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 20:29:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:29:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 20:30:11 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:31:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 20:32:38 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_inverter_1_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData.
+2022-01-10 20:32:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:33:03 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 20:34:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-01-10 20:35:28 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 20:36:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 20:37:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 20:37:10 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 20:38:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 20:39:07 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 20:40:00 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2022-01-10 20:40:12 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-10 20:42:03 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-10 20:42:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 20:43:09 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 20:43:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2022-01-10 20:45:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 20:46:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 20:49:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 20:50:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 20:51:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2022-01-10 20:52:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 20:52:57 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 20:54:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:57:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 20:58:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2022-01-10 20:59:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 21:01:05 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-10 21:01:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:01:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 21:03:06 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-01-10 21:03:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-10 21:03:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:04:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:04:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:05:33 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2022-01-10 21:06:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:07:06 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Error while reading data: [Errno 104] Connection reset by peer
+2022-01-10 21:08:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:11:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:11:40 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from iPhone-XR.lan (192.168.1.56). (Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Home Assistant/2021.12.1 (io.robbie.HomeAssistant; build:2021.327; iOS 15.1.0) Mobile/HomeAssistant, like Safari)
+2022-01-10 21:14:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 21:15:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 21:16:45 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 21:17:03 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 21:17:25 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 21:18:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:18:10 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_logger_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetLoggerInfo.cgi.
+2022-01-10 21:20:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2022-01-10 21:21:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2022-01-10 21:24:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 21:24:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:28:26 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:29:03 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 21:30:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 21:31:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 21:31:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:33:13 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 21:33:28 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 21:34:08 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 21:34:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:35:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-01-10 21:36:36 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 21:30:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 21:36:36 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 21:36:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:38:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 21:38:32 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 21:39:12 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 21:40:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-01-10 21:40:25 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 21:41:13 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 21:41:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 21:42:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:43:35 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 21:30:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 21:43:35 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 21:44:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-10 21:46:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-01-10 21:48:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:49:12 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 21:50:03 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:50:03 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 21:30:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 21:50:03 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 21:51:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-10 21:53:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:56:01 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 21:30:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 21:56:01 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 21:57:07 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 21:59:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2022-01-10 22:00:27 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 21:30:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 22:00:27 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 22:00:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 22:04:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 22:05:29 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 21:30:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 22:05:29 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 22:06:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 22:07:07 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-10 22:07:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-01-10 22:08:03 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 22:09:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 22:10:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 22:11:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 22:12:12 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-10 22:12:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 22:13:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 22:14:16 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 21:30:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 22:14:16 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 22:15:08 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 22:17:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 22:18:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 22:18:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 22:19:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 22:19:34 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-10 22:22:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 22:25:40 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 22:25:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 22:27:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 22:30:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 22:31:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 22:31:20 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-10 22:32:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 22:33:33 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-01-10 22:34:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 22:35:17 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 21:30:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 22:35:17 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 22:36:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 22:38:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 22:39:48 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 22:43:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 22:46:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 22:48:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 22:49:03 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-10 22:50:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 22:50:40 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 21:30:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 22:50:40 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 22:50:48 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 22:52:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 22:54:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 22:58:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 22:59:09 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 21:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 21:30:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 22:59:09 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-01-10 23:00:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-01-10 23:00:00', however this template will fail to render in Home Assistant core 2022.1
+2022-01-10 22:59:44 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-10 22:59:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.111 @ 192.168.1.111: Timeout while connecting to ('192.168.1.111', 6053)
+2022-01-10 23:00:25 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 23:00:26 ERROR (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2022-01-10 23:00:26 WARNING (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2022-01-10 23:00:27 WARNING (Thread-10) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2022-01-10 23:00:31 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-10 23:00:31 WARNING (Thread-12) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2022-01-10 23:00:42 WARNING (Thread-11) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2022-01-10 23:00:43 WARNING (Thread-8) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
+2022-01-10 23:00:43 WARNING (Thread-7) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2022-01-10 23:00:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:00:46 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Error opening stream rtsp://192.168.1.150:8554/unicast
+2022-01-10 23:00:51 ERROR (Thread-7) [pychromecast.socket_client] [Kitchen([::ffff:c0a8:128]):8009] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:128]', 8009)), retrying in 5.0s
+2022-01-10 23:00:53 ERROR (Thread-8) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 8009)), retrying in 5.0s
+2022-01-10 23:00:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.9 @ 192.168.1.9: Error connecting to ('192.168.1.9', 6053): [Errno 113] Connect call failed ('192.168.1.9', 6053)
+2022-01-10 23:00:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.16 @ 192.168.1.16: Error connecting to ('192.168.1.16', 6053): [Errno 113] Connect call failed ('192.168.1.16', 6053)
+2022-01-10 23:00:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.8 @ 192.168.1.8: Error connecting to ('192.168.1.8', 6053): [Errno 113] Connect call failed ('192.168.1.8', 6053)
+2022-01-10 23:00:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.126 @ 192.168.1.126: Error connecting to ('192.168.1.126', 6053): [Errno 113] Connect call failed ('192.168.1.126', 6053)
+2022-01-10 23:00:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.7 @ 192.168.1.7: Error connecting to ('192.168.1.7', 6053): [Errno 113] Connect call failed ('192.168.1.7', 6053)
+2022-01-10 23:00:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.86 @ 192.168.1.86: Error connecting to ('192.168.1.86', 6053): [Errno 113] Connect call failed ('192.168.1.86', 6053)
+2022-01-10 23:00:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.87 @ 192.168.1.87: Error connecting to ('192.168.1.87', 6053): [Errno 113] Connect call failed ('192.168.1.87', 6053)
+2022-01-10 23:00:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.maria is taking over 10 seconds
+2022-01-10 23:00:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.john is taking over 10 seconds
+2022-01-10 23:00:56 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with 
+2022-01-10 23:00:56 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with 
+2022-01-10 23:00:57 ERROR (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 32201)), retrying in 5.0s
+2022-01-10 23:00:57 WARNING (MainThread) [zeroconf] Error with socket 20 (('192.168.1.110', 5353))): [Errno 101] Network unreachable
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/asyncio/selector_events.py", line 1056, in sendto
+    self._sock.sendto(data, addr)
+OSError: [Errno 101] Network unreachable
+2022-01-10 23:00:57 ERROR (Thread-10) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2022-01-10 23:01:02 ERROR (Thread-12) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
+2022-01-10 23:01:03 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.55 @ 192.168.1.55: Timeout while connecting to ('192.168.1.55', 6053)
+2022-01-10 23:01:12 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Error opening stream rtsp://192.168.1.150:8554/unicast
+2022-01-10 23:01:12 ERROR (Thread-11) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2022-01-10 23:01:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 23:01:47 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Error opening stream rtsp://192.168.1.150:8554/unicast
+2022-01-10 23:02:32 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Error opening stream rtsp://192.168.1.150:8554/unicast
+2022-01-10 23:02:39 WARNING (Thread-3) [homeassistant.components.mqtt] Disconnected from MQTT server 192.168.1.110:1883 (16)
+2022-01-10 23:02:39 WARNING (Thread-3) [homeassistant.components.mqtt] Disconnected from MQTT server 192.168.1.110:1883 (16)
+2022-01-10 23:02:40 ERROR (MainThread) [snitun.multiplexer.core] Ping fails, no response from peer
+2022-01-10 23:03:27 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Error opening stream rtsp://192.168.1.150:8554/unicast
+2022-01-10 23:03:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 23:04:32 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Error opening stream rtsp://192.168.1.150:8554/unicast
+2022-01-10 23:04:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:04:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 23:05:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 23:07:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2022-01-10 23:08:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:09:03 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 23:11:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 23:12:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:12:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 23:15:39 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 23:16:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:18:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 23:22:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:23:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 23:25:02 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 23:29:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 23:32:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:34:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:36:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:38:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 23:39:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:40:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:41:55 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-10 23:42:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:43:07 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 23:49:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:52:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:53:09 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-10 23:54:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:56:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-10 23:56:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 00:00:06 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 00:02:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 00:04:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 00:07:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2022-01-11 00:07:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-11 00:11:09 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 00:12:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-11 00:12:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 00:14:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 00:14:41 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 00:17:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 00:20:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 00:21:09 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 00:24:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 00:24:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 00:27:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-11 00:28:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 00:29:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-11 00:31:42 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 00:34:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 00:35:08 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 00:38:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 00:41:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-11 00:42:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 00:45:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 00:47:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 00:49:20 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-11 00:49:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 00:50:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 00:51:38 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 00:52:11 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2022-01-11 00:54:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2022-01-11 00:57:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-11 00:59:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 00:59:50 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 01:02:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 01:03:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 01:07:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-11 01:08:09 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 01:10:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 01:12:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 01:14:01 ERROR (stream_worker) [homeassistant.components.stream] Error from stream worker: Stream ended; no additional packets
+2022-01-11 01:14:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 01:16:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 01:18:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 01:20:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 01:21:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 01:22:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 01:26:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 01:28:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 01:28:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-11 01:32:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 01:35:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 01:36:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 01:37:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 01:38:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 01:39:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 01:43:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-11 01:46:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 01:48:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 01:50:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 01:53:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 01:56:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 02:02:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 02:04:09 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-11 02:04:27 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 02:07:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-11 02:08:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 02:11:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 02:11:50 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 02:12:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 02:13:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-11 02:15:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 02:19:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 02:20:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 02:22:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 02:29:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 02:32:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 02:33:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 02:34:34 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-11 02:35:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 02:36:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 02:37:09 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 02:38:09 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-11 02:40:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-11 02:40:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 02:42:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 02:43:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 02:44:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 02:44:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-11 02:46:09 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-11 02:46:44 WARNING (Thread-7) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2022-01-11 02:46:52 ERROR (Thread-7) [pychromecast.socket_client] [Kitchen([::ffff:c0a8:128]):8009] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:128]', 8009)), retrying in 5.0s
+2022-01-11 02:47:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Hello timed out
+2022-01-11 02:48:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 02:49:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 02:50:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 02:51:50 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 02:54:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 02:59:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-11 03:00:34 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-11 03:01:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 03:02:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 03:04:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 03:05:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 03:07:14 WARNING (Thread-10) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2022-01-11 03:07:29 ERROR (Thread-10) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2022-01-11 03:09:27 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 03:13:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 03:14:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-11 03:16:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 03:16:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 03:18:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 03:19:51 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-11 03:20:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 03:22:01 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 03:24:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 03:26:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 03:27:40 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 03:28:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-11 03:28:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-11 03:29:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-11 03:30:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 03:32:09 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-11 03:33:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 03:34:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 03:37:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 03:38:33 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 03:43:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 03:44:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 03:44:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-11 03:45:50 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 03:46:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 03:48:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 03:49:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 03:49:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 03:50:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 03:53:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 03:55:09 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 03:59:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:00:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-11 04:03:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:05:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:06:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:07:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:10:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:12:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:13:50 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:14:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:16:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:18:27 WARNING (Thread-11) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2022-01-11 04:18:34 ERROR (Thread-11) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2022-01-11 04:18:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:20:37 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:22:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:23:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-11 04:24:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:26:23 WARNING (Thread-8) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
+2022-01-11 04:26:31 ERROR (Thread-8) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 8009)), retrying in 5.0s
+2022-01-11 04:27:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-11 04:28:33 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-11 04:29:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:30:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:30:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:34:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:35:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-01-11 04:36:09 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:38:00 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:40:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:42:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:44:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:45:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-01-11 04:45:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-01-11 04:45:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:47:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:48:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:48:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:49:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:49:50 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:52:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:53:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:54:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:56:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-01-11 04:57:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-01-11 04:57:36 ERROR (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2022-01-11 04:57:36 WARNING (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2022-01-11 04:57:36 ERROR (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 32201)), retrying in 5.0s
+2022-01-11 04:58:01 WARNING (Thread-12) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2022-01-11 04:58:16 ERROR (Thread-12) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
+2022-01-11 04:58:21 ERROR (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Error reading from socket.
+2022-01-11 04:58:21 WARNING (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Error communicating with socket, resetting connection
+2022-01-11 04:58:24 ERROR (Thread-9) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32201)), retrying in 5.0s
+2022-01-11 04:58:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 192.168.1.99 @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
