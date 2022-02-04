@@ -386,3 +386,592 @@
 2022-02-04 04:53:16 WARNING (Thread-12) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
 2022-02-04 04:53:20 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
 2022-02-04 04:53:20 ERROR (Thread-12) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2022-02-04 05:00:58 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 05:02:46 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 05:08:56 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 05:16:55 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 05:24:50 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out) rtsp://192.168.1.150:8554/unicast
+2022-02-04 05:32:53 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-04 05:33:17 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 05:34:17 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x4d'
+2022-02-04 05:41:51 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 05:50:40 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 05:56:17 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 05:59:13 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-04 06:08:26 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 06:17:55 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 06:19:17 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 06:27:28 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 06:34:17 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 06:40:40 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 06:49:05 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 06:54:37 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 06:57:17 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 06:59:47 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 07:00:18 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 07:00:39 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 07:04:18 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 07:04:45 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 07:04:47 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 07:07:11 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 07:07:54 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 07:11:42 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 07:12:04 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 07:15:14 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 07:21:45 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 07:26:01 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 07:27:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 07:36:46 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 07:47:14 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 07:58:17 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 08:03:27 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 08:03:41 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-04 08:03:57 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.62.54
+2022-02-04 08:04:04 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-04 08:04:37 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-04 08:05:20 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-04 08:06:13 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-04 08:07:32 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 08:08:33 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.30.154
+2022-02-04 08:11:07 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 08:12:59 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 08:21:17 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 08:35:23 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x5a'
+2022-02-04 08:44:13 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_inverter_1_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData.
+2022-02-04 09:06:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 09:29:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 10:07:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 10:53:17 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 11:20:23 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 11:20:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 11:21:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 11:21:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 11:23:24 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 11:23:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 11:23:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 11:25:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 11:25:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 11:26:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 11:26:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 11:50:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 11:50:28 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 11:52:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 11:52:50 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 12:01:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 12:03:28 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 12:04:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 12:09:17 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 12:13:13 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 12:13:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 12:19:05 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 12:19:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 12:24:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 12:24:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 12:25:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 12:26:01 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 12:26:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 12:37:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 12:37:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 12:48:32 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 12:48:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Error connecting to ('192.168.1.86', 6053): [Errno 113] Connect call failed ('192.168.1.86', 6053)
+2022-02-04 12:50:23 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 12:50:50 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 12:54:48 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 12:54:52 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 12:55:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 12:56:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 12:56:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 13:00:04 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 13:00:27 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 13:01:20 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 13:01:39 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 13:02:58 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 13:03:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 13:03:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 13:04:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 13:05:40 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 13:06:16 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 13:06:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 13:07:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 13:07:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 13:13:49 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 13:14:08 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 13:16:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 13:16:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 13:21:43 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 13:22:02 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 13:23:09 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 13:23:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 13:25:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 13:39:05 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 13:41:06 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 13:41:26 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 13:42:27 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.62.34
+2022-02-04 13:42:35 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 13:42:46 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 13:43:00 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out) rtsp://192.168.1.150:8554/unicast
+2022-02-04 13:43:08 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 13:43:49 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 13:44:00 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 13:44:09 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 13:44:43 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 13:45:07 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 13:45:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 13:46:28 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 13:46:30 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 13:46:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 13:47:48 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 13:49:03 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out) rtsp://192.168.1.150:8554/unicast
+2022-02-04 13:50:43 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 13:52:59 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 13:55:17 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 13:55:48 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 13:58:23 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:00:54 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:01:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for bedroom-tv @ 192.168.1.111: Timeout while connecting to ('192.168.1.111', 6053)
+2022-02-04 14:02:40 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 14:03:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 14:07:20 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 14:07:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 14:08:52 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:11:21 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:12:15 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:13:16 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:15:53 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:17:11 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:17:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 14:17:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 14:19:13 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:21:01 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:22:58 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:26:02 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:26:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 14:28:16 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:29:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 14:29:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 14:30:30 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:32:53 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:36:45 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:41:58 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:42:36 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 14:43:16 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 14:43:42 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 14:44:28 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 14:45:05 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:45:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 14:45:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 14:48:04 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:51:24 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:51:32 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 14:52:12 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 14:53:16 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 14:53:40 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 14:54:06 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 14:54:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 14:54:58 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:55:52 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 14:56:27 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 14:56:55 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 14:57:22 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 14:57:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 14:58:39 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 14:58:43 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 14:59:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 14:59:38 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 15:00:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:00:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 15:00:58 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:01:38 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 15:01:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:02:27 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 15:02:33 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:02:59 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 15:03:08 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.state }}'
+2022-02-04 15:03:08 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.state }}'
+2022-02-04 15:03:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 15:04:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 15:06:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:06:38 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:06:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 15:07:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:07:49 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 15:07:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 15:10:57 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 15:11:12 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.43.90
+2022-02-04 15:11:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:11:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 15:11:56 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 15:12:50 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:13:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 15:14:39 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:14:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 15:15:49 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 15:16:09 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 15:16:57 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 15:18:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:18:55 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:19:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 15:19:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 15:19:46 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:20:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 15:22:55 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:23:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 15:23:55 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 15:25:34 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 15:25:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 15:28:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:28:55 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:29:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 15:30:09 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:30:44 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 15:30:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 15:35:25 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 15:40:32 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 15:44:46 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:45:06 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 15:46:56 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 15:52:22 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 15:57:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 15:57:22 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 15:57:52 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 15:57:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 15:58:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 15:58:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Error connecting to ('192.168.1.86', 6053): [Errno 113] Connect call failed ('192.168.1.86', 6053)
+2022-02-04 16:03:21 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 16:09:09 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 16:15:21 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 16:15:23 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 16:15:35 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Error while reading data: [Errno 104] Connection reset by peer
+2022-02-04 16:20:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 16:21:46 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 16:25:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 16:25:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Error connecting to ('192.168.1.86', 6053): [Errno 113] Connect call failed ('192.168.1.86', 6053)
+2022-02-04 16:28:27 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 16:32:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 16:32:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 16:33:05 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 16:33:32 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 16:33:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 16:35:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 16:35:38 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 16:35:52 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 16:37:03 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 16:37:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 16:38:34 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x05'
+2022-02-04 16:40:47 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 16:41:08 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 16:41:39 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 16:42:02 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 16:42:38 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 16:44:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 16:45:23 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 16:46:00 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 16:47:41 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 16:48:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 16:48:39 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 16:49:08 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 16:49:21 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 16:55:40 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 16:56:03 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 16:56:10 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 16:58:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 17:01:53 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 17:02:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:02:34 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:02:39 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-04 17:03:12 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:03:42 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 17:06:23 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:06:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:07:46 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:08:06 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:08:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:08:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:10:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:10:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:12:10 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:12:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:14:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:14:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 17:16:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:16:33 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:16:50 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:17:16 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 17:17:44 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 17:18:07 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:19:38 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:20:00 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:20:33 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:20:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:21:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:22:21 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 17:22:41 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:23:47 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 17:24:08 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:24:22 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 17:25:02 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 17:27:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:27:40 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 17:27:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:28:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 17:28:48 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 17:30:58 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 17:32:03 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 17:33:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 17:33:33 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 17:33:48 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:34:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 17:34:18 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 17:34:42 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 17:35:11 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 17:35:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:35:57 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:36:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:36:33 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 17:36:52 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 17:37:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:37:44 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:37:48 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 17:38:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 17:39:16 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 17:39:50 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 17:41:19 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 17:42:28 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:42:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:42:52 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 17:42:59 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 17:44:47 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:45:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:45:54 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 17:46:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:46:48 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 17:46:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 17:48:01 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:48:33 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 17:48:59 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 17:49:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:53:14 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 17:53:25 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.26.86
+2022-02-04 17:54:28 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:54:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 17:55:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:55:37 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 17:55:39 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 17:56:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 17:57:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 17:57:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 17:58:14 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 17:59:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 18:00:19 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out) rtsp://192.168.1.150:8554/unicast
+2022-02-04 18:02:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 18:02:36 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:02:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 18:03:03 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 18:05:26 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-04 18:08:01 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out) rtsp://192.168.1.150:8554/unicast
+2022-02-04 18:08:34 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:08:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 18:09:17 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:09:28 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 18:09:57 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:10:32 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 18:10:45 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-04 18:14:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 18:15:12 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 18:15:34 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 18:16:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 18:18:01 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 18:18:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 18:18:31 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 18:18:45 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:19:06 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 18:20:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 18:20:38 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 18:22:40 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 18:26:25 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 18:27:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 18:27:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 18:28:05 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:28:22 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 18:28:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 18:30:27 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 18:34:40 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 18:36:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:36:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 18:38:35 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out) rtsp://192.168.1.150:8554/unicast
+2022-02-04 18:43:07 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:43:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 18:43:39 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 18:44:15 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 18:44:26 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Error while reading data: 0 bytes read on a total of 1 expected bytes
+2022-02-04 18:44:37 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 18:44:48 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 18:45:16 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 18:45:58 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:46:38 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 18:47:33 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 18:48:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 18:48:28 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Error connecting to ('192.168.1.86', 6053): [Errno 113] Connect call failed ('192.168.1.86', 6053)
+2022-02-04 18:48:52 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:49:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 18:49:55 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:50:22 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:50:40 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 18:51:18 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 18:52:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:53:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 18:56:01 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 18:56:05 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:56:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 18:56:48 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 18:57:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 18:57:36 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:58:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 18:58:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 19:00:49 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 19:02:38 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:02:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 19:03:21 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:03:42 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 19:04:16 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:04:37 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 19:05:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:05:34 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_110, Operation timed out) rtsp://192.168.1.150:8554/unicast
+2022-02-04 19:05:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:06:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 19:07:43 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:08:06 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:08:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:08:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 19:10:28 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-04 19:15:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 19:16:17 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 19:18:47 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.32.42
+2022-02-04 19:22:05 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 19:23:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:23:32 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 19:23:50 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:24:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 19:29:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:30:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 19:30:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 19:31:05 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:31:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 19:31:58 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 19:32:43 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:33:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 19:33:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:33:38 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 19:34:19 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 19:35:04 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:35:26 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 19:37:48 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 19:38:11 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-04 19:40:35 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 19:40:50 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 19:41:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 19:41:45 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 19:43:17 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 19:45:48 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-04 19:53:50 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:54:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 19:54:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 20:00:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 20:08:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-sofia @ 192.168.1.8: Error connecting to ('192.168.1.8', 6053): [Errno 113] Connect call failed ('192.168.1.8', 6053)
+2022-02-04 20:09:30 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 20:09:47 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-04 20:24:48 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_inverter_1_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData.
+2022-02-04 20:26:29 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_logger_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetLoggerInfo.cgi.
+2022-02-04 20:36:53 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 20:37:16 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 20:38:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 20:45:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 20:45:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 20:45:54 ERROR (MainThread) [homeassistant] Error doing job: Task was destroyed but it is pending!
+2022-02-04 20:46:44 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 20:46:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 21:07:59 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 21:08:43 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 21:09:03 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 21:09:32 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 21:09:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 21:10:08 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 21:10:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 21:11:07 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 21:11:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 21:14:26 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 21:14:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 21:16:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 21:16:39 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 21:16:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 21:16:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 21:17:37 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 21:19:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 21:19:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 21:19:48 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 21:20:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 21:27:41 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 21:28:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 21:28:45 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 21:29:12 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 21:30:38 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 21:30:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 21:31:24 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 21:31:44 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 21:32:01 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 21:32:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-04 21:33:47 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 21:34:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 21:35:49 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 21:36:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 21:39:09 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 21:39:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 21:52:58 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-04 21:53:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 21:54:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 21:55:04 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 21:55:24 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 21:56:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 21:56:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Hello timed out
+2022-02-04 22:01:37 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.86: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-04 22:02:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Timeout while connecting to ('192.168.1.86', 6053)
+2022-02-04 22:25:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 22:32:41 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-simon @ 192.168.1.9: Timeout while connecting to ('192.168.1.9', 6053)
+2022-02-04 23:03:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-04 23:33:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-05 00:19:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-05 00:34:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-05 01:00:11 ERROR (MainThread) [homeassistant.components.speedtestdotnet] Error fetching speedtestdotnet data: Unable to connect to servers to test latency.
+2022-02-05 01:20:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-05 01:50:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-05 02:05:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-05 02:07:34 WARNING (Thread-12) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2022-02-05 02:07:41 ERROR (Thread-12) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2022-02-05 02:34:05 WARNING (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2022-02-05 02:34:08 ERROR (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2022-02-05 02:36:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-05 02:58:53 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-05 03:00:14 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-05 03:02:46 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-05 03:04:23 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-05 03:06:10 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-05 03:06:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-05 03:07:22 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-05 03:22:45 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-05 03:22:45 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-05 03:34:28 WARNING (Thread-7) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2022-02-05 03:34:35 ERROR (Thread-7) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2022-02-05 03:44:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-05 03:46:28 WARNING (Thread-9) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2022-02-05 03:46:44 ERROR (Thread-9) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
+2022-02-05 04:22:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-05 04:38:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-05 04:39:26 ERROR (Thread-8) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error reading from socket.
+2022-02-05 04:39:26 WARNING (Thread-8) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error communicating with socket, resetting connection
+2022-02-05 04:39:26 ERROR (Thread-8) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 32201)), retrying in 5.0s
+2022-02-05 04:39:56 WARNING (Thread-11) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
+2022-02-05 04:40:03 ERROR (Thread-11) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 8009)), retrying in 5.0s
+2022-02-05 04:40:11 ERROR (Thread-8) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2022-02-05 04:40:11 WARNING (Thread-8) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2022-02-05 04:40:11 ERROR (Thread-8) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 32201)), retrying in 5.0s
+2022-02-05 04:45:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
