@@ -468,3 +468,536 @@
 2022-02-07 04:42:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
 2022-02-07 04:49:14 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x30'
 2022-02-07 04:53:17 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 05:12:37 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 05:13:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 05:32:08 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 05:36:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 05:51:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 05:51:48 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 05:51:49 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 05:52:14 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 06:11:07 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-sofia @ 192.168.1.8: Error connecting to ('192.168.1.8', 6053): [Errno 113] Connect call failed ('192.168.1.8', 6053)
+2022-02-07 06:11:38 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 06:21:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 06:24:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-sofia @ 192.168.1.8: Timeout while connecting to ('192.168.1.8', 6053)
+2022-02-07 06:31:39 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 06:44:48 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 06:47:09 WARNING (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2022-02-07 06:47:39 ERROR (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='mdns', data='Google-Home-Mini-f6c9a37581c84dd2b1d69a6114446f60._googlecast._tcp.local.'), retrying in 5.0s
+2022-02-07 06:48:47 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 06:49:17 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 06:49:34 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 06:49:47 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 06:49:59 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xe7'
+2022-02-07 06:50:00 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 06:50:29 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 06:51:49 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 06:59:59 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 07:00:14 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 07:01:29 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 07:04:45 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 07:05:05 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 07:05:19 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 07:06:09 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 07:07:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 07:09:46 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 07:12:09 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 07:14:23 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 07:32:40 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 07:37:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 07:52:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 07:53:20 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 08:04:23 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.13.6
+2022-02-07 08:09:33 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.13.6
+2022-02-07 08:14:10 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 08:15:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 08:30:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 08:32:13 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.13.6
+2022-02-07 08:35:11 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 08:37:25 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.13.6
+2022-02-07 08:53:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 08:56:21 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 09:16:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 09:17:41 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 09:24:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 09:39:12 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 09:54:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 10:00:52 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 10:22:42 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 10:25:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 10:44:42 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 11:03:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 11:06:53 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 11:22:10 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for sensor.temp_master
+2022-02-07 11:22:10 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for climate.master_bedroom
+2022-02-07 11:26:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 11:29:13 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 11:41:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 11:49:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 11:51:43 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 12:14:24 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 12:19:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 12:37:14 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 12:52:14 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x5d'
+2022-02-07 12:57:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 13:00:14 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 13:23:25 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 13:28:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 13:46:45 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 14:01:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for bedroom-tv @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2022-02-07 14:06:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 14:10:15 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 14:33:56 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 14:36:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 14:57:46 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 14:59:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 15:02:29 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.state }}'
+2022-02-07 15:02:29 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.state }}'
+2022-02-07 15:07:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 15:21:46 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 15:37:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 15:45:56 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 16:00:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 16:10:17 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 16:15:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 16:33:16 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for light.lamp_sofia
+2022-02-07 16:33:16 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for light.lamp_sofia
+2022-02-07 16:34:47 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 16:46:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 16:59:27 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 17:07:02 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.26.78
+2022-02-07 17:08:24 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.26.78
+2022-02-07 17:13:34 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.26.78
+2022-02-07 17:16:06 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.26.78
+2022-02-07 17:16:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 17:24:18 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 17:39:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 17:41:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 17:41:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 17:42:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 17:44:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 17:47:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 17:48:13 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 17:48:16 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 17:49:12 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 17:49:18 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 17:50:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 17:51:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-07 17:51:22 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 17:52:02 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 17:53:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 17:53:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 17:54:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 17:54:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 17:55:01 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 17:55:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 17:55:31 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 17:55:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 17:57:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 17:59:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:00:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 18:02:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:03:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:03:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:04:42 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:05:31 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-07 18:06:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:07:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:07:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:08:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 18:08:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:09:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:10:05 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 18:10:38 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:11:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 18:12:58 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 18:14:07 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:14:28 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 18:14:42 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 18:15:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 18:15:44 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 18:16:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 18:17:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 18:17:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:18:58 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 18:20:51 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 18:21:10 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 18:21:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:23:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 18:24:07 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 18:25:42 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 18:28:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:29:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-07 18:30:59 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 18:31:26 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 18:34:04 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 18:35:12 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 18:35:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:37:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:38:26 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 18:39:06 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 18:39:49 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 18:40:07 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Error while reading data: [Errno 104] Connection reset by peer
+2022-02-07 18:45:27 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 18:46:08 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:47:32 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 18:49:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:51:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:53:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:54:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 18:55:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 18:55:40 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 18:56:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Hello timed out
+2022-02-07 18:57:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 18:58:57 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 18:59:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 19:00:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:01:02 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 19:01:53 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 19:02:37 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:03:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:04:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:05:19 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 19:05:39 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:06:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:07:53 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 19:08:06 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:08:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:09:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 19:10:40 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 19:11:14 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 19:11:43 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 19:12:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:13:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-07 19:13:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 19:14:53 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 19:15:28 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 19:15:31 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:16:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:18:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 19:19:01 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:21:01 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:21:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:21:50 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 19:22:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:23:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp @ 192.168.1.87: Error connecting to ('192.168.1.87', 6053): [Errno 113] Connect call failed ('192.168.1.87', 6053)
+2022-02-07 19:23:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 19:25:42 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:26:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:26:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 19:28:33 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:29:05 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 19:29:08 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:29:37 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:30:24 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 19:30:59 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 19:31:00 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Hello timed out
+2022-02-07 19:31:05 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 19:31:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:31:55 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 19:32:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:32:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:33:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:34:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 19:34:20 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: 504, message='Invalid response status', url=URL('wss://cloud.nabucasa.com/websocket')
+2022-02-07 19:34:39 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: 504, message='Invalid response status', url=URL('wss://cloud.nabucasa.com/websocket')
+2022-02-07 19:34:52 WARNING (MainThread) [hass_nabucasa.iot] Unable to connect: 503, message='Invalid response status', url=URL('wss://cloud.nabucasa.com/websocket')
+2022-02-07 19:35:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 19:35:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:37:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:38:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 19:38:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:39:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:40:18 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:40:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:41:32 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:43:08 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:44:35 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xd9'
+2022-02-07 19:45:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-07 19:46:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:47:32 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:49:00 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 19:50:06 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:51:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 19:52:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Hello timed out
+2022-02-07 19:55:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:56:41 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:56:50 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 19:57:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 19:57:28 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 19:57:42 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:57:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-sofia @ 192.168.1.8: Error connecting to ('192.168.1.8', 6053): [Errno 113] Connect call failed ('192.168.1.8', 6053)
+2022-02-07 19:57:56 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 19:59:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 19:59:59 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 20:00:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:00:53 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 20:03:00 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:04:00 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 20:04:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 20:05:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:08:12 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 20:10:20 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 20:11:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:12:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 20:14:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:15:37 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:16:53 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 20:18:24 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 20:19:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 20:20:00 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 20:20:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 20:21:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 20:22:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:22:37 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_logger_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetLoggerInfo.cgi.
+2022-02-07 20:22:40 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_inverter_1_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData.
+2022-02-07 20:22:50 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 20:24:12 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 20:26:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:26:50 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 20:29:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 20:29:42 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:30:51 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 20:31:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:32:24 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 20:33:08 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:34:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 20:34:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:34:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 20:35:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 20:36:41 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:37:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 20:41:06 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 20:42:15 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:43:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:46:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 20:49:00 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Hello timed out
+2022-02-07 20:49:00 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 20:49:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Hello timed out
+2022-02-07 20:51:51 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 20:51:53 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 20:52:09 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 20:52:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 20:54:01 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 20:55:15 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 20:55:55 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 20:57:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 20:59:12 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 21:00:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-07 21:02:11 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 21:03:00 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:03:09 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-07 21:05:53 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 21:06:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 21:06:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:07:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Hello timed out
+2022-02-07 21:10:15 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 21:11:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:12:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 21:14:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:15:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 21:15:21 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 21:16:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Hello timed out
+2022-02-07 21:18:03 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:20:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 21:22:03 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:22:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-07 21:23:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Hello timed out
+2022-02-07 21:23:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 21:24:51 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 21:25:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:27:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 21:29:47 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 21:31:12 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 21:32:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-07 21:34:42 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:34:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 21:35:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 21:36:06 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:37:30 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 21:39:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 21:40:39 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:41:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:41:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 21:41:51 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 21:42:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 21:43:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:43:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 21:44:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:46:31 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:47:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 21:47:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:48:30 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 21:49:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:50:07 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:51:02 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:52:58 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 21:53:49 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:55:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 21:56:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 21:58:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 21:59:38 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:01:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:04:12 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 22:05:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:07:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:07:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-07 22:08:31 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 22:09:30 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 22:10:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:10:56 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 22:11:52 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 22:12:02 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:13:15 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 22:13:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 22:15:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:17:31 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-07 22:18:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error while reading data: [Errno 104] Connection reset by peer
+2022-02-07 22:19:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:19:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:21:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 22:21:15 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-simon @ 192.168.1.9: Error connecting to ('192.168.1.9', 6053): [Errno 113] Connect call failed ('192.168.1.9', 6053)
+2022-02-07 22:22:02 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 22:22:48 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:24:30 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 22:25:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 22:26:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:29:22 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for bedroom-tv @ 192.168.1.111: Timeout while connecting to ('192.168.1.111', 6053)
+2022-02-07 22:30:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:32:13 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 22:32:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 22:33:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 22:33:50 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:34:18 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 22:34:57 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 22:35:22 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 22:37:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:38:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-07 22:40:11 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 22:40:40 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:44:07 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:44:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 22:45:38 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x42'
+2022-02-07 22:47:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:49:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 22:50:26 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 22:51:06 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 22:52:39 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:53:38 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:54:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:55:07 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:56:03 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:56:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 22:57:03 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Hello timed out
+2022-02-07 22:57:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Hello timed out
+2022-02-07 22:57:43 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 22:58:06 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 22:58:58 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 23:00:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:01:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:02:22 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 23:03:03 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:05:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:07:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 23:08:15 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:09:00 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:09:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:10:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 23:11:09 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 23:11:44 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:11:54 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 23:12:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:13:29 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 23:15:03 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:15:40 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:16:16 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Error while reading data: [Errno 104] Connection reset by peer
+2022-02-07 23:19:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 23:20:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 23:21:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 23:22:00 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 23:22:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 23:22:48 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:23:40 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 23:24:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 23:26:14 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 23:27:12 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 23:29:25 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 23:29:32 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 23:30:01 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 23:30:03 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:30:20 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:32:51 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 23:33:27 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:35:03 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 23:35:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Hello timed out
+2022-02-07 23:35:48 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:36:14 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 23:36:23 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 23:36:28 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 23:36:52 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 23:37:58 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:40:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 23:41:31 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:42:17 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 23:43:27 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Hello timed out
+2022-02-07 23:43:49 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 23:43:51 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:44:45 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:45:12 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 23:46:39 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:48:17 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Hello timed out
+2022-02-07 23:48:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Hello timed out
+2022-02-07 23:49:09 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:51:19 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.DeviceInfoRequest'>
+2022-02-07 23:52:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:52:40 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-07 23:53:37 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-07 23:56:52 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-07 23:56:54 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Hello timed out
+2022-02-07 23:56:59 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 23:57:12 WARNING (MainThread) [homeassistant.components.esphome] Error getting initial data for 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ListEntitiesRequest'>
+2022-02-07 23:57:34 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-07 23:58:19 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout waiting for response for <class 'api_pb2.ConnectRequest'>
+2022-02-07 23:59:36 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-08 00:00:30 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 111] Connect call failed ('192.168.1.99', 6053)
+2022-02-08 00:01:26 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-08 00:23:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-08 00:24:23 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-08 00:46:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-08 00:52:03 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-08 00:53:40 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-08 01:16:40 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-08 01:19:53 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-08 01:22:51 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_logger_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetLoggerInfo.cgi.
+2022-02-08 01:47:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-08 01:47:54 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-08 01:54:40 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-08 02:07:16 WARNING (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2022-02-08 02:07:23 ERROR (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2022-02-08 02:16:04 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-08 02:25:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-08 02:44:24 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-08 02:48:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-08 03:12:55 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-08 03:26:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-08 03:41:35 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-08 03:43:11 WARNING (Thread-9) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2022-02-08 03:43:19 ERROR (Thread-9) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2022-02-08 03:47:41 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x6b'
+2022-02-08 03:56:26 WARNING (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2022-02-08 03:56:31 ERROR (Thread-8) [pychromecast.socket_client] [Front Room([::ffff:c0a8:129]):8009] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 8009)), retrying in 5.0s
+2022-02-08 04:10:25 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-08 04:11:40 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-08 04:31:25 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error reading from socket.
+2022-02-08 04:31:25 WARNING (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error communicating with socket, resetting connection
+2022-02-08 04:31:25 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 32201)), retrying in 5.0s
+2022-02-08 04:31:55 WARNING (Thread-12) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
+2022-02-08 04:32:03 ERROR (Thread-12) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 8009)), retrying in 5.0s
+2022-02-08 04:32:10 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2022-02-08 04:32:10 WARNING (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2022-02-08 04:32:15 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts([::ffff:c0a8:129]):32201] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 32201)), retrying in 5.0s
+2022-02-08 04:39:26 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-08 04:42:10 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-08 04:48:02 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x8c'
+2022-02-08 04:50:58 WARNING (Thread-11) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2022-02-08 04:51:05 ERROR (Thread-11) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
