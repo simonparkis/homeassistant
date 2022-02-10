@@ -41,7 +41,7 @@ group: !include groups.yaml
 script manual: !include_dir_merge_named scripts
 script: !include scripts.yaml
 automation: !include automations.yaml
-automation manual: !include_dir_merge_list automation/
+#automation manual: !include_dir_merge_list automation/
 
 http:
   use_x_forwarded_for: true
@@ -78,7 +78,6 @@ apple_tv:
       
 recorder:
   purge_keep_days: 7
-  purge_interval: 1
 
 tts:
   - platform: google_translate

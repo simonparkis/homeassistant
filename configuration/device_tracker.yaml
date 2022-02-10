@@ -1,6 +1,2 @@
-#- platform: bluetooth_tracker
-#  new_device_defaults:
-#    track_new_devices: false  
-#  device_id: 0
-#  interval_seconds: 10
-#  consider_home: 30
+- platform: bluetooth_tracker
+- platform: bluetooth_le_tracker

@@ -34,10 +34,3 @@
       arg: /
     - type: disk_free
       arg: /
-
-- platform: fronius
-  resource: !secret fronius_url
-  monitored_conditions:
-    - sensor_type: inverter
-      scope: system
-      device: 1

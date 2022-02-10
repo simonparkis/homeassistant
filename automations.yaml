@@ -806,3 +806,68 @@
   - service: fan.turn_off
     entity_id: fan.master_bedroom
   mode: restart
+- id: '1644452835224'
+  alias: Philips Remote - Garage
+  description: ''
+  trigger:
+  - device_id: d248ea8e6a087482dd4d7bf4a63a4fcc
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
+    id: open
+  - device_id: d248ea8e6a087482dd4d7bf4a63a4fcc
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_off
+    id: close
+  - device_id: d248ea8e6a087482dd4d7bf4a63a4fcc
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: dim_up
+    id: keep_open
+  - device_id: d248ea8e6a087482dd4d7bf4a63a4fcc
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: dim_down
+    id: auto_close
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: open
+      sequence:
+      - service: cover.open_cover
+        data: {}
+        target:
+          entity_id: cover.garage_door
+    - conditions:
+      - condition: trigger
+        id: close
+      sequence:
+      - service: cover.close_cover
+        data: {}
+        target:
+          entity_id: cover.garage_door
+    - conditions:
+      - condition: trigger
+        id: keep_open
+      sequence:
+      - service: input_boolean.turn_off
+        data: {}
+        target:
+          entity_id: input_boolean.auto_garage_door
+    - conditions:
+      - condition: trigger
+        id: auto_close
+      sequence:
+      - service: input_boolean.turn_on
+        data: {}
+        target:
+          entity_id: input_boolean.auto_garage_door
+    default: []
+  mode: single
