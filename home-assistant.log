@@ -1396,3 +1396,320 @@
 2022-02-16 04:36:02 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
 2022-02-16 04:36:17 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
 2022-02-16 04:51:17 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 05:04:43 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 05:21:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 05:33:33 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 05:44:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 06:00:07 ERROR (MainThread) [homeassistant.components.speedtestdotnet] Error fetching speedtestdotnet data: Unable to connect to servers to test latency.
+2022-02-16 06:02:33 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 06:15:17 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 06:31:43 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 06:32:00 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 06:43:10 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x7f'
+2022-02-16 06:47:16 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-16 07:01:04 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 07:08:17 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 07:24:25 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 07:26:37 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 07:27:16 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 07:28:12 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 07:30:34 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 07:30:48 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 07:31:38 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 07:33:26 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 07:36:38 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 07:36:57 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 07:38:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 08:00:14 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 08:01:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 08:07:37 WARNING (MainThread) [homeassistant.components.automation.motion_light_walk_in_robe] Motion Light - Walk In Robe: Already running
+2022-02-16 08:24:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 08:30:05 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 09:00:05 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 09:10:17 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 09:30:15 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 09:38:14 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-16 09:38:14 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-16 09:40:47 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 10:00:36 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 10:01:44 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-16 10:01:44 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-16 10:11:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 10:13:36 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x49'
+2022-02-16 10:16:19 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 10:17:40 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 10:18:46 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 10:18:48 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 10:31:06 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 10:33:16 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 10:41:48 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 10:42:10 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 10:47:36 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 10:50:42 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 10:50:57 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-16 10:51:08 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 10:52:17 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 11:01:46 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 11:12:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 11:27:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 11:32:37 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 11:48:13 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 11:57:48 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 12:03:37 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 12:18:57 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 12:19:21 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 12:20:48 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 12:28:32 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 12:28:56 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 12:29:07 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 12:34:47 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 12:36:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 12:42:52 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 12:48:11 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 12:48:43 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 12:51:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 12:58:48 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 13:06:08 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 13:11:02 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 13:11:33 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 13:11:42 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xe0'
+2022-02-16 13:11:43 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 13:12:29 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 13:14:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 13:17:58 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 13:18:15 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 13:18:29 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 13:18:49 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 13:36:57 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 13:37:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 13:37:38 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 13:51:46 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 13:58:57 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 14:01:52 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for bedroom-tv @ 192.168.1.111: Timeout while connecting to ('192.168.1.111', 6053)
+2022-02-16 14:07:48 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 14:09:18 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 14:37:15 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 14:38:17 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 14:38:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 14:38:51 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 14:41:09 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 15:13:09 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 15:16:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 15:33:41 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 15:45:19 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 15:46:48 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 16:11:48 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 16:12:12 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 16:17:40 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 16:24:48 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 16:50:10 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 16:55:18 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 17:22:01 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 17:22:50 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 17:25:04 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-16 17:25:29 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 17:25:44 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 17:26:02 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 17:26:14 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 17:28:53 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 17:29:39 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 17:30:08 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 17:30:55 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 17:31:18 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 17:31:28 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 17:33:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 17:34:36 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 17:55:40 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 18:03:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 18:04:02 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Timeout while connecting to ('192.168.1.99', 6053)
+2022-02-16 18:13:19 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x83'
+2022-02-16 18:26:18 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-02-16 18:28:41 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 18:34:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 18:49:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 19:01:51 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 19:04:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 19:35:11 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 19:35:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 19:50:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 20:08:42 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 20:10:59 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_inverter_1_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData.
+2022-02-16 20:17:10 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x7f'
+2022-02-16 20:17:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-sofia @ 192.168.1.8: Timeout while connecting to ('192.168.1.8', 6053)
+2022-02-16 20:20:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 20:27:09 ERROR (SyncWorker_4) [homeassistant.components.bluetooth_tracker.device_tracker] Couldn't discover bluetooth devices: error communicating with local bluetooth adapter
+2022-02-16 20:42:22 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 20:45:12 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_logger_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetLoggerInfo.cgi.
+2022-02-16 20:51:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 21:14:21 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x7d'
+2022-02-16 21:16:12 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 21:21:49 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 21:50:13 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 21:52:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 21:55:56 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-16 22:14:40 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xdb'
+2022-02-16 22:17:43 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-16 22:24:23 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 22:45:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 22:54:10 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-simon @ 192.168.1.9: Timeout while connecting to ('192.168.1.9', 6053)
+2022-02-16 22:58:43 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 23:23:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-16 23:33:14 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-16 23:46:19 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 00:06:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:06:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:06:17 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
+2022-02-17 00:06:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:06:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:06:47 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
+2022-02-17 00:07:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:07:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:07:17 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
+2022-02-17 00:07:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:07:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:07:52 ERROR (MainThread) [snitun.multiplexer.core] Ping fails, no response from peer
+2022-02-17 00:07:54 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-17 00:07:59 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:07:59 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:08:09 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:08:09 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:08:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:08:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:08:17 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
+2022-02-17 00:08:17 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:08:17 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:08:24 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:08:24 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:08:32 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:08:32 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:08:38 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/sensor.date_time failed with [Errno -3] Try again
+2022-02-17 00:08:38 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'strptime' will return 'unavailable', however this template will fail to render in Home Assistant core 2022.1
+2022-02-17 00:08:38 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'as_timestamp' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'as_timestamp' will return 'None', however this template will fail to render in Home Assistant core 2022.1
+2022-02-17 00:08:38 WARNING (MainThread) [homeassistant.components.template.trigger] Error evaluating 'template' trigger for 'Notify - Zwarteveen Server Offline': TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+2022-02-17 00:08:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:08:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:08:47 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
+2022-02-17 00:08:51 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:08:51 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:09:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'strptime' will return 'unavailable', however this template will fail to render in Home Assistant core 2022.1
+2022-02-17 00:09:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'as_timestamp' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'as_timestamp' will return 'None', however this template will fail to render in Home Assistant core 2022.1
+2022-02-17 00:09:10 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:09:10 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:09:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:09:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:09:22 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
+2022-02-17 00:09:29 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:09:29 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:09:36 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:09:36 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:09:43 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:09:43 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:09:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:09:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:10:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'strptime' will return 'unavailable', however this template will fail to render in Home Assistant core 2022.1
+2022-02-17 00:10:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'as_timestamp' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'as_timestamp' will return 'None', however this template will fail to render in Home Assistant core 2022.1
+2022-02-17 00:10:03 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:10:03 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:10:09 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:10:09 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:10:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:10:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:10:17 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
+2022-02-17 00:10:22 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:10:22 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:10:33 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:10:33 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:10:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:10:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:10:47 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
+2022-02-17 00:10:47 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for sensor.temp_joseph
+2022-02-17 00:10:47 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for climate.joseph_bedroom
+2022-02-17 00:10:48 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:10:48 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:10:58 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:10:58 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:11:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'strptime' will return 'unavailable', however this template will fail to render in Home Assistant core 2022.1
+2022-02-17 00:11:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'as_timestamp' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'as_timestamp' will return 'None', however this template will fail to render in Home Assistant core 2022.1
+2022-02-17 00:11:08 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:11:08 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:11:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:11:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:11:17 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
+2022-02-17 00:11:20 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:11:20 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:11:34 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:11:34 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:11:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:11:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:11:47 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
+2022-02-17 00:11:49 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:11:49 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:12:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'strptime' will return 'unavailable', however this template will fail to render in Home Assistant core 2022.1
+2022-02-17 00:12:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'as_timestamp' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'as_timestamp' will return 'None', however this template will fail to render in Home Assistant core 2022.1
+2022-02-17 00:12:03 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:12:03 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:12:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:12:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:12:17 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
+2022-02-17 00:12:21 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:12:21 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:12:27 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:12:27 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:12:44 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:12:44 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:12:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:12:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:12:51 ERROR (MainThread) [snitun.client.client_peer] Can't connect to SniTun server ap-southeast-1-0.ui.nabu.casa:443 with: [Errno -3] Try again
+2022-02-17 00:12:51 ERROR (MainThread) [hass_nabucasa.remote] Connection problem to snitun server
+2022-02-17 00:13:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'strptime' will return 'unavailable', however this template will fail to render in Home Assistant core 2022.1
+2022-02-17 00:13:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'as_timestamp' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'as_timestamp' will return 'None', however this template will fail to render in Home Assistant core 2022.1
+2022-02-17 00:14:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:14:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:14:47 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
+2022-02-17 00:15:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:15:16 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:15:17 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
+2022-02-17 00:15:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-17 00:15:46 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-17 00:15:47 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
+2022-02-17 00:16:07 ERROR (MainThread) [snitun.multiplexer.core] Ping fails, no response from peer
+2022-02-17 00:16:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 00:31:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 00:42:44 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-17 01:02:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 01:17:45 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-17 01:25:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 01:40:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 01:52:55 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-17 02:10:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 02:26:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 02:28:15 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-17 02:33:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 02:38:38 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error reading from socket.
+2022-02-17 02:38:38 WARNING (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error communicating with socket, resetting connection
+2022-02-17 02:38:38 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 32201)), retrying in 5.0s
+2022-02-17 02:39:08 WARNING (Thread-11) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
+2022-02-17 02:39:24 ERROR (Thread-11) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 8009)), retrying in 5.0s
+2022-02-17 02:39:24 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2022-02-17 02:39:24 WARNING (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2022-02-17 02:39:24 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 32201)), retrying in 5.0s
+2022-02-17 02:49:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 02:56:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 03:03:46 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-17 03:19:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 03:30:35 WARNING (Thread-9) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2022-02-17 03:30:38 ERROR (Thread-9) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2022-02-17 03:39:26 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-17 03:50:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 03:51:00 WARNING (Thread-12) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2022-02-17 03:51:07 ERROR (Thread-12) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2022-02-17 04:02:02 WARNING (Thread-10) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2022-02-17 04:02:09 ERROR (Thread-10) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2022-02-17 04:05:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 04:15:16 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-17 04:28:20 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 04:33:14 WARNING (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2022-02-17 04:33:21 ERROR (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
+2022-02-17 04:51:17 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-17 04:58:50 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-17 04:59:32 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x7a'
