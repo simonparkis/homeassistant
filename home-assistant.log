@@ -1,182 +1,134 @@
-2022-02-18 17:11:13 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-02-18 17:11:13 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-02-18 17:11:13 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-02-18 17:11:13 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-02-18 17:11:13 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-02-18 17:11:13 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-02-18 17:11:21 ERROR (MainThread) [homeassistant.components.mqtt] Failed to connect to MQTT server due to exception: [Errno 111] Connection refused
-2022-02-18 17:11:26 WARNING (MainThread) [homeassistant.helpers.entity] Entity fan.master_bedroom (<class 'custom_components.xiaomi_miio_fan.fan.XiaomiFan'>) implements device_state_attributes. Please report it to the custom component author.
-2022-02-18 17:11:26 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.rubbish (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
-2022-02-18 17:11:26 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.recycling (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
-2022-02-18 17:11:26 WARNING (MainThread) [homeassistant.helpers.entity] Entity calendar.garbage_collection (<class 'custom_components.garbage_collection.calendar.GarbageCollectionCalendar'>) implements device_state_attributes. Please report it to the custom component author.
-2022-02-18 17:11:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
-2022-02-18 17:11:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-simon @ 192.168.1.133: Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
-2022-02-18 17:11:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 3d-printer @ 192.168.1.14: Error connecting to ('192.168.1.14', 6053): [Errno 113] Connect call failed ('192.168.1.14', 6053)
-2022-02-18 17:11:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for heater-joseph @ 192.168.1.17: Error connecting to ('192.168.1.17', 6053): [Errno 113] Connect call failed ('192.168.1.17', 6053)
-2022-02-18 17:11:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for bedroom-tv @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
-2022-02-18 17:11:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-joseph @ 192.168.1.7: Error connecting to ('192.168.1.7', 6053): [Errno 113] Connect call failed ('192.168.1.7', 6053)
-2022-02-18 17:11:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-simon @ 192.168.1.9: Error connecting to ('192.168.1.9', 6053): [Errno 113] Connect call failed ('192.168.1.9', 6053)
-2022-02-18 17:11:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-sofia @ 192.168.1.8: Error connecting to ('192.168.1.8', 6053): [Errno 113] Connect call failed ('192.168.1.8', 6053)
-2022-02-18 17:11:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Error connecting to ('192.168.1.86', 6053): [Errno 113] Connect call failed ('192.168.1.86', 6053)
-2022-02-18 17:11:29 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for frontroom-tv @ 192.168.1.70: Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
-2022-02-18 17:11:44 WARNING (SyncWorker_4) [homeassistant.components.bluetooth_le_tracker.device_tracker] No Bluetooth LE devices to track!
-2022-02-18 17:11:44 ERROR (MainThread) [homeassistant.components.device_tracker] Error setting up platform legacy bluetooth_le_tracker
-2022-02-18 17:11:47 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0300]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0300]: Message send failure'), TimeoutError(), TimeoutError(), TimeoutError()]
-2022-02-18 17:11:52 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0008]: async_initialize: all attempts have failed: [TimeoutError(), TimeoutError(), TimeoutError(), TimeoutError()]
-2022-02-18 17:11:53 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0006]: async_initialize: all attempts have failed: [TimeoutError(), TimeoutError(), TimeoutError(), TimeoutError()]
-2022-02-18 17:12:24 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Random RGB
-2022-02-18 17:12:24 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Lamp
-2022-02-18 17:12:24 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Lamp
-2022-02-18 17:12:24 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Random RGB
-2022-02-18 17:12:35 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:12:55 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:13:25 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:14:06 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:14:56 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:15:34 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
-2022-02-18 17:15:56 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:17:07 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:18:27 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:19:57 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:21:38 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:23:28 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:24:36 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 17:25:28 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:26:53 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for frontroom-tv @ 192.168.1.70: Timeout while connecting to ('192.168.1.70', 6053)
-2022-02-18 17:27:39 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:29:59 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:32:29 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:35:10 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:38:00 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:41:00 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:44:11 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:47:31 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:50:55 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for frontroom-tv @ 192.168.1.70: Timeout while connecting to ('192.168.1.70', 6053)
-2022-02-18 17:51:01 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:54:42 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 17:58:32 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 18:00:17 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2022-02-18 18:00:52 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2022-02-18 18:01:32 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2022-02-18 18:02:03 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2022-02-18 18:02:32 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 18:02:36 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 18:02:43 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2022-02-18 18:06:43 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 18:11:03 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 18:15:33 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 18:20:14 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 18:25:04 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 18:30:04 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 18:33:06 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 18:35:15 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 18:40:35 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 18:46:05 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 18:51:46 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 18:57:36 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 19:03:36 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 19:09:47 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 19:16:07 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 19:18:36 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 19:22:37 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 19:29:18 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 19:36:08 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 19:43:08 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 19:49:06 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 19:50:19 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 19:57:39 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 20:04:06 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 20:05:09 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 20:12:50 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 20:12:57 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_inverter_1_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData.
-2022-02-18 20:20:40 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 20:28:40 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 20:36:51 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 20:42:06 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 20:45:11 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 20:47:02 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
-2022-02-18 20:47:02 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
-2022-02-18 20:53:41 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 21:02:22 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 21:11:12 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 21:11:34 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_logger_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetLoggerInfo.cgi.
-2022-02-18 21:20:06 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 21:20:12 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 21:29:23 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 21:38:28 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
-2022-02-18 21:38:43 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 21:40:21 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-simon @ 192.168.1.9: Timeout while connecting to ('192.168.1.9', 6053)
-2022-02-18 21:48:13 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 21:50:36 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 21:57:54 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 22:05:36 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 22:07:44 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 22:17:44 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 22:27:55 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 22:36:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 22:38:15 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 22:48:45 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 22:51:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 22:59:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 22:59:26 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 23:08:59 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for bedroom-tv @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
-2022-02-18 23:10:16 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 23:14:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 23:21:16 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 23:29:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 23:32:27 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 23:36:07 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-02-18 22:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-02-18 22:30:00', however this template will fail to render in Home Assistant core 2022.1
-2022-02-18 23:36:07 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-02-18 23:59:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-02-18 23:59:00', however this template will fail to render in Home Assistant core 2022.1
-2022-02-18 23:43:47 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-18 23:52:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-18 23:55:17 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 00:06:58 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 00:18:48 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 00:23:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-19 00:30:48 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 00:31:49 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x7e'
-2022-02-19 00:38:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-19 00:42:59 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 00:55:19 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 01:07:49 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 01:08:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-19 01:20:30 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 01:29:09 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x6c'
-2022-02-19 01:33:20 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 01:46:20 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 01:46:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-19 01:59:31 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 02:12:51 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 02:24:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-19 02:26:21 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 02:40:02 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 02:53:40 WARNING (Thread-7) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
-2022-02-19 02:53:43 ERROR (Thread-7) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
-2022-02-19 02:53:52 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 03:07:52 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 03:10:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-19 03:22:03 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 03:33:19 WARNING (Thread-9) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
-2022-02-19 03:33:21 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error reading from socket.
-2022-02-19 03:33:21 WARNING (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error communicating with socket, resetting connection
-2022-02-19 03:33:21 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 32201)), retrying in 5.0s
-2022-02-19 03:33:22 ERROR (Thread-9) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
-2022-02-19 03:33:47 WARNING (Thread-12) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
-2022-02-19 03:34:03 ERROR (Thread-12) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 8009)), retrying in 5.0s
-2022-02-19 03:34:05 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
-2022-02-19 03:34:05 WARNING (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
-2022-02-19 03:34:05 ERROR (Thread-11) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 32201)), retrying in 5.0s
-2022-02-19 03:36:23 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 03:40:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-19 03:50:53 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 03:51:51 WARNING (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
-2022-02-19 03:51:56 ERROR (Thread-8) [pychromecast.socket_client] [Front Room([::ffff:c0a8:129]):8009] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 8009)), retrying in 5.0s
-2022-02-19 04:05:34 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 04:20:24 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 04:26:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-19 04:35:24 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 04:41:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
-2022-02-19 04:46:59 WARNING (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
-2022-02-19 04:47:15 ERROR (Thread-10) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
-2022-02-19 04:50:35 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
-2022-02-19 04:56:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-19 23:19:10 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-02-19 23:19:10 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-02-19 23:19:10 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-02-19 23:19:10 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-02-19 23:19:10 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-02-19 23:19:10 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-02-19 23:19:19 WARNING (MainThread) [homeassistant.config_entries] Config entry 'SolarNet Datalogger at 192.168.1.80' for fronius integration not ready yet: Connection to Fronius device failed at http://192.168.1.80/solar_api/GetAPIVersion.cgi.; Retrying in background
+2022-02-19 23:19:19 WARNING (MainThread) [homeassistant.helpers.entity] Entity fan.master_bedroom (<class 'custom_components.xiaomi_miio_fan.fan.XiaomiFan'>) implements device_state_attributes. Please report it to the custom component author.
+2022-02-19 23:19:20 ERROR (MainThread) [metno] Access to https://aa015h6buqvih86i1.api.met.no/weatherapi/locationforecast/2.0/complete returned error 'ClientConnectorError'
+2022-02-19 23:19:20 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.rubbish (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
+2022-02-19 23:19:20 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.recycling (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
+2022-02-19 23:19:20 WARNING (MainThread) [homeassistant.helpers.entity] Entity calendar.garbage_collection (<class 'custom_components.garbage_collection.calendar.GarbageCollectionCalendar'>) implements device_state_attributes. Please report it to the custom component author.
+2022-02-19 23:19:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Error connecting to ('192.168.1.86', 6053): [Errno 113] Connect call failed ('192.168.1.86', 6053)
+2022-02-19 23:19:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 3d-printer @ 192.168.1.14: Error connecting to ('192.168.1.14', 6053): [Errno 113] Connect call failed ('192.168.1.14', 6053)
+2022-02-19 23:19:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for heater-joseph @ 192.168.1.17: Error connecting to ('192.168.1.17', 6053): [Errno 113] Connect call failed ('192.168.1.17', 6053)
+2022-02-19 23:19:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-joseph @ 192.168.1.7: Error connecting to ('192.168.1.7', 6053): [Errno 113] Connect call failed ('192.168.1.7', 6053)
+2022-02-19 23:19:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-simon @ 192.168.1.9: Error connecting to ('192.168.1.9', 6053): [Errno 113] Connect call failed ('192.168.1.9', 6053)
+2022-02-19 23:19:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-sofia @ 192.168.1.8: Error connecting to ('192.168.1.8', 6053): [Errno 113] Connect call failed ('192.168.1.8', 6053)
+2022-02-19 23:19:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for frontroom-tv @ 192.168.1.70: Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2022-02-19 23:19:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-02-19 23:19:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-simon @ 192.168.1.133: Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
+2022-02-19 23:19:23 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for bedroom-tv @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2022-02-19 23:19:26 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0300]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure')]
+2022-02-19 23:19:27 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0008]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure')]
+2022-02-19 23:19:33 WARNING (SyncWorker_1) [homeassistant.components.bluetooth_le_tracker.device_tracker] No Bluetooth LE devices to track!
+2022-02-19 23:19:33 ERROR (MainThread) [homeassistant.components.device_tracker] Error setting up platform legacy bluetooth_le_tracker
+2022-02-19 23:19:48 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Random RGB
+2022-02-19 23:19:48 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Lamp
+2022-02-19 23:19:48 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Lamp
+2022-02-19 23:19:48 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Random RGB
+2022-02-19 23:19:51 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:20:04 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:20:08 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0006]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure')]
+2022-02-19 23:20:27 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:21:00 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:21:43 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:22:36 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:23:40 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:24:53 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:26:16 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:27:49 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:29:32 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:31:25 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:33:28 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:35:41 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:38:04 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:40:37 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:43:20 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:43:34 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-19 23:46:13 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:49:17 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:52:30 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:55:53 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-19 23:56:45 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-02-19 22:30:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-02-19 22:30:00', however this template will fail to render in Home Assistant core 2022.1
+2022-02-19 23:56:45 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input '2022-02-19 23:59:00' when rendering template '{% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%H:%M:%S")) %} {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%H:%M:%S")) %} {% set now_time =  as_timestamp(now()) %}      {{ ([([((end_dim_time - now_time) / (end_dim_time- start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}' but no default was specified. Currently 'strptime' will return '2022-02-19 23:59:00', however this template will fail to render in Home Assistant core 2022.1
+2022-02-19 23:59:26 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 00:03:09 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 00:07:02 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 00:08:17 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_inverter_1_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData.
+2022-02-20 00:11:05 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 00:14:04 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-20 00:15:18 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 00:19:41 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 00:24:14 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 00:28:57 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 00:29:04 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-20 00:33:50 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 00:38:54 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 00:44:07 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 00:49:30 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 00:52:04 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-20 00:55:03 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 01:00:46 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 01:06:39 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 01:07:02 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_logger_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetLoggerInfo.cgi.
+2022-02-20 01:07:04 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-20 01:12:42 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 01:18:55 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 01:25:18 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 01:30:04 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-20 01:31:51 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 01:38:34 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 01:45:05 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-20 01:45:27 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 01:52:30 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 01:59:44 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 02:00:35 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-20 02:07:07 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 02:08:05 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-20 02:14:40 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 02:22:23 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 02:27:18 WARNING (Thread-11) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2022-02-20 02:27:36 ERROR (Thread-11) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2022-02-20 02:30:16 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 02:31:05 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-20 02:38:19 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 02:46:32 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 02:47:14 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xa0'
+2022-02-20 02:54:55 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 02:55:22 WARNING (Thread-10) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2022-02-20 02:55:38 ERROR (Thread-10) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2022-02-20 03:01:35 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-20 03:03:28 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 03:12:11 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 03:16:35 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-20 03:21:04 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 03:30:08 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 03:31:20 WARNING (Thread-9) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2022-02-20 03:31:23 ERROR (Thread-9) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2022-02-20 03:34:14 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2022-02-20 03:34:14 WARNING (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2022-02-20 03:34:19 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts([::ffff:c0a8:129]):32201] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 32201)), retrying in 5.0s
+2022-02-20 03:34:39 WARNING (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2022-02-20 03:34:55 ERROR (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
+2022-02-20 03:39:21 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 03:47:05 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-20 03:48:44 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 03:58:17 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 04:04:32 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for fan.master_bedroom
+2022-02-20 04:05:00 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-20 04:05:00 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-20 04:08:00 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 04:17:53 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 04:19:53 WARNING (Thread-12) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
+2022-02-20 04:20:09 ERROR (Thread-12) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 8009)), retrying in 5.0s
+2022-02-20 04:20:09 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2022-02-20 04:20:09 WARNING (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2022-02-20 04:20:14 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts([::ffff:c0a8:129]):32201] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 32201)), retrying in 5.0s
+2022-02-20 04:27:56 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 04:38:09 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 04:40:05 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-20 04:46:32 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xd4'
+2022-02-20 04:48:32 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
+2022-02-20 04:59:05 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Error opening stream (ERRORTYPE_113, Host is unreachable) rtsp://192.168.1.150:8554/unicast
