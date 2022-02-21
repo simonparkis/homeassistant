@@ -391,3 +391,109 @@ serial.serialutil.SerialException: write failed: [Errno 5] I/O error
 2022-02-21 04:42:14 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts([::ffff:c0a8:129]):32201] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 32201)), retrying in 5.0s
 2022-02-21 04:42:39 WARNING (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
 2022-02-21 04:42:46 ERROR (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
+2022-02-21 05:10:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 05:33:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 05:55:02 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [139830312669728] Disconnected: Did not receive auth message within 10 seconds
+2022-02-21 06:11:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 06:27:00 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 06:34:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 06:50:05 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xf7'
+2022-02-21 06:57:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 07:05:59 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [139830583450016] Disconnected: Did not receive auth message within 10 seconds
+2022-02-21 07:12:30 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 07:43:00 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 08:06:01 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 08:14:20 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [139830586935088] Disconnected: Did not receive auth message within 10 seconds
+2022-02-21 08:15:31 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [139830582655200] Disconnected: Did not receive auth message within 10 seconds
+2022-02-21 08:21:01 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 08:36:31 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 08:44:01 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 09:14:31 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 09:52:31 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 10:23:01 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 11:01:01 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 11:24:01 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 12:02:01 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 12:16:38 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [139830584303824] Disconnected: Did not receive auth message within 10 seconds
+2022-02-21 12:32:31 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 12:52:06 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xc3'
+2022-02-21 12:59:26 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x28'
+2022-02-21 13:18:01 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 13:48:31 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 13:52:26 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x08'
+2022-02-21 13:59:42 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x68'
+2022-02-21 14:01:40 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for bedroom-tv @ 192.168.1.111: Timeout while connecting to ('192.168.1.111', 6053)
+2022-02-21 14:03:31 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 14:20:58 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [139830584438160] Disconnected: Did not receive auth message within 10 seconds
+2022-02-21 14:34:01 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 14:52:44 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x4b'
+2022-02-21 14:57:01 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 15:00:00 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xac'
+2022-02-21 15:12:01 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 15:42:32 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 15:53:00 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x90'
+2022-02-21 16:20:32 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 16:43:32 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 16:53:16 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x23'
+2022-02-21 17:21:32 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 17:52:02 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 17:59:32 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 18:30:02 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 18:53:02 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 19:08:02 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 19:38:32 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 19:44:09 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-21 20:00:46 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_inverter_1_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData.
+2022-02-21 20:09:02 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 20:13:33 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_logger_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetLoggerInfo.cgi.
+2022-02-21 20:16:32 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 20:47:02 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 20:54:26 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xab'
+2022-02-21 21:01:50 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x06'
+2022-02-21 21:02:32 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 21:17:32 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 21:19:08 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-21 21:19:37 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-02-21 21:33:02 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 21:48:02 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 21:54:44 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xc7'
+2022-02-21 22:11:02 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 22:41:32 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 23:02:37 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x33'
+2022-02-21 23:27:03 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-21 23:55:20 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xfe'
+2022-02-22 00:03:10 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x6a'
+2022-02-22 00:12:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-22 00:35:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-22 01:03:37 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xbf'
+2022-02-22 01:13:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-22 01:36:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-22 01:55:56 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x87'
+2022-02-22 02:03:57 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xf0'
+2022-02-22 02:08:57 WARNING (Thread-11) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2022-02-22 02:09:07 ERROR (Thread-11) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2022-02-22 02:14:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-22 02:37:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-22 02:56:14 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x8f'
+2022-02-22 03:00:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-22 03:15:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-22 03:22:29 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2022-02-22 03:22:29 WARNING (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2022-02-22 03:22:34 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts([::ffff:c0a8:129]):32201] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 32201)), retrying in 5.0s
+2022-02-22 03:22:55 WARNING (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2022-02-22 03:23:10 ERROR (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
+2022-02-22 03:23:12 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Error reading from socket.
+2022-02-22 03:23:12 WARNING (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Error communicating with socket, resetting connection
+2022-02-22 03:23:12 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.40):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 32201)), retrying in 5.0s
+2022-02-22 03:31:03 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-22 03:38:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-22 03:56:35 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xa1'
+2022-02-22 04:01:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-22 04:24:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-22 04:37:15 WARNING (Thread-10) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2022-02-22 04:37:30 ERROR (Thread-10) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2022-02-22 04:39:33 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-22 04:53:40 WARNING (Thread-9) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2022-02-22 04:53:55 ERROR (Thread-9) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2022-02-22 04:55:03 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-22 04:56:54 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xe4'
