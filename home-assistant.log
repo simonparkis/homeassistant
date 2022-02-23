@@ -595,3 +595,321 @@ serial.serialutil.SerialException: write failed: [Errno 5] I/O error
 2022-02-23 04:20:03 WARNING (Thread-9) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
 2022-02-23 04:20:19 ERROR (Thread-9) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
 2022-02-23 04:40:36 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 05:05:04 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xd1'
+2022-02-23 05:11:06 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 05:18:36 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 05:26:06 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 05:49:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 06:12:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 06:50:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 07:12:08 WARNING (MainThread) [homeassistant.components.websocket_api.http.connection] [139830309971040] Disconnected: Did not receive auth message within 10 seconds
+2022-02-23 07:20:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 07:58:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 08:06:10 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x4c'
+2022-02-23 08:36:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 09:07:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 09:45:07 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 10:06:52 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xf8'
+2022-02-23 10:15:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 10:17:28 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x81'
+2022-02-23 10:38:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 10:53:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 11:16:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 11:39:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 11:54:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 12:07:30 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x81'
+2022-02-23 12:17:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 12:55:37 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 13:03:33 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-23 13:03:33 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-23 13:04:49 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/sensor.date_time failed with [Errno -3] Try again
+2022-02-23 13:04:49 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'strptime' will return 'unavailable', however this template will fail to render in Home Assistant core 2022.1
+2022-02-23 13:04:49 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'as_timestamp' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'as_timestamp' will return 'None', however this template will fail to render in Home Assistant core 2022.1
+2022-02-23 13:04:49 WARNING (MainThread) [homeassistant.components.template.trigger] Error evaluating 'template' trigger for 'Notify - Zwarteveen Server Offline': TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+2022-02-23 13:05:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'strptime' will return 'unavailable', however this template will fail to render in Home Assistant core 2022.1
+2022-02-23 13:05:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'as_timestamp' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'as_timestamp' will return 'None', however this template will fail to render in Home Assistant core 2022.1
+2022-02-23 13:06:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'strptime' will return 'unavailable', however this template will fail to render in Home Assistant core 2022.1
+2022-02-23 13:06:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'as_timestamp' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'as_timestamp' will return 'None', however this template will fail to render in Home Assistant core 2022.1
+2022-02-23 13:07:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'strptime' will return 'unavailable', however this template will fail to render in Home Assistant core 2022.1
+2022-02-23 13:07:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'as_timestamp' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'as_timestamp' will return 'None', however this template will fail to render in Home Assistant core 2022.1
+2022-02-23 13:08:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'strptime' will return 'unavailable', however this template will fail to render in Home Assistant core 2022.1
+2022-02-23 13:08:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'as_timestamp' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'as_timestamp' will return 'None', however this template will fail to render in Home Assistant core 2022.1
+2022-02-23 13:09:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'strptime' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'strptime' will return 'unavailable', however this template will fail to render in Home Assistant core 2022.1
+2022-02-23 13:09:00 WARNING (MainThread) [homeassistant.helpers.template] Template warning: 'as_timestamp' got invalid input 'unavailable' when rendering template '{% set current_time = as_timestamp(now()) %} {% set heartbeat = as_timestamp(strptime(states('sensor.zwarteveen_heartbeat'), '%Y-%m-%d, %H:%M')) %} {% set timeout_minutes = 11 %} {{ (current_time - heartbeat) > (timeout_minutes * 60) }}' but no default was specified. Currently 'as_timestamp' will return 'None', however this template will fail to render in Home Assistant core 2022.1
+2022-02-23 13:10:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 13:26:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 13:33:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 14:01:12 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for bedroom-tv @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2022-02-23 14:04:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 14:08:08 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x50'
+2022-02-23 14:27:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 14:34:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 14:47:17 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x7c'
+2022-02-23 15:05:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 15:50:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 16:19:47 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x93'
+2022-02-23 16:21:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 16:51:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 17:22:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 18:07:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 18:30:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 19:01:08 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 19:31:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 20:06:13 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_inverter_1_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData.
+2022-02-23 20:09:38 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 20:14:57 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_logger_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetLoggerInfo.cgi.
+2022-02-23 20:20:58 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xd3'
+2022-02-23 20:32:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 20:55:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 21:10:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 21:18:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 21:26:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 21:56:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 22:10:40 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xc1'
+2022-02-23 22:11:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 22:31:34 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-02-23 22:31:34 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-02-23 22:31:36 WARNING (MainThread) [hass_nabucasa.google_report_state] Unable to connect: Cannot connect to host remotestate.nabucasa.com:443 ssl:default [Try again]
+2022-02-23 22:32:08 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 867, in _resolve_host
+    await event.wait()
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/locks.py", line 34, in wait
+    raise self._exc
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 867, in _resolve_host
+    await event.wait()
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/locks.py", line 34, in wait
+    raise self._exc
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 867, in _resolve_host
+    await event.wait()
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/locks.py", line 34, in wait
+    raise self._exc
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Try again
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/alexa/state_report.py", line 101, in async_entity_state_listener
+    await async_send_changereport_message(
+  File "/usr/src/homeassistant/homeassistant/components/alexa/state_report.py", line 118, in async_send_changereport_message
+    token = await config.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 156, in async_get_access_token
+    resp = await cloud_api.async_alexa_access_token(self._cloud)
+  File "/usr/local/lib/python3.9/site-packages/hass_nabucasa/cloud_api.py", line 23, in check_token
+    return await func(cloud, *args)
+  File "/usr/local/lib/python3.9/site-packages/hass_nabucasa/cloud_api.py", line 34, in log_response
+    resp = await func(*args)
+  File "/usr/local/lib/python3.9/site-packages/hass_nabucasa/cloud_api.py", line 94, in async_alexa_access_token
+    return await cloud.websession.post(
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host alexa-api.nabucasa.com:443 ssl:default [Try again]
+2022-02-23 22:32:08 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 867, in _resolve_host
+    await event.wait()
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/locks.py", line 34, in wait
+    raise self._exc
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 867, in _resolve_host
+    await event.wait()
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/locks.py", line 34, in wait
+    raise self._exc
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 867, in _resolve_host
+    await event.wait()
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/locks.py", line 34, in wait
+    raise self._exc
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Try again
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/alexa/state_report.py", line 101, in async_entity_state_listener
+    await async_send_changereport_message(
+  File "/usr/src/homeassistant/homeassistant/components/alexa/state_report.py", line 118, in async_send_changereport_message
+    token = await config.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 156, in async_get_access_token
+    resp = await cloud_api.async_alexa_access_token(self._cloud)
+  File "/usr/local/lib/python3.9/site-packages/hass_nabucasa/cloud_api.py", line 23, in check_token
+    return await func(cloud, *args)
+  File "/usr/local/lib/python3.9/site-packages/hass_nabucasa/cloud_api.py", line 34, in log_response
+    resp = await func(*args)
+  File "/usr/local/lib/python3.9/site-packages/hass_nabucasa/cloud_api.py", line 94, in async_alexa_access_token
+    return await cloud.websession.post(
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host alexa-api.nabucasa.com:443 ssl:default [Try again]
+2022-02-23 22:32:08 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 867, in _resolve_host
+    await event.wait()
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/locks.py", line 34, in wait
+    raise self._exc
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 867, in _resolve_host
+    await event.wait()
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/locks.py", line 34, in wait
+    raise self._exc
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 867, in _resolve_host
+    await event.wait()
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/locks.py", line 34, in wait
+    raise self._exc
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Try again
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/alexa/state_report.py", line 101, in async_entity_state_listener
+    await async_send_changereport_message(
+  File "/usr/src/homeassistant/homeassistant/components/alexa/state_report.py", line 118, in async_send_changereport_message
+    token = await config.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 156, in async_get_access_token
+    resp = await cloud_api.async_alexa_access_token(self._cloud)
+  File "/usr/local/lib/python3.9/site-packages/hass_nabucasa/cloud_api.py", line 23, in check_token
+    return await func(cloud, *args)
+  File "/usr/local/lib/python3.9/site-packages/hass_nabucasa/cloud_api.py", line 34, in log_response
+    resp = await func(*args)
+  File "/usr/local/lib/python3.9/site-packages/hass_nabucasa/cloud_api.py", line 94, in async_alexa_access_token
+    return await cloud.websession.post(
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host alexa-api.nabucasa.com:443 ssl:default [Try again]
+2022-02-23 22:32:08 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1154, in _create_direct_connection
+    hosts = await asyncio.shield(host_resolved)
+  [Previous line repeated 1 more time]
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 867, in _resolve_host
+    await event.wait()
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/locks.py", line 34, in wait
+    raise self._exc
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 867, in _resolve_host
+    await event.wait()
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/locks.py", line 34, in wait
+    raise self._exc
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 867, in _resolve_host
+    await event.wait()
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/locks.py", line 34, in wait
+    raise self._exc
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 880, in _resolve_host
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/resolver.py", line 33, in resolve
+    infos = await self._loop.getaddrinfo(
+  File "/usr/local/lib/python3.9/asyncio/base_events.py", line 856, in getaddrinfo
+    return await self.run_in_executor(
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 52, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.9/socket.py", line 954, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Try again
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/alexa/state_report.py", line 101, in async_entity_state_listener
+    await async_send_changereport_message(
+  File "/usr/src/homeassistant/homeassistant/components/alexa/state_report.py", line 118, in async_send_changereport_message
+    token = await config.async_get_access_token()
+  File "/usr/src/homeassistant/homeassistant/components/cloud/alexa_config.py", line 156, in async_get_access_token
+    resp = await cloud_api.async_alexa_access_token(self._cloud)
+  File "/usr/local/lib/python3.9/site-packages/hass_nabucasa/cloud_api.py", line 23, in check_token
+    return await func(cloud, *args)
+  File "/usr/local/lib/python3.9/site-packages/hass_nabucasa/cloud_api.py", line 34, in log_response
+    resp = await func(*args)
+  File "/usr/local/lib/python3.9/site-packages/hass_nabucasa/cloud_api.py", line 94, in async_alexa_access_token
+    return await cloud.websession.post(
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/client.py", line 535, in _request
+    conn = await self._connector.connect(
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 542, in connect
+    proto = await self._create_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 907, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+  File "/usr/local/lib/python3.9/site-packages/aiohttp/connector.py", line 1166, in _create_direct_connection
+    raise ClientConnectorError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorError: Cannot connect to host alexa-api.nabucasa.com:443 ssl:default [Try again]
+2022-02-23 22:42:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 23:20:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 23:35:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-23 23:58:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-24 00:28:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-24 01:14:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-24 01:37:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-24 02:15:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-24 02:20:24 WARNING (Thread-10) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2022-02-24 02:20:39 ERROR (Thread-10) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2022-02-24 02:25:28 WARNING (Thread-11) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2022-02-24 02:25:35 ERROR (Thread-11) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2022-02-24 02:35:30 WARNING (Thread-9) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2022-02-24 02:35:34 ERROR (Thread-9) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2022-02-24 02:38:09 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-24 03:08:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-24 03:31:39 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-24 04:14:11 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2022-02-24 04:14:11 WARNING (Thread-7) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2022-02-24 04:14:16 ERROR (Thread-7) [pychromecast.socket_client] [All Chromecasts([::ffff:c0a8:129]):32201] Failed to connect to service ServiceInfo(type='host', data=('[::ffff:c0a8:129]', 32201)), retrying in 5.0s
+2022-02-24 04:14:41 WARNING (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2022-02-24 04:14:44 ERROR (Thread-8) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
+2022-02-24 04:24:40 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-02-24 04:47:40 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
