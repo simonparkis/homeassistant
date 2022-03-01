@@ -2767,3 +2767,134 @@ homeassistant.exceptions.TemplateError: TypeError: unsupported operand type(s) f
 2022-03-01 04:48:00 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
 2022-03-01 04:51:36 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
 2022-03-01 04:52:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 05:30:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 05:46:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 05:51:16 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-03-01 06:01:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 06:31:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 06:44:12 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0300]: async_initialize: all attempts have failed: [TimeoutError(), TimeoutError(), TimeoutError(), TimeoutError()]
+2022-03-01 06:44:12 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0006]: async_initialize: all attempts have failed: [TimeoutError(), TimeoutError(), TimeoutError(), TimeoutError()]
+2022-03-01 06:54:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 07:02:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 07:10:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 07:25:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 07:30:35 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-03-01 07:30:39 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-03-01 07:31:34 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [62718:2:0x0406]: async_initialize: all attempts have failed: [DeliveryError('[0xf4fe:2:0x0406]: Message send failure'), DeliveryError('[0xf4fe:2:0x0406]: Message send failure'), TimeoutError(), TimeoutError()]
+2022-03-01 07:31:46 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-03-01 07:32:30 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [62718:2:0x0001]: async_initialize: all attempts have failed: [TimeoutError(), TimeoutError(), TimeoutError(), TimeoutError()]
+2022-03-01 07:49:11 WARNING (MainThread) [homeassistant.components.http.ban] Login attempt or request with invalid authentication from 1.145.103.232 (1.145.103.232). (Mozilla/5.0 (iPhone; CPU iPhone OS 15_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Home Assistant/2022.2 (io.robbie.HomeAssistant; build:2022.345; iOS 15.1.0) Mobile/HomeAssistant, like Safari)
+2022-03-01 07:55:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 08:02:06 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.107.228
+2022-03-01 08:06:00 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.120.228
+2022-03-01 08:06:12 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.120.228
+2022-03-01 08:10:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 08:41:25 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.120.228
+2022-03-01 08:41:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 09:04:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 09:34:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 09:50:03 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [45124:2:0x0400]: async_initialize: all attempts have failed: [TimeoutError(), TimeoutError(), TimeoutError(), TimeoutError()]
+2022-03-01 10:05:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 10:28:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 11:13:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 11:51:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 11:59:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 12:06:23 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-03-01 12:14:56 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 12:22:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 13:00:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 13:30:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 13:53:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 14:01:38 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for bedroom-tv @ 192.168.1.111: Timeout while connecting to ('192.168.1.111', 6053)
+2022-03-01 14:05:28 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [62718:1:0x0006]: async_initialize: all attempts have failed: [TimeoutError(), TimeoutError(), TimeoutError(), TimeoutError()]
+2022-03-01 14:05:31 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [62718:2:0x0406]: async_initialize: all attempts have failed: [TimeoutError(), TimeoutError(), TimeoutError(), TimeoutError()]
+2022-03-01 14:08:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 14:46:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 15:17:27 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 15:30:02 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-03-01 15:32:27 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 15:59:13 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.108.232
+2022-03-01 16:02:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 16:19:05 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.108.232
+2022-03-01 16:26:33 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.108.232
+2022-03-01 16:33:27 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 16:34:35 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.108.232
+2022-03-01 16:34:54 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.108.232
+2022-03-01 16:36:17 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.108.232
+2022-03-01 16:42:36 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.108.232
+2022-03-01 16:43:36 WARNING (MainThread) [homeassistant.components.webhook] Received message for unregistered webhook c0d203f366185703b86464c6a802d90c67db3c70760f6322ff1fd45537757d7b from 1.145.108.232
+2022-03-01 17:03:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 17:19:27 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 18:04:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 18:06:02 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-03-01 18:21:05 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-03-01 18:27:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 18:38:51 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [52067:2:0x0001]: async_initialize: all attempts have failed: [DeliveryError('[0xcb63:2:0x0001]: Message send failure'), DeliveryError('[0xcb63:2:0x0001]: Message send failure'), DeliveryError('[0xcb63:2:0x0001]: Message send failure'), DeliveryError('[0xcb63:2:0x0001]: Message send failure')]
+2022-03-01 18:39:46 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [52067:2:0x000f]: async_initialize: all attempts have failed: [TimeoutError(), DeliveryError('[0xcb63:2:0x000f]: Message send failure'), DeliveryError('[0xcb63:2:0x000f]: Message send failure'), TimeoutError()]
+2022-03-01 18:50:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 18:58:27 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 19:02:07 ERROR (stream_worker) [homeassistant.components.stream.stream.camera.garage] Error from stream worker: Stream ended; no additional packets
+2022-03-01 19:17:56 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-03-01 19:19:26 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-03-01 19:21:07 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-03-01 19:21:50 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-03-01 19:22:11 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-03-01 19:24:14 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-03-01 19:28:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 19:51:04 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_inverter_1_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetInverterRealtimeData.cgi?Scope=Device&DeviceId=1&DataCollection=CommonInverterData.
+2022-03-01 19:51:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 19:59:27 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 20:02:47 ERROR (MainThread) [homeassistant.components.fronius] Error fetching fronius_logger_http://192.168.1.80 data: Connection to Fronius device failed at http://192.168.1.80/solar_api/v1/GetLoggerInfo.cgi.
+2022-03-01 20:07:00 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xeb'
+2022-03-01 20:17:04 WARNING (MainThread) [homeassistant.components.automation.motion_lights_laundry] Motion Lights Laundry: Already running
+2022-03-01 20:29:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 21:22:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 21:38:27 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 21:53:27 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 21:58:25 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-simon @ 192.168.1.9: Error connecting to ('192.168.1.9', 6053): [Errno 113] Connect call failed ('192.168.1.9', 6053)
+2022-03-01 21:59:46 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for bedroom-tv @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2022-03-01 22:23:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 22:38:57 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 23:05:02 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-simon @ 192.168.1.9: Error connecting to ('192.168.1.9', 6053): [Errno 113] Connect call failed ('192.168.1.9', 6053)
+2022-03-01 23:07:19 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for switch.living_room_tv
+2022-03-01 23:09:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 23:39:58 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-01 23:47:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-02 00:10:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-02 00:22:55 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x53'
+2022-03-02 00:33:56 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xf9'
+2022-03-02 00:40:58 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-02 01:08:53 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x28'
+2022-03-02 01:23:30 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x04'
+2022-03-02 01:26:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-02 01:34:36 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xaf'
+2022-03-02 01:49:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-02 02:09:12 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xb3'
+2022-03-02 02:27:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-02 02:45:14 WARNING (Thread-12) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Heartbeat timeout, resetting connection
+2022-03-02 02:45:30 ERROR (Thread-12) [pychromecast.socket_client] [Bedroom TV(192.168.1.62):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.62', 8009)), retrying in 5.0s
+2022-03-02 03:09:31 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x4b'
+2022-03-02 03:12:58 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-02 03:24:30 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x2c'
+2022-03-02 03:26:52 ERROR (Thread-8) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error reading from socket.
+2022-03-02 03:26:52 WARNING (Thread-8) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Error communicating with socket, resetting connection
+2022-03-02 03:26:52 ERROR (Thread-8) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 32201)), retrying in 5.0s
+2022-03-02 03:27:21 WARNING (Thread-9) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Heartbeat timeout, resetting connection
+2022-03-02 03:27:28 ERROR (Thread-9) [pychromecast.socket_client] [Bedroom(192.168.1.220):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 8009)), retrying in 5.0s
+2022-03-02 03:27:36 ERROR (Thread-8) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error reading from socket.
+2022-03-02 03:27:36 WARNING (Thread-8) [pychromecast.socket_client] [All Chromecasts(192.168.1.41):32201] Error communicating with socket, resetting connection
+2022-03-02 03:27:36 ERROR (Thread-8) [pychromecast.socket_client] [All Chromecasts(192.168.1.220):32201] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.220', 32201)), retrying in 5.0s
+2022-03-02 03:29:26 WARNING (Thread-11) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Heartbeat timeout, resetting connection
+2022-03-02 03:29:33 ERROR (Thread-11) [pychromecast.socket_client] [Kitchen(192.168.1.40):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.40', 8009)), retrying in 5.0s
+2022-03-02 03:43:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-02 04:09:53 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0x1d'
+2022-03-02 04:13:58 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-02 04:24:53 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.john failed with [Errno -3] Try again
+2022-03-02 04:24:53 ERROR (MainThread) [homeassistant.components.rest.data] Error fetching data: https://zwarteveen.duckdns.org/api/states/person.maria failed with [Errno -3] Try again
+2022-03-02 04:28:58 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-02 04:36:48 WARNING (MainThread) [zigpy_deconz.api] No response to 'Command.aps_data_indication' command with seq id '0xc6'
+2022-03-02 04:52:51 WARNING (Thread-7) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Heartbeat timeout, resetting connection
+2022-03-02 04:52:58 ERROR (Thread-7) [pychromecast.socket_client] [Front Room(192.168.1.41):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.41', 8009)), retrying in 5.0s
+2022-03-02 04:54:40 WARNING (Thread-10) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Heartbeat timeout, resetting connection
+2022-03-02 04:54:48 ERROR (Thread-10) [pychromecast.socket_client] [Front Room TV(192.168.1.61):8009] Failed to connect to service ServiceInfo(type='host', data=('192.168.1.61', 8009)), retrying in 5.0s
+2022-03-02 04:59:28 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
