@@ -871,3 +871,46 @@
           entity_id: input_boolean.auto_garage_door
     default: []
   mode: single
+- id: '1646648094965'
+  alias: Update Complications
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.house_status
+  - platform: state
+    entity_id: input_boolean.house_guests
+  - platform: state
+    entity_id: input_boolean.vacation_mode
+  action:
+  - service: notify.mobile_app_parkis
+    data:
+      message: update_complications
+  mode: single
+- id: '1646649699776'
+  alias: iOS - Toggle Lamp
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ios.action_fired
+    event_data:
+      actionName: Toggle lamp
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: light.lamp
+        state: 'on'
+      sequence:
+      - service: homeassistant.turn_off
+        data: {}
+        target:
+          entity_id:
+          - light.lamp
+          - automation.auto_lights_living_room
+    default:
+    - service: homeassistant.turn_on
+      data: {}
+      target:
+        entity_id: automation.auto_lights_living_room
+  mode: single

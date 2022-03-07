@@ -1,26 +1,81 @@
-2022-03-06 10:58:51 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-03-06 10:58:51 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-03-06 10:58:51 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-03-06 10:58:51 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-03-06 10:58:51 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-03-06 10:58:51 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
-2022-03-06 10:58:56 WARNING (MainThread) [homeassistant.components.updater] The updater integration has been deprecated and will be removed in 2022.5, please remove it from your configuration
-2022-03-06 10:58:59 ERROR (MainThread) [homeassistant.components.mqtt] Failed to connect to MQTT server due to exception: [Errno 111] Connection refused
-2022-03-06 10:59:01 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.rubbish (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
-2022-03-06 10:59:01 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.recycling (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
-2022-03-06 10:59:02 WARNING (SyncWorker_0) [homeassistant.components.bluetooth_le_tracker.device_tracker] No Bluetooth LE devices to track!
-2022-03-06 10:59:02 WARNING (MainThread) [homeassistant.helpers.entity] Entity calendar.garbage_collection (<class 'custom_components.garbage_collection.calendar.GarbageCollectionCalendar'>) implements device_state_attributes. Please report it to the custom component author.
-2022-03-06 10:59:02 ERROR (MainThread) [homeassistant.components.device_tracker] Error setting up platform legacy bluetooth_le_tracker
-2022-03-06 10:59:02 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.state }}'
-2022-03-06 10:59:02 ERROR (MainThread) [homeassistant.helpers.template] Template variable error: 'value_json' is undefined when rendering '{{ value_json.state }}'
-2022-03-06 10:59:03 WARNING (MainThread) [homeassistant.helpers.entity] Entity fan.master_bedroom (<class 'custom_components.xiaomi_miio_fan.fan.XiaomiFan'>) implements device_state_attributes. Please report it to the custom component author.
-2022-03-06 10:59:03 WARNING (MainThread) [homeassistant.config_entries] Config entry 'SolarNet Datalogger at 192.168.1.80' for fronius integration not ready yet: Connection to Fronius device failed at http://192.168.1.80/solar_api/GetAPIVersion.cgi.; Retrying in background
-2022-03-06 10:59:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-sofia @ 192.168.1.8: Error connecting to ('192.168.1.8', 6053): [Errno 113] Connect call failed ('192.168.1.8', 6053)
-2022-03-06 10:59:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-joseph @ 192.168.1.7: Error connecting to ('192.168.1.7', 6053): [Errno 113] Connect call failed ('192.168.1.7', 6053)
-2022-03-06 10:59:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for bedroom-tv @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
-2022-03-06 10:59:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Error connecting to ('192.168.1.86', 6053): [Errno 113] Connect call failed ('192.168.1.86', 6053)
-2022-03-06 10:59:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for frontroom-tv @ 192.168.1.70: Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
-2022-03-06 10:59:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 3d-printer @ 192.168.1.14: Error connecting to ('192.168.1.14', 6053): [Errno 113] Connect call failed ('192.168.1.14', 6053)
-2022-03-06 10:59:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for heater-joseph @ 192.168.1.17: Error connecting to ('192.168.1.17', 6053): [Errno 113] Connect call failed ('192.168.1.17', 6053)
-2022-03-06 10:59:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
-2022-03-06 10:59:05 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-simon @ 192.168.1.133: Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
+2022-03-07 20:01:40 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration browser_mod which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-03-07 20:01:40 WARNING (SyncWorker_1) [homeassistant.loader] We found a custom integration circadian_lighting which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-03-07 20:01:40 WARNING (SyncWorker_3) [homeassistant.loader] We found a custom integration xiaomi_miio_fan which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-03-07 20:01:40 WARNING (SyncWorker_0) [homeassistant.loader] We found a custom integration spotcast which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-03-07 20:01:40 WARNING (SyncWorker_4) [homeassistant.loader] We found a custom integration garbage_collection which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-03-07 20:01:40 WARNING (SyncWorker_2) [homeassistant.loader] We found a custom integration hacs which has not been tested by Home Assistant. This component might cause stability problems, be sure to disable it if you experience issues with Home Assistant
+2022-03-07 20:01:41 WARNING (MainThread) [homeassistant.components.updater] The updater integration has been deprecated and will be removed in 2022.5, please remove it from your configuration
+2022-03-07 20:01:43 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.rubbish (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
+2022-03-07 20:01:43 WARNING (MainThread) [homeassistant.helpers.entity] Entity sensor.recycling (<class 'custom_components.garbage_collection.sensor.GarbageCollection'>) implements device_state_attributes. Please report it to the custom component author.
+2022-03-07 20:01:44 WARNING (MainThread) [homeassistant.helpers.entity] Entity calendar.garbage_collection (<class 'custom_components.garbage_collection.calendar.GarbageCollectionCalendar'>) implements device_state_attributes. Please report it to the custom component author.
+2022-03-07 20:01:44 WARNING (SyncWorker_3) [homeassistant.components.bluetooth_le_tracker.device_tracker] No Bluetooth LE devices to track!
+2022-03-07 20:01:44 ERROR (MainThread) [homeassistant.components.device_tracker] Error setting up platform legacy bluetooth_le_tracker
+2022-03-07 20:01:46 WARNING (MainThread) [homeassistant.config_entries] Config entry 'SolarNet Datalogger at 192.168.1.80' for fronius integration not ready yet: Connection to Fronius device failed at http://192.168.1.80/solar_api/GetAPIVersion.cgi.; Retrying in background
+2022-03-07 20:01:46 WARNING (MainThread) [homeassistant.helpers.entity] Entity fan.master_bedroom (<class 'custom_components.xiaomi_miio_fan.fan.XiaomiFan'>) implements device_state_attributes. Please report it to the custom component author.
+2022-03-07 20:01:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for frontroom-tv @ 192.168.1.70: Error connecting to ('192.168.1.70', 6053): [Errno 113] Connect call failed ('192.168.1.70', 6053)
+2022-03-07 20:01:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-sofia @ 192.168.1.8: Error connecting to ('192.168.1.8', 6053): [Errno 113] Connect call failed ('192.168.1.8', 6053)
+2022-03-07 20:01:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-simon @ 192.168.1.9: Error connecting to ('192.168.1.9', 6053): [Errno 113] Connect call failed ('192.168.1.9', 6053)
+2022-03-07 20:01:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-joseph @ 192.168.1.7: Error connecting to ('192.168.1.7', 6053): [Errno 113] Connect call failed ('192.168.1.7', 6053)
+2022-03-07 20:01:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for lamp-switch @ 192.168.1.86: Error connecting to ('192.168.1.86', 6053): [Errno 113] Connect call failed ('192.168.1.86', 6053)
+2022-03-07 20:01:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-simon @ 192.168.1.133: Error connecting to ('192.168.1.133', 6053): [Errno 113] Connect call failed ('192.168.1.133', 6053)
+2022-03-07 20:01:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for computer-zoey @ 192.168.1.99: Error connecting to ('192.168.1.99', 6053): [Errno 113] Connect call failed ('192.168.1.99', 6053)
+2022-03-07 20:01:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for bedroom-tv @ 192.168.1.111: Error connecting to ('192.168.1.111', 6053): [Errno 113] Connect call failed ('192.168.1.111', 6053)
+2022-03-07 20:01:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for 3d-printer @ 192.168.1.14: Error connecting to ('192.168.1.14', 6053): [Errno 113] Connect call failed ('192.168.1.14', 6053)
+2022-03-07 20:01:47 WARNING (MainThread) [aioesphomeapi.reconnect_logic] Can't connect to ESPHome API for heater-joseph @ 192.168.1.17: Error connecting to ('192.168.1.17', 6053): [Errno 113] Connect call failed ('192.168.1.17', 6053)
+2022-03-07 20:01:49 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0008]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure'), DeliveryError('[0xb09b:11:0x0008]: Message send failure')]
+2022-03-07 20:01:50 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0300]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure'), DeliveryError('[0xb09b:11:0x0300]: Message send failure')]
+2022-03-07 20:01:50 WARNING (MainThread) [homeassistant.components.zha.core.channels.base] [0xB09B:11:0x0006]: async_initialize: all attempts have failed: [DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure'), DeliveryError('[0xb09b:11:0x0006]: Message send failure')]
+2022-03-07 20:01:59 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Random RGB
+2022-03-07 20:01:59 ERROR (MainThread) [homeassistant.components.automation.button_sofia_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Sofia Toggle Lamp
+2022-03-07 20:01:59 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_lamp] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Lamp
+2022-03-07 20:01:59 ERROR (MainThread) [homeassistant.components.automation.button_joseph_toggle_random_rgb] Unknown error while setting up trigger (empty result) Button - Joseph Toggle Random RGB
+2022-03-07 20:13:26 WARNING (MainThread) [homeassistant.helpers.entity] Update of fan.master_bedroom is taking over 10 seconds
+2022-03-07 20:16:56 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for light.lamp_sofia
+2022-03-07 20:16:57 ERROR (MainThread) [homeassistant.components.alexa.state_report] Timeout sending report to Alexa for light.lamp_sofia
+2022-03-07 20:23:06 ERROR (MainThread) [frontend.js.latest.202203010] :0:0 ResizeObserver loop completed with undelivered notifications.
+2022-03-07 20:25:19 ERROR (MainThread) [frontend.js.latest.202203010] :0:0 ResizeObserver loop completed with undelivered notifications.
+2022-03-07 20:25:51 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Invalid trigger configuration. Got OrderedDict([('media_extractor', {}), ('stream', {}), ('default_config', {}), ('updater', {}), ('system_health', {}), ('conversation', {}), ('history', {'use_include_order': False, 'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], 'entities': []}}), ('logbook', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], 'entities': []}}), ('map', {}), ('sun', {}), ('fan', [OrderedD.... (See /config/configuration.yaml, line 42). 
+2022-03-07 20:25:52 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Invalid trigger configuration. Got OrderedDict([('media_extractor', {}), ('stream', {}), ('default_config', {}), ('updater', {}), ('system_health', {}), ('conversation', {}), ('history', {'use_include_order': False, 'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], 'entities': []}}), ('logbook', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], 'entities': []}}), ('map', {}), ('sun', {}), ('fan', [OrderedD.... (See /config/configuration.yaml, line 42). 
+2022-03-07 20:25:52 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Invalid trigger configuration. Got OrderedDict([('media_extractor', {}), ('stream', {}), ('default_config', {}), ('updater', {}), ('system_health', {}), ('conversation', {}), ('history', {'use_include_order': False, 'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], 'entities': []}}), ('logbook', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], 'entities': []}}), ('map', {}), ('sun', {}), ('fan', [OrderedD.... (See /config/configuration.yaml, line 42). 
+2022-03-07 20:25:52 ERROR (MainThread) [homeassistant.config] Invalid config for [automation]: Invalid trigger configuration. Got OrderedDict([('media_extractor', {}), ('stream', {}), ('default_config', {}), ('updater', {}), ('system_health', {}), ('conversation', {}), ('history', {'use_include_order': False, 'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], 'entities': []}}), ('logbook', {'exclude': {'entity_globs': [], 'domains': [], 'entities': []}, 'include': {'entity_globs': [], 'domains': [], 'entities': []}}), ('map', {}), ('sun', {}), ('fan', [OrderedD.... (See /config/configuration.yaml, line 42). 
+2022-03-07 20:25:52 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.9/site-packages/aioesphomeapi/client.py", line 201, in _on_stop
+    await on_stop()
+  File "/usr/local/lib/python3.9/site-packages/aioesphomeapi/reconnect_logic.py", line 84, in _on_disconnect
+    await self._on_disconnect_cb()
+  File "/usr/src/homeassistant/homeassistant/components/esphome/__init__.py", line 297, in on_disconnect
+    disconnect_cb()
+  File "/usr/src/homeassistant/homeassistant/helpers/event.py", line 293, in remove_listener
+    _async_remove_indexed_listeners(
+  File "/usr/src/homeassistant/homeassistant/helpers/event.py", line 321, in _async_remove_indexed_listeners
+    callbacks[storage_key].remove(job)
+ValueError: list.remove(x): x not in list
+2022-03-07 20:25:55 WARNING (Thread-108) [homeassistant.util.executor] Thread[SyncWorker_5] is still running at shutdown: File "/usr/local/lib/python3.9/threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 83, in _worker
+    work_item.run()
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/bluetooth_tracker/device_tracker.py", line 64, in discover_devices
+    result = bluetooth.discover_devices(
+  File "/usr/local/lib/python3.9/site-packages/bluetooth/bluez.py", line 30, in discover_devices
+    results = _bt.hci_inquiry (sock, duration=duration, flush_cache=True,
+2022-03-07 20:25:56 WARNING (Thread-108) [homeassistant.util.executor] Thread[SyncWorker_5] is still running at shutdown: File "/usr/local/lib/python3.9/threading.py", line 930, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/lib/python3.9/threading.py", line 973, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.9/threading.py", line 910, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 83, in _worker
+    work_item.run()
+  File "/usr/local/lib/python3.9/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/src/homeassistant/homeassistant/components/bluetooth_tracker/device_tracker.py", line 64, in discover_devices
+    result = bluetooth.discover_devices(
+  File "/usr/local/lib/python3.9/site-packages/bluetooth/bluez.py", line 30, in discover_devices
+    results = _bt.hci_inquiry (sock, duration=duration, flush_cache=True,
