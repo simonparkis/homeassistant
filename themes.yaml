@@ -1,5 +1,7 @@
 slate_v1:
   # Main colors
+  code-editor-background-color: '#222222'
+  code-editor-gutter-color: '#292929'
   primary-color: '#2980b9'
   accent-color: '#b58e31'
   hui-divider-row-color: '#b5e31'
@@ -89,7 +91,8 @@ slate_v1:
   card-background-color: "var(--paper-card-background-color)"
 
 slate:
-    
+    code-editor-background-color: '#222222'
+    code-editor-gutter-color: '#292929'
     card-background-color: "var(--paper-card-background-color)"
     switch-checked-color: "var(--paper-toggle-button-checked-button-color)"
     switch-unchecked-button-color: "var(--paper-toggle-button-unchecked-button-color)"
