@@ -8,3 +8,8 @@
   framerate: 5
   verify_ssl: false
   scan_interval: 5
+
+- platform: mjpeg
+  name: voron
+  still_image_url: http://192.168.1.100/webcam/?action=snapshot
+  mjpeg_url: http://192.168.1.100/webcam/?action=stream
