@@ -130,6 +130,7 @@
   condition: []
   action:
   - service: cover.toggle
+    data: {}
     target:
       entity_id: cover.garage_door
   mode: single
@@ -182,7 +183,7 @@
     input:
       begin_dim: '19:30:00'
       end_dim: '23:00:00'
-      no_motion_wait: 6
+      no_motion_wait: 60
       light_entity: light.robe
       motion_sensor: binary_sensor.motion_robe
       min_brightness: 1

@@ -38,7 +38,7 @@ template: !include configuration/template.yaml
 group: !include groups.yaml
 
 ########### SCRIPTS, AUTOMATIONS & SCENES ################
-script manual: !include_dir_merge_named scripts
+#script manual: !include_dir_merge_named scripts
 script: !include scripts.yaml
 automation: !include automations.yaml
 #automation manual: !include_dir_merge_list automation/
