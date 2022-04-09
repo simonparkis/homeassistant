@@ -118,22 +118,6 @@
         push:
           sound: doorbell.wav
   mode: single
-- id: '1631102887796'
-  alias: Button - Toggle Garage Door
-  description: ''
-  trigger:
-  - device_id: b8959b35b68ce88450a8f23e653fa5a9
-    domain: zha
-    platform: device
-    type: remote_button_short_press
-    subtype: remote_button_short_press
-  condition: []
-  action:
-  - service: cover.toggle
-    data: {}
-    target:
-      entity_id: cover.garage_door
-  mode: single
 - id: '1631139553218'
   alias: Modes - Vacation Mode
   description: ''
@@ -841,6 +825,11 @@
     - conditions:
       - condition: trigger
         id: open
+      - condition: device
+        device_id: d3d0ec8c86f42fcf3ba206f8756b5b0b
+        domain: cover
+        entity_id: cover.garage_door
+        type: is_closed
       sequence:
       - service: cover.open_cover
         data: {}
@@ -849,6 +838,11 @@
     - conditions:
       - condition: trigger
         id: close
+      - condition: device
+        device_id: d3d0ec8c86f42fcf3ba206f8756b5b0b
+        domain: cover
+        entity_id: cover.garage_door
+        type: is_open
       sequence:
       - service: cover.close_cover
         data: {}
