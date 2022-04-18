@@ -1,19 +1,3 @@
-- id: '1630324400777'
-  alias: Buttons - Simon Lamp Toggle
-  description: ''
-  trigger:
-  - device_id: 2c22963379a0ca458aa4467070f57643
-    domain: zha
-    platform: device
-    type: remote_button_short_press
-    subtype: remote_button_short_press
-  condition: []
-  action:
-  - type: toggle
-    device_id: 9df99d57274abf920f3fa0db25367426
-    entity_id: light.lamp_simon
-    domain: light
-  mode: single
 - id: '1630971499864'
   alias: Climate - Auto Heater Master Bedroom
   description: ''
@@ -147,18 +131,6 @@
       target:
         entity_id: input_boolean.vacation_mode
   mode: single
-- id: '1631192764512'
-  alias: Auto Lights - Master Bedroom
-  description: ''
-  use_blueprint:
-    path: auto_lights.yaml
-    input:
-      light_entity: light.lamp_simon
-      motion_sensor: binary_sensor.motion_master
-      begin_dim: '21:30:00'
-      end_dim: '23:00:00'
-      no_motion_wait: 120
-      min_brightness: 1
 - id: '1631192884264'
   alias: Auto Lights - Robe
   description: ''
@@ -281,53 +253,6 @@
       end_dim: '23:59:00'
       no_motion_wait: 3600
       min_brightness: 25
-- id: '1631444022649'
-  alias: Button - Sofia Toggle Random RGB
-  description: ''
-  trigger:
-  - device_id: b9136715b05f11f9b46f1c587b8b2f30
-    domain: zha
-    platform: device
-    type: remote_button_double_press
-    subtype: remote_button_double_press
-  action:
-  - choose:
-      conditions:
-      - condition: template
-        value_template: '{{ state_attr("light.lamp_sofia", "color_mode") == "rgb"
-          and state_attr("light.lamp_sofia", "effect") == "Random" }}'
-      sequence:
-      - service: light.turn_on
-        data:
-          white: 255
-          effect: none
-        target:
-          entity_id: light.lamp_sofia
-    default:
-    - service: light.turn_on
-      data:
-        rgb_color:
-        - 255
-        - 255
-        - 255
-        effect: Random
-      target:
-        entity_id: light.lamp_sofia
-  mode: single
-- id: '1631444352803'
-  alias: Button - Sofia Toggle Lamp
-  description: ''
-  trigger:
-  - device_id: b9136715b05f11f9b46f1c587b8b2f30
-    domain: zha
-    platform: device
-    type: remote_button_short_press
-    subtype: remote_button_short_press
-  action:
-  - service: light.toggle
-    target:
-      entity_id: light.lamp_sofia
-  mode: single
 - id: '1631593521972'
   alias: Modes - Guest Mode
   description: Automatically Set and Reset (except when manualy set) Guest Mode when
@@ -361,55 +286,6 @@
         entity_id: input_boolean.house_guests
   mode: single
   max_exceeded: silent
-- id: '1631610776168'
-  alias: Button - Joseph Toggle Lamp
-  description: ''
-  trigger:
-  - device_id: 57bdadaa16262393d6ba3c4327241cbc
-    domain: zha
-    platform: device
-    type: remote_button_short_press
-    subtype: remote_button_short_press
-  condition: []
-  action:
-  - service: light.toggle
-    target:
-      entity_id: light.lamp_joseph
-  mode: single
-- id: '1631610858722'
-  alias: Button - Joseph Toggle Random RGB
-  description: ''
-  trigger:
-  - device_id: 57bdadaa16262393d6ba3c4327241cbc
-    domain: zha
-    platform: device
-    type: remote_button_double_press
-    subtype: remote_button_double_press
-  condition: []
-  action:
-  - choose:
-      conditions:
-      - condition: template
-        value_template: '{{ state_attr("light.lamp_joseph", "color_mode") == "rgb"
-          and state_attr("light.lamp_joseph", "effect") == "Random" }}'
-      sequence:
-      - service: light.turn_on
-        data:
-          white: 255
-          effect: none
-        target:
-          entity_id: light.lamp_joseph
-    default:
-    - service: light.turn_on
-      data:
-        rgb_color:
-        - 255
-        - 255
-        - 255
-        effect: Random
-      target:
-        entity_id: light.lamp_joseph
-  mode: single
 - id: '1631618246753'
   alias: Kids Lights Off At Sunrise
   description: ''
@@ -423,6 +299,8 @@
       entity_id:
       - light.lamp_sofia
       - light.lamp_joseph
+      - light.lamp_theo
+    data: {}
   mode: single
 - id: '1631706621274'
   alias: Garage Door - Simon
@@ -718,43 +596,6 @@
       title: Security System
       message: Motion has been detected in the house
   mode: single
-- id: '1633256768845'
-  alias: Button - Toggle Master Motion Lights
-  description: ''
-  trigger:
-  - device_id: 2c22963379a0ca458aa4467070f57643
-    domain: zha
-    platform: device
-    type: remote_button_double_press
-    subtype: remote_button_double_press
-  action:
-  - service: automation.toggle
-    entity_id: automation.auto_lights_master_bedroom
-  mode: single
-- id: '1634260556718'
-  alias: Motion Lights Laundry
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: binary_sensor.motion_laundry
-    to: 'on'
-  action:
-  - service: light.turn_on
-    target:
-      entity_id: light.laundry
-    data:
-      brightness_pct: 100
-  - wait_for_trigger:
-      platform: state
-      entity_id: binary_sensor.motion_laundry
-      to: 'off'
-      for: 00:00:30
-  - service: light.turn_off
-    target:
-      entity_id: light.laundry
-    data:
-      transition: 0.1
-  mode: single
 - id: '1635649936935'
   alias: iOS - Toggle Garage Door
   description: ''
@@ -795,29 +636,33 @@
   alias: Philips Remote - Garage
   description: ''
   trigger:
-  - device_id: d248ea8e6a087482dd4d7bf4a63a4fcc
-    domain: zha
+  - device_id: f7bf09ea0eff070b1acda3c89cbecab1
+    domain: hue
     platform: device
-    type: remote_button_short_press
-    subtype: turn_on
+    type: short_release
+    subtype: 1
+    unique_id: c0b96bb4-cbfa-43ae-b9c1-43ba7fefb08f
     id: open
-  - device_id: d248ea8e6a087482dd4d7bf4a63a4fcc
-    domain: zha
+  - device_id: f7bf09ea0eff070b1acda3c89cbecab1
+    domain: hue
     platform: device
-    type: remote_button_short_press
-    subtype: turn_off
+    type: short_release
+    subtype: 4
+    unique_id: 528960a8-d579-4a32-aece-fb14bb9f62eb
     id: close
-  - device_id: d248ea8e6a087482dd4d7bf4a63a4fcc
-    domain: zha
+  - device_id: f7bf09ea0eff070b1acda3c89cbecab1
+    domain: hue
     platform: device
-    type: remote_button_short_press
-    subtype: dim_up
+    type: short_release
+    subtype: 2
+    unique_id: 1836907a-1155-458e-ba95-be406334a5ae
     id: keep_open
-  - device_id: d248ea8e6a087482dd4d7bf4a63a4fcc
-    domain: zha
+  - device_id: f7bf09ea0eff070b1acda3c89cbecab1
+    domain: hue
     platform: device
-    type: remote_button_short_press
-    subtype: dim_down
+    type: short_release
+    subtype: 3
+    unique_id: b7ceff6d-bbe3-4b0d-b74d-fab613e21f3b
     id: auto_close
   condition: []
   action:
@@ -909,3 +754,73 @@
       target:
         entity_id: automation.auto_lights_living_room
   mode: single
+- id: '1650171153523'
+  alias: Auto Lights - Sofia
+  description: ''
+  use_blueprint:
+    path: auto_lights.yaml
+    input:
+      end_dim: '20:00:00'
+      light_entity: light.lamp_sofia
+      motion_sensor: binary_sensor.motion_sofia
+      begin_dim: '17:00:00'
+- id: '1650274609927'
+  alias: Lights - Sofia
+  description: ''
+  use_blueprint:
+    path: auto_lights_kids.yaml
+    input:
+      off_time_threshold: '19:30:00'
+      light_entity: light.lamp_sofia
+      motion_sensor: binary_sensor.motion_sofia
+      light_sensor: sensor.lux_sofia
+      no_motion_wait: 180
+      min_brightness: 10
+- id: '1650275312000'
+  alias: Lights - Joseph
+  description: ''
+  use_blueprint:
+    path: auto_lights_kids.yaml
+    input:
+      off_time_threshold: '19:30:00'
+      light_entity: light.lamp_joseph
+      motion_sensor: binary_sensor.motion_joseph
+      light_sensor: sensor.lux_joseph
+      no_motion_wait: 300
+      min_brightness: 25
+- id: '1650275433270'
+  alias: Lights - Theo
+  description: ''
+  use_blueprint:
+    path: auto_lights_kids.yaml
+    input:
+      off_time_threshold: '19:00:00'
+      light_entity: light.lamp_theo
+      motion_sensor: binary_sensor.motion_theo
+      light_sensor: sensor.lux_theo
+      no_motion_wait: 180
+      min_brightness: 10
+- id: '1650280329890'
+  alias: Lights - Simon
+  description: ''
+  use_blueprint:
+    path: auto_lights_master.yaml
+    input:
+      off_time_threshold: '20:30:00'
+      light_entity: light.lamp_simon
+      motion_sensor: binary_sensor.motion_master
+      light_sensor: sensor.lux_master
+      no_motion_wait: 180
+      phone_charge_state: sensor.iphone_xr_battery_state
+- id: '1650280413939'
+  alias: Lights - Zoey
+  description: ''
+  use_blueprint:
+    path: auto_lights_master.yaml
+    input:
+      off_time_threshold: '20:30:00'
+      light_entity: light.lamp_zoey
+      motion_sensor: binary_sensor.motion_master
+      light_sensor: sensor.lux_master
+      no_motion_wait: 180
+      phone_charge_state: sensor.zoeys_iphone_battery_state

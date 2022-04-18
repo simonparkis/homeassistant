@@ -253,36 +253,6 @@
                                     "icon": "mdi:run-fast"
                                 }
                             ]
-                        },
-                        {
-                            "title": "Laundry",
-                            "type": "entities",
-                            "show_header_toggle": false,
-                            "state_color": true,
-                            "entities": [
-                                {
-                                    "entity": "light.laundry",
-                                    "name": "Light"
-                                },
-                                {
-                                    "entity": "binary_sensor.motion_laundry",
-                                    "name": "Motion Sensor"
-                                },
-                                {
-                                    "type": "divider",
-                                    "style": {
-                                        "height": "1px",
-                                        "width": "100%",
-                                        "margin-left": "auto",
-                                        "margin-right": "auto",
-                                        "background": "#CC7C19"
-                                    }
-                                },
-                                {
-                                    "entity": "automation.motion_lights_laundry",
-                                    "name": "Motion Lights"
-                                }
-                            ]
                         }
                     ]
                 },
@@ -318,21 +288,16 @@
                                     "icon": "mdi:thermometer"
                                 },
                                 {
-                                    "entity": "fan.master_bedroom"
-                                },
-                                {
                                     "entity": "binary_sensor.motion_master",
                                     "name": "Motion Sensor",
                                     "icon": "mdi:run-fast"
                                 },
                                 {
                                     "entity": "light.lamp_simon",
-                                    "name": "Simon's Lamp",
-                                    "icon": "mdi:floor-lamp"
+                                    "name": "Simon's Lamp"
                                 },
                                 {
-                                    "entity": "light.robe",
-                                    "name": "Walk-in-Robe"
+                                    "entity": "light.lamp_zoey"
                                 },
                                 {
                                     "type": "divider",
@@ -345,7 +310,7 @@
                                     }
                                 },
                                 {
-                                    "entity": "automation.auto_lights_master_bedroom",
+                                    "entity": "group.auto_lights_master",
                                     "name": "Motion Lights",
                                     "icon": "mdi:exit-run"
                                 },
@@ -387,6 +352,11 @@
                                     }
                                 },
                                 {
+                                    "entity": "binary_sensor.motion_sofia",
+                                    "name": "Motion Sensor",
+                                    "icon": "mdi:run-fast"
+                                },
+                                {
                                     "type": "divider",
                                     "style": {
                                         "height": "1px",
@@ -397,9 +367,9 @@
                                     }
                                 },
                                 {
-                                    "entity": "input_boolean.nightlight_sofia",
-                                    "name": "Auto Night Light",
-                                    "icon": "mdi:lighthouse-on"
+                                    "entity": "automation.auto_lights_sofia",
+                                    "name": "Auto Lights",
+                                    "icon": "mdi:exit-run"
                                 },
                                 {
                                     "entity": "input_boolean.enable_heater_sofia",
@@ -439,6 +409,11 @@
                                     }
                                 },
                                 {
+                                    "entity": "binary_sensor.motion_joseph",
+                                    "name": "Motion Sensor",
+                                    "icon": "mdi:run-fast"
+                                },
+                                {
                                     "type": "divider",
                                     "style": {
                                         "height": "1px",
@@ -449,9 +424,9 @@
                                     }
                                 },
                                 {
-                                    "entity": "input_boolean.nightlight_joseph",
-                                    "name": "Auto Night Light",
-                                    "icon": "mdi:lighthouse-on"
+                                    "entity": "automation.auto_lights_joseph",
+                                    "name": "Auto Lights",
+                                    "icon": "mdi:exit-run"
                                 },
                                 {
                                     "entity": "input_boolean.enable_heater_joseph",
@@ -470,6 +445,11 @@
                                     "entity": "climate.theo_bedroom",
                                     "icon": "mdi:thermometer",
                                     "name": "Climate Control"
+                                },
+                                {
+                                    "entity": "light.lamp_theo",
+                                    "name": "Lamp",
+                                    "icon": "mdi:floor-lamp"
                                 },
                                 {
                                     "entity": "binary_sensor.motion_theo",
@@ -499,6 +479,11 @@
                                         "margin-right": "auto",
                                         "background": "#CC7C19"
                                     }
+                                },
+                                {
+                                    "entity": "automation.auto_lights_theo",
+                                    "name": "Motion Lights",
+                                    "icon": "mdi:exit-run"
                                 },
                                 {
                                     "entity": "input_boolean.enable_heater_theo",
@@ -596,30 +581,6 @@
                                     "icon": "mdi:printer"
                                 }
                             ]
-                        },
-                        {
-                            "type": "entity-filter",
-                            "show_empty": false,
-                            "entities": [
-                                "sensor.battery_temp_master",
-                                "sensor.battery_temp_sofia",
-                                "sensor.battery_temp_joseph",
-                                "sensor.battery_temp_theo",
-                                "sensor.battery_button_simon",
-                                "sensor.battery_button_sofia",
-                                "sensor.battery_button_joseph",
-                                "sensor.battery_button_theo"
-                            ],
-                            "state_filter": [
-                                {
-                                    "operator": "<",
-                                    "value": 30
-                                }
-                            ],
-                            "card": {
-                                "title": "Low Batteries",
-                                "type": "entities"
-                            }
                         },
                         {
                             "type": "statistics-graph",

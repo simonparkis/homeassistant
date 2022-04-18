@@ -27,3 +27,8 @@ family:
     - person.sofia
     - person.joseph
     - person.theo
+
+auto_lights_master:
+  entities:
+    - automation.lights_zoey
+    - automation.lights_simon
