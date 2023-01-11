@@ -1,0 +1,1734 @@
+- id: '1630971499864'
+  alias: Climate - Auto Heater Master Bedroom
+  description: ''
+  use_blueprint:
+    path: auto_heaters.yaml
+    input:
+      climate_entity: climate.master_bedroom
+      time_start: '21:00:00'
+      time_end: 08:00:00
+      house_occupancy: sensor.house_status
+      enable_switch: input_boolean.enable_heater_master
+      smart_plug: switch.heater_master
+      power_meter: sensor.power_heater_master
+      demand_power: 2500
+- id: '1630971683566'
+  alias: Climate - Auto Heater Sofia
+  description: ''
+  use_blueprint:
+    path: auto_heaters.yaml
+    input:
+      climate_entity: climate.sofia_bedroom
+      time_start: '19:00:00'
+      time_end: 08:00:00
+      house_occupancy: sensor.house_status
+      enable_switch: input_boolean.enable_heater_sofia
+      smart_plug: switch.heater_sofia
+      power_meter: sensor.power_heater_sofia
+      demand_power: 1000
+- id: '1630971724133'
+  alias: Climate - Auto Heater Joseph
+  description: ''
+  use_blueprint:
+    path: auto_heaters.yaml
+    input:
+      climate_entity: climate.joseph_bedroom
+      house_occupancy: sensor.house_status
+      enable_switch: input_boolean.enable_heater_joseph
+      smart_plug: switch.heater_joseph
+      time_start: '19:00:00'
+      time_end: 08:00:00
+      demand_power: 1000
+      power_meter: sensor.power_heater_joseph
+- id: '1630971763040'
+  alias: Climate - Auto Heater Theo
+  description: ''
+  use_blueprint:
+    path: auto_heaters.yaml
+    input:
+      climate_entity: climate.theo_bedroom
+      time_start: '19:00:00'
+      time_end: 08:00:00
+      house_occupancy: sensor.house_status
+      enable_switch: input_boolean.enable_heater_theo
+      smart_plug: switch.heater_theo
+      power_meter: sensor.power_heater_theo
+      demand_power: 1000
+- id: '1631099598325'
+  alias: Silence Doorbell
+  description: ''
+  trigger:
+  - platform: time
+    at: '19:00:00'
+  - platform: time
+    at: 07:00:00
+  - platform: state
+    entity_id: switch.doorbell_chime
+    from: unavailable
+  action:
+  - choose:
+    - conditions:
+      - condition: time
+        after: '19:00:00'
+        before: 07:00:00
+      sequence:
+      - service: switch.turn_off
+        target:
+          entity_id: switch.doorbell_chime
+    - conditions:
+      - condition: time
+        after: 07:00:00
+        before: '19:00:00'
+      - condition: template
+        value_template: '{{ states.switch.doorbell_chime.context.user_id == None }}'
+      sequence:
+      - service: switch.turn_on
+        target:
+          entity_id: switch.doorbell_chime
+  mode: single
+  max_exceeded: silent
+- id: '1631099793227'
+  alias: Notify - Doorbell
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.doorbell
+    to: 'on'
+  condition: []
+  action:
+  - service: notify.simon_zoey
+    data:
+      title: Ding Dong!
+      message: Doorbell Pressed
+      data:
+        push:
+          sound: doorbell.wav
+  mode: single
+- id: '1631139553218'
+  alias: Modes - Vacation Mode
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.house_status
+    to: Occupied
+  - platform: state
+    entity_id: sensor.house_status
+    to: Vacant
+    for: '16:00:00'
+  - platform: numeric_state
+    entity_id: proximity.home
+    above: '100'
+  action:
+  - choose:
+      conditions:
+      - condition: state
+        entity_id: sensor.house_status
+        state: Vacant
+      sequence:
+      - service: input_boolean.turn_on
+        target:
+          entity_id: input_boolean.vacation_mode
+    default:
+    - service: input_boolean.turn_off
+      target:
+        entity_id: input_boolean.vacation_mode
+  mode: single
+- id: '1631318144171'
+  alias: Lights - On arrival / transition sunset
+  description: Dim in the lights at sunset or at full brightness if arriving after
+    sunset
+  trigger:
+  - platform: numeric_state
+    entity_id: sun.sun
+    attribute: elevation
+    below: 7
+    id: sunset
+  - platform: state
+    entity_id: sensor.house_status
+    from: Vacant
+    to: Occupied
+    id: arrival
+  condition:
+  - condition: state
+    entity_id: sensor.house_status
+    state: Occupied
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: sunset
+      sequence:
+      - service: light.turn_on
+        data:
+          color_temp: 287
+          brightness_pct: 100
+          effect: none
+          transition: 900
+        target:
+          entity_id: light.lamps_livingroom, light.bookshelf, light.lamp_frontroom
+    - conditions:
+      - condition: trigger
+        id: arrival
+      - condition: numeric_state
+        entity_id: sun.sun
+        attribute: elevation
+        below: 7
+      sequence:
+      - service: light.turn_on
+        data:
+          entity_id: light.lamps_livingroom, light.bookshelf, light.lamp_frontroom
+          color_temp: 287
+          brightness_pct: 100
+          effect: none
+    default:
+  mode: single
+- id: '1631361844123'
+  alias: Lights - Off when gone to bed
+  description: ''
+  trigger:
+  - platform: template
+    value_template: '{{ states.binary_sensor | selectattr(''attributes.device_class'',
+      ''defined'') | selectattr("attributes.device_class", "eq","motion") | map(attribute="state")
+      | select("eq", "on") | list | count > 0 }}'
+  condition:
+  - condition: state
+    entity_id: binary_sensor.motion_master
+    state: 'on'
+  - condition: time
+    after: '20:30:00'
+    before: 09:00:00
+  - condition: state
+    entity_id: sun.sun
+    state: below_horizon
+  - condition: template
+    value_template: '{{ is_state("light.lamps_livingroom", "on") or is_state("light.bookshelf",
+      "on") or is_state("light.lamp_frontroom", "on") }}'
+  - condition: state
+    entity_id:
+    - binary_sensor.tv_livingroom
+    - binary_sensor.tv_frontroom
+    - group.computers
+    state: 'off'
+  action:
+  - wait_for_trigger:
+    - platform: template
+      value_template: '{{ states.binary_sensor | selectattr(''attributes.device_class'',
+        ''defined'') | selectattr("attributes.device_class", "eq", "motion") | map(attribute="state")
+        | select("eq", "on") | list | count == 0 }}'
+      for: 00:05:00
+    timeout: 02:30:00
+  - service: light.turn_off
+    data:
+      transition: 30
+    target:
+      entity_id:
+      - light.bookshelf
+      - light.lamps_livingroom
+      - light.lamp_frontroom
+  mode: restart
+- id: '1631368050042'
+  alias: Lights - Auto Lights Living Room
+  description: ''
+  use_blueprint:
+    path: auto_lights.yaml
+    input:
+      light_entity: light.lamps_livingroom, light.bookshelf
+      motion_sensor: binary_sensor.motion_livingroom
+      begin_dim: '22:30:00'
+      end_dim: '23:59:00'
+      no_motion_wait: 3600
+      min_brightness: 25
+- id: '1631593521972'
+  alias: Modes - Guest Mode
+  description: Automatically Set and Reset (except when manualy set) Guest Mode when
+    Maria or John visiting
+  trigger:
+  - platform: state
+    entity_id: zone.home
+  action:
+  - choose:
+    - conditions:
+      - condition: template
+        value_template: '{{ states.zone.home.attributes.persons | reject(''search'',''person.simon'')
+          | reject(''search'', ''person.zoey'') | list | count > 0 }}'
+      - condition: state
+        entity_id: input_boolean.guest_mode
+        state: 'off'
+      sequence:
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.guest_mode
+    - conditions:
+      - condition: template
+        value_template: '{{ states.input_boolean.guest_mode.context.user_id == None
+          }}'
+      - condition: template
+        value_template: '{{ states.zone.home.attributes.persons | reject(''search'',''person.simon'')
+          | reject(''search'', ''person.zoey'') | list | count == 0 }}'
+      sequence:
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.guest_mode
+  mode: single
+  max_exceeded: silent
+- id: '1631706621274'
+  alias: Garage Door - Simon
+  description: Automatically open the garage door on arrival
+  trigger:
+  - platform: zone
+    entity_id: person.simon
+    zone: zone.home
+    event: enter
+  condition:
+  - condition: state
+    entity_id: cover.garage_door
+    state: closed
+  - condition: state
+    entity_id: sensor.simon_activity
+    state: Automotive
+  - condition: template
+    value_template: '{{ states.sensor.simon_battery_state.state != ''Not Charging''
+      }}'
+  action:
+  - service: cover.open_cover
+    target:
+      entity_id: cover.garage_door
+    data: {}
+- id: '1631706714864'
+  alias: Garage Door - Zoey
+  description: Automatically open the garage door on arrival
+  trigger:
+  - platform: zone
+    entity_id: person.zoey
+    zone: zone.home
+    event: enter
+  condition:
+  - condition: state
+    entity_id: cover.garage_door
+    state: closed
+  - condition: state
+    entity_id: sensor.zoeys_iphone_activity
+    state: Automotive
+  - condition: template
+    value_template: '{{ states.sensor.zoeys_iphone_battery_state.state != ''Not Charging''
+      }}'
+  action:
+  - service: cover.open_cover
+    target:
+      entity_id: cover.garage_door
+    data: {}
+- id: '1631854800555'
+  alias: Grandfather Clock
+  trigger:
+  - platform: time_pattern
+    hours: '*'
+  condition:
+  - condition: state
+    entity_id: sensor.house_status
+    state: Occupied
+  - condition: template
+    value_template: '{{ not is_state(''person.zoey'',''home'') }}'
+  - condition: template
+    value_template: '{{ not is_state(''media_player.display_kitchen'', ''playing'')
+      }}'
+  - condition: template
+    value_template: '{{ not is_state(''media_player.speaker_bedroom'', ''playing'')
+      }}'
+  - condition: template
+    value_template: '{{ not is_state(''media_player.speaker_frontroom'', ''playing'')
+      }}'
+  - condition: template
+    value_template: '{{ not is_state(''media_player.speaker_livingroom'', ''playing'')
+      }}'
+  - condition: template
+    value_template: '{{ not is_state(''media_player.speaker_joseph'', ''playing'')
+      }}'
+  action:
+  - service: media_player.volume_set
+    data_template:
+      entity_id:
+      - media_player.display_kitchen
+      - media_player.speaker_bedroom
+      - media_player.speaker_livingroom
+      - media_player.speaker_frontroom
+      - media_player.speaker_joseph
+      volume_level: "{% if (now().strftime(\"%H\") | int) < 8 or (now().strftime(\"%H\")
+        | int) > 18 %}\n  0.2\n{% else %}\n  0.4\n{% endif %}\n"
+  - delay: 00:00:01
+  - service: media_player.play_media
+    target:
+      entity_id: media_player.all_chromecasts
+    data:
+      announce: true
+      media_content_id: http://192.168.1.110:8123/local/sounds/GrandFatherChime{{now().strftime('%I')}}.mp3
+      media_content_type: audio/mp4
+  - delay: 00:00:05
+  - wait_template: '{{ not is_state("media_player.all_chromecasts", "playing") }}'
+  - service: media_player.volume_set
+    data:
+      entity_id:
+      - media_player.display_kitchen
+      - media_player.speaker_bedroom
+      - media_player.speaker_livingroom
+      - media_player.speaker_frontroom
+      - media_player.speaker_joseph
+      volume_level: 0.4
+  - service: media_player.turn_off
+    data:
+      entity_id:
+      - media_player.display_kitchen
+      - media_player.speaker_bedroom
+      - media_player.speaker_livingroom
+      - media_player.speaker_frontroom
+      - media_player.speaker_joseph
+  mode: single
+- id: '1631870728951'
+  alias: Auto Close Garage Door
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: cover.garage_door
+    to: open
+    for: 00:03:00
+    id: timeout
+  - platform: state
+    entity_id: input_boolean.auto_garage_door
+    to: 'on'
+    id: enabled
+  - platform: event
+    event_type: call_service
+    event_data:
+      domain: cover
+      service: close_cover
+      service_data:
+        entity_id: cover.garage_door
+    id: closed
+  - platform: event
+    event_type: mobile_app_notification_action
+    event_data:
+      action: GARAGE_CLOSE
+    id: close_garage
+  condition:
+  - condition: state
+    entity_id: input_boolean.auto_garage_door
+    state: 'on'
+  action:
+  - wait_template: '{{ is_state(''binary_sensor.ford_escape'', ''off'') }}
+
+      '
+  - wait_template: '{{ ((states(''sensor.garage_no_motion'') | int) > 2)  or is_state(''cover.garage_door'',''closed'')
+      }}
+
+      '
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: close_garage
+      sequence:
+      - service: cover.close_cover
+        target:
+          entity_id: cover.garage_door
+        data: {}
+      - delay: 00:00:40
+    - conditions:
+      - condition: trigger
+        id: closed
+      sequence:
+      - wait_for_trigger:
+        - platform: state
+          entity_id: cover.garage_door
+          to: closed
+        timeout: 00:00:45
+      - if:
+        - condition: template
+          value_template: '{{ wait.trigger == none }}'
+        then:
+        - service: notify.mobile_app_simon
+          data:
+            message: Garage door failed to close automatically
+            data:
+              entity_id: camera.garage
+              actions:
+              - action: GARAGE_CLOSE
+                title: Close Garage
+              - action: GARAGE_DISMISS
+                title: Dismiss
+              push:
+              sound:
+                name: default
+                critical: 1
+                volume: 1
+    - conditions:
+      - condition: state
+        entity_id: cover.garage_door
+        state: open
+      - condition: state
+        entity_id: input_boolean.auto_garage_door
+        state: 'on'
+      sequence:
+      - service: cover.close_cover
+        target:
+          entity_id: cover.garage_door
+        data: {}
+  mode: queued
+  max_exceeded: silent
+- id: '1631939546843'
+  alias: Set Theme on startup
+  trigger:
+  - platform: homeassistant
+    event: start
+  action:
+  - service: frontend.set_theme
+    data:
+      name: slate
+  initial_state: true
+  mode: single
+- id: '1632400430196'
+  alias: Garbage Collection Reminder
+  description: ''
+  trigger:
+  - platform: calendar
+    event: start
+    offset: -05:00:00
+    entity_id: calendar.homeassistant_homeassistant
+  condition:
+  - condition: template
+    value_template: '{{ trigger.calendar_event.summary == ''Rubbish'' or trigger.calendar_event.summary
+      == ''Rubbish & Recycling'' }}'
+  - condition: state
+    entity_id: input_boolean.audible_notifications
+    state: 'on'
+  action:
+  - wait_for_trigger:
+    - platform: state
+      entity_id: binary_sensor.motion_living_room
+      to: 'on'
+  - service: tts.cloud_say
+    data:
+      entity_id: media_player.kitchen
+      message: "{% if trigger.calendar_event.summary == \"Rubbish & Recycling\"  %}\n
+        \ Don't forget to take the bins out... both red and yellow bins\n{% elif trigger.calendar_event.summary
+        == \"Rubbish\" %}\n  Don't forget to take the bins out... red bin only\n{%
+        endif %}\n"
+  - service: notify.mobile_app_simon
+    data:
+      title: Garbage Bins
+      message: "{% if trigger.calendar_event.summary == \"Rubbish & Recycling\"  %}\n
+        \ Don't forget to take the bins out... both red and yellow bins\n{% elif trigger.calendar_event.summary
+        == \"Rubbish\" %}\n  Don't forget to take the bins out... red bin only\n{%
+        endif %}\n"
+  mode: queued
+  max_exceeded: silent
+- id: '1632476399006'
+  alias: Follow Me Audio
+  description: ''
+  trigger:
+  - platform: state
+    id: motion_on
+    to: 'on'
+    entity_id:
+    - binary_sensor.motion_master
+    - binary_sensor.motion_frontroom
+    - binary_sensor.motion_livingroom
+    - binary_sensor.motion_joseph
+  - platform: state
+    id: motion_off
+    to: 'off'
+    for: 00:01:00
+    entity_id:
+    - binary_sensor.motion_master
+    - binary_sensor.motion_frontroom
+    - binary_sensor.motion_livingroom
+    - binary_sensor.motion_joseph
+  - platform: template
+    value_template: '{{ is_state(''media_player.all_chromecasts'', ''off'') }}
+
+      '
+    id: stopped
+  condition:
+  - condition: state
+    entity_id: input_boolean.follow_me_audio
+    state: 'on'
+  - condition: template
+    value_template: '{{ states.automation.grandfather_clock.attributes.current ==
+      0 }}'
+  - condition: template
+    value_template: '{{ states.zone.home.attributes.persons | list | count >= 1 }}'
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: stopped
+      sequence:
+      - service: input_boolean.turn_off
+        target:
+          entity_id: input_boolean.follow_me_audio
+        data: {}
+      - service: media_player.volume_mute
+        data_template:
+          is_volume_muted: false
+          entity_id:
+          - media_player.display_kitchen
+          - media_player.speaker_livingroom
+          - media_player.speaker_frontroom
+          - media_player.speaker_bedroom
+          - media_player.speaker_joseph
+    - conditions:
+      - condition: trigger
+        id: motion_on
+      sequence:
+      - service: media_player.volume_mute
+        data_template:
+          is_volume_muted: false
+          entity_id: "{% if trigger.entity_id == 'binary_sensor.motion_master' %}\n
+            \ media_player.speaker_bedroom\n{% elif trigger.entity_id == 'binary_sensor.motion_frontroom'
+            %}\n  media_player.speaker_frontroom\n{% elif trigger.entity_id == 'binary_sensor.motion_livingroom'
+            %}\n  media_player.display_kitchen, media_player.speaker_livingroom\n{%
+            elif trigger.entity_id == 'binary_sensor.motion_joseph' %}\n  media_player.speaker_joseph\n{%
+            endif %}\n"
+    - conditions:
+      - condition: trigger
+        id: motion_off
+      - condition: template
+        value_template: "{% set count = namespace(not_muted = 0) %} {% for player
+          in expand('group.all_chromecasts') | map(attribute='entity_id') %}\n  {%
+          if state_attr(player, 'is_volume_muted') == False %}\n    {% set count.not_muted
+          = count.not_muted + 1 %}\n  {% endif %}\n{% endfor %}   {% if trigger.entity_id
+          == 'binary_sensor.motion_livingroom' %}\n  {{ count.not_muted | int > 2
+          }}\n{% else %}\n  {{ count.not_muted | int > 1 }}\n{% endif %}\n"
+      sequence:
+      - service: media_player.volume_mute
+        data_template:
+          is_volume_muted: true
+          entity_id: "{% if trigger.entity_id == 'binary_sensor.motion_master' %}\n
+            \ media_player.speaker_bedroom\n{% elif trigger.entity_id == 'binary_sensor.motion_frontroom'
+            %}\n  media_player.speaker_frontroom\n{% elif trigger.entity_id == 'binary_sensor.motion_livingroom'
+            %}\n  media_player.display_kitchen, media_player.speaker_livingroom\n{%
+            elif trigger.entity_id == 'binary_sensor.motion_joseph' %}\n  media_player.speaker_joseph\n{%
+            endif %}\n"
+  mode: queued
+  max_exceeded: silent
+- id: '1635649936935'
+  alias: iOS - Garage Door
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ios.action_fired
+    event_data:
+      actionName: toggle_garage
+    context:
+      user_id:
+      - 8cf5ca26368a47578d759264b2ceaf98
+      - 9a78e16d6589444cbdf82944e76f59fd
+  condition: []
+  action:
+  - service: cover.toggle
+    target:
+      entity_id: cover.garage_door
+    data: {}
+  mode: single
+- id: '1639801985715'
+  alias: Auto Fan Master Bedroom
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.motion_master
+    to: 'on'
+  condition:
+  - condition: numeric_state
+    entity_id: sensor.temp_master
+    above: '25'
+  action:
+  - service: fan.turn_on
+    entity_id: fan.master_bedroom
+  - wait_for_trigger:
+    - platform: state
+      entity_id: binary_sensor.motion_master
+      to: 'off'
+      for: 02:00:00
+  - service: fan.turn_off
+    entity_id: fan.master_bedroom
+  mode: restart
+- id: '1650274609927'
+  alias: Lights - Auto Lights Sofia
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.motion_sofia
+    to: 'on'
+    id: motion_on
+  - platform: state
+    entity_id: binary_sensor.motion_sofia
+    to: 'off'
+    for: 00:03:00
+    id: motion_off
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: motion_on
+      - condition: numeric_state
+        entity_id: sensor.lux_sofia
+        below: 20
+      sequence:
+      - service: light.turn_on
+        data:
+          brightness_pct: 100
+          color_temp: 370
+        target:
+          entity_id: light.lamp_sofia
+    - conditions:
+      - condition: trigger
+        id: motion_off
+      sequence:
+      - service: light.turn_off
+        target:
+          entity_id: light.lamp_sofia
+        data: {}
+  mode: single
+- id: '1650275312000'
+  alias: Lights - Auto Lights Joseph
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.motion_joseph
+    to: 'on'
+    id: motion_on
+  - platform: state
+    entity_id: binary_sensor.motion_joseph
+    to: 'off'
+    for: 00:03:00
+    id: motion_off
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: motion_on
+      - condition: numeric_state
+        entity_id: sensor.lux_joseph
+        below: 20
+      sequence:
+      - service: light.turn_on
+        data:
+          brightness_pct: 100
+          color_temp: 370
+        target:
+          entity_id: light.lamp_joseph
+    - conditions:
+      - condition: trigger
+        id: motion_off
+      sequence:
+      - service: light.turn_off
+        target:
+          entity_id: light.lamp_joseph
+        data: {}
+  mode: single
+- id: '1650275433270'
+  alias: Lights - Auto Lights Theo
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_theo
+    - binary_sensor.motion_theo_dsc
+    to: 'on'
+    id: motion_on
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_theo
+    - binary_sensor.motion_theo_dsc
+    to: 'off'
+    for: 00:03:00
+    id: motion_off
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: motion_on
+      - condition: numeric_state
+        entity_id: sensor.lux_theo
+        below: 20
+      sequence:
+      - service: light.turn_on
+        data:
+          brightness_pct: 100
+          color_temp: 370
+        target:
+          entity_id: light.lamp_theo
+    - conditions:
+      - condition: trigger
+        id: motion_off
+      sequence:
+      - service: light.turn_off
+        target:
+          entity_id: light.lamp_theo
+        data: {}
+  mode: restart
+- id: '1650280329890'
+  alias: Lights - Auto Lights Simon
+  description: ''
+  use_blueprint:
+    path: auto_lights_master.yaml
+    input:
+      off_time_threshold: '20:30:00'
+      light_entity: light.lamp_simon
+      motion_sensor: binary_sensor.motion_master
+      light_sensor: sensor.lux_master
+      no_motion_wait: 180
+      sleep_sensor: binary_sensor.simon_sleeping
+      lamp_switch: switch.lamp_simon
+      switch_override: input_boolean.lamp_override_simon
+      lamp_button: binary_sensor.lamp_button_simon
+      dim_brighten: input_boolean.lamp_dim_simon
+      press_event: esphome.lamp_simon_press
+      double_press_event: esphome.lamp_simon_doublepress
+      hold_event: esphome.lamp_simon_hold
+- id: '1650280413939'
+  alias: Lights - Auto Lights Zoey
+  description: ''
+  use_blueprint:
+    path: auto_lights_master.yaml
+    input:
+      off_time_threshold: '20:30:00'
+      light_entity: light.lamp_zoey
+      motion_sensor: binary_sensor.motion_master
+      light_sensor: sensor.lux_master
+      no_motion_wait: 180
+      phone_charge_state: sensor.zoeys_iphone_battery_state
+      sleep_sensor: binary_sensor.zoey_sleeping
+      lamp_switch: switch.lamp_zoey
+      switch_override: input_boolean.lamp_override_zoey
+      lamp_button: binary_sensor.lamp_button_zoey
+      dim_brighten: input_boolean.lamp_dim_zoey
+      press_event: esphome.lamp_zoey_press
+      double_press_event: esphome.lamp_zoey_doublepress
+      hold_event: esphome.lamp_zoey_hold
+- id: '1652053156471'
+  alias: House Vacant
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: sensor.house_status
+    to: Vacant
+    for: 00:05:00
+  action:
+  - service: light.turn_off
+    entity_id: all
+  - service: climate.turn_off
+    entity_id: all
+  mode: single
+- id: '1652612892418'
+  alias: Lights - Wake Up
+  description: ''
+  trigger:
+  - platform: time
+    at: 05:45:00
+  condition:
+  - condition: state
+    entity_id: binary_sensor.workday_sensor
+    state: 'on'
+  - condition: state
+    entity_id: sensor.house_status
+    state: Occupied
+  action:
+  - service: light.turn_on
+    data:
+      brightness_pct: 1
+      rgbw_color:
+      - 255
+      - 66
+      - 2
+      - 0
+    target:
+      entity_id: light.bedroom_lamps
+  - delay: 5
+  - service: light.turn_on
+    data:
+      brightness_pct: 30
+      transition: 600
+      rgbw_color:
+      - 255
+      - 128
+      - 26
+      - 0
+    target:
+      entity_id: light.bedroom_lamps
+  - delay: 600
+  - service: light.turn_on
+    data:
+      brightness_pct: 100
+      transition: 300
+      rgbw_color:
+      - 255
+      - 255
+      - 255
+      - 0
+    target:
+      entity_id: light.bedroom_lamps
+  - delay: 1200
+  mode: restart
+- id: '1652932636182'
+  alias: Speech - Morning Greeting
+  description: ''
+  trigger:
+  - platform: numeric_state
+    entity_id: sensor.wattage_coffee_machine
+    above: 20
+  condition:
+  - condition: time
+    after: 05:45:00
+    before: '10:00:00'
+  - condition: template
+    value_template: '{{ states.automation.morning_greeting.attributes.last_triggered
+      < today_at(''05:45:00'') }}'
+  action:
+  - service: media_player.volume_set
+    data_template:
+      entity_id: media_player.display_kitchen
+      volume_level: 0.45
+  - service: script.turn_on
+    target:
+      entity_id: script.morning_greeting
+    data: {}
+  mode: restart
+- id: '1653202825683'
+  alias: Lights - Simulated Vacation Lighting
+  description: Random lighting to simulate occupancy during vacation mode
+  trigger:
+  - platform: state
+    entity_id: sun.sun
+    to: below_horizon
+  condition:
+  - condition: state
+    entity_id: input_boolean.vacation_mode
+    state: 'on'
+  action:
+  - repeat:
+      until:
+      - condition: time
+        after: '23:00:00'
+        before: 06:00:00
+      sequence:
+      - service: light.toggle
+        data:
+          entity_id: '{{ expand(''light.vacation_lights'') | map(attribute=''entity_id'')
+            | list | random }}
+
+            '
+          brightness_pct: 100
+      - delay:
+          minutes: '{{ range(1,15) | random | int }}'
+  - service: light.turn_off
+    entity_id: all
+  mode: single
+- id: '1653371737527'
+  alias: Speech - People Travelling Home
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: person.zoey
+    from: Work
+    to: not_home
+    id: Zoey
+  - platform: state
+    entity_id: person.simon
+    from: Work
+    to: not_home
+    id: Simon
+  condition:
+  - condition: state
+    entity_id: sensor.house_status
+    state: Occupied
+  - condition: state
+    entity_id: input_boolean.audible_notifications
+    state: 'on'
+  - condition: time
+    after: '15:00:00'
+    before: '20:00:00'
+  action:
+  - service: tts.cloud_say
+    data:
+      message: "{% if trigger.id == 'Simon' %}\n  {% set eta = states.sensor.simon_commute_home.state
+        %}\n{% else %}\n  {% set eta = states.sensor.zoey_commute_home.state %}\n{%
+        endif %} {{ trigger.id }} is travelling home from work. Expected time of arrival
+        is in {{ eta }} minutes time\"\n"
+      entity_id: media_player.display_kitchen
+  mode: single
+- id: '1654267729698'
+  alias: Modes - Sentry Mode
+  description: Automatically arms security system when house vacant and notifies of
+    breach
+  trigger:
+  - platform: state
+    entity_id: sensor.house_status
+    id: house_status
+  - platform: template
+    value_template: "{{ states.binary_sensor | selectattr('attributes.device_class',
+      'defined') | selectattr(\"attributes.device_class\", \"eq\",\n    \"motion\")
+      | map(attribute=\"state\") | select(\"eq\", \"on\") | list |\n    count > 0
+      }}"
+    id: motion
+  - platform: template
+    value_template: '{{ states.binary_sensor | selectattr(''attributes.device_class'',
+      ''defined'')  | selectattr(''attributes.device_class'', ''eq'', ''door'')  |
+      map(attribute=''state'') | select(''eq'', ''on'') | list | count > 0 }}'
+    id: door
+  - platform: template
+    value_template: '{{ states.binary_sensor | selectattr(''attributes.device_class'',
+      ''defined'')  | selectattr(''attributes.device_class'', ''eq'', ''window'')  |
+      map(attribute=''state'') | select(''eq'', ''on'') | list | count > 0 }}'
+    id: window
+  - platform: template
+    value_template: '{{ states.cover | selectattr(''attributes.device_class'', ''defined'')  |
+      selectattr(''attributes.device_class'', ''eq'', ''garage'')  | map(attribute=''state'')
+      | select(''eq'', ''open'') | list | count > 0 }}'
+    id: window_disabled
+  - platform: event
+    event_type: mobile_app_notification_action
+    event_data:
+      action: SENTRY_ALARM
+    id: sound_alarm
+  - platform: event
+    event_type: mobile_app_notification_action
+    event_data:
+      action: SENTRY_GUEST
+    id: enable_guest
+  - platform: event
+    event_type: mobile_app_notification_action
+    event_data:
+      action: SENTRY_DISARM
+    id: disable_sentry
+  - platform: event
+    event_type: mobile_app_notification_action action
+  - platform: homeassistant
+    event: start
+    id: startup
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - house_status
+        - startup
+      - condition: state
+        entity_id: sensor.house_status
+        state: Vacant
+      sequence:
+      - alias: Wait until no motion detected
+        wait_template: '{{ states.binary_sensor | selectattr(''attributes.device_class'',
+          ''defined'') | selectattr(''attributes.device_class'', ''eq'', ''motion'')
+          | map(attribute=''state'') | select(''eq'', ''on'') | list | count == 0
+          }}'
+      - service: input_boolean.turn_on
+        target:
+          entity_id: input_boolean.sentry_mode
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - house_status
+        - startup
+      - condition: state
+        entity_id: sensor.house_status
+        state: Occupied
+      sequence:
+      - service: input_boolean.turn_off
+        target:
+          entity_id: input_boolean.sentry_mode
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - motion
+        - door
+        - window
+      - condition: state
+        entity_id: input_boolean.sentry_mode
+        state: 'on'
+      sequence:
+      - service: notify.mobile_app_simon
+        data:
+          title: Sentry Mode
+          message: Motion detected in the house, tap and hold for options
+          data:
+            actions:
+            - action: SENTRY_DISMISS
+              title: Dismiss
+            - action: SENTRY_GUEST
+              title: Enable Guest Mode
+              authenticationRequired: true
+            - action: SENTRY_DISARM
+              title: Disable Senty Mode
+              authenticationRequired: true
+            - action: NOTIFY_SIMON
+              title: Notify Maria
+              destructive: true
+            - action: SENTRY_ALARM
+              title: Sound Alarm
+              destructive: true
+            push:
+            sound:
+              name: default
+              critical: 1
+              volume: 1
+    - conditions:
+      - condition: trigger
+        id: dismiss
+      sequence:
+    - conditions:
+      - condition: trigger
+        id: enable_guest
+      sequence:
+      - service: input_boolean.turn_on
+        target:
+          entity_id: input_boolean.guest_mode
+        data: {}
+    - conditions:
+      - condition: trigger
+        id: disable_sentry
+      sequence:
+      - service: input_boolean.turn_off
+        target:
+          entity_id: input_boolean.sentry_mode
+        data: {}
+    - conditions:
+      - condition: trigger
+        id: sound_alarm
+      sequence:
+      - delay: 5
+  mode: queued
+- id: '1654433824986'
+  alias: Modes - Audible Notifications
+  description: Automatically Set and Reset (except when manualy set) Audible Notifications
+    based on quiet time
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.quiet_time
+  - platform: homeassistant
+    event: start
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: binary_sensor.quiet_time
+        state: 'off'
+      - condition: template
+        value_template: '{{ states.input_boolean.guest_mode.context.user_id == None
+          }}'
+      sequence:
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.audible_notifications
+    - conditions:
+      - condition: state
+        entity_id: binary_sensor.quiet_time
+        state: 'on'
+      sequence:
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.audible_notifications
+  mode: single
+  max_exceeded: silent
+- id: '1654512990915'
+  alias: Speech - Internet Connection
+  description: Audible Notification when internet connected is down/restored
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.internet
+    to: 'off'
+    for: 00:01:00
+  - platform: state
+    entity_id: binary_sensor.internet
+    to: 'on'
+  condition:
+  - condition: state
+    entity_id: sensor.house_status
+    state: Occupied
+  - condition: state
+    entity_id: input_boolean.audible_notifications
+    state: 'on'
+  action:
+  - service: media_player.volume_set
+    data_template:
+      entity_id:
+      - media_player.kitchen
+      - media_player.bedroom
+      - media_player.living_room
+      - media_player.front_room
+      volume_level: 0.4
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.all_chromecasts
+      media_content_id: "{% if states.binary_sensor.internet.state == 'off' %}\n  http://192.168.1.110:8123/media/sounds/internet_disconnected.mp3\n{%
+        else %}\n  http://192.168.1.110:8123/media/sounds/internet_restored.mp3\n{%
+        endif %}\n"
+      media_content_type: audio/mp3
+  mode: queued
+- id: '1654777796403'
+  alias: Lights - Master Bedroom
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_master
+    - binary_sensor.motion_master_dsc
+    to: 'on'
+    id: motion_on
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_master
+    - binary_sensor.motion_master_dsc
+    to: 'off'
+    id: motion_off
+  condition:
+  - condition: template
+    value_template: '{{ states.automation.lights_wake_up.attributes.current == 0 }}'
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: motion_on
+      - condition: state
+        entity_id:
+        - switch.lamp_simon
+        - switch.lamp_zoey
+        state: 'off'
+      - condition: time
+        after: 08:00:00
+        before: '21:30:00'
+      sequence:
+      - service: switch.turn_on
+        target:
+          entity_id:
+          - switch.lamp_simon
+          - switch.lamp_zoey
+        data: {}
+    - conditions:
+      - condition: trigger
+        id: motion_on
+      - condition: numeric_state
+        entity_id: sensor.lux_master
+        below: 15
+      sequence:
+      - service: light.turn_on
+        data:
+          color_temp: 366
+          brightness_pct: "{% if is_state('binary_sensor.simon_sleeping', 'on') and
+            is_state('binary_sensor.zoey_sleeping', 'on') %}\n  0\n{% elif is_state('binary_sensor.simon_sleeping',
+            'on') or is_state('binary_sensor.zoey_sleeping', 'on') and (states('sensor.time')
+            < '08:00:00' or states('sensor.time') > '21:00:00') %}\n  1\n{% elif (states('sensor.time')
+            > '21:00:00') or (states('sensor.time') < '08:00:00') %}\n  50\n{% else
+            %}\n  100\n{% endif %}\n"
+        target:
+          entity_id: light.bedroom_lamps
+    - conditions:
+      - condition: trigger
+        id: motion_off
+      - condition: state
+        entity_id:
+        - input_boolean.lamp_override_simon
+        - input_boolean.lamp_override_zoey
+        state: 'off'
+      sequence:
+      - delay:
+          seconds: "{% if is_state('binary_sensor.simon_sleeping', 'on') or is_state('binary_sensor.zoey_sleeping',
+            'on') %}\n  10\n{% else %}\n  180\n{% endif %}\n"
+      - service: light.turn_off
+        data:
+          transition: 5
+        target:
+          entity_id: light.bedroom_lamps
+  mode: restart
+- id: '1655008732481'
+  alias: Button - Sofia
+  description: ''
+  trigger:
+  - device_id: cda85d7d01c831a383bb4d6fa162deb8
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: remote_button_short_press
+    id: single_press
+  - device_id: cda85d7d01c831a383bb4d6fa162deb8
+    domain: zha
+    platform: device
+    type: remote_button_double_press
+    subtype: remote_button_double_press
+    id: double_press
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: single_press
+      - condition: time
+        after: '18:00:00'
+        before: 06:30:00
+      - condition: state
+        entity_id: automation.auto_lights_sofia
+        state: 'on'
+      - condition: state
+        entity_id: light.lamp_sofia
+        state: 'on'
+      sequence:
+      - service: automation.turn_off
+        target:
+          entity_id: automation.auto_lights_sofia
+        data: {}
+      - service: light.turn_on
+        data:
+          transition: 3
+          brightness_pct: 1
+          color_temp: 370
+        target:
+          entity_id: light.lamp_sofia
+    - conditions:
+      - condition: trigger
+        id: double_press
+      - condition: template
+        value_template: '{{ states.light.lamp_sofia.attributes.brightness > 127 }}'
+      sequence:
+      - service: light.turn_on
+        data:
+          brightness_pct: 1
+        target:
+          entity_id: light.lamp_sofia
+    - conditions:
+      - condition: trigger
+        id: double_press
+      - condition: template
+        value_template: '{{ states.light.lamp_sofia.attributes.brightness < 127 }}'
+      sequence:
+      - service: light.turn_on
+        data:
+          brightness_pct: 100
+        target:
+          entity_id: light.lamp_sofia
+    default:
+    - service: light.toggle
+      data: {}
+      target:
+        entity_id: light.lamp_sofia
+  mode: single
+- id: '1655009177755'
+  alias: Button - Joseph
+  description: ''
+  trigger:
+  - device_id: aca57e3cf8a9034990bd021fb063e64b
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: remote_button_short_press
+    id: single_press
+  - device_id: aca57e3cf8a9034990bd021fb063e64b
+    domain: zha
+    platform: device
+    type: remote_button_double_press
+    subtype: remote_button_double_press
+    id: double_press
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: single_press
+      - condition: time
+        after: '18:00:00'
+        before: 06:30:00
+      - condition: state
+        entity_id: automation.auto_lights_joseph
+        state: 'on'
+      - condition: state
+        entity_id: light.lamp_joseph
+        state: 'on'
+      sequence:
+      - service: light.turn_on
+        data:
+          transition: 3
+          brightness_pct: 28
+          rgb_color:
+          - 1
+          - 47
+          - 123
+        target:
+          entity_id: light.lamp_joseph
+      - service: automation.turn_off
+        target:
+          entity_id: automation.auto_lights_joseph
+        data: {}
+    - conditions:
+      - condition: trigger
+        id: double_press
+      - condition: template
+        value_template: '{{ states.light.lamp_joseph.attributes.brightness > 127 }}'
+      sequence:
+      - service: light.turn_on
+        data:
+          color_temp: 370
+          brightness_pct: 10
+        target:
+          entity_id: light.lamp_joseph
+    - conditions:
+      - condition: trigger
+        id: double_press
+      - condition: template
+        value_template: '{{ states.light.lamp_joseph.attributes.brightness < 127 }}'
+      sequence:
+      - service: light.turn_on
+        data:
+          color_temp: 370
+          brightness_pct: 100
+        target:
+          entity_id: light.lamp_joseph
+    default:
+    - service: light.toggle
+      data: {}
+      target:
+        entity_id: light.lamp_joseph
+  mode: single
+- id: '1655010066614'
+  alias: Button - Theo
+  description: ''
+  trigger:
+  - device_id: 95b6df22185febad013a3ddb996291d4
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: remote_button_short_press
+    id: single_press
+  - device_id: 95b6df22185febad013a3ddb996291d4
+    domain: zha
+    platform: device
+    type: remote_button_double_press
+    subtype: remote_button_double_press
+    id: double_press
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: single_press
+      - condition: time
+        after: '17:00:00'
+        before: 06:30:00
+      - condition: state
+        entity_id: automation.auto_lights_theo
+        state: 'on'
+      - condition: state
+        entity_id: light.lamp_theo
+        state: 'on'
+      sequence:
+      - service: automation.turn_off
+        target:
+          entity_id: automation.auto_lights_theo
+        data: {}
+      - service: light.turn_on
+        data:
+          transition: 3
+          brightness_pct: 1
+          color_temp: 370
+        target:
+          entity_id: light.lamp_theo
+    - conditions:
+      - condition: trigger
+        id: double_press
+      - condition: template
+        value_template: '{{ states.light.lamp_theo.attributes.brightness > 127 }}'
+      sequence:
+      - service: light.turn_on
+        data:
+          brightness_pct: 1
+        target:
+          entity_id: light.lamp_theo
+    - conditions:
+      - condition: trigger
+        id: double_press
+      - condition: template
+        value_template: '{{ states.light.lamp_theo.attributes.brightness < 127 }}'
+      sequence:
+      - service: light.turn_on
+        data:
+          brightness_pct: 100
+        target:
+          entity_id: light.lamp_theo
+    default:
+    - service: light.toggle
+      data: {}
+      target:
+        entity_id: light.lamp_theo
+  mode: single
+- id: '1655010604077'
+  alias: Lights - Laundry
+  description: Automatically Turn on/off the Laundry light with motion
+  trigger:
+  - platform: state
+    entity_id: binary_sensor.motion_laundry
+    to: 'on'
+    id: motion_on
+  - platform: state
+    entity_id: binary_sensor.motion_laundry
+    to: 'off'
+    for: 00:01:00
+    id: motion_off
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: motion_on
+      sequence:
+      - service: light.turn_on
+        target:
+          entity_id: light.laundry
+        data: {}
+    - conditions:
+      - condition: trigger
+        id: motion_off
+      sequence:
+      - service: light.turn_off
+        target:
+          entity_id: light.laundry
+        data: {}
+  mode: restart
+- id: '1655451822000'
+  alias: Sunrise
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunrise
+    offset: 00:15:00
+  action:
+  - service: light.turn_off
+    target:
+      entity_id:
+      - light.lamp_sofia
+      - light.lamp_joseph
+      - light.lamp_theo
+      - light.lamp_livingroom
+      - light.bookshelf
+    data: {}
+  - service: automation.turn_on
+    target:
+      entity_id:
+      - automation.auto_lights_sofia
+      - automation.auto_lights_joseph
+      - automation.auto_lights_theo
+      - automation.lights_master_bedroom
+    data: {}
+  mode: single
+- id: '1655515573815'
+  alias: iOS - Theo Bedtime
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ios.action_fired
+    event_data:
+      actionName: theo_bedtime
+    context:
+      user_id:
+      - 8cf5ca26368a47578d759264b2ceaf98
+      - 9a78e16d6589444cbdf82944e76f59fd
+  condition: []
+  action:
+  - service: script.turn_on
+    data: {}
+    target:
+      entity_id: script.theo_bedtime
+  mode: single
+- id: '1655524498497'
+  alias: iOS - Sentry Mode
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ios.action_fired
+    event_data:
+      actionName: sentry_mode
+    context:
+      user_id:
+      - 8cf5ca26368a47578d759264b2ceaf98
+      - 9a78e16d6589444cbdf82944e76f59fd
+  action:
+  - service: input_boolean.toggle
+    data: {}
+    target:
+      entity_id: input_boolean.sentry_mode
+  mode: single
+- id: '1655524543280'
+  alias: iOS - Guest Mode
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ios.action_fired
+    event_data:
+      actionName: guest_mode
+    context:
+      user_id:
+      - 8cf5ca26368a47578d759264b2ceaf98
+      - 9a78e16d6589444cbdf82944e76f59fd
+  condition: []
+  action:
+  - service: input_boolean.toggle
+    data: {}
+    target:
+      entity_id: input_boolean.guest_mode
+  mode: single
+- id: '1655614243703'
+  alias: Button - Garage Door
+  description: Button for Garage Door at front door entrance
+  trigger:
+  - device_id: fb5d4966b1db5d9ab488158888ef7a0b
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_on
+    id: garage_open
+  - device_id: fb5d4966b1db5d9ab488158888ef7a0b
+    domain: zha
+    platform: device
+    type: remote_button_short_press
+    subtype: turn_off
+    id: garage_close
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: garage_open
+      - condition: state
+        entity_id: cover.garage_door
+        state: closed
+      sequence:
+      - service: cover.open_cover
+        target:
+          entity_id: cover.garage_door
+        data: {}
+    - conditions:
+      - condition: trigger
+        id: garage_close
+      - condition: state
+        entity_id: cover.garage_door
+        state: open
+      sequence:
+      - service: cover.close_cover
+        target:
+          entity_id: cover.garage_door
+        data: {}
+  mode: single
+- id: '1656634542242'
+  alias: Modes - Doorbell Chime
+  description: Automatically Set and Reset (except when manualy set) Doorbell Chime
+    based on quiet time
+  trigger:
+  - platform: time
+    at: '19:00:00'
+    id: chime_off
+  - platform: time
+    at: 07:30:00
+    id: chime_on
+  - platform: homeassistant
+    event: start
+  - platform: state
+    entity_id: input_boolean.doorbell_chime
+    to: 'on'
+    id: sound_on
+  - platform: state
+    entity_id: input_boolean.doorbell_chime
+    to: 'off'
+    id: sound_off
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: sound_on
+      sequence:
+      - service: number.set_value
+        data:
+          value: '0.5'
+        target:
+          entity_id: number.volume_doorbell
+    - conditions:
+      - condition: trigger
+        id: sound_off
+      sequence:
+      - service: number.set_value
+        data:
+          value: '0.01'
+        target:
+          entity_id: number.volume_doorbell
+    - conditions:
+      - condition: time
+        after: 07:30:00
+        before: '19:00:00'
+      - condition: template
+        value_template: '{{ states.input_boolean.doorbell_chime.context.user_id ==
+          None }}'
+      sequence:
+      - service: input_boolean.turn_on
+        entity_id: input_boolean.doorbell_chime
+    - conditions:
+      - condition: time
+        after: '19:00:00'
+        before: 07:30:00
+      sequence:
+      - service: input_boolean.turn_off
+        entity_id: input_boolean.doorbell_chime
+  mode: queued
+  max_exceeded: silent
+- id: '1663132676550'
+  alias: Alarm - Auto Arm/Disarm Vacation Mode
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - input_boolean.vacation_mode
+    from: 'off'
+    to: 'on'
+    id: arm
+    alias: Leave for Vacation
+  - platform: state
+    entity_id:
+    - input_boolean.vacation_mode
+    from: 'on'
+    to: 'off'
+    id: disarm
+    alias: Return from Vacation
+  condition: []
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: arm
+      sequence:
+      - service: esphome.dscalarm_alarm_arm_away
+        data: {}
+    - conditions:
+      - condition: trigger
+        id: disarm
+      sequence:
+      - service: esphome.dscalarm_alarm_disarm
+        data:
+          code: '1749'
+  mode: single
+- id: '1664341044791'
+  alias: Sunset
+  description: ''
+  trigger:
+  - platform: sun
+    event: sunset
+    offset: 00:15:00
+  action:
+  - service: input_boolean.turn_on
+    target:
+      entity_id:
+      - input_boolean.enable_heater_joseph
+      - input_boolean.enable_heater_sofia
+      - input_boolean.enable_heater_theo
+      - input_boolean.enable_heater_master
+    data: {}
+  mode: single
+- id: '1669510834699'
+  alias: Lights - Auto Lights Front Room
+  description: Auto Lights Front Room
+  use_blueprint:
+    path: auto_lights.yaml
+    input:
+      light_entity: light.lamp_frontroom
+      motion_sensor: binary_sensor.motion_frontroom
+      begin_dim: '22:30:00'
+      end_dim: '23:59:00'
+      no_motion_wait: 3600
+      min_brightness: 5

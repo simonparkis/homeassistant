@@ -1,0 +1,33 @@
+  sensor:
+    - name: "House Status"
+      state: >
+        {% set zone_occupied = int(states('zone.home')) > 0 %}
+        {% set guests = is_state('input_boolean.guest_mode', 'on') %}
+        {% if zone_occupied or guests %}
+          Occupied
+        {% else %}
+          Vacant
+        {% endif %}
+      icon: >
+        {% if is_state('sensor.house_status', 'Occupied') %}
+          mdi:home-import-outline
+        {% else %}
+          mdi:home-export-outline
+        {% endif %}
+
+    - name: "Garage No Motion"
+      state: '{{ ((as_timestamp(now()) - as_timestamp(states.binary_sensor.motion_garage.last_updated)) / 60) | int}}'
+    - name: 'Calendar Location'
+      state: >
+        {% if states.calendar.family_family.attributes.location is defined %}
+          {{ state.calendar.family_family.attributes.location }}
+        {% else %}
+          zone.sew
+        {% endif %}
+    - name: 'Power Heater Joseph'
+      state: >
+        {% if states.switch.heater_joseph.state == 'on' %}
+          1200
+        {% else %}
+          0
+        {% endif %}

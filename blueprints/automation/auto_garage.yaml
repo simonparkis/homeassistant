@@ -1,0 +1,78 @@
+blueprint:
+  name: Auto Garage Door
+  description: Automatically Open/Close the Garage Door on Arrival/Departure
+  domain: automation
+  input:
+    person:
+      name: person
+      description: The person to track for arrival/Departure
+      selector:
+        entity:
+          domain: person
+    car_tracker:
+      name: Car Tracker
+      description: Input Select to determine which car a person is driving
+      selector:
+        entity:
+          domain: input_select
+    car:
+      name: Car
+      description: Which car the person should be driving to trigger the auto garage door
+      selector:
+        select:
+          options:
+            - 'Toyota Camry'
+            - 'Ford Escape'
+
+trigger:
+  - platform: state
+    entity_id: !input person
+    from: 'home'
+    to: 'not_home'
+  - platform: state
+    entity_id: !input person
+    from: 'not_home'
+    to: 'home'
+condition:
+  - condition: state
+    entity_id: input_boolean.auto_garage_door
+    state: 'on'
+  - condition: state
+    entity_id: !input car_tracker
+    state: !input car
+action:
+  - choose:
+      - conditions:
+          - condition: state
+            entity_id: !input person
+            state: 'home'
+          - condition: state
+            entity_id: cover.garage_door
+            state: 'closed'
+        sequence:
+          - service: cover.open_cover
+            target:
+              entity_id: cover.garage_door
+          - wait_for_trigger:
+              platform: state
+              entity_id: binary_sensor.motion_garage
+              to: 'off'
+              for: '00:02:30'
+          - service: cover.close_cover
+            target:
+              entity_id: cover.garage_door
+      - conditions:
+          - condition: state
+            entity_id: !input person
+            state: 'not_home'
+          - condition: state
+            entity_id: cover.garage_door
+            state: 'open'
+        sequence:
+          - wait_template: "{{ (states('sensor.garage_no_motion') | int) > 0 }}"
+          - service: cover.close_cover
+            target:
+              entity_id: cover.garage_door
+
+mode: single
+

@@ -1,0 +1,38 @@
+tvs:
+  name: TVs
+  entities:
+    - binary_sensor.bedroom_tv
+    - binary_sensor.frontroom_tv
+    - binary_sensor.livingroom_tv
+
+computers:
+  name: Computers
+  entities:
+    - binary_sensor.computer_simon
+    - binary_sensor.computer_zoey
+    - binary_sensor.macbook_air
+
+media_players:
+  name: Media Players
+  entities:
+    - media_player.display_kitchen
+    - media_player.apple_tv
+    - media_player.speaker_bedroom
+    - media_player.speaker_front_room
+
+all_chromecasts:
+  name: All Chromecasts
+  entities:
+    - media_player.display_kitchen
+    - media_player.speaker_livingroom
+    - media_player.speaker_frontroom
+    - media_player.speaker_bedroom
+    - media_player.speaker_joseph
+
+family:
+  entities:
+    - person.simon
+    - person.zoey
+    - person.sofia
+    - person.joseph
+    - person.theo

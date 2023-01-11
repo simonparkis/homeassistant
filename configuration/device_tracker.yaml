@@ -1,0 +1,6 @@
+- platform: bluetooth_tracker
+  new_device_defaults:
+    track_new_devices: false
+- platform: bluetooth_le_tracker
+  new_device_defaults:
+    track_new_devices: false

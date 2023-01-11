@@ -1,0 +1,5 @@
+- platform: group
+  name: simon_zoey
+  services:
+    - service: mobile_app_simon
+    - service: mobile_app_zoeys_iphone

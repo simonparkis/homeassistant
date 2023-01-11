@@ -1,0 +1,96 @@
+>
+  {%- macro greeting() -%}
+    {% if now() < today_at('12:00') %}
+      Good Morning
+    {% elif today_at('12:00') < now() < today_at('17:00') %}
+      Good Afternoon
+    {% else %}
+      Good Evening
+    {% endif %}
+  {%- endmacro -%}
+  
+  {%- macro dateTime() -%}
+    {% set now = as_timestamp(now()) %}
+    {% set weekday = now | timestamp_custom('%A') %}
+    {% set day = now | timestamp_custom('%-d') %}
+    {% set month = now | timestamp_custom('%B') %}
+    {% if day | last == '1' %}
+      {% set suffix = 'st' %}
+    {% elif day | last == '2' %}
+      {% set suffix = 'nd' %}
+    {% elif day | last == '3' %}
+      {% set suffix = 'rd' %}
+    {% else %}
+      {% set suffix = 'th' %}
+    {% endif %}
+  
+      {{ now | timestamp_custom('%I:%M %p') }} on {{ weekday }} the {{ day }}{{ suffix }} of {{ month }}
+  {%- endmacro -%}
+  
+  {%- macro cleanup(data) -%}
+    {%- for item in data.split("\n")  if item | trim != "" -%}
+      {{ item | trim }} {% endfor -%}
+  {%- endmacro -%}
+  
+  {%- macro weather() -%}
+      It is expected to be {{ states.weather.home.state }} with a forecasted high of {{ states.weather.home.attributes.forecast[1].temperature | round }} and a low of {{ states.weather.home.attributes.forecast[1].templow | round}}.
+      It is currently {{ states.sensor.temp_outside.state | round }} degrees outside, whilst the average temperature inside the house is {{ states.sensor.average_temp.state | round }}...
+  {%- endmacro -%}
+  
+  {%- macro calendar() -%}
+    {% if states.calendar.family_family.attributes.message is defined %}
+      {% if states.calendar.family_family.state == 'off' and states.calendar.family_family.attributes.offset_reached and states.calendar.family_family.attributes.all_day %}
+        According to your calendar, Tomorrow is {{ states.calendar.family_family.attributes.message }}...
+      {% elif states.calendar.family_family.state == 'on' and states.calendar.family_family.attributes.all_day %}
+        Today is {{ states.calendar.family_family.attributes.message }}...
+      {% elif as_timestamp(states.calendar.family_family.attributes.start_time) <  as_timestamp(today_at('23:59:59')) %}
+        You have an entry in your calendar today for {{ states.calendar.family_family.attributes.message }} at {{ as_timestamp(strptime(states.calendar.family_family.attributes.start_time, '%Y-%m-%d %H:%M:%S')) | timestamp_custom('%I:%M %p')}}...
+      {% endif %}
+      {% if states.calendar.family_family.attributes.location != '' %}
+        The expected travel time is {{ states.sensor.calendar_travel_time.state }} minutes...
+      {% endif %}
+    {% endif %}
+  {%- endmacro -%}
+  
+  {%- macro birthdays() %}
+    {% if states.calendar.birthdays_birthdays.attributes.message is defined %}
+      {% if states.calendar.birthdays_birthdays.state == 'on' %}
+        Today is {{ states.calendar.birthdays_birthdays.attributes.message }}...
+      {% endif %}
+      
+      {% if states.calendar.birthdays_birthdays.state == 'off' and states.calendar.birthdays_birthdays.attributes.offset_reached %}
+      	Tomorrow is {{ states.calendar.birthdays_birthdays.attributes.message }}...
+      {% endif %}
+    {% endif %}
+  {%- endmacro -%}
+  
+  {%- macro garbageBins() -%}
+    {% if states.sensor.rubbish.state == '1' and states.sensor.recycling.state == '1' %}
+      Waste collection day is tomorrow, the Rubbish and Recycling Bins must go out tonight...
+    {% elif states.sensor.rubbish.state == '1' %}
+      Waste collection day is tomorrow, the Rubbish bin must go out tonight...
+    {% endif %}
+  {%- endmacro -%}
+    
+  
+  {%- macro travelTime() -%}
+    {% if states.binary_sensor.workday_sensor.state == 'on' %}
+      {% if int(states.sensor.simon_commute_work.state) > 40 or int(states.sensor.zoey_commute_work.state) > 22 %}
+        Traffic is heavy, with
+      {% else %}
+        Traffic is average, with
+      {% endif %}
+      Simon's approximate commute time to the office at {{ states.sensor.simon_commute_work.state }} minutes, whilst Zoey's is at {{ states.sensor.zoey_commute_work.state }}...
+    {% endif %}
+  {%- endmacro -%}
+  
+  {%- macro completeMacro() -%}
+    {{ greeting() }}, It is {{ dateTime() }}...
+    {{ birthdays() }}
+    {{ weather() }}
+    {{ travelTime() }}
+    {{ garbageBins() }}
+    {{ calendar() }}
+  {%- endmacro -%}
+  
+  {{ cleanup(completeMacro()) }}

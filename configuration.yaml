@@ -1,0 +1,142 @@
+homeassistant:
+  name: Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: !secret elevation
+  country: AU
+  external_url: https://simonparkis.duckdns.org
+  internal_url: http://192.168.1.110:8123
+  unit_system: metric
+  time_zone: Australia/Sydney
+  customize: !include ./customize/customize.yaml
+  auth_providers:
+    - type: homeassistant
+
+zha:
+  zigpy_config:
+    network:
+      channel: 25
+
+zone:
+  - name: Home
+    latitude: !secret latitude
+    longitude: !secret longitude
+    radius: 65
+
+logger:
+  default: info
+  logs:
+    homeassistant.core: debug
+    homeassistant.components.zha: debug
+    bellows.zigbee.application: debug
+    bellows.ezsp: debug
+    zigpy: debug
+    zigpy_deconz.zigbee.application: debug
+    zigpy_deconz.api: debug
+    zigpy_xbee.zigbee.application: debug
+    zigpy_xbee.api: debug
+    zigpy_zigate: debug
+    zigpy_znp: debug
+    zhaquirks: debug
+
+########## CONFIGURATION OPTIONS #############
+media_extractor:
+stream:
+default_config:
+system_health:
+conversation:
+history:
+logbook:
+map:
+sun:
+
+
+############## COMPONENTS ######################
+notify: !include configuration/notify.yaml
+fan: !include configuration/fan.yaml
+climate: !include configuration/climate.yaml
+input_boolean: !include configuration/input_boolean.yaml
+input_datetime: !include configuration/input_datetime.yaml
+input_select: !include configuration/input_select.yaml
+input_number: !include configuration/input_number.yaml
+sensor: !include configuration/sensor.yaml
+binary_sensor: !include configuration/binary_sensor.yaml
+device_tracker: !include configuration/device_tracker.yaml
+camera: !include configuration/camera.yaml
+switch: !include configuration/switch.yaml
+template: !include configuration/template.yaml
+group: !include groups.yaml
+cover: !include configuration/cover.yaml
+
+########### SCRIPTS, AUTOMATIONS & SCENES ################
+script manual: !include_dir_merge_named scripts
+script: !include scripts.yaml
+automation: !include automations.yaml
+#automation manual: !include_dir_merge_list automation/
+
+http:
+  use_x_forwarded_for: true
+  trusted_proxies:
+    - 10.0.0.0/8
+    - 169.254.0.0/16
+    - 172.16.0.0/12
+    - 192.168.0.0/24
+    - 172.26.0.0/24
+
+frontend:
+  themes: !include themes.yaml
+
+lovelace:
+  mode: storage
+  
+homekit:
+  filter:
+    include_domains:
+      - light
+      - cover
+      - switch
+      - media_player
+      - input_boolean
+
+apple_tv:
+  - host: 192.168.1.60
+    login_id: !secret appletv_login_id
+    credentials: !secret appletv_credentials
+    start_off: true
+    
+calendar:
+  - platform: caldav
+    url: https://caldav.icloud.com
+    username: !secret apple_email
+    password: !secret apple_calendar_password
+    days: 3
+    custom_calendars:
+      - name: 'Family'
+        calendar: 'Family'
+        search: '.*'
+      - name: 'Birthdays'
+        calendar: 'Birthdays'
+        search: '.*'
+      - name: 'HomeAssistant'
+        calendar: 'HomeAssistant'
+        search: '.*'
+      
+recorder:
+  purge_keep_days: 7
+
+tts:
+  - platform: google_translate
+    service_name: google_say
+    
+proximity:
+  home:
+    devices:
+      - person.simon
+      - person.zoey
+    unit_of_measurement: km
+
+panel_iframe:
+  vscode:
+    title: "VSCode"
+    url: !secret vscodeURL
+    icon: mdi:microsoft-visual-studio-code

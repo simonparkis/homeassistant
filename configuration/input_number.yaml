@@ -1,0 +1,5 @@
+master_bedroom_fan_speed:
+  initial: 50
+  min: 0
+  max: 100
+  step: 1

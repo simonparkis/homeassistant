@@ -1,0 +1,24 @@
+  - platform: template
+    covers:
+      garage_door:
+        device_class: garage
+        friendly_name: "Garage Door"
+        value_template: "{{ states('cover.garage') }}"
+        icon_template: >
+          {% if is_state('cover.garage_door', 'closed') %}
+            mdi:garage-variant
+          {% else %}
+            mdi:garage-open-variant
+          {% endif %}
+        open_cover:
+          - service: cover.open_cover
+            target: 
+              entity_id: cover.garage
+        close_cover:
+          - service: cover.close_cover
+            target:
+              entity_id: cover.garage
+        stop_cover:
+          - service: cover.stop_cover
+            target:
+              entity_id: cover.garage

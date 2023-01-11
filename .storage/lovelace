@@ -1,0 +1,754 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "lovelace",
+  "data": {
+    "config": {
+      "views": [
+        {
+          "panel": false,
+          "title": "Home",
+          "path": "home",
+          "badges": [],
+          "cards": [
+            {
+              "title": "Presence Detection",
+              "type": "entities",
+              "show_header_toggle": false,
+              "state_color": true,
+              "entities": [
+                {
+                  "entity": "sensor.house_status",
+                  "name": "House Status"
+                },
+                {
+                  "entity": "person.simon",
+                  "name": "Simon"
+                },
+                {
+                  "entity": "person.zoey",
+                  "name": "Zoey"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "input_boolean.sentry_mode",
+                  "icon": "mdi:shield-account",
+                  "name": "Sentry Mode"
+                },
+                {
+                  "entity": "input_boolean.guest_mode",
+                  "icon": "mdi:account-multiple",
+                  "name": "Guest Mode"
+                },
+                {
+                  "entity": "input_boolean.vacation_mode",
+                  "icon": "mdi:airplane",
+                  "name": "Vacation Mode"
+                }
+              ]
+            },
+            {
+              "title": "Access Control",
+              "type": "entities",
+              "show_header_toggle": false,
+              "state_color": true,
+              "entities": [
+                {
+                  "entity": "sensor.dscalarm_partition_1_msg",
+                  "name": "Alarm Status",
+                  "icon": "mdi:alarm-bell"
+                },
+                {
+                  "entity": "binary_sensor.door_front"
+                },
+                {
+                  "entity": "cover.garage_door"
+                },
+                {
+                  "entity": "binary_sensor.motion_garage",
+                  "name": "Motion Sensor",
+                  "icon": "mdi:run-fast"
+                },
+                {
+                  "entity": "sensor.temp_outside",
+                  "name": "Outside Temperature"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "input_boolean.auto_garage_door",
+                  "name": "Auto Garage Door",
+                  "icon": "mdi:garage-variant-lock"
+                },
+                {
+                  "entity": "input_boolean.doorbell_chime",
+                  "name": "Doorbell Chime",
+                  "icon": "mdi:bell-outline"
+                }
+              ]
+            },
+            {
+              "title": "Living Room",
+              "type": "entities",
+              "show_header_toggle": false,
+              "state_color": true,
+              "entities": [
+                {
+                  "entity": "binary_sensor.tv_livingroom",
+                  "icon": "mdi:television",
+                  "name": "Television"
+                },
+                {
+                  "entity": "media_player.tv_livingroom",
+                  "name": "Chromecast",
+                  "icon": "mdi:google-chrome",
+                  "secondary_info": "none"
+                },
+                {
+                  "entity": "media_player.living_room_2",
+                  "name": "Audio",
+                  "icon": "mdi:speaker"
+                },
+                {
+                  "entity": "light.lamps_livingroom",
+                  "icon": "mdi:lamps",
+                  "name": "Lounge Lamps"
+                },
+                {
+                  "entity": "light.bookshelf",
+                  "icon": "mdi:wall-sconce-round-variant",
+                  "name": "Bookshelf Light"
+                },
+                {
+                  "entity": "binary_sensor.motion_livingroom",
+                  "name": "Motion Sensor",
+                  "icon": "mdi:run-fast"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "automation.auto_lights_living_room",
+                  "name": "Auto Lights",
+                  "icon": "mdi:exit-run"
+                }
+              ]
+            },
+            {
+              "title": "Kitchen",
+              "type": "entities",
+              "show_header_toggle": false,
+              "state_color": true,
+              "entities": [
+                {
+                  "entity": "media_player.display_kitchen",
+                  "name": "Display",
+                  "icon": "mdi:television"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "automation.grandfather_clock",
+                  "icon": "mdi:clock-outline"
+                },
+                {
+                  "entity": "input_boolean.audible_notifications",
+                  "name": "Audible Notifications",
+                  "icon": "mdi:bullhorn-variant-outline"
+                }
+              ]
+            },
+            {
+              "title": "Study",
+              "type": "entities",
+              "show_header_toggle": false,
+              "state_color": true,
+              "entities": [
+                {
+                  "entity": "binary_sensor.computer_zoey",
+                  "name": "Zoey's Computer",
+                  "icon": "mdi:monitor"
+                },
+                {
+                  "entity": "binary_sensor.macbook_air_active",
+                  "name": "MacBook Air",
+                  "icon": "mdi:laptop"
+                },
+                {
+                  "type": "conditional",
+                  "conditions": [
+                    {
+                      "entity": "binary_sensor.motion_study",
+                      "state_not": "unavailable"
+                    }
+                  ],
+                  "row": {
+                    "entity": "binary_sensor.motion_study",
+                    "name": "Motion Sensor",
+                    "icon": "mdi:run-fast"
+                  }
+                }
+              ]
+            },
+            {
+              "title": "Front Room",
+              "type": "entities",
+              "show_header_toggle": false,
+              "state_color": true,
+              "entities": [
+                {
+                  "entity": "binary_sensor.tv_frontroom",
+                  "icon": "mdi:television",
+                  "name": "Television"
+                },
+                {
+                  "entity": "media_player.tv_frontroom",
+                  "name": "Chromecast",
+                  "icon": "mdi:google-chrome"
+                },
+                {
+                  "entity": "media_player.speaker_frontroom",
+                  "name": "Audio",
+                  "icon": "mdi:speaker"
+                },
+                {
+                  "entity": "light.lamp_frontroom",
+                  "name": "Lamp"
+                },
+                {
+                  "entity": "binary_sensor.motion_frontroom",
+                  "name": "Motion Sensor",
+                  "icon": "mdi:run-fast"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "automation.lights_auto_lights_front_room",
+                  "name": "Auto Lights",
+                  "icon": "mdi:exit-run"
+                }
+              ]
+            },
+            {
+              "type": "entities",
+              "title": "Laundry",
+              "state_color": true,
+              "show_header_toggle": false,
+              "entities": [
+                {
+                  "entity": "light.laundry",
+                  "name": "Light"
+                },
+                {
+                  "entity": "binary_sensor.motion_laundry",
+                  "name": "Motion Sensor"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "automation.lights_laundry",
+                  "name": "Auto Lights"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Bedrooms",
+          "path": "bedrooms",
+          "badges": [],
+          "cards": [
+            {
+              "title": "Master Bedroom",
+              "type": "entities",
+              "show_header_toggle": false,
+              "state_color": true,
+              "entities": [
+                {
+                  "entity": "binary_sensor.tv_bedroom",
+                  "name": "Television",
+                  "icon": "mdi:television"
+                },
+                {
+                  "entity": "media_player.tv_bedroom",
+                  "name": "Chromecast",
+                  "icon": "mdi:google-chrome"
+                },
+                {
+                  "entity": "media_player.speaker_bedroom",
+                  "name": "Audio",
+                  "icon": "mdi:speaker"
+                },
+                {
+                  "entity": "climate.master_bedroom",
+                  "name": "Climate Control",
+                  "icon": "mdi:thermometer"
+                },
+                {
+                  "entity": "binary_sensor.motion_master",
+                  "name": "Motion Sensor",
+                  "icon": "mdi:run-fast"
+                },
+                {
+                  "entity": "light.lamp_simon",
+                  "name": "Simon's Lamp"
+                },
+                {
+                  "entity": "light.lamp_zoey"
+                },
+                {
+                  "type": "conditional",
+                  "conditions": [
+                    {
+                      "entity": "input_boolean.fans",
+                      "state": "on"
+                    }
+                  ],
+                  "row": {
+                    "entity": "fan.master",
+                    "name": "Fan"
+                  }
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "automation.lights_master_bedroom",
+                  "name": "Auto Lights",
+                  "icon": "mdi:exit-run"
+                },
+                {
+                  "entity": "automation.lights_wake_up",
+                  "name": "Wake-Up Light"
+                },
+                {
+                  "entity": "input_boolean.enable_heater_master",
+                  "name": "Auto Heater",
+                  "icon": "mdi:fire"
+                }
+              ]
+            },
+            {
+              "title": "Sofia's Room",
+              "type": "entities",
+              "show_header_toggle": false,
+              "state_color": true,
+              "entities": [
+                {
+                  "entity": "climate.sofia_bedroom",
+                  "icon": "mdi:thermometer",
+                  "name": "Climate Control"
+                },
+                {
+                  "entity": "light.lamp_sofia",
+                  "name": "Lamp",
+                  "icon": "mdi:floor-lamp"
+                },
+                {
+                  "type": "conditional",
+                  "conditions": [
+                    {
+                      "entity": "input_boolean.fans",
+                      "state": "on"
+                    }
+                  ],
+                  "row": {
+                    "entity": "fan.sofia",
+                    "icon": "mdi:fan",
+                    "name": "Fan"
+                  }
+                },
+                {
+                  "entity": "binary_sensor.motion_sofia",
+                  "name": "Motion Sensor",
+                  "icon": "mdi:run-fast"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "automation.auto_lights_sofia",
+                  "name": "Auto Lights",
+                  "icon": "mdi:exit-run"
+                },
+                {
+                  "entity": "input_boolean.enable_heater_sofia",
+                  "icon": "mdi:fire",
+                  "name": "Auto Heater"
+                }
+              ]
+            },
+            {
+              "title": "Joseph's Room",
+              "type": "entities",
+              "show_header_toggle": false,
+              "state_color": true,
+              "entities": [
+                {
+                  "entity": "climate.joseph_bedroom",
+                  "icon": "mdi:thermometer",
+                  "name": "Climate Control"
+                },
+                {
+                  "entity": "light.lamp_joseph",
+                  "name": "Lamp",
+                  "icon": "mdi:floor-lamp"
+                },
+                {
+                  "type": "conditional",
+                  "conditions": [
+                    {
+                      "entity": "input_boolean.fans",
+                      "state": "on"
+                    }
+                  ],
+                  "row": {
+                    "entity": "fan.joseph",
+                    "icon": "mdi:fan",
+                    "name": "Fan"
+                  }
+                },
+                {
+                  "entity": "binary_sensor.motion_joseph",
+                  "name": "Motion Sensor",
+                  "icon": "mdi:run-fast"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "automation.auto_lights_joseph",
+                  "name": "Auto Lights",
+                  "icon": "mdi:exit-run"
+                },
+                {
+                  "entity": "input_boolean.enable_heater_joseph",
+                  "icon": "mdi:fire",
+                  "name": "Auto Heater"
+                }
+              ]
+            },
+            {
+              "title": "Theo's Room",
+              "type": "entities",
+              "show_header_toggle": false,
+              "state_color": true,
+              "entities": [
+                {
+                  "entity": "climate.theo_bedroom",
+                  "icon": "mdi:thermometer",
+                  "name": "Climate Control"
+                },
+                {
+                  "entity": "light.lamp_theo",
+                  "name": "Lamp",
+                  "icon": "mdi:floor-lamp"
+                },
+                {
+                  "entity": "binary_sensor.motion_theo",
+                  "name": "Motion Sensor",
+                  "icon": "mdi:run-fast"
+                },
+                {
+                  "type": "conditional",
+                  "conditions": [
+                    {
+                      "entity": "input_boolean.fans",
+                      "state": "on"
+                    }
+                  ],
+                  "row": {
+                    "entity": "fan.theo",
+                    "icon": "mdi:fan",
+                    "name": "Fan"
+                  }
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "automation.auto_lights_theo",
+                  "name": "Auto Lights",
+                  "icon": "mdi:exit-run"
+                },
+                {
+                  "entity": "input_boolean.enable_heater_theo",
+                  "icon": "mdi:fire",
+                  "name": "Auto Heater"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "System",
+          "path": "system",
+          "badges": [],
+          "cards": [
+            {
+              "title": "System Monitor",
+              "type": "entities",
+              "show_header_toggle": false,
+              "state_color": true,
+              "entities": [
+                {
+                  "entity": "sensor.processor_use_percent",
+                  "name": "Processor Usage"
+                },
+                {
+                  "entity": "sensor.memory_use_percent",
+                  "name": "Memory Usage"
+                },
+                {
+                  "entity": "sensor.uptime",
+                  "name": "Uptime"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "sensor.disk_use_percent",
+                  "name": "Disk Use"
+                },
+                {
+                  "entity": "sensor.disk_free",
+                  "name": "Free Space"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "sensor.speedtest_ping",
+                  "name": "Ping"
+                },
+                {
+                  "entity": "sensor.speedtest_download",
+                  "name": "Download Speed"
+                },
+                {
+                  "entity": "sensor.speedtest_upload",
+                  "name": "Upload Speed"
+                }
+              ]
+            },
+            {
+              "title": "Connectivity",
+              "type": "entities",
+              "show_header_toggle": false,
+              "state_color": true,
+              "entities": [
+                {
+                  "entity": "binary_sensor.internet",
+                  "name": "Internet",
+                  "icon": "mdi:earth"
+                },
+                {
+                  "entity": "binary_sensor.inkjet_printer",
+                  "name": "Inkjet Printer",
+                  "icon": "mdi:printer"
+                },
+                {
+                  "entity": "binary_sensor.laser_printer",
+                  "name": "Laser Printer",
+                  "icon": "mdi:printer"
+                }
+              ]
+            },
+            {
+              "type": "statistics-graph",
+              "entities": [
+                "sensor.speedtest_download",
+                "sensor.speedtest_upload",
+                "sensor.speedtest_ping"
+              ],
+              "chart_type": "line",
+              "stat_types": [
+                "mean"
+              ],
+              "title": "Internet Speeds",
+              "days_to_show": 14
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "input_boolean.fans",
+                  "icon": "mdi:fan",
+                  "name": "Fans"
+                }
+              ],
+              "title": "UI Toggles"
+            }
+          ]
+        },
+        {
+          "title": "Audio",
+          "path": "audio",
+          "badges": [],
+          "cards": [
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "media_player.all_chromecasts"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "media_player.display_kitchen"
+                },
+                {
+                  "entity": "media_player.living_room_2"
+                },
+                {
+                  "entity": "media_player.speaker_frontroom"
+                },
+                {
+                  "entity": "media_player.speaker_bedroom"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "input_boolean.follow_me_audio",
+                  "name": "Follow Me Audio",
+                  "icon": "mdi:cast-audio"
+                }
+              ],
+              "state_color": true
+            }
+          ]
+        },
+        {
+          "title": "Cameras",
+          "path": "cameras",
+          "badges": [],
+          "cards": [
+            {
+              "type": "picture-entity",
+              "image": "https://demo.home-assistant.io/stub_config/bedroom.png",
+              "entity": "camera.garage",
+              "show_state": false,
+              "camera_image": "camera.garage",
+              "show_name": false
+            },
+            {
+              "show_state": false,
+              "show_name": false,
+              "camera_view": "auto",
+              "type": "picture-entity",
+              "entity": "camera.voron",
+              "image": "https://demo.home-assistant.io/stub_config/bedroom.png",
+              "name": "Voron"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

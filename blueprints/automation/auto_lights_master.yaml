@@ -1,0 +1,314 @@
+blueprint:
+  name: Auto Lights Master
+  description: The lights will turn on if light level low enough, if after set time, the lights wont turn off again automatically.
+  domain: automation
+  input:
+    light_entity:
+      name: Light
+      description: The Light Entity to be controlled automatically
+      selector:
+        entity:
+          domain: light
+    motion_sensor:
+      name: Motion Sensor
+      description: The motion sensor which will trigger the light
+      selector:
+        entity:
+          domain: binary_sensor
+          device_class: motion
+    light_sensor:
+      name: Light Sensor
+      description: Light Level Sensor
+      selector:
+        entity:
+          domain: sensor
+    off_time_threshold:
+      name: Auto-Off Time Threshold
+      description: The time when the lights will no longer turn off automatically
+      selector:
+        time:
+    no_motion_wait:
+      name: Wait time
+      description: Time to leave the light on after last motion is detected.
+      default: 60
+      selector:
+        number:
+          min: 0
+          max: 3600
+          unit_of_measurement: seconds
+    sleep_sensor:
+      name: Sleep Sensor
+      description: Sensor which tracks if person sleeping
+      selector:
+        entity:
+          domain: binary_sensor
+    lamp_switch:
+      name: Switch Entity
+      description: Switch Entity for inline switch module
+      selector:
+        entity:
+          domain: switch
+    lamp_button:
+      name: Lamp Button
+      description: Sensor for lamp button status
+      selector:
+        entity:
+          domain: binary_sensor
+    switch_override:
+      name: Switch Override
+      description: Input boolean keeps light on when controlled via switch
+      selector:
+        entity:
+          domain: input_boolean
+    dim_brighten:
+      name: Dim/Brighten Toggle Boolean
+      description: Input Boolean to toggle between Dim or Brighten
+    press_event:
+      name: Single Press Event
+      description: The event that fires when button single pressed
+    double_press_event:
+      name: Double Press Event
+      description: The event that fires when button double pressed
+    hold_event:
+      name: Hold Event
+      description: The event that fires when button is held
+
+mode: restart
+max_exceeded: silent
+
+variables:
+  off_time_threshold: !input off_time_threshold  
+  no_motion_wait: !input no_motion_wait
+
+trigger:
+  - platform: state
+    entity_id: !input motion_sensor
+    to: 'on'
+    id: motion_on
+  - platform: state
+    entity_id: !input motion_sensor
+    to: 'off'
+    id: motion_off
+  - platform: state
+    entity_id: !input sleep_sensor
+    to: 'on'
+    id: sleeping
+  - platform: event
+    event_type: !input press_event
+    id: press
+  - platform: event
+    event_type: !input double_press_event
+    id: doublepress
+  - platform: event
+    event_type: !input hold_event
+    id: hold
+    
+action:
+  - choose:
+########## TURN ON LAMP VIA BUTTON ##########
+      - conditions:
+          - condition: trigger
+            id: press
+          - condition: state
+            entity_id: !input light_entity
+            state: 'off'
+        sequence:
+          - service: light.turn_on
+            data:
+              color_temp: 366
+            target:
+              entity_id: !input light_entity
+          - service: input_boolean.turn_on
+            target:
+              entity_id: !input switch_override  
+
+########## TURN OFF LAMP VIA BUTTON ##########       
+      - conditions:
+          - condition: trigger
+            id: press
+          - condition: state
+            entity_id: !input light_entity
+            state: 'on'
+        sequence:
+          - service: light.turn_off
+            target:
+              entity_id: !input light_entity
+          - service: input_boolean.turn_off
+            target:
+              entity_id: !input switch_override
+
+########## BRIGTHEN LAMP ##########
+      - conditions:
+          - condition: trigger
+            id: hold
+          - condition: state
+            entity_id: !input dim_brighten
+            state: 'on'
+        sequence:
+          - repeat:
+              sequence:
+                - service: light.turn_on
+                  data:
+                    color_temp: 366
+                    brightness_step_pct: 10
+                  target:
+                    entity_id: !input light_entity
+                - delay: 0.3
+              until:
+                - condition: state
+                  entity_id: !input lamp_button
+                  state: 'off'
+          - service: input_boolean.toggle
+            target:
+              entity_id: !input dim_brighten  
+
+########## DIM LAMP ##########
+      - conditions:
+          - condition: trigger
+            id: hold
+          - condition: state
+            entity_id: !input dim_brighten
+            state: 'off'
+        sequence:
+          - repeat:
+              sequence:
+                - service: light.turn_on
+                  data:
+                    color_temp: 366
+                    brightness_step_pct: -10
+                  target:
+                    entity_id: !input light_entity
+                - delay: 0.3
+              until:
+                - condition: state
+                  entity_id: !input lamp_button
+                  state: 'off'
+          - service: input_boolean.toggle
+            target:
+              entity_id: !input dim_brighten  
+                
+
+########## TURN ON OVERRIDE ##########
+      - conditions:
+          - condition: trigger
+            id: doublepress
+          - condition: state
+            entity_id: !input light_entity
+            state: 'on'
+        sequence:
+          - service: input_boolean.turn_on
+            target:
+              entity_id: !input switch_override
+
+########## TURN OFF LAMP BECAUSE SLEEPING ##########
+      - conditions:
+          - condition: template
+            value_template: "{{ states.automation.lights_wake_up.attributes.current == 0 }}"
+          - condition: trigger
+            id: sleeping
+          - condition: state
+            entity_id: !input switch_override
+            state: 'off'
+          - condition: state
+            entity_id: input_boolean.auto_lights_master
+            state: 'on'
+          - condition: template
+            value_template: "{{ is_state('input_boolean.house_guests', 'off') or (is_state('person.simon', 'home') or is_state('person.zoey', 'home')) }}"
+        sequence:
+          - service: light.turn_off
+            data:
+              transition: 5
+            target:
+              entity_id: !input light_entity
+
+########## TURN ON LAMP VIA MOTION BEFORE BED TIME ##########              
+      - conditions:
+          - condition: template
+            value_template: "{{ states.automation.lights_wake_up.attributes.current == 0 }}"
+          - condition: state
+            entity_id: !input lamp_switch
+            state: 'off'
+          - condition: trigger
+            id: motion_on
+          - condition: numeric_state
+            entity_id: !input light_sensor
+            below: 15
+          - condition: state
+            entity_id: input_boolean.auto_lights_master
+            state: 'on'
+          - condition: template
+            value_template: "{{ states('sensor.time') > '08:00:00' and states('sensor.time') < off_time_threshold }}"
+          - condition: template
+            value_template: "{{ is_state('input_boolean.house_guests', 'off') or (is_state('person.simon', 'home') or is_state('person.zoey', 'home')) }}"
+        sequence:
+          - service: switch.turn_on
+            target:
+              entity_id: !input lamp_switch
+          - service: light.turn_on
+            data:
+              color_temp: 366
+              brightness_pct: 100
+            target:
+              entity_id: !input light_entity
+
+########## TURN ON LAMP VIA MOTION AFTER BED TIME #########                    
+      - conditions:
+          - condition: template
+            value_template: "{{ states.automation.lights_wake_up.attributes.current == 0 }}"
+          - condition: trigger
+            id: motion_on
+          - condition: numeric_state
+            entity_id: !input light_sensor
+            below: 15
+          - condition: state
+            entity_id: input_boolean.auto_lights_master
+            state: 'on'
+          - condition: template
+            value_template: "{{ is_state('input_boolean.house_guests', 'off') or (is_state('person.simon', 'home') or is_state('person.zoey', 'home')) }}"
+        sequence:
+          - service: light.turn_on
+            data:
+              color_temp: 366
+              brightness_pct: >
+                {% if is_state('binary_sensor.simon_sleeping', 'on') and is_state('binary_sensor.zoey_sleeping', 'on') %}
+                  0
+                {% elif is_state('binary_sensor.simon_sleeping', 'on') or is_state('binary_sensor.zoey_sleeping', 'on') and (states('sensor.time') < '08:00:00' or states('sensor.time') > off_time_threshold) %}
+                  1
+                {% elif (states('sensor.time') > off_time_threshold) or (states('sensor.time') < '08:00:00') %}
+                  50
+                {% else %}
+                  100
+                {% endif %}
+            target:
+              entity_id: !input light_entity
+
+########## TURN OFF LAMP VIA MOTION ##########
+      - conditions:
+          - condition: template
+            value_template: "{{ states.automation.lights_wake_up.attributes.current == 0 }}"
+          - condition: trigger
+            id: motion_off
+          - condition: state
+            entity_id: !input switch_override
+            state: 'off'
+          - condition: state
+            entity_id: input_boolean.auto_lights_master
+            state: 'on'
+          - condition: template
+            value_template: "{{ is_state('input_boolean.house_guests', 'off') or (is_state('person.simon', 'home') or is_state('person.zoey', 'home')) }}"
+        sequence:
+          - delay:
+              seconds: >
+                {% if is_state('binary_sensor.simon_sleeping', 'on') or is_state('binary_sensor.zoey_sleeping', 'on') %}
+                  0
+                {% else %}
+                  {{ no_motion_wait }}
+                {% endif %}
+          - service: light.turn_off
+            data:
+              transition: 5
+            target:
+              entity_id: !input light_entity
+              
+    
+ 

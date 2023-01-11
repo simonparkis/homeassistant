@@ -1,0 +1,38 @@
+theo_bedtime:
+  alias: Theo Bedtime
+  sequence:
+  - service: automation.turn_off
+    data:
+      stop_actions: false
+    target:
+      entity_id:
+      - automation.auto_lights_theo
+  - service: light.turn_on
+    data:
+      brightness_pct: 1
+      rgbw_color:
+      - 127
+      - 255
+      - 0
+      - 0
+    target:
+      entity_id: light.lamp_theo
+  mode: restart
+sofia_joseph_bedtime:
+  sequence:
+  - service: automation.turn_off
+    data:
+      stop_actions: true
+    target:
+      entity_id:
+      - automation.auto_lights_sofia
+      - automation.auto_lights_joseph
+  - service: light.turn_on
+    data:
+      brightness_pct: 100
+    target:
+      entity_id:
+      - light.lamp_sofia
+      - light.lamp_joseph
+  mode: restart
+  alias: Sofia Joseph Bedtime

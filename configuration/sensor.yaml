@@ -1,0 +1,107 @@
+- platform: systemmonitor
+  resources:
+    - type: last_boot
+    - type: processor_use
+    #- type: processor_temperature
+    - type: memory_use_percent
+    - type: disk_use_percent
+      arg: /
+    - type: disk_free
+      arg: /
+
+- platform: time_date
+  display_options:
+    - time
+    - date
+
+- platform: min_max
+  type: mean
+  name: average temp
+  entity_ids:
+    - sensor.temp_master
+    - sensor.temp_sofia
+    - sensor.temp_joseph
+    - sensor.temp_theo
+
+- platform: mqtt_room
+  name: Recycling Bin
+  device_id: tile:fbb75f4814cf
+  state_topic: "espresense/rooms"
+
+- platform: mqtt_room
+  name: Rubbish Bin
+  device_id: tile:ff33c4222e80
+  state_topic: "espresence/rooms"
+
+- platform: rest
+  name: Voron
+  resource: "http://192.168.1.100:7125/printer/objects/query?heater_bed&extruder&print_stats&toolhead&display_status&virtual_sdcard"
+  json_attributes_path: "$.result.status"
+  json_attributes:
+    - heater_bed
+    - extruder
+    - print_stats
+    - toolhead
+    - display_status
+    - virtual_sdcard
+  value_template: >-
+    {{ 'OK' if ('result' in value_json) else None }}    
+  headers:
+    x-api-key: 275466c23ae240b1820285f11af85b6f
+      
+- platform: template
+  sensors:
+
+    voron_hotend_target:
+      friendly_name: 'V0.126 Hotend Target'
+      device_class: temperature
+      unit_of_measurement: '°C'
+      value_template: >-
+        {{ states.sensor.voron.attributes['extruder']['target'] | float | round(1) if is_state('sensor.voron', 'OK') else None }}
+    voron_hotend_actual:
+      device_class: temperature
+      unit_of_measurement: '°C'
+      value_template: >-
+        {{ states.sensor.voron.attributes['extruder']['temperature'] | float | round(1) if is_state('sensor.voron', 'OK') else None }}
+    voron_bed_target:
+      device_class: temperature
+      unit_of_measurement: '°C'
+      value_template: >-
+        {{ states.sensor.voron.attributes['heater_bed']['target'] | float | round(1) if is_state('sensor.voron', 'OK') else None }}
+    voron_bed_actual:
+      device_class: temperature
+      unit_of_measurement: '°C'
+      value_template: >-
+        {{ states.sensor.voron.attributes['heater_bed']['temperature'] | float | round(1) if is_state('sensor.voron', 'OK') else None }}
+    voron_state:
+      icon_template: mdi:printer-3d
+      value_template: >-
+        {{ states.sensor.voron.attributes['print_stats']['state'] if is_state('sensor.voron', 'OK') else None }}
+    voron_current_print:
+      value_template: >-
+        {{ states.sensor.voron.attributes['print_stats']['filename'] if is_state('sensor.voron', 'OK') else None }}
+    voron_current_progress:
+      unit_of_measurement: '%'
+      icon_template: mdi:file-percent
+      value_template: >-
+        {{ (states.sensor.voron.attributes['display_status']['progress'] * 100) | round(1) if is_state('sensor.voron', 'OK') else None }}
+    voron_print_time:
+      icon_template: mdi:clock-start
+      value_template: >-
+        {{ states.sensor.voron.attributes['print_stats']['print_duration'] | timestamp_custom("%H:%M:%S", 0) if is_state('sensor.voron', 'OK') else None }}
+    voron_time_remaining:
+      icon_template: mdi:clock-end
+      value_template: >-
+        {{ (((states.sensor.voron.attributes['print_stats']['print_duration'] / states.sensor.voron.attributes['display_status']['progress'] - states.sensor.voron.attributes['print_stats']['print_duration']) if states.sensor.voron.attributes['display_status']['progress'] > 0 else 0) | timestamp_custom('%H:%M:%S', 0)) if is_state('sensor.voron', 'OK') else None }}
+    voron_eta:
+      icon_template: mdi:clock-outline
+      value_template: >-
+        {{ (as_timestamp(now()) + 2 * 60 * 60 + ((states.sensor.voron.attributes['print_stats']['print_duration'] / states.sensor.voron.attributes['display_status']['progress'] - states.sensor.voron.attributes['print_stats']['print_duration']) if states.sensor.voron.attributes['display_status']['progress'] > 0 else 0)) | timestamp_custom("%H:%M:%S", 0) if is_state('sensor.voron', 'OK') else None }}
+    voron_nozzletemp:
+      icon_template: mdi:thermometer
+      value_template: >-
+        {{ [(states.sensor.voron.attributes['extruder']['temperature'] | float | round(1) | string), " / ", (states.sensor.voron.attributes['extruder']['target'] | float | round(1) | string)] | join if is_state('sensor.voron', 'OK') else None }}
+    voron_bedtemp:
+      icon_template: mdi:thermometer
+      value_template: >-
+        {{ [(states.sensor.voron.attributes['heater_bed']['temperature'] | float | round(1) | string), " / ", (states.sensor.voron.attributes['heater_bed']['target'] | float | round(1) | string)] | join if is_state('sensor.voron', 'OK') else None }}

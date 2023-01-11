@@ -1,0 +1,68 @@
+- platform: ping
+  host: 142.250.204.3 #google.com.au
+  name: Internet
+  scan_interval: 60
+- platform: ping
+  host: 192.168.1.101
+  name: Laser Printer
+  scan_interval: 60
+- platform: ping
+  host: 192.168.1.20
+  name: Ford Escape
+  scan_interval: 60
+- platform: ping
+  host: 192.168.1.76
+  name: Inkjet Printer
+  scan_interval: 60
+- platform: workday
+  country: AU
+  province: NSW
+- platform: bayesian
+  name: Simon Sleeping
+  prior: 0.3
+  probability_threshold: 0.92
+  observations:
+    - platform: template
+      value_template: "{{ not is_state('sensor.simon_battery_state', 'Not Charging') and is_state('person.simon', 'home') }}"
+      prob_given_true: 0.99
+      prob_given_false: 0.125
+    - platform: state
+      entity_id: person.simon
+      to_state: home
+      prob_given_true: 0.99
+      prob_given_false: 0.52
+    - platform: template
+      value_template: "{{ is_state('group.tvs', 'off') }}"
+      prob_given_true: 0.95
+      prob_given_false: 0.844
+    - platform: template
+      value_template: "{{ states('sensor.time') > '21:30:00' or states('sensor.time') < '07:00:00' }}"
+      prob_given_true: 0.9
+      prob_given_false: 0.01
+- platform: bayesian
+  name: Zoey Sleeping
+  prior: 0.3
+  probability_threshold: 0.92
+  observations:
+    - platform: template
+      value_template: "{{ not is_state('sensor.zoeys_iphone_battery_state', 'Not Charging') and is_state('person.zoey', 'home') }}"
+      prob_given_true: 0.99
+      prob_given_false: 0.125
+    - platform: state
+      entity_id: person.zoey
+      to_state: home
+      prob_given_true: 0.99
+      prob_given_false: 0.52
+    - platform: template
+      value_template: "{{ is_state('group.tvs', 'off') }}"
+      prob_given_true: 0.95
+      prob_given_false: 0.844
+    - platform: template
+      value_template: "{{ states('sensor.time') > '21:30:00' or states('sensor.time') < '07:00:00' }}"
+      prob_given_true: 0.9
+      prob_given_false: 0.01
+
+- platform: tod
+  name: Quiet Time
+  after: '21:00:00'
+  before: '06:30:00'

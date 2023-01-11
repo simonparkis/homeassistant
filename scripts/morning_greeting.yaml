@@ -1,0 +1,8 @@
+morning_greeting:
+  alias: Morning Greeting
+  mode: single
+  sequence:
+    - service: tts.cloud_say
+      entity_id: media_player.display_kitchen
+      data:
+        message: !include ../speech/daily_briefing.yaml

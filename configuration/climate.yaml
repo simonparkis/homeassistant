@@ -1,0 +1,40 @@
+- platform: generic_thermostat
+  name: Master Bedroom
+  heater: switch.heater_master
+  target_sensor: sensor.temp_master
+  target_temp: 18.5
+  min_temp: 16
+  max_temp: 24
+  hot_tolerance: 0.5
+  cold_tolerance: 0.5
+  initial_hvac_mode: "off"
+- platform: generic_thermostat
+  name: Sofia Bedroom
+  heater: switch.heater_sofia
+  target_sensor: sensor.temp_sofia
+  target_temp: 18.5
+  min_temp: 16
+  max_temp: 24
+  hot_tolerance: 0.5
+  cold_tolerance: 0.5
+  initial_hvac_mode: "off"
+- platform: generic_thermostat
+  name: Joseph Bedroom
+  heater: switch.heater_joseph
+  target_sensor: sensor.temp_joseph
+  target_temp: 18.5
+  min_temp: 16
+  max_temp: 24
+  hot_tolerance: 0.5
+  cold_tolerance: 0.5
+  initial_hvac_mode: "off"
+- platform: generic_thermostat
+  name: Theo Bedroom
+  heater: switch.heater_theo
+  target_sensor: sensor.temp_theo
+  target_temp: 18.5
+  min_temp: 16
+  max_temp: 24
+  hot_tolerance: 0.5
+  cold_tolerance: 0.5
+  initial_hvac_mode: "off"

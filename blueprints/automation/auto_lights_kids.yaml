@@ -1,0 +1,128 @@
+blueprint:
+  name: Auto Lights Kids
+  description: The lights will turn on if light level low enough, if after set time, the lights wont turn off again automatically.
+  domain: automation
+  input:
+    light_entity:
+      name: Light
+      description: The Light Entity to be controlled automatically
+      selector:
+        entity:
+          domain: light
+    motion_sensor:
+      name: Motion Sensor
+      description: The motion sensor which will trigger the light
+      selector:
+        entity:
+          domain: binary_sensor
+          device_class: motion
+    light_sensor:
+      name: Light Sensor
+      description: Light Level Sensor
+      selector:
+        entity:
+          domain: sensor
+    off_time_threshold:
+      name: Auto-Off Time Threshold
+      description: The time when the lights will no longer turn off automatically
+      selector:
+        time:
+    no_motion_wait:
+      name: Wait time
+      description: Time to leave the light on after last motion is detected.
+      default: 60
+      selector:
+        number:
+          min: 0
+          max: 3600
+          unit_of_measurement: seconds
+    min_brightness:
+      name: Minimum Brightness Level
+      description: The lowest brightness value the light will have
+      default: 1
+      selector:
+        number:
+          min: 1
+          max: 100
+
+
+mode: restart
+max_exceeded: silent
+      
+trigger:
+  - platform: state
+    entity_id: !input motion_sensor
+    to: 'on'
+    id: motion
+  - platform: time
+    at: '06:30:00'
+    id: morning
+
+condition:
+  - condition:  numeric_state
+    entity_id: !input light_sensor
+    below: 15
+
+action:
+  - choose:
+      - conditions:
+          - condition: trigger
+            id: morning
+        sequence:
+          - service: light.turn_off
+            target:
+              entity_id: !input light_entity
+      - conditions:
+          - condition: state
+            entity_id: !input light_entity
+            state: 'off'
+          - condition: time
+            after: !input off_time_threshold
+            before: '06:30:00'
+        sequence:
+          - service: light.turn_on
+            data:
+              brightness_pct: 100
+            target:
+              entity_id: !input light_entity
+          - wait_for_trigger:
+              platform: state
+              entity_id: !input motion_sensor
+              from: "on"
+              to: "off"
+          - service: light.turn_on
+            data: 
+              brightness_pct: !input min_brightness
+              transition: 600
+            target: 
+              entity_id: !input light_entity
+      - conditions:
+          - condition: state
+            entity_id: !input light_entity
+            state: 'on'
+          - condition: time
+            after: !input off_time_threshold
+            before: '06:30:00'
+        sequence:
+          - service: light.turn_on
+            data: 
+              brightness_pct: !input min_brightness
+              transition: 600
+            target: 
+              entity_id: !input light_entity      
+    default:
+      - service: light.turn_on
+        data:
+          brightness_pct: 100
+        target:
+          entity_id: !input light_entity
+      - wait_for_trigger:
+          platform: state
+          entity_id: !input motion_sensor
+          from: "on"
+          to: "off"
+          for: !input no_motion_wait
+      - service: light.turn_off
+        target:
+          entity_id: !input light_entity
+

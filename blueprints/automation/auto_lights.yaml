@@ -1,0 +1,149 @@
+blueprint:
+  name: Auto Lights
+  description: Automatically turn on lights after sunset with brightness appropriate for the time of day.
+  domain: automation
+  input:
+    light_entity:
+      name: Light
+      description: The Light Entity to be controlled automatically
+      selector:
+        entity:
+          domain: light
+    motion_sensor:
+      name: Motion Sensor
+      description: The motion sensor which will trigger the light
+      selector:
+        entity:
+          domain: binary_sensor
+          device_class: motion
+    begin_dim:
+      name: Begin Dimming Time
+      description: The time when the brightness of the light starts to drop from 100%
+      selector:
+        time:
+    end_dim:
+      name: End Dimming Time
+      description: The time when the brightness of the light will be at its lowest level
+      selector:
+        time:
+    no_motion_wait:
+      name: Wait time
+      description: Time to leave the light on after last motion is detected.
+      default: 60
+      selector:
+        number:
+          min: 0
+          max: 3600
+          unit_of_measurement: seconds
+    min_brightness:
+      name: Minimum Brightness Level
+      description: The lowest brightness value the light will have
+      default: 1
+      selector:
+        number:
+          min: 1
+          max: 100
+    ignore_sun:
+      name: Ignore Sun
+      description: Turn on lights regardless of sun state
+      default: false
+      selector:
+        boolean:
+
+
+mode: restart
+max_exceeded: silent
+      
+trigger:
+  - platform: state
+    entity_id: !input motion_sensor
+    to: 'on'
+
+condition:
+  - condition: state
+    entity_id: sun.sun
+    state: below_horizon
+
+variables:
+  begin_dim: !input begin_dim
+  end_dim: !input end_dim
+  light_entity: !input light_entity
+  min_brightness: !input min_brightness
+
+action:
+  - choose:
+      - conditions:
+          - condition: state
+            entity_id: !input light_entity
+            state: 'on'
+        sequence:
+          - wait_for_trigger:
+              platform: state
+              entity_id: !input motion_sensor
+              from: "on"
+              to: "off"
+              for: !input no_motion_wait
+          - service: light.turn_off
+            target: 
+              entity_id: !input light_entity
+      - conditions:
+          - condition: time
+            after: !input begin_dim
+        sequence:
+          - service: light.turn_on
+            data:
+              transition: 0.5
+              brightness_pct: >
+                {% set start_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + begin_dim, "%Y-%m-%d %H:%M:%S")) %}
+                {% set end_dim_time = as_timestamp(strptime(now().strftime("%Y-%m-%d") + " " + end_dim, "%Y-%m-%d %H:%M:%S")) %}
+                {% set now_time =  as_timestamp(now()) %}     
+                {{ ([([((end_dim_time - now_time) / (end_dim_time - start_dim_time) * 100), min_brightness] | max), 100] | min) | int }}  
+            target:
+              entity_id: !input light_entity
+          - wait_for_trigger:
+              platform: state
+              entity_id: !input motion_sensor
+              from: "on"
+              to: "off"
+              for: !input no_motion_wait
+          - service: light.turn_off
+            data:
+              transition: 0.5
+            target: 
+              entity_id: !input light_entity
+      - conditions:
+          - condition: sun
+            before: sunrise
+        sequence:
+          - service: light.turn_on
+            data:
+              brightness_pct: !input min_brightness
+              transition: 0.5
+            target:
+              entity_id: !input light_entity
+          - wait_for_trigger:
+              platform: state
+              entity_id: !input motion_sensor
+              from: "on"
+              to: "off"
+              for: !input no_motion_wait
+          - service: light.turn_off
+            target: 
+              entity_id: !input light_entity
+    default:
+      - service: light.turn_on
+        data:
+          brightness_pct: 100
+          transition: 0.5
+        target: 
+          entity_id: !input light_entity
+        
+      - wait_for_trigger:
+          platform: state
+          entity_id: !input motion_sensor
+          from: "on"
+          to: "off"
+          for: !input no_motion_wait
+      - service: light.turn_off
+        target: 
+          entity_id: !input light_entity 
