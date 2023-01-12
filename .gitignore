@@ -16,4 +16,3 @@ secrets.yaml
 zigbee.db
 zigbee.db-shm
 zigbee.db-wal
-tts/**
