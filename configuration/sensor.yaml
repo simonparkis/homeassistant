@@ -105,3 +105,14 @@
       icon_template: mdi:thermometer
       value_template: >-
         {{ [(states.sensor.voron.attributes['heater_bed']['temperature'] | float | round(1) | string), " / ", (states.sensor.voron.attributes['heater_bed']['target'] | float | round(1) | string)] | join if is_state('sensor.voron', 'OK') else None }}
+
+
+- platform: command_line
+  name: WAN IP
+  command: "curl https://checkip.amazonaws.com"
+  scan_interval: 30
+
+- platform: command_line
+  name: VPN IP
+  command: "cat /shared/vpn_ip"
+  scan_interval: 30

@@ -668,6 +668,20 @@
                 }
               ],
               "title": "UI Toggles"
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "sensor.wan_ip"
+                },
+                {
+                  "entity": "sensor.vpn_ip"
+                }
+              ],
+              "title": "Network",
+              "state_color": true,
+              "show_header_toggle": false
             }
           ]
         },
