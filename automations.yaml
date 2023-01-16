@@ -349,7 +349,6 @@
       - media_player.speaker_bedroom
       - media_player.speaker_livingroom
       - media_player.speaker_frontroom
-      - media_player.speaker_joseph
       volume_level: "{% if (now().strftime(\"%H\") | int) < 8 or (now().strftime(\"%H\")
         | int) > 18 %}\n  0.2\n{% else %}\n  0.4\n{% endif %}\n"
   - delay: 00:00:01
@@ -369,7 +368,6 @@
       - media_player.speaker_bedroom
       - media_player.speaker_livingroom
       - media_player.speaker_frontroom
-      - media_player.speaker_joseph
       volume_level: 0.4
   - service: media_player.turn_off
     data:
@@ -378,7 +376,6 @@
       - media_player.speaker_bedroom
       - media_player.speaker_livingroom
       - media_player.speaker_frontroom
-      - media_player.speaker_joseph
   mode: single
 - id: '1631870728951'
   alias: Auto Close Garage Door
@@ -677,6 +674,9 @@
     - conditions:
       - condition: trigger
         id: motion_off
+      - condition: time
+        after: 06:30:00
+        before: '21:15:00'
       sequence:
       - service: light.turn_off
         target:
@@ -1506,7 +1506,6 @@
       - automation.auto_lights_sofia
       - automation.auto_lights_joseph
       - automation.auto_lights_theo
-      - automation.lights_master_bedroom
     data: {}
   mode: single
 - id: '1655515573815'
