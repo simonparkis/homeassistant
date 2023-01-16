@@ -759,45 +759,6 @@
           entity_id: light.lamp_theo
         data: {}
   mode: restart
-- id: '1650280329890'
-  alias: Lights - Auto Lights Simon
-  description: ''
-  use_blueprint:
-    path: auto_lights_master.yaml
-    input:
-      off_time_threshold: '20:30:00'
-      light_entity: light.lamp_simon
-      motion_sensor: binary_sensor.motion_master
-      light_sensor: sensor.lux_master
-      no_motion_wait: 180
-      sleep_sensor: binary_sensor.simon_sleeping
-      lamp_switch: switch.lamp_simon
-      switch_override: input_boolean.lamp_override_simon
-      lamp_button: binary_sensor.lamp_button_simon
-      dim_brighten: input_boolean.lamp_dim_simon
-      press_event: esphome.lamp_simon_press
-      double_press_event: esphome.lamp_simon_doublepress
-      hold_event: esphome.lamp_simon_hold
-- id: '1650280413939'
-  alias: Lights - Auto Lights Zoey
-  description: ''
-  use_blueprint:
-    path: auto_lights_master.yaml
-    input:
-      off_time_threshold: '20:30:00'
-      light_entity: light.lamp_zoey
-      motion_sensor: binary_sensor.motion_master
-      light_sensor: sensor.lux_master
-      no_motion_wait: 180
-      phone_charge_state: sensor.zoeys_iphone_battery_state
-      sleep_sensor: binary_sensor.zoey_sleeping
-      lamp_switch: switch.lamp_zoey
-      switch_override: input_boolean.lamp_override_zoey
-      lamp_button: binary_sensor.lamp_button_zoey
-      dim_brighten: input_boolean.lamp_dim_zoey
-      press_event: esphome.lamp_zoey_press
-      double_press_event: esphome.lamp_zoey_doublepress
-      hold_event: esphome.lamp_zoey_hold
 - id: '1652053156471'
   alias: House Vacant
   description: ''
