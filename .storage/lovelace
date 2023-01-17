@@ -22,12 +22,16 @@
                   "name": "House Status"
                 },
                 {
-                  "entity": "person.simon",
-                  "name": "Simon"
+                  "entity": "person.simon"
                 },
                 {
-                  "entity": "person.zoey",
-                  "name": "Zoey"
+                  "entity": "person.zoey"
+                },
+                {
+                  "entity": "person.maria"
+                },
+                {
+                  "entity": "person.john"
                 },
                 {
                   "type": "divider",
