@@ -384,7 +384,7 @@
   - platform: state
     entity_id: cover.garage_door
     to: open
-    for: 00:03:00
+    for: 00:05:00
     id: timeout
   - platform: state
     entity_id: input_boolean.auto_garage_door
@@ -411,7 +411,7 @@
   - wait_template: '{{ is_state(''binary_sensor.ford_escape'', ''off'') }}
 
       '
-  - wait_template: '{{ ((states(''sensor.garage_no_motion'') | int) > 2)  or is_state(''cover.garage_door'',''closed'')
+  - wait_template: '{{ ((states(''sensor.garage_no_motion'') | int) > 4) or is_state(''cover.garage_door'',''closed'')
       }}
 
       '
