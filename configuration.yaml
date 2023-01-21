@@ -74,6 +74,8 @@ script: !include scripts.yaml
 automation: !include automations.yaml
 #automation manual: !include_dir_merge_list automation/
 
+bluetooth:
+
 http:
   use_x_forwarded_for: true
   trusted_proxies:
