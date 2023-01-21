@@ -26,6 +26,7 @@ zone:
 logger:
   default: info
   logs:
+    homeassistant.components.bluetooth: debug
     homeassistant.core: debug
     homeassistant.components.zha: debug
     bellows.zigbee.application: debug
@@ -73,8 +74,6 @@ script manual: !include_dir_merge_named scripts
 script: !include scripts.yaml
 automation: !include automations.yaml
 #automation manual: !include_dir_merge_list automation/
-
-bluetooth:
 
 http:
   use_x_forwarded_for: true
