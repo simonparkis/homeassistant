@@ -1,3 +1,13 @@
+- platform: iphonedetect
+  consider_home: 60
+  scan_interval: 12
+  new_device_defaults:
+    track_new_devices: true
+  hosts:
+    john_wifi: 192.168.1.22
+    maria_wifi: 192.168.1.52
+    simon_wifi: 192.168.1.56
+    zoey_wifi: 192.168.1.57
 - platform: bluetooth_tracker
   new_device_defaults:
     track_new_devices: false
