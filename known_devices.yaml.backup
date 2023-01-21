@@ -1,0 +1,108 @@
+
+simon_bt:
+  name: 'Simon Bluetooth'
+  mac: BT_A8:91:3D:C2:BD:D0
+  icon: mdi:bluetooth
+  track: true
+
+zoey_bt:
+  name: 'Zoey Bluetooth'
+  mac: BT_94:BF:2D:1C:47:2A
+  icon: mdi:bluetooth
+  track: true
+  
+maria_bt:
+  name: 'Maria Bluetooth'
+  mac: BT_B0:70:2D:96:38:E5
+  icon: mdi:bluetooth
+  track: true
+  
+john_bt:
+  name: 'John Bluetooth'
+  mac: BT_CC:2D:B7:B7:05:C0
+  icon: mdi:bluetooth
+  track: true
+
+tv_samsung_8_series_65:
+  name: '[TV] Samsung 8 Series (65)'
+  mac: BT_FC:03:9F:62:28:77
+  icon:
+  picture:
+  track: false
+
+ao_headb18_n:
+  name: AO-HEADB18-N
+  mac: BT_2F:32:63:82:46:28
+  icon:
+  picture:
+  track: false
+
+bose_micro_soundlink:
+  name: Bose Micro SoundLink
+  mac: BT_2C:41:A1:2A:E4:03
+  icon:
+  picture:
+  track: false
+
+ipad:
+  name: iPad
+  mac: BT_C8:B5:B7:97:44:58
+  icon:
+  picture:
+  track: false
+
+apple_bluetooth_device:
+  name: Apple Bluetooth Device
+  mac: BT_E0:F8:47:15:0F:87
+  icon:
+  picture:
+  track: false
+
+wh_1000xm3:
+  name: WH-1000XM3
+  mac: BT_CC:98:8B:22:14:4E
+  icon:
+  picture:
+  track: false
+
+oppo_a16s:
+  name: OPPO A16s
+  mac: BT_24:75:3A:0C:3D:A8
+  icon:
+  picture:
+  track: false
+
+desktop_4si32nh:
+  name: DESKTOP-4SI32NH
+  mac: BT_F4:7B:09:2A:F6:56
+  icon:
+  picture:
+  track: false
+
+keychron_k4:
+  name: Keychron K4
+  mac: BT_DC:2C:26:0A:0F:55
+  icon:
+  picture:
+  track: false
+
+john_wifi:
+  name: john_wifi
+  mac:
+  icon:
+  picture:
+  track: true
+
+maria_wifi:
+  name: maria_wifi
+  mac:
+  icon:
+  picture:
+  track: true
+
+simon_wifi:
+  name: simon_wifi
+  mac:
+  icon:
+  picture:
+  track: true
