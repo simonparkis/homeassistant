@@ -28,12 +28,6 @@
                   "entity": "person.zoey"
                 },
                 {
-                  "entity": "person.maria"
-                },
-                {
-                  "entity": "person.john"
-                },
-                {
                   "type": "divider",
                   "style": {
                     "height": "1px",
