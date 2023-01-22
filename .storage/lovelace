@@ -120,7 +120,7 @@
                   "secondary_info": "none"
                 },
                 {
-                  "entity": "media_player.living_room_2",
+                  "entity": "media_player.living_room",
                   "name": "Audio",
                   "icon": "mdi:speaker"
                 },
@@ -708,7 +708,7 @@
                   "entity": "media_player.display_kitchen"
                 },
                 {
-                  "entity": "media_player.living_room_2"
+                  "entity": "media_player.living_room"
                 },
                 {
                   "entity": "media_player.speaker_frontroom"
