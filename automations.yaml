@@ -1688,7 +1688,7 @@
     input:
       light_entity: light.lamp_frontroom
       motion_sensor: binary_sensor.motion_frontroom
-      begin_dim: '22:30:00'
-      end_dim: '23:59:00'
+      begin_dim: '21:00:00'
+      end_dim: '22:30:00'
       no_motion_wait: 3600
       min_brightness: 5
