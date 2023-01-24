@@ -328,8 +328,6 @@
     entity_id: sensor.house_status
     state: Occupied
   - condition: template
-    value_template: '{{ not is_state(''person.zoey'',''not_home'') }}'
-  - condition: template
     value_template: '{{ not is_state(''media_player.audio_only'', ''playing'') }}'
   action:
   - service: media_player.volume_set
