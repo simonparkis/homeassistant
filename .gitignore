@@ -16,3 +16,4 @@ secrets.yaml
 zigbee.db
 zigbee.db-shm
 zigbee.db-wal
+create_simon_laptop.sh
