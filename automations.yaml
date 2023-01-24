@@ -329,6 +329,8 @@
     state: Occupied
   - condition: template
     value_template: '{{ not is_state(''media_player.audio_only'', ''playing'') }}'
+  - condition: template
+    value_template: '{{ not is_state(''person.zoey'', ''home'') }}'
   action:
   - service: media_player.volume_set
     data_template:
