@@ -170,9 +170,7 @@
                   "icon": "mdi:monitor"
                 },
                 {
-                  "entity": "binary_sensor.macbook_air_active",
-                  "name": "MacBook Air",
-                  "icon": "mdi:laptop"
+                  "entity": "binary_sensor.laptop_simon"
                 },
                 {
                   "type": "conditional",
