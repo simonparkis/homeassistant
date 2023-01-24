@@ -18,8 +18,7 @@
               "state_color": true,
               "entities": [
                 {
-                  "entity": "sensor.house_status",
-                  "name": "House Status"
+                  "entity": "sensor.house_status"
                 },
                 {
                   "entity": "person.simon"
@@ -38,19 +37,13 @@
                   }
                 },
                 {
-                  "entity": "input_boolean.sentry_mode",
-                  "icon": "mdi:shield-account",
-                  "name": "Sentry Mode"
+                  "entity": "input_boolean.sentry_mode"
                 },
                 {
-                  "entity": "input_boolean.guest_mode",
-                  "icon": "mdi:account-multiple",
-                  "name": "Guest Mode"
+                  "entity": "input_boolean.guest_mode"
                 },
                 {
-                  "entity": "input_boolean.vacation_mode",
-                  "icon": "mdi:airplane",
-                  "name": "Vacation Mode"
+                  "entity": "input_boolean.vacation_mode"
                 }
               ]
             },
@@ -91,14 +84,10 @@
                   }
                 },
                 {
-                  "entity": "input_boolean.auto_garage_door",
-                  "name": "Auto Garage Door",
-                  "icon": "mdi:garage-variant-lock"
+                  "entity": "input_boolean.auto_garage_door"
                 },
                 {
-                  "entity": "input_boolean.doorbell_chime",
-                  "name": "Doorbell Chime",
-                  "icon": "mdi:bell-outline"
+                  "entity": "input_boolean.doorbell_chime"
                 }
               ]
             },
@@ -369,17 +358,14 @@
                 },
                 {
                   "entity": "automation.lights_master_bedroom",
-                  "name": "Auto Lights",
-                  "icon": "mdi:exit-run"
+                  "name": "Auto Lights"
                 },
                 {
                   "entity": "automation.lights_wake_up",
                   "name": "Wake-Up Light"
                 },
                 {
-                  "entity": "input_boolean.enable_heater_master",
-                  "name": "Auto Heater",
-                  "icon": "mdi:fire"
+                  "entity": "input_boolean.enable_heater_master"
                 }
               ]
             },
@@ -434,9 +420,7 @@
                   "icon": "mdi:exit-run"
                 },
                 {
-                  "entity": "input_boolean.enable_heater_sofia",
-                  "icon": "mdi:fire",
-                  "name": "Auto Heater"
+                  "entity": "input_boolean.enable_heater_sofia"
                 }
               ]
             },
@@ -491,9 +475,7 @@
                   "icon": "mdi:exit-run"
                 },
                 {
-                  "entity": "input_boolean.enable_heater_joseph",
-                  "icon": "mdi:fire",
-                  "name": "Auto Heater"
+                  "entity": "input_boolean.enable_heater_joseph"
                 }
               ]
             },
@@ -548,9 +530,7 @@
                   "icon": "mdi:exit-run"
                 },
                 {
-                  "entity": "input_boolean.enable_heater_theo",
-                  "icon": "mdi:fire",
-                  "name": "Auto Heater"
+                  "entity": "input_boolean.enable_heater_theo"
                 }
               ]
             }

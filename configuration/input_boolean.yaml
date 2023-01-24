@@ -1,6 +1,12 @@
 guest_mode:
+  name: Guest Mode
+  icon: mdi:account-multiple
 vacation_mode:
+  name: Vacation Mode
+  icon: mdi:airplane
 sentry_mode:
+  name: Sentry Mode
+  icon: mdi:shield-account
 mobile_notifications:
   name: Mobile Notifications
   icon: mdi:cellphone-information
@@ -8,14 +14,26 @@ audible_notifications:
   name: Audible Notifications
   icon: mdi:bullhorn-variant-outline
 doorbell_chime:
+  name: Doorbell Chime
+  icon: mdi:bell-outline
 enable_heater_master:
+  name: Auto Heater
+  icon: mdi:fire
 enable_heater_sofia:
+  name: Auto Heater
+  icon: mdi:fire
 enable_heater_joseph:
+  name: Auto Heater
+  icon: mdi:fire
 enable_heater_theo:
+  name: Auto Heater
+  icon: mdi:fire
 nightlight_sofia:
 nightlight_joseph:
 nightlight_theo:
 auto_garage_door:
+  name: Auto Garage Door
+  icon: mdi:garage-variant-lock
 fans:
 heaters:
 acoustic_hits_everywhere:
