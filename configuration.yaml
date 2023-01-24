@@ -51,6 +51,8 @@ logbook:
 map:
 sun:
 
+shell_command:
+  create_simon_laptop: bash ./create_simon_laptop.sh
 
 ############## COMPONENTS ######################
 notify: !include configuration/notify.yaml
