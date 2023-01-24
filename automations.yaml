@@ -330,55 +330,27 @@
   - condition: template
     value_template: '{{ not is_state(''person.zoey'',''home'') }}'
   - condition: template
-    value_template: '{{ not is_state(''media_player.display_kitchen'', ''playing'')
-      }}'
-  - condition: template
-    value_template: '{{ not is_state(''media_player.speaker_bedroom'', ''playing'')
-      }}'
-  - condition: template
-    value_template: '{{ not is_state(''media_player.speaker_frontroom'', ''playing'')
-      }}'
-  - condition: template
-    value_template: '{{ not is_state(''media_player.speaker_livingroom'', ''playing'')
-      }}'
-  - condition: template
-    value_template: '{{ not is_state(''media_player.speaker_joseph'', ''playing'')
-      }}'
+    value_template: '{{ not is_state(''media_player.audio_only'', ''playing'') }}'
   action:
   - service: media_player.volume_set
     data_template:
-      entity_id:
-      - media_player.display_kitchen
-      - media_player.speaker_bedroom
-      - media_player.speaker_livingroom
-      - media_player.speaker_frontroom
+      entity_id: media_player.audio_only
       volume_level: "{% if (now().strftime(\"%H\") | int) < 8 or (now().strftime(\"%H\")
         | int) > 18 %}\n  0.2\n{% else %}\n  0.4\n{% endif %}\n"
   - delay: 00:00:01
   - service: media_player.play_media
     target:
-      entity_id: media_player.all_chromecasts
+      entity_id: media_player.audio_only
     data:
       announce: true
       media_content_id: http://192.168.1.110:8123/local/sounds/GrandFatherChime{{now().strftime('%I')}}.mp3
       media_content_type: audio/mp4
   - delay: 00:00:05
-  - wait_template: '{{ not is_state("media_player.all_chromecasts", "playing") }}'
+  - wait_template: '{{ not is_state(''media_player.audio_only'', ''playing'') }}'
   - service: media_player.volume_set
     data:
-      entity_id:
-      - media_player.display_kitchen
-      - media_player.speaker_bedroom
-      - media_player.speaker_livingroom
-      - media_player.speaker_frontroom
+      entity_id: media_player.audio_only
       volume_level: 0.4
-  - service: media_player.turn_off
-    data:
-      entity_id:
-      - media_player.display_kitchen
-      - media_player.speaker_bedroom
-      - media_player.speaker_livingroom
-      - media_player.speaker_frontroom
   mode: single
 - id: '1631870728951'
   alias: Auto Close Garage Door
@@ -1720,3 +1692,18 @@
         %}\n  Rubbish Bin Only\n{% endif %}\n"
   mode: restart
   max_exceeded: silent
+- id: '1674537634620'
+  alias: Keep Speakers Alive
+  description: ''
+  trigger:
+  - platform: state
+    entity_id: media_player.audio_only
+    to: idle
+    for: 00:04:00
+  action:
+  - service: media_player.play_media
+    data:
+      entity_id: media_player.audio_only
+      media_content_id: http://192.168.1.110:8123/local/sounds/silence.mp3
+      media_content_type: audio/mp3
+  mode: single
