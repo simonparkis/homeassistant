@@ -1,7 +1,12 @@
 guest_mode:
 vacation_mode:
 sentry_mode:
+mobile_notifications:
+  name: Mobile Notifications
+  icon: mdi:cellphone-information
 audible_notifications:
+  name: Audible Notifications
+  icon: mdi:bullhorn-variant-outline
 doorbell_chime:
 enable_heater_master:
 enable_heater_sofia:

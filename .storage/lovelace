@@ -166,25 +166,6 @@
                   "entity": "media_player.display_kitchen",
                   "name": "Display",
                   "icon": "mdi:television"
-                },
-                {
-                  "type": "divider",
-                  "style": {
-                    "height": "1px",
-                    "width": "100%",
-                    "margin-left": "auto",
-                    "margin-right": "auto",
-                    "background": "#CC7C19"
-                  }
-                },
-                {
-                  "entity": "automation.grandfather_clock",
-                  "icon": "mdi:clock-outline"
-                },
-                {
-                  "entity": "input_boolean.audible_notifications",
-                  "name": "Audible Notifications",
-                  "icon": "mdi:bullhorn-variant-outline"
                 }
               ]
             },
@@ -296,6 +277,17 @@
                   "name": "Auto Lights"
                 }
               ]
+            },
+            {
+              "type": "entities",
+              "title": "Notifications",
+              "entities": [
+                "automation.grandfather_clock",
+                "input_boolean.audible_notifications",
+                "input_boolean.mobile_notifications"
+              ],
+              "show_header_toggle": false,
+              "state_color": true
             }
           ]
         },

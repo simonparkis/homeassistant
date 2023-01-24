@@ -94,7 +94,10 @@
   - platform: state
     entity_id: binary_sensor.doorbell
     to: 'on'
-  condition: []
+  condition:
+  - condition: state
+    entity_id: input_boolean.mobile_notifications
+    state: 'on'
   action:
   - service: notify.simon_zoey
     data:
@@ -479,13 +482,13 @@
   initial_state: true
   mode: single
 - id: '1632400430196'
-  alias: Garbage Collection Reminder
+  alias: Speech - Waste Collection
   description: ''
   trigger:
   - platform: calendar
     event: start
-    offset: -05:00:00
-    entity_id: calendar.homeassistant_homeassistant
+    offset: -05:30:00
+    entity_id: calendar.garbage_collection
   condition:
   - condition: template
     value_template: '{{ trigger.calendar_event.summary == ''Rubbish'' or trigger.calendar_event.summary
@@ -496,23 +499,27 @@
   action:
   - wait_for_trigger:
     - platform: state
-      entity_id: binary_sensor.motion_living_room
+      entity_id: binary_sensor.motion_livingroom
       to: 'on'
-  - service: tts.cloud_say
+  - service: media_player.volume_set
+    data_template:
+      entity_id:
+      - media_player.display_kitchen
+      volume_level: 0.7
+  - service: media_player.play_media
     data:
-      entity_id: media_player.kitchen
-      message: "{% if trigger.calendar_event.summary == \"Rubbish & Recycling\"  %}\n
-        \ Don't forget to take the bins out... both red and yellow bins\n{% elif trigger.calendar_event.summary
-        == \"Rubbish\" %}\n  Don't forget to take the bins out... red bin only\n{%
+      entity_id: media_player.display_kitchen
+      media_content_id: "{% if trigger.calendar_event.summary == \"Rubbish & Recycling\"
+        \ %}\n  http://192.168.1.110:8123/local/sounds/WasteCollectionRubbishRecycling.mp3\n{%
+        elif trigger.calendar_event.summary == \"Rubbish\" %}\n  http://192.168.1.110:8123/local/sounds/WasteCollectionRubbish.mp3\n{%
         endif %}\n"
-  - service: notify.mobile_app_simon
-    data:
-      title: Garbage Bins
-      message: "{% if trigger.calendar_event.summary == \"Rubbish & Recycling\"  %}\n
-        \ Don't forget to take the bins out... both red and yellow bins\n{% elif trigger.calendar_event.summary
-        == \"Rubbish\" %}\n  Don't forget to take the bins out... red bin only\n{%
-        endif %}\n"
-  mode: queued
+      media_content_type: audio/mp3
+  - service: media_player.volume_set
+    data_template:
+      entity_id:
+      - media_player.display_kitchen
+      volume_level: 0.4
+  mode: restart
   max_exceeded: silent
 - id: '1632476399006'
   alias: Follow Me Audio
@@ -1114,8 +1121,8 @@
   - service: media_player.play_media
     data:
       entity_id: media_player.all_chromecasts
-      media_content_id: "{% if states.binary_sensor.internet.state == 'off' %}\n  http://192.168.1.110:8123/media/sounds/internet_disconnected.mp3\n{%
-        else %}\n  http://192.168.1.110:8123/media/sounds/internet_restored.mp3\n{%
+      media_content_id: "{% if states.binary_sensor.internet.state == 'off' %}\n  http://192.168.1.110:8123/local/sounds/internet_disconnected.mp3\n{%
+        else %}\n  http://192.168.1.110:8123/local/sounds/internet_restored.mp3\n{%
         endif %}\n"
       media_content_type: audio/mp3
   mode: queued
@@ -1692,3 +1699,27 @@
       end_dim: '22:30:00'
       no_motion_wait: 3600
       min_brightness: 5
+- id: '1674517769621'
+  alias: Notify - Waste Collection
+  description: ''
+  trigger:
+  - platform: calendar
+    event: start
+    offset: -05:30:00
+    entity_id: calendar.garbage_collection
+  condition:
+  - condition: template
+    value_template: '{{ trigger.calendar_event.summary == ''Rubbish'' or trigger.calendar_event.summary
+      == ''Rubbish & Recycling'' }}'
+  - condition: state
+    entity_id: input_boolean.mobile_notifications
+    state: 'on'
+  action:
+  - service: notify.simon_zoey
+    data:
+      title: Waste Collection Tomorrow
+      message: "{% if trigger.calendar_event.summary == \"Rubbish & Recycling\"  %}\n
+        \ Rubbish and Recycling Bins\n{% elif trigger.calendar_event.summary == \"Rubbish\"
+        %}\n  Rubbish Bin Only\n{% endif %}\n"
+  mode: restart
+  max_exceeded: silent
