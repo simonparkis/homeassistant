@@ -282,9 +282,19 @@
               "type": "entities",
               "title": "Notifications",
               "entities": [
-                "automation.grandfather_clock",
                 "input_boolean.audible_notifications",
-                "input_boolean.mobile_notifications"
+                "input_boolean.mobile_notifications",
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                "automation.grandfather_clock"
               ],
               "show_header_toggle": false,
               "state_color": true
