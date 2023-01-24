@@ -1700,6 +1700,11 @@
     entity_id: media_player.audio_only
     to: idle
     for: 00:04:00
+  - platform: homeassistant
+    event: start
+  condition:
+  - condition: template
+    value_template: '{{ not is_state(''media_player.audio_only'', ''playing'') }}'
   action:
   - service: media_player.play_media
     data:
