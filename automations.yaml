@@ -476,11 +476,11 @@
   - service: media_player.volume_set
     data_template:
       entity_id:
-      - media_player.display_kitchen
-      volume_level: 0.7
+      - media_player.audio_only
+      volume_level: 0.6
   - service: media_player.play_media
     data:
-      entity_id: media_player.display_kitchen
+      entity_id: media_player.audio_only
       media_content_id: "{% if trigger.calendar_event.summary == \"Rubbish & Recycling\"
         \ %}\n  http://192.168.1.110:8123/local/sounds/WasteCollectionRubbishRecycling.mp3\n{%
         elif trigger.calendar_event.summary == \"Rubbish\" %}\n  http://192.168.1.110:8123/local/sounds/WasteCollectionRubbish.mp3\n{%
@@ -489,7 +489,7 @@
   - service: media_player.volume_set
     data_template:
       entity_id:
-      - media_player.display_kitchen
+      - media_player.audio_only
       volume_level: 0.4
   mode: restart
   max_exceeded: silent
@@ -887,7 +887,7 @@
         %}\n{% else %}\n  {% set eta = states.sensor.zoey_commute_home.state %}\n{%
         endif %} {{ trigger.id }} is travelling home from work. Expected time of arrival
         is in {{ eta }} minutes time\"\n"
-      entity_id: media_player.display_kitchen
+      entity_id: media_player.audio_only
   mode: single
 - id: '1654267729698'
   alias: Modes - Sentry Mode
@@ -1085,11 +1085,11 @@
   - service: media_player.volume_set
     data_template:
       entity_id:
-      - media_player.all_chromecasts
+      - media_player.audio_only
       volume_level: 0.4
   - service: media_player.play_media
     data:
-      entity_id: media_player.all_chromecasts
+      entity_id: media_player.audio_only
       media_content_id: "{% if states.binary_sensor.internet.state == 'off' %}\n  http://192.168.1.110:8123/local/sounds/internet_disconnected.mp3\n{%
         else %}\n  http://192.168.1.110:8123/local/sounds/internet_restored.mp3\n{%
         endif %}\n"
