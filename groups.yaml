@@ -8,9 +8,9 @@ tvs:
 computers:
   name: Computers
   entities:
-    - binary_sensor.computer_simon
-    - binary_sensor.computer_zoey
-    - binary_sensor.macbook_air
+    - binary_sensor.desktop_simon
+    - binary_sensor.laptop_zoey
+    - binary_sensor.laptop_simon
 
 media_players:
   name: Media Players
