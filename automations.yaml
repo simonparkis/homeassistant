@@ -1712,14 +1712,3 @@
       media_content_id: http://192.168.1.110:8123/local/sounds/silence.mp3
       media_content_type: audio/mp3
   mode: single
-- id: '1674559188733'
-  alias: On Boot - Create Simon Laptop Sensor
-  description: ''
-  trigger:
-  - platform: homeassistant
-    event: start
-  condition: []
-  action:
-  - service: shell_command.create_simon_laptop
-    data: {}
-  mode: single
