@@ -173,6 +173,9 @@
                   "entity": "binary_sensor.laptop_simon"
                 },
                 {
+                  "entity": "binary_sensor.desktop_simon"
+                },
+                {
                   "type": "conditional",
                   "conditions": [
                     {
