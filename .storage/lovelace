@@ -153,8 +153,7 @@
               "entities": [
                 {
                   "entity": "media_player.display_kitchen",
-                  "name": "Display",
-                  "icon": "mdi:television"
+                  "name": "Display"
                 }
               ]
             },
@@ -168,10 +167,10 @@
                   "entity": "binary_sensor.desktop_simon"
                 },
                 {
-                  "entity": "binary_sensor.computer_zoey"
+                  "entity": "binary_sensor.laptop_simon"
                 },
                 {
-                  "entity": "binary_sensor.laptop_simon"
+                  "entity": "binary_sensor.laptop_zoey"
                 },
                 {
                   "type": "conditional",
