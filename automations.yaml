@@ -667,14 +667,6 @@
             entity_id: counter.sleep_motion_sofia
     - conditions:
       - condition: trigger
-        id: awake
-      sequence:
-      - service: counter.reset
-        data: {}
-        target:
-          entity_id: counter.sleep_motion_sofia
-    - conditions:
-      - condition: trigger
         id: motion_off
       - condition: state
         entity_id: binary_sensor.sleep_sofia
@@ -684,6 +676,14 @@
         target:
           entity_id: light.lamp_sofia
         data: {}
+    - conditions:
+      - condition: trigger
+        id: awake
+      sequence:
+      - service: counter.reset
+        data: {}
+        target:
+          entity_id: counter.sleep_motion_sofia
   mode: single
 - id: '1650275312000'
   alias: Lights - Auto Lights Joseph
@@ -730,14 +730,6 @@
             entity_id: counter.sleep_motion_joseph
     - conditions:
       - condition: trigger
-        id: awake
-      sequence:
-      - service: counter.reset
-        data: {}
-        target:
-          entity_id: counter.sleep_motion_joseph
-    - conditions:
-      - condition: trigger
         id: motion_off
       - condition: state
         entity_id: light.lamp_joseph
@@ -763,6 +755,14 @@
           target:
             entity_id: light.lamp_joseph
           data: {}
+    - conditions:
+      - condition: trigger
+        id: awake
+      sequence:
+      - service: counter.reset
+        data: {}
+        target:
+          entity_id: counter.sleep_motion_joseph
   mode: single
 - id: '1650275433270'
   alias: Lights - Auto Lights Theo
@@ -813,14 +813,6 @@
             entity_id: counter.sleep_motion_theo
     - conditions:
       - condition: trigger
-        id: awake
-      sequence:
-      - service: counter.reset
-        data: {}
-        target:
-          entity_id: counter.sleep_motion_theo
-    - conditions:
-      - condition: trigger
         id: motion_off
       - condition: state
         entity_id: light.lamp_theo
@@ -846,6 +838,14 @@
           target:
             entity_id: light.lamp_theo
           data: {}
+    - conditions:
+      - condition: trigger
+        id: awake
+      sequence:
+      - service: counter.reset
+        data: {}
+        target:
+          entity_id: counter.sleep_motion_theo
   mode: restart
 - id: '1652053156471'
   alias: House Vacant
