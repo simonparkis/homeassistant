@@ -18,9 +18,36 @@
   country: AU
   province: NSW
 - platform: bayesian
+  name: Sleep Sofia
+  prior: 0.3
+  probability_threshold: 0.95
+  observations:
+    - platform: template
+      value_template: "{{ states('sensor.time') > '19:00:00' or states('sensor.time') < '07:00:00' }}"
+      prob_given_true: 0.99
+      prob_given_false: 0.01
+- platform: bayesian
+  name: Sleep Joseph
+  prior: 0.3
+  probability_threshold: 0.95
+  observations:
+    - platform: template
+      value_template: "{{ states('sensor.time') > '19:00:00' or states('sensor.time') < '07:00:00' }}"
+      prob_given_true: 0.99
+      prob_given_false: 0.01
+- platform: bayesian
+  name: Sleep Theo
+  prior: 0.3
+  probability_threshold: 0.95
+  observations:
+    - platform: template
+      value_template: "{{ states('sensor.time') > '18:00:00' or states('sensor.time') < '07:00:00' }}"
+      prob_given_true: 0.99
+      prob_given_false: 0.01
+- platform: bayesian
   name: Simon Sleeping
   prior: 0.3
-  probability_threshold: 0.92
+  probability_threshold: 0.96
   observations:
     - platform: state
       entity_id: binary_sensor.bedsensor_simon

@@ -54,6 +54,18 @@ sun:
 shell_command:
   initialise_computer_sensors: bash ./create_simon_laptop.sh
 
+counter:
+  sleep_motion_sofia:
+    initial: 0
+    step: 1
+  sleep_motion_joseph:
+    initial: 0
+    step: 1
+  sleep_motion_theo:
+    initial: 0
+    step: 1
+
+
 ############## COMPONENTS ######################
 notify: !include configuration/notify.yaml
 fan: !include configuration/fan.yaml
