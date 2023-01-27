@@ -22,6 +22,11 @@
   prior: 0.3
   probability_threshold: 0.92
   observations:
+    - platform: state
+      entity_id: binary_sensor.bedsensor_simon
+      to_state: 'on'
+      prob_given_true: 0.90
+      prob_given_false: 0.01
     - platform: template
       value_template: "{{ not is_state('sensor.simon_battery_state', 'Not Charging') and is_state('person.simon', 'home') }}"
       prob_given_true: 0.99
