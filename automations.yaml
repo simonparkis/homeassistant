@@ -634,6 +634,10 @@
     to: 'off'
     for: 00:03:00
     id: motion_off
+  - platform: state
+    entity_id: binary_sensor.sleep_sofia
+    to: 'off'
+    id: awake
   action:
   - choose:
     - conditions:
@@ -661,11 +665,14 @@
           data: {}
           target:
             entity_id: counter.sleep_motion_sofia
-        else:
-        - service: counter.reset
-          data: {}
-          target:
-            entity_id: counter.sleep_motion_sofia
+    - conditions:
+      - condition: trigger
+        id: awake
+      sequence:
+      - service: counter.reset
+        data: {}
+        target:
+          entity_id: counter.sleep_motion_sofia
     - conditions:
       - condition: trigger
         id: motion_off
@@ -690,6 +697,10 @@
     to: 'off'
     for: 00:03:00
     id: motion_off
+  - platform: state
+    entity_id: binary_sensor.sleep_joseph
+    to: 'off'
+    id: awake
   action:
   - choose:
     - conditions:
@@ -717,14 +728,20 @@
           data: {}
           target:
             entity_id: counter.sleep_motion_joseph
-        else:
-        - service: counter.reset
-          data: {}
-          target:
-            entity_id: counter.sleep_motion_joseph
+    - conditions:
+      - condition: trigger
+        id: awake
+      sequence:
+      - service: counter.reset
+        data: {}
+        target:
+          entity_id: counter.sleep_motion_joseph
     - conditions:
       - condition: trigger
         id: motion_off
+      - condition: state
+        entity_id: light.lamp_joseph
+        state: 'on'
       sequence:
       - if:
         - condition: state
@@ -763,6 +780,10 @@
     to: 'off'
     for: 00:03:00
     id: motion_off
+  - platform: state
+    entity_id: binary_sensor.sleep_theo
+    to: 'off'
+    id: awake
   action:
   - choose:
     - conditions:
@@ -790,14 +811,20 @@
           data: {}
           target:
             entity_id: counter.sleep_motion_theo
-        else:
-        - service: counter.reset
-          data: {}
-          target:
-            entity_id: counter.sleep_motion_theo
+    - conditions:
+      - condition: trigger
+        id: awake
+      sequence:
+      - service: counter.reset
+        data: {}
+        target:
+          entity_id: counter.sleep_motion_theo
     - conditions:
       - condition: trigger
         id: motion_off
+      - condition: state
+        entity_id: light.lamp_theo
+        state: 'on'
       sequence:
       - if:
         - condition: state
@@ -1178,7 +1205,7 @@
       media_content_type: audio/mp3
   mode: queued
 - id: '1654777796403'
-  alias: Lights - Master Bedroom
+  alias: Lights - Auto Lights Master Bedroom
   description: ''
   trigger:
   - platform: state
@@ -1201,24 +1228,6 @@
     - conditions:
       - condition: trigger
         id: motion_on
-      - condition: state
-        entity_id:
-        - switch.lamp_simon
-        - switch.lamp_zoey
-        state: 'off'
-      - condition: time
-        after: 08:00:00
-        before: '21:30:00'
-      sequence:
-      - service: switch.turn_on
-        target:
-          entity_id:
-          - switch.lamp_simon
-          - switch.lamp_zoey
-        data: {}
-    - conditions:
-      - condition: trigger
-        id: motion_on
       - condition: numeric_state
         entity_id: sensor.lux_master
         below: 15
@@ -1226,25 +1235,21 @@
       - service: light.turn_on
         data:
           color_temp: 366
-          brightness_pct: "{% if is_state('binary_sensor.simon_sleeping', 'on') and
-            is_state('binary_sensor.zoey_sleeping', 'on') %}\n  0\n{% elif is_state('binary_sensor.simon_sleeping',
-            'on') or is_state('binary_sensor.zoey_sleeping', 'on') and (states('sensor.time')
+          brightness_pct: "{% if (is_state('binary_sensor.sleep_simon', 'on') or not
+            is_state('person.simon', 'home')) and (is_state('binary_sensor.sleep_zoey',
+            'on') or not is_state('person.zoey','home')) %}\n  0\n{% elif is_state('binary_sensor.sleep_simon',
+            'on') or is_state('binary_sensor.sleep_zoey', 'on') and (states('sensor.time')
             < '08:00:00' or states('sensor.time') > '21:00:00') %}\n  1\n{% elif (states('sensor.time')
-            > '21:00:00') or (states('sensor.time') < '08:00:00') %}\n  50\n{% else
+            > '21:00:00') or (states('sensor.time') < '08:00:00') %}\n  75\n{% else
             %}\n  100\n{% endif %}\n"
         target:
           entity_id: light.bedroom_lamps
     - conditions:
       - condition: trigger
         id: motion_off
-      - condition: state
-        entity_id:
-        - input_boolean.lamp_override_simon
-        - input_boolean.lamp_override_zoey
-        state: 'off'
       sequence:
       - delay:
-          seconds: "{% if is_state('binary_sensor.simon_sleeping', 'on') or is_state('binary_sensor.zoey_sleeping',
+          seconds: "{% if is_state('binary_sensor.sleep_simon', 'on') or is_state('binary_sensor.sleep_zoey',
             'on') %}\n  10\n{% else %}\n  180\n{% endif %}\n"
       - service: light.turn_off
         data:
