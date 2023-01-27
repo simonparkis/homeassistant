@@ -330,13 +330,18 @@
   - condition: template
     value_template: '{{ not is_state(''media_player.audio_only'', ''playing'') }}'
   - condition: template
+    value_template: '{{ not is_state(''media_player.all_chromecasts'', ''playing'')
+      }}'
+  - condition: template
+    value_template: '{{ not is_state(''media_player.music'', ''playing'') }}'
+  - condition: template
     value_template: '{{ not is_state(''person.zoey'', ''home'') }}'
   action:
   - service: media_player.volume_set
     data_template:
       entity_id: media_player.audio_only
       volume_level: "{% if (now().strftime(\"%H\") | int) < 8 or (now().strftime(\"%H\")
-        | int) > 18 %}\n  0.15\n{% else %}\n  0.4\n{% endif %}\n"
+        | int) > 18 %}\n  0.1\n{% else %}\n  0.4\n{% endif %}\n"
   - delay: 00:00:01
   - service: media_player.play_media
     target:
@@ -345,12 +350,6 @@
       announce: true
       media_content_id: http://192.168.1.110:8123/local/sounds/GrandFatherChime{{now().strftime('%I')}}.mp3
       media_content_type: audio/mp4
-  - delay: 00:00:05
-  - wait_template: '{{ not is_state(''media_player.audio_only'', ''playing'') }}'
-  - service: media_player.volume_set
-    data:
-      entity_id: media_player.audio_only
-      volume_level: 0.4
   mode: single
 - id: '1631870728951'
   alias: Auto Close Garage Door
