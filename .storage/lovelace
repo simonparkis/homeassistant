@@ -346,6 +346,11 @@
                 },
                 {
                   "entity": "input_boolean.enable_heater_master"
+                },
+                {
+                  "entity": "automation.auto_fan_master_bedroom",
+                  "name": "Auto Fan",
+                  "icon": "mdi:fan"
                 }
               ]
             },
@@ -401,6 +406,11 @@
                 },
                 {
                   "entity": "input_boolean.enable_heater_sofia"
+                },
+                {
+                  "entity": "automation.fan_auto_fan_sofia",
+                  "name": "Auto Fan",
+                  "icon": "mdi:fan"
                 }
               ]
             },
@@ -456,6 +466,11 @@
                 },
                 {
                   "entity": "input_boolean.enable_heater_joseph"
+                },
+                {
+                  "entity": "automation.fan_auto_fan_joseph",
+                  "name": "Auto Fan",
+                  "icon": "mdi:fan"
                 }
               ]
             },
@@ -511,6 +526,11 @@
                 },
                 {
                   "entity": "input_boolean.enable_heater_theo"
+                },
+                {
+                  "entity": "automation.fan_auto_fan_theo",
+                  "name": "Auto Fan",
+                  "icon": "mdi:fan"
                 }
               ]
             }

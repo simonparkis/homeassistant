@@ -860,6 +860,8 @@
     entity_id: all
   - service: climate.turn_off
     entity_id: all
+  - service: fan.turn_off
+    entity_id: all
   mode: single
 - id: '1652612892418'
   alias: Lights - Wake Up
@@ -1727,4 +1729,272 @@
   action:
   - service: shell_command.initialise_computer_sensors
     data: {}
+  mode: single
+- id: '1674890994424'
+  alias: Fan - Auto Fan Sofia
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_sofia
+    from: 'off'
+    to: 'on'
+    id: motion_on
+  - platform: numeric_state
+    entity_id: sensor.temp_sofia
+    below: 23
+    id: off_threshold
+  - platform: state
+    entity_id: binary_sensor.motion_sofia
+    from: 'on'
+    to: 'off'
+    for: 00:15:00
+    id: motion_off
+  condition:
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: motion_on
+      - condition: numeric_state
+        entity_id: sensor.temp_sofia
+        above: 26
+      - condition: state
+        entity_id: fan.sofia
+        state: 'off'
+      sequence:
+      - service: fan.turn_on
+        data:
+          percentage: 33
+        target:
+          entity_id: fan.sofia
+      - service: fan.oscillate
+        data:
+          oscillating: true
+        target:
+          entity_id: fan.sofia
+    - conditions:
+      - condition: trigger
+        id: off_threshold
+      - condition: state
+        entity_id: fan.sofia
+        state: 'on'
+      sequence:
+      - service: fan.turn_off
+        target:
+          entity_id: fan.sofia
+        data: {}
+    - conditions:
+      - condition: trigger
+        id: motion_off
+      - condition: state
+        entity_id: binary_sensor.sleep_sofia
+        state: 'off'
+      sequence:
+      - service: fan.turn_off
+        target:
+          entity_id: fan.sofia
+        data: {}
+  mode: single
+- id: '1674891111889'
+  alias: Fan - Auto Fan Joseph
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_joseph
+    from: 'off'
+    to: 'on'
+    id: motion_on
+  - platform: numeric_state
+    entity_id: sensor.temp_joseph
+    below: 23
+    id: off_threshold
+  - platform: state
+    entity_id: binary_sensor.motion_joseph
+    from: 'on'
+    to: 'off'
+    for: 00:15:00
+    id: motion_off
+  condition:
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: motion_on
+      - condition: numeric_state
+        entity_id: sensor.temp_joseph
+        above: 26
+      - condition: state
+        entity_id: fan.joseph
+        state: 'off'
+      sequence:
+      - service: fan.turn_on
+        data:
+          percentage: 33
+        target:
+          entity_id: fan.joseph
+      - service: fan.oscillate
+        data:
+          oscillating: true
+        target:
+          entity_id: fan.joseph
+    - conditions:
+      - condition: trigger
+        id: off_threshold
+      - condition: state
+        entity_id: fan.joseph
+        state: 'on'
+      sequence:
+      - service: fan.turn_off
+        target:
+          entity_id: fan.joseph
+    - conditions:
+      - condition: trigger
+        id: motion_off
+      - condition: state
+        entity_id: binary_sensor.sleep_joseph
+        state: 'off'
+      sequence:
+      - service: fan.turn_off
+        target:
+          entity_id: fan.joseph
+  mode: single
+- id: '1674891223115'
+  alias: Fan - Auto Fan Theo
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_theo
+    - binary_sensor.motion_theo_dsc
+    from: 'off'
+    to: 'on'
+    id: motion_on
+  - platform: numeric_state
+    entity_id: sensor.temp_theo
+    below: 23
+    id: off_threshold
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_theo
+    - binary_sensor.motion_theo_dsc
+    from: 'on'
+    to: 'off'
+    for: 00:15:00
+    id: motion_off
+  condition:
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: motion_on
+      - condition: numeric_state
+        entity_id: sensor.temp_theo
+        above: 26
+      - condition: state
+        entity_id: fan.theo
+        state: 'off'
+      sequence:
+      - service: fan.turn_on
+        data:
+          percentage: 33
+        target:
+          entity_id: fan.theo
+      - service: fan.oscillate
+        data:
+          oscillating: true
+        target:
+          entity_id: fan.theo
+    - conditions:
+      - condition: trigger
+        id: off_threshold
+      - condition: state
+        entity_id: fan.theo
+        state: 'on'
+      sequence:
+      - service: fan.turn_off
+        target:
+          entity_id: fan.theo
+        data: {}
+    - conditions:
+      - condition: trigger
+        id: motion_off
+      - condition: state
+        entity_id: binary_sensor.sleep_theo
+        state: 'off'
+      sequence:
+      - service: fan.turn_off
+        target:
+          entity_id: fan.theo
+        data: {}
+  mode: single
+- id: '1674891301034'
+  alias: Fan - Auto Fan Joseph
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_master
+    - binary_sensor.motion_master_dsc
+    from: 'off'
+    to: 'on'
+    id: motion_on
+  - platform: numeric_state
+    entity_id: sensor.temp_master
+    below: 23
+    id: off_threshold
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_master
+    - binary_sensor.motion_master_dsc
+    from: 'on'
+    to: 'off'
+    for: 00:15:00
+    id: motion_off
+  condition:
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: motion_on
+      - condition: numeric_state
+        entity_id: sensor.temp_master
+        above: 26
+      - condition: state
+        entity_id: fan.master
+        state: 'off'
+      sequence:
+      - service: fan.turn_on
+        data:
+          percentage: 33
+        target:
+          entity_id: fan.master
+      - service: fan.oscillate
+        data:
+          oscillating: true
+        target:
+          entity_id: fan.master
+    - conditions:
+      - condition: trigger
+        id: off_threshold
+      - condition: state
+        entity_id: fan.master
+        state: 'on'
+      sequence:
+      - service: fan.turn_off
+        target:
+          entity_id: fan.master
+        data: {}
+    - conditions:
+      - condition: trigger
+        id: motion_off
+      - condition: template
+        value_template: '{{ is_state(''binary_sensor.sleep_simon'', ''off'') and is_state(''binary_sensor.sleep_zoey'',
+          ''off'') and is_state(''binary_sensor.bedsensor_simon'', ''off'') }}'
+      sequence:
+      - service: fan.turn_off
+        target:
+          entity_id: fan.master
+        data: {}
   mode: single
