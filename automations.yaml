@@ -1740,10 +1740,9 @@
     from: 'off'
     to: 'on'
     id: motion_on
-  - platform: numeric_state
+  - platform: state
     entity_id: sensor.temp_sofia
-    below: 24.5
-    id: off_threshold
+    id: speed_adjust
   - platform: state
     entity_id: binary_sensor.motion_sofia
     from: 'on'
@@ -1756,20 +1755,14 @@
     - conditions:
       - condition: trigger
         id: motion_on
-      - condition: numeric_state
-        entity_id: sensor.temp_sofia
-        above: 26
-      - condition: state
-        entity_id: fan.sofia
-        state: 'off'
       sequence:
       - service: fan.turn_on
-        data:
-          percentage: "{% if float(states.sensor.temp_sofia.state) > 30 %}\n  100\n{%
-            elif float(states.sensor.temp_sofia.state) > 28 %}\n  66\n{% else %}\n
-            \ 33\n{% endif %}\n"
         target:
           entity_id: fan.sofia
+        data:
+          percentage: "{% if float(states.sensor.temp_sofia.state) > 30 %}\n  100\n{%
+            elif float(states.sensor.temp_sofia.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_sofia.state)
+            > 25 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
       - service: fan.oscillate
         data:
           oscillating: true
@@ -1777,15 +1770,23 @@
           entity_id: fan.sofia
     - conditions:
       - condition: trigger
-        id: off_threshold
+        id: speed_adjust
       - condition: state
         entity_id: fan.sofia
         state: 'on'
       sequence:
-      - service: fan.turn_off
+      - service: fan.turn_on
         target:
           entity_id: fan.sofia
-        data: {}
+        data:
+          percentage: "{% if float(states.sensor.temp_sofia.state) > 30 %}\n  100\n{%
+            elif float(states.sensor.temp_sofia.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_sofia.state)
+            > 25 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
+      - service: fan.oscillate
+        data:
+          oscillating: true
+        target:
+          entity_id: fan.sofia
     - conditions:
       - condition: trigger
         id: motion_off
@@ -1878,10 +1879,9 @@
     from: 'off'
     to: 'on'
     id: motion_on
-  - platform: numeric_state
+  - platform: state
     entity_id: sensor.temp_theo
-    below: 24.5
-    id: off_threshold
+    id: speed_adjust
   - platform: state
     entity_id:
     - binary_sensor.motion_theo
@@ -1896,20 +1896,14 @@
     - conditions:
       - condition: trigger
         id: motion_on
-      - condition: numeric_state
-        entity_id: sensor.temp_theo
-        above: 26
-      - condition: state
-        entity_id: fan.theo
-        state: 'off'
       sequence:
       - service: fan.turn_on
-        data:
-          percentage: "{% if float(states.sensor.temp_theo.state) > 30 %}\n  100\n{%
-            elif float(states.sensor.temp_theo.state) > 28 %}\n  66\n{% else %}\n
-            \ 33\n{% endif %}\n"
         target:
           entity_id: fan.theo
+        data:
+          percentage: "{% if float(states.sensor.temp_theo.state) > 30 %}\n  100\n{%
+            elif float(states.sensor.temp_theo.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_theo.state)
+            > 25 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
       - service: fan.oscillate
         data:
           oscillating: true
@@ -1917,15 +1911,23 @@
           entity_id: fan.theo
     - conditions:
       - condition: trigger
-        id: off_threshold
+        id: speed_adjust
       - condition: state
         entity_id: fan.theo
         state: 'on'
       sequence:
-      - service: fan.turn_off
+      - service: fan.turn_on
         target:
           entity_id: fan.theo
-        data: {}
+        data:
+          percentage: "{% if float(states.sensor.temp_theo.state) > 30 %}\n  100\n{%
+            elif float(states.sensor.temp_theo.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_theo.state)
+            > 25 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
+      - service: fan.oscillate
+        data:
+          oscillating: true
+        target:
+          entity_id: fan.theo
     - conditions:
       - condition: trigger
         id: motion_off
@@ -1949,10 +1951,9 @@
     from: 'off'
     to: 'on'
     id: motion_on
-  - platform: numeric_state
+  - platform: state
     entity_id: sensor.temp_master
-    below: 24.5
-    id: off_threshold
+    id: speed_adjust
   - platform: state
     entity_id:
     - binary_sensor.motion_master
@@ -1967,18 +1968,14 @@
     - conditions:
       - condition: trigger
         id: motion_on
-      - condition: numeric_state
-        entity_id: sensor.temp_master
-        above: 26
-      - condition: state
-        entity_id: fan.master
-        state: 'off'
       sequence:
       - service: fan.turn_on
-        data:
-          percentage: 33
         target:
           entity_id: fan.master
+        data:
+          percentage: "{% if float(states.sensor.temp_master.state) > 28 %}\n  100\n{%
+            elif float(states.sensor.temp_master.state) > 25 %}\n  75\n{% else %}\n
+            \ 0\n{% endif %}\n"
       - service: fan.oscillate
         data:
           oscillating: true
@@ -1986,21 +1983,29 @@
           entity_id: fan.master
     - conditions:
       - condition: trigger
-        id: off_threshold
+        id: speed_adjust
       - condition: state
         entity_id: fan.master
         state: 'on'
       sequence:
-      - service: fan.turn_off
+      - service: fan.turn_on
         target:
           entity_id: fan.master
-        data: {}
+        data:
+          percentage: "{% if float(states.sensor.temp_master.state) > 28 %}\n  100\n{%
+            elif float(states.sensor.temp_master.state) > 25 %}\n  75\n{% else %}\n
+            \ 0\n{% endif %}\n"
+      - service: fan.oscillate
+        data:
+          oscillating: true
+        target:
+          entity_id: fan.master
     - conditions:
       - condition: trigger
         id: motion_off
-      - condition: template
-        value_template: '{{ is_state(''binary_sensor.sleep_simon'', ''off'') and is_state(''binary_sensor.sleep_zoey'',
-          ''off'') and is_state(''binary_sensor.bedsensor_simon'', ''off'') }}'
+      - condition: state
+        entity_id: binary_sensor.sleep_master
+        state: 'off'
       sequence:
       - service: fan.turn_off
         target:
