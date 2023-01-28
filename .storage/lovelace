@@ -366,6 +366,11 @@
                   "name": "Climate Control"
                 },
                 {
+                  "entity": "binary_sensor.motion_sofia",
+                  "name": "Motion Sensor",
+                  "icon": "mdi:run-fast"
+                },
+                {
                   "entity": "light.lamp_sofia",
                   "name": "Lamp",
                   "icon": "mdi:floor-lamp"
@@ -383,11 +388,6 @@
                     "icon": "mdi:fan",
                     "name": "Fan"
                   }
-                },
-                {
-                  "entity": "binary_sensor.motion_sofia",
-                  "name": "Motion Sensor",
-                  "icon": "mdi:run-fast"
                 },
                 {
                   "type": "divider",
@@ -426,6 +426,11 @@
                   "name": "Climate Control"
                 },
                 {
+                  "entity": "binary_sensor.motion_joseph",
+                  "name": "Motion Sensor",
+                  "icon": "mdi:run-fast"
+                },
+                {
                   "entity": "light.lamp_joseph",
                   "name": "Lamp",
                   "icon": "mdi:floor-lamp"
@@ -443,11 +448,6 @@
                     "icon": "mdi:fan",
                     "name": "Fan"
                   }
-                },
-                {
-                  "entity": "binary_sensor.motion_joseph",
-                  "name": "Motion Sensor",
-                  "icon": "mdi:run-fast"
                 },
                 {
                   "type": "divider",
@@ -486,14 +486,14 @@
                   "name": "Climate Control"
                 },
                 {
-                  "entity": "light.lamp_theo",
-                  "name": "Lamp",
-                  "icon": "mdi:floor-lamp"
-                },
-                {
                   "entity": "binary_sensor.motion_theo",
                   "name": "Motion Sensor",
                   "icon": "mdi:run-fast"
+                },
+                {
+                  "entity": "light.lamp_theo",
+                  "name": "Lamp",
+                  "icon": "mdi:floor-lamp"
                 },
                 {
                   "type": "conditional",
@@ -576,6 +576,47 @@
                 {
                   "entity": "sensor.disk_free",
                   "name": "Free Space"
+                }
+              ]
+            },
+            {
+              "title": "Connectivity",
+              "type": "entities",
+              "show_header_toggle": false,
+              "state_color": true,
+              "entities": [
+                {
+                  "entity": "binary_sensor.internet",
+                  "name": "Internet",
+                  "icon": "mdi:earth"
+                },
+                {
+                  "entity": "binary_sensor.inkjet_printer",
+                  "name": "Inkjet Printer",
+                  "icon": "mdi:printer"
+                },
+                {
+                  "entity": "binary_sensor.laser_printer",
+                  "name": "Laser Printer",
+                  "icon": "mdi:printer"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "sensor.wan_ip",
+                  "icon": "mdi:desktop-classic"
+                },
+                {
+                  "entity": "sensor.vpn_ip",
+                  "icon": "mdi:vpn"
                 },
                 {
                   "type": "divider",
@@ -602,68 +643,6 @@
               ]
             },
             {
-              "title": "Connectivity",
-              "type": "entities",
-              "show_header_toggle": false,
-              "state_color": true,
-              "entities": [
-                {
-                  "entity": "binary_sensor.internet",
-                  "name": "Internet",
-                  "icon": "mdi:earth"
-                },
-                {
-                  "entity": "binary_sensor.inkjet_printer",
-                  "name": "Inkjet Printer",
-                  "icon": "mdi:printer"
-                },
-                {
-                  "entity": "binary_sensor.laser_printer",
-                  "name": "Laser Printer",
-                  "icon": "mdi:printer"
-                }
-              ]
-            },
-            {
-              "type": "statistics-graph",
-              "entities": [
-                "sensor.speedtest_download",
-                "sensor.speedtest_upload",
-                "sensor.speedtest_ping"
-              ],
-              "chart_type": "line",
-              "stat_types": [
-                "mean"
-              ],
-              "title": "Internet Speeds",
-              "days_to_show": 14
-            },
-            {
-              "type": "entities",
-              "entities": [
-                {
-                  "entity": "input_boolean.fans",
-                  "icon": "mdi:fan",
-                  "name": "Fans"
-                }
-              ],
-              "title": "UI Toggles"
-            },
-            {
-              "type": "entities",
-              "entities": [
-                {
-                  "entity": "sensor.wan_ip"
-                },
-                {
-                  "entity": "sensor.vpn_ip"
-                }
-              ],
-              "title": "Network",
-              "state_color": true,
-              "show_header_toggle": false
-            },
-            {
               "type": "entities",
               "title": "Notifications",
               "entities": [
@@ -683,6 +662,31 @@
               ],
               "show_header_toggle": false,
               "state_color": true
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "input_boolean.fans",
+                  "icon": "mdi:fan",
+                  "name": "Fans"
+                }
+              ],
+              "title": "UI Toggles"
+            },
+            {
+              "type": "statistics-graph",
+              "entities": [
+                "sensor.speedtest_download",
+                "sensor.speedtest_upload",
+                "sensor.speedtest_ping"
+              ],
+              "chart_type": "line",
+              "stat_types": [
+                "mean"
+              ],
+              "title": "Internet Speeds",
+              "days_to_show": 14
             }
           ]
         },

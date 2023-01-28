@@ -791,7 +791,7 @@
         id: motion_on
       - condition: numeric_state
         entity_id: sensor.lux_theo
-        below: 20
+        below: 25
       - condition: numeric_state
         entity_id: counter.sleep_motion_theo
         below: 1
@@ -1742,7 +1742,7 @@
     id: motion_on
   - platform: numeric_state
     entity_id: sensor.temp_sofia
-    below: 23
+    below: 24.5
     id: off_threshold
   - platform: state
     entity_id: binary_sensor.motion_sofia
@@ -1765,7 +1765,9 @@
       sequence:
       - service: fan.turn_on
         data:
-          percentage: 33
+          percentage: "{% if float(states.sensor.temp_sofia.state) > 30 %}\n  100\n{%
+            elif float(states.sensor.temp_sofia.state) > 28 %}\n  66\n{% else %}\n
+            \ 33\n{% endif %}\n"
         target:
           entity_id: fan.sofia
       - service: fan.oscillate
@@ -1808,7 +1810,7 @@
     id: motion_on
   - platform: numeric_state
     entity_id: sensor.temp_joseph
-    below: 23
+    below: 24.5
     id: off_threshold
   - platform: state
     entity_id: binary_sensor.motion_joseph
@@ -1831,7 +1833,9 @@
       sequence:
       - service: fan.turn_on
         data:
-          percentage: 33
+          percentage: "{% if float(states.sensor.temp_joseph.state) > 30 %}\n  100\n{%
+            elif float(states.sensor.temp_joseph.state) > 28 %}\n  66\n{% else %}\n
+            \ 33\n{% endif %}\n"
         target:
           entity_id: fan.joseph
       - service: fan.oscillate
@@ -1849,6 +1853,7 @@
       - service: fan.turn_off
         target:
           entity_id: fan.joseph
+        data: {}
     - conditions:
       - condition: trigger
         id: motion_off
@@ -1859,6 +1864,7 @@
       - service: fan.turn_off
         target:
           entity_id: fan.joseph
+        data: {}
   mode: single
 - id: '1674891223115'
   alias: Fan - Auto Fan Theo
@@ -1873,7 +1879,7 @@
     id: motion_on
   - platform: numeric_state
     entity_id: sensor.temp_theo
-    below: 23
+    below: 24.5
     id: off_threshold
   - platform: state
     entity_id:
@@ -1898,7 +1904,9 @@
       sequence:
       - service: fan.turn_on
         data:
-          percentage: 33
+          percentage: "{% if float(states.sensor.temp_theo.state) > 30 %}\n  100\n{%
+            elif float(states.sensor.temp_theo.state) > 28 %}\n  66\n{% else %}\n
+            \ 33\n{% endif %}\n"
         target:
           entity_id: fan.theo
       - service: fan.oscillate
@@ -1930,7 +1938,7 @@
         data: {}
   mode: single
 - id: '1674891301034'
-  alias: Fan - Auto Fan Joseph
+  alias: Fan - Auto Fan Master
   description: ''
   trigger:
   - platform: state
@@ -1942,7 +1950,7 @@
     id: motion_on
   - platform: numeric_state
     entity_id: sensor.temp_master
-    below: 23
+    below: 24.5
     id: off_threshold
   - platform: state
     entity_id:
