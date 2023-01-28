@@ -1973,9 +1973,8 @@
         target:
           entity_id: fan.master
         data:
-          percentage: "{% if float(states.sensor.temp_master.state) > 28 %}\n  100\n{%
-            elif float(states.sensor.temp_master.state) > 25 %}\n  75\n{% else %}\n
-            \ 0\n{% endif %}\n"
+          percentage: "{% if float(states.sensor.temp_master.state) > 25 %}\n  100\n{%
+            else %}\n  0\n{% endif %}\n"
       - service: fan.oscillate
         data:
           oscillating: true
