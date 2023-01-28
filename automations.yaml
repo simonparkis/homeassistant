@@ -1808,10 +1808,9 @@
     from: 'off'
     to: 'on'
     id: motion_on
-  - platform: numeric_state
+  - platform: state
     entity_id: sensor.temp_joseph
-    below: 24.5
-    id: off_threshold
+    id: speed_adjust
   - platform: state
     entity_id: binary_sensor.motion_joseph
     from: 'on'
@@ -1824,20 +1823,14 @@
     - conditions:
       - condition: trigger
         id: motion_on
-      - condition: numeric_state
-        entity_id: sensor.temp_joseph
-        above: 26
-      - condition: state
-        entity_id: fan.joseph
-        state: 'off'
       sequence:
       - service: fan.turn_on
-        data:
-          percentage: "{% if float(states.sensor.temp_joseph.state) > 30 %}\n  100\n{%
-            elif float(states.sensor.temp_joseph.state) > 28 %}\n  66\n{% else %}\n
-            \ 33\n{% endif %}\n"
         target:
           entity_id: fan.joseph
+        data:
+          percentage: "{% if float(states.sensor.temp_joseph.state) > 30 %}\n  100\n{%
+            elif float(states.sensor.temp_joseph.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_joseph.state)
+            > 25 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
       - service: fan.oscillate
         data:
           oscillating: true
@@ -1845,15 +1838,23 @@
           entity_id: fan.joseph
     - conditions:
       - condition: trigger
-        id: off_threshold
+        id: speed_adjust
       - condition: state
         entity_id: fan.joseph
         state: 'on'
       sequence:
-      - service: fan.turn_off
+      - service: fan.turn_on
         target:
           entity_id: fan.joseph
-        data: {}
+        data:
+          percentage: "{% if float(states.sensor.temp_joseph.state) > 30 %}\n  100\n{%
+            elif float(states.sensor.temp_joseph.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_joseph.state)
+            > 25 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
+      - service: fan.oscillate
+        data:
+          oscillating: true
+        target:
+          entity_id: fan.joseph
     - conditions:
       - condition: trigger
         id: motion_off
