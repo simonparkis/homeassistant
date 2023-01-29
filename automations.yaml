@@ -1989,9 +1989,9 @@
   condition:
   - condition: template
     value_template: '{% set fan_off = is_state(''fan.master'', ''off'') %} {% set
-      via_remote = states.fan.master.context.parent_id == none and states.fan.master.context.user_id
-      == none %} {% set sleeping = is_state(''binary_sensor.sleep_master'', ''on'')
-      %} {{ not (sleeping and fan_off and via_remote) }}'
+      via_remote = states.fan.master.context.parent_id == none %} {% set sleeping
+      = is_state(''binary_sensor.sleep_master'', ''on'') %} {{ not (sleeping and fan_off
+      and via_remote) }}'
   action:
   - choose:
     - conditions:
@@ -2005,9 +2005,9 @@
         target:
           entity_id: fan.master
         data:
-          percentage: "{% if float(states.sensor.temp_master.state) > 30 %}\n  100\n{%
-            elif float(states.sensor.temp_master.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_master.state)
-            > 25 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
+          percentage: "{% if float(states.sensor.temp_master.state) > 28 %}\n  100\n{%
+            elif float(states.sensor.temp_master.state) > 25 %}\n  85\n{% else %}\n
+            \ 0\n{% endif %}\n"
       - service: fan.oscillate
         data:
           oscillating: true
