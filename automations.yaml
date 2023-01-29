@@ -1779,9 +1779,9 @@
     - conditions:
       - condition: trigger
         id: speed_adjust
-      - condition: state
-        entity_id: fan.sofia
-        state: 'on'
+      - condition: template
+        value_template: '{{ is_state(''fan.sofia'', ''on'') or is_state(''binary_sensor.sleep_sofia'',
+          ''on'') }}'
       sequence:
       - service: fan.turn_on
         target:
@@ -1856,6 +1856,9 @@
     - conditions:
       - condition: trigger
         id: speed_adjust
+      - condition: template
+        value_template: '{{ is_state(''fan.joseph'', ''on'') or is_state(''binary_sensor.sleep_joseph'',
+          ''on'') }}'
       sequence:
       - service: fan.turn_on
         target:
@@ -1933,9 +1936,9 @@
     - conditions:
       - condition: trigger
         id: speed_adjust
-      - condition: state
-        entity_id: fan.theo
-        state: 'on'
+      - condition: template
+        value_template: '{{ is_state(''fan.theo'', ''on'') or is_state(''binary_sensor.sleep_theo'',
+          ''on'') }}'
       sequence:
       - service: fan.turn_on
         target:
@@ -2013,9 +2016,9 @@
     - conditions:
       - condition: trigger
         id: speed_adjust
-      - condition: state
-        entity_id: fan.master
-        state: 'on'
+      - condition: template
+        value_template: '{{ is_state(''fan.master'', ''on'') or (is_state(''binary_sensor.sleep_zoey'',
+          ''on'') or is_state(''binary_sensor.sleep_simon'', ''on''))}}'
       sequence:
       - service: fan.turn_on
         target:
