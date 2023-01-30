@@ -410,7 +410,7 @@
         timeout: 00:00:45
       - if:
         - condition: template
-          value_template: '{{ wait.trigger == None }}'
+          value_template: '{{ wait.trigger == none }}'
         then:
         - service: notify.mobile_app_simon
           data:
