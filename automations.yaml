@@ -1719,17 +1719,6 @@
       media_content_id: http://192.168.1.110:8123/local/sounds/silence.mp3
       media_content_type: audio/mp3
   mode: single
-- id: '1674641168173'
-  alias: Startup - Initialise Computer Sensors
-  description: ''
-  trigger:
-  - platform: homeassistant
-    event: start
-  condition: []
-  action:
-  - service: shell_command.initialise_computer_sensors
-    data: {}
-  mode: single
 - id: '1674890994424'
   alias: Fan - Auto Fan Sofia
   description: ''
