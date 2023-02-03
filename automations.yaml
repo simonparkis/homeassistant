@@ -476,7 +476,7 @@
     data_template:
       entity_id:
       - media_player.audio_only
-      volume_level: 0.6
+      volume_level: 0.7
   - service: media_player.play_media
     data:
       entity_id: media_player.audio_only
