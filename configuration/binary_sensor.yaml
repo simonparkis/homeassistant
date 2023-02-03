@@ -25,12 +25,23 @@
     - platform: state
       entity_id: sensor.house_status
       to_state: "Occupied"
-      prob_given_true: 0.99
+      prob_given_true: 0.90
+      prob_given_false: 0.01
+    - platform: state
+      entity_id: binary_sensor.sofia_bedtime
+      to_state: 'on'
+      prob_given_true: 0.90
       prob_given_false: 0.01
     - platform: template
-      value_template: "{{ states('sensor.time') > '19:30:00' or states('sensor.time') < '07:00:00' }}"
-      prob_given_true: 0.99
-      prob_given_false: 0.01
+      value_template: >
+        {% if is_state('sensor.house_status', 'Occupied') %}
+          {% set minutes_home = int((as_timestamp(now()) - as_timestamp(states.sensor.house_status.last_changed)) / 60) %}
+        {% else %}
+          {% set minutes_home = 0 %}
+        {% endif %}
+        {{ is_state('binary_sensor.sofia_bedtime', 'on')  and is_state('sensor.house_status', 'Occupied') and minutes_home > 60 }}
+      prob_given_true: 0.90
+      prob_given_false: 0.05
 - platform: bayesian
   name: Sleep Joseph
   prior: 0.3
@@ -39,12 +50,23 @@
     - platform: state
       entity_id: sensor.house_status
       to_state: "Occupied"
-      prob_given_true: 0.99
+      prob_given_true: 0.90
+      prob_given_false: 0.01
+    - platform: state
+      entity_id: binary_sensor.joseph_bedtime
+      to_state: 'on'
+      prob_given_true: 0.90
       prob_given_false: 0.01
     - platform: template
-      value_template: "{{ states('sensor.time') > '19:30:00' or states('sensor.time') < '07:00:00' }}"
-      prob_given_true: 0.99
-      prob_given_false: 0.01
+      value_template: >
+        {% if is_state('sensor.house_status', 'Occupied') %}
+          {% set minutes_home = int((as_timestamp(now()) - as_timestamp(states.sensor.house_status.last_changed)) / 60) %}
+        {% else %}
+          {% set minutes_home = 0 %}
+        {% endif %}
+        {{ is_state('binary_sensor.joseph_bedtime', 'on')  and is_state('sensor.house_status', 'Occupied') and minutes_home > 60 }}
+      prob_given_true: 0.90
+      prob_given_false: 0.05
 - platform: bayesian
   name: Sleep Theo
   prior: 0.3
@@ -53,12 +75,23 @@
     - platform: state
       entity_id: sensor.house_status
       to_state: "Occupied"
-      prob_given_true: 0.99
+      prob_given_true: 0.90
+      prob_given_false: 0.01
+    - platform: state
+      entity_id: binary_sensor.theo_bedtime
+      to_state: 'on'
+      prob_given_true: 0.90
       prob_given_false: 0.01
     - platform: template
-      value_template: "{{ states('sensor.time') > '18:30:00' or states('sensor.time') < '07:00:00' }}"
-      prob_given_true: 0.99
-      prob_given_false: 0.01
+      value_template: >
+        {% if is_state('sensor.house_status', 'Occupied') %}
+          {% set minutes_home = int((as_timestamp(now()) - as_timestamp(states.sensor.house_status.last_changed)) / 60) %}
+        {% else %}
+          {% set minutes_home = 0 %}
+        {% endif %}
+        {{ is_state('binary_sensor.theo_bedtime', 'on')  and is_state('sensor.house_status', 'Occupied') and minutes_home > 60 }}
+      prob_given_true: 0.90
+      prob_given_false: 0.05
 - platform: bayesian
   name: Sleep Simon
   prior: 0.3
@@ -112,4 +145,19 @@
 - platform: tod
   name: Quiet Time
   after: '21:00:00'
+  before: '06:30:00'
+
+- platform: tod
+  name: Theo Bedtime
+  after: '18:30:00'
+  before: '06:30:00'
+
+- platform: tod
+  name: Joseph Bedtime
+  after: '19:30:00'
+  before: '06:30:00'
+
+- platform: tod
+  name: Sofia Bedtime
+  after: '19:30:00'
   before: '06:30:00'
