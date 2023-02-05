@@ -10,6 +10,6 @@
     zoey_wifi: 192.168.1.57
 - platform: bluetooth_tracker
   new_device_defaults:
-    track_new_devices: True
+    track_new_devices: False
 - platform: bluetooth_le_tracker
-  track_new_devices: True
+  track_new_devices: False
