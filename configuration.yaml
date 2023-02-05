@@ -50,6 +50,7 @@ history:
 logbook:
 map:
 sun:
+bluetooth:
 
 shell_command:
   initialise_computer_sensors: bash ./create_simon_laptop.sh
