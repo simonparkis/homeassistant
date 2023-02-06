@@ -1438,9 +1438,11 @@
   alias: Sunrise
   description: ''
   trigger:
-  - platform: sun
-    event: sunrise
-    offset: 00:15:00
+  - platform: numeric_state
+    entity_id: sun.sun
+    attribute: elevation
+    above: 7
+    id: sunrise
   action:
   - service: light.turn_off
     target:
@@ -1448,8 +1450,9 @@
       - light.lamp_sofia
       - light.lamp_joseph
       - light.lamp_theo
-      - light.lamp_livingroom
+      - light.lamps_livingroom
       - light.bookshelf
+      - light.lamp_frontroom
     data: {}
   mode: single
 - id: '1655515573815'
@@ -2050,19 +2053,4 @@
         target:
           entity_id: fan.master
         data: {}
-  mode: single
-- id: '1675686606295'
-  alias: New Automation
-  description: ''
-  trigger:
-  - platform: state
-    entity_id:
-    - binary_sensor.motion_sofia
-    from: 'off'
-    to: 'on'
-  condition: []
-  action:
-  - service: notify.mobile_app_simon
-    data:
-      message: Test
   mode: single
