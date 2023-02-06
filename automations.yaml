@@ -2051,3 +2051,18 @@
           entity_id: fan.master
         data: {}
   mode: single
+- id: '1675686606295'
+  alias: New Automation
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_sofia
+    from: 'off'
+    to: 'on'
+  condition: []
+  action:
+  - service: notify.mobile_app_simon
+    data:
+      message: Test
+  mode: single
