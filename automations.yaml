@@ -458,7 +458,7 @@
   trigger:
   - platform: calendar
     event: start
-    offset: -05:30:00
+    offset: -04:30:00
     entity_id: calendar.garbage_collection
   condition:
   - condition: template
