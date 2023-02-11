@@ -324,7 +324,16 @@
                   }
                 },
                 {
-                  "entity": "binary_sensor.bedsensor_simon"
+                  "type": "conditional",
+                  "conditions": [
+                    {
+                      "entity": "binary_sensor.bedsensor_simon",
+                      "state_not": "unavailable"
+                    }
+                  ],
+                  "row": {
+                    "entity": "binary_sensor.bedsensor_simon"
+                  }
                 },
                 {
                   "type": "divider",
