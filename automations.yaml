@@ -1762,7 +1762,7 @@
         data:
           percentage: "{% if float(states.sensor.temp_sofia.state) > 30 %}\n  100\n{%
             elif float(states.sensor.temp_sofia.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_sofia.state)
-            > 26 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
+            > 25 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
       - service: fan.oscillate
         data:
           oscillating: true
@@ -1781,7 +1781,7 @@
         data:
           percentage: "{% if float(states.sensor.temp_sofia.state) > 30 %}\n  100\n{%
             elif float(states.sensor.temp_sofia.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_sofia.state)
-            > 26 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
+            > 25 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
       - service: fan.oscillate
         data:
           oscillating: true
@@ -1839,7 +1839,7 @@
         data:
           percentage: "{% if float(states.sensor.temp_joseph.state) > 30 %}\n  100\n{%
             elif float(states.sensor.temp_joseph.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_joseph.state)
-            > 26 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
+            > 25 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
       - service: fan.oscillate
         data:
           oscillating: true
@@ -1858,7 +1858,7 @@
         data:
           percentage: "{% if float(states.sensor.temp_joseph.state) > 30 %}\n  100\n{%
             elif float(states.sensor.temp_joseph.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_joseph.state)
-            > 26 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
+            > 25 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
       - service: fan.oscillate
         data:
           oscillating: true
@@ -1919,7 +1919,7 @@
         data:
           percentage: "{% if float(states.sensor.temp_theo.state) > 30 %}\n  100\n{%
             elif float(states.sensor.temp_theo.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_theo.state)
-            > 26 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
+            > 25 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
       - service: fan.oscillate
         data:
           oscillating: true
@@ -1938,7 +1938,7 @@
         data:
           percentage: "{% if float(states.sensor.temp_theo.state) > 30 %}\n  100\n{%
             elif float(states.sensor.temp_theo.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_theo.state)
-            > 26 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
+            > 25 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
       - service: fan.oscillate
         data:
           oscillating: true
@@ -1996,7 +1996,7 @@
       - if:
         - condition: numeric_state
           entity_id: sensor.temp_master
-          above: 26
+          above: 25
         then:
         - service: fan.turn_on
           target:
@@ -2024,7 +2024,7 @@
       - if:
         - condition: numeric_state
           entity_id: sensor.temp_master
-          above: 26
+          above: 25
         then:
         - service: fan.turn_on
           target:
