@@ -218,7 +218,7 @@
       value_template: '{{ states.binary_sensor | selectattr(''attributes.device_class'',
         ''defined'') | selectattr("attributes.device_class", "eq", "motion") | map(attribute="state")
         | select("eq", "on") | list | count == 0 }}'
-      for: 00:05:00
+      for: 00:03:00
     timeout: 02:30:00
   - service: light.turn_off
     data:
