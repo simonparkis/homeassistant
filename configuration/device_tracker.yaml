@@ -9,7 +9,13 @@
     simon_wifi: 192.168.1.56
     zoey_wifi: 192.168.1.57
 - platform: bluetooth_tracker
+  interval_seconds: 12
+  consider_home: 60
+  request_rssi: true
   new_device_defaults:
-    track_new_devices: False
+    track_new_devices: false
 - platform: bluetooth_le_tracker
-  track_new_devices: False
+  track_battery: true
+  interval_seconds: 12
+  consider_home: 60
+  track_new_devices: false
