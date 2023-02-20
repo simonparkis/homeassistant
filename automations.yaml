@@ -1831,13 +1831,23 @@
         entity_id: fan.joseph
         state: 'off'
       sequence:
-      - service: fan.turn_on
-        target:
-          entity_id: fan.joseph
-        data:
-          percentage: "{% if float(states.sensor.temp_joseph.state) > 30 %}\n  100\n{%
-            elif float(states.sensor.temp_joseph.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_joseph.state)
-            > 26 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
+      - if:
+        - condition: numeric_state
+          entity_id: sensor.temp_joseph
+          above: 25
+        then:
+        - service: fan.turn_on
+          target:
+            entity_id: fan.joseph
+          data:
+            percentage: "{% if float(states.sensor.temp_joseph.state) > 30 %}\n  100\n{%
+              elif float(states.sensor.temp_joseph.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_joseph.state)
+              > 26 %}\n  33\n{% endif %}\n"
+        else:
+        - service: fan.turn_off
+          target:
+            entity_id: fan.joseph
+          data: {}
       - service: fan.oscillate
         data:
           oscillating: true
@@ -1850,13 +1860,23 @@
         value_template: '{{ is_state(''fan.joseph'', ''on'') or is_state(''binary_sensor.sleep_joseph'',
           ''on'') }}'
       sequence:
-      - service: fan.turn_on
-        target:
-          entity_id: fan.joseph
-        data:
-          percentage: "{% if float(states.sensor.temp_joseph.state) > 30 %}\n  100\n{%
-            elif float(states.sensor.temp_joseph.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_joseph.state)
-            > 26 %}\n  33\n{% else %}\n  0\n{% endif %}\n"
+      - if:
+        - condition: numeric_state
+          entity_id: sensor.temp_joseph
+          above: 25
+        then:
+        - service: fan.turn_on
+          target:
+            entity_id: fan.joseph
+          data:
+            percentage: "{% if float(states.sensor.temp_joseph.state) > 30 %}\n  100\n{%
+              elif float(states.sensor.temp_joseph.state) > 28 %}\n  66\n{% elif float(states.sensor.temp_joseph.state)
+              > 26 %}\n  33\n{% endif %}\n"
+        else:
+        - service: fan.turn_off
+          target:
+            entity_id: fan.joseph
+          data: {}
       - service: fan.oscillate
         data:
           oscillating: true
