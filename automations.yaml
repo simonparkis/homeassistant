@@ -2092,3 +2092,18 @@
           entity_id: fan.master
         data: {}
   mode: single
+- id: '1677826577913'
+  alias: New Automation
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - person.zoey
+    to: home
+    from: not_home
+  condition: []
+  action:
+  - service: notify.mobile_app_simon
+    data:
+      message: Zoey home
+  mode: single
