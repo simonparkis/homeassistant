@@ -526,7 +526,7 @@
     value_template: '{{ states.automation.grandfather_clock.attributes.current ==
       0 }}'
   - condition: template
-    value_template: '{{ states.zone.home.attributes.persons | list | count >= 1 }}'
+    value_template: '{{ states.zone.home.attributes.persons | list | count == 1 }}'
   action:
   - choose:
     - conditions:
@@ -557,7 +557,6 @@
             \ media_player.speaker_bedroom\n{% elif trigger.entity_id == 'binary_sensor.motion_frontroom'
             %}\n  media_player.speaker_frontroom\n{% elif trigger.entity_id == 'binary_sensor.motion_livingroom'
             %}\n  media_player.display_kitchen, media_player.speaker_livingroom\n{%
-            elif trigger.entity_id == 'binary_sensor.motion_joseph' %}\n  media_player.speaker_joseph\n{%
             endif %}\n"
     - conditions:
       - condition: trigger
