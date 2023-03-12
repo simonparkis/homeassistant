@@ -2111,6 +2111,12 @@
         - group.computers
         state: 'off'
       sequence:
+      - wait_for_trigger:
+        - platform: template
+          value_template: '{{ states.binary_sensor | selectattr(''attributes.device_class'',''defined'')
+            | selectattr(''attributes.device_class'', ''eq'', ''motion'') | map(attribute=''state'')
+            | select(''eq'', ''on'') | list | count == 0 }}'
+          for: 00:03:00
       - service: input_boolean.turn_on
         target:
           entity_id: input_boolean.night_mode
@@ -2135,6 +2141,7 @@
       - service: script.turn_on
         target:
           entity_id: script.turn_off_lights_common_areas
+        data: {}
       - service: script.turn_on
         target:
           entity_id: script.turn_off_electronics

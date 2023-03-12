@@ -41,7 +41,6 @@ from zhaquirks.tuya import (
     TuyaNewManufCluster,
 )
 from zhaquirks.tuya.mcu import (
-    TuyaDPType,
     DPToAttributeMapping,
     TuyaAttributesCluster,
     TuyaMCUCluster,
@@ -178,17 +177,14 @@ class TuyaMmwRadarCluster(NoManufacturerCluster, TuyaMCUCluster):
         1: DPToAttributeMapping(
             TuyaOccupancySensing.ep_attribute,
             "occupancy",
-            dp_type=TuyaDPType.BOOL,
         ),
         2: DPToAttributeMapping(
             TuyaMmwRadarSensitivity.ep_attribute,
             "present_value",
-            dp_type=TuyaDPType.VALUE,
         ),
         3: DPToAttributeMapping(
             TuyaMmwRadarMinRange.ep_attribute,
             "present_value",
-            dp_type=TuyaDPType.VALUE,
             endpoint_id=2,
             #converter=lambda x: x / 100,
             #dp_converter=lambda x: x * 100,
@@ -196,7 +192,6 @@ class TuyaMmwRadarCluster(NoManufacturerCluster, TuyaMCUCluster):
         4: DPToAttributeMapping(
             TuyaMmwRadarMaxRange.ep_attribute,
             "present_value",
-            dp_type=TuyaDPType.VALUE,
             endpoint_id=3,
             #converter=lambda x: x / 100,
             #dp_converter=lambda x: x * 100,
@@ -204,18 +199,15 @@ class TuyaMmwRadarCluster(NoManufacturerCluster, TuyaMCUCluster):
         6: DPToAttributeMapping(
             TuyaMCUCluster.ep_attribute,
             "self_test",
-            dp_type=TuyaDPType.ENUM,
         ),
         9: DPToAttributeMapping(
             TuyaMmwRadarTargetDistance.ep_attribute,
             "present_value",
             #converter=lambda x: x / 100,
-            dp_type=TuyaDPType.VALUE,
         ),
         101: DPToAttributeMapping(
             TuyaMmwRadarDetectionDelay.ep_attribute,
             "present_value",
-            dp_type=TuyaDPType.VALUE,
             converter=lambda x: x * 100,
             dp_converter=lambda x: x // 100,
             endpoint_id=4,
@@ -223,7 +215,6 @@ class TuyaMmwRadarCluster(NoManufacturerCluster, TuyaMCUCluster):
         102: DPToAttributeMapping(
             TuyaMmwRadarFadingTime.ep_attribute,
             "present_value",
-            dp_type=TuyaDPType.VALUE,
             converter=lambda x: x * 100,
             dp_converter=lambda x: x // 100,
             endpoint_id=5,
@@ -231,12 +222,10 @@ class TuyaMmwRadarCluster(NoManufacturerCluster, TuyaMCUCluster):
         103: DPToAttributeMapping(
             TuyaMCUCluster.ep_attribute,
             "cli",
-            dp_type=TuyaDPType.STRING,
         ),
         104: DPToAttributeMapping(
             TuyaIlluminanceMeasurement.ep_attribute,
             "measured_value",
-            dp_type=TuyaDPType.VALUE,
             converter=lambda x: math.log10(x) * 10000 + 1,
         ),
     }
