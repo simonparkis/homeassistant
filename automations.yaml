@@ -2066,3 +2066,86 @@
           entity_id: fan.master
         data: {}
   mode: single
+- id: '1678611097830'
+  alias: Modes - Night Mode
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_master
+    - binary_sensor.motion_master_dsc
+    from: 'off'
+    to: 'on'
+    id: entered_bedroom
+  - platform: state
+    entity_id: input_boolean.night_mode
+    from: 'off'
+    to: 'on'
+    id: night_mode_enabled
+  - platform: state
+    entity_id: input_boolean.night_mode
+    from: 'on'
+    to: 'off'
+    id: night_mode_disabled
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_frontroom
+    - binary_sensor.motion_livingroom
+    - binary_sensor.motion_garage
+    id: motion_detected
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: entered_bedroom
+      - condition: time
+        after: '20:30:00'
+        before: 09:00:00
+      - condition: state
+        entity_id: sun.sun
+        state: below_horizon
+      - condition: state
+        entity_id:
+        - binary_sensor.tv_livingroom
+        - binary_sensor.tv_frontroom
+        - group.computers
+        state: 'off'
+      sequence:
+      - service: input_boolean.turn_on
+        target:
+          entity_id: input_boolean.night_mode
+        data: {}
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: motion_detected
+      - condition: state
+        entity_id: input_boolean.night_mode
+        state: 'on'
+      sequence:
+      - service: input_boolean.turn_off
+        target:
+          entity_id: input_boolean.night_mode
+        data: {}
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: night_mode_enabled
+      sequence:
+      - service: script.turn_on
+        target:
+          entity_id: script.turn_off_lights_common_areas
+      - service: script.turn_on
+        target:
+          entity_id: script.turn_off_electronics
+        data: {}
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: night_mode_disabled
+      sequence:
+      - service: script.turn_on
+        target:
+          entity_id: script.turn_on_electronics
+        data: {}
+  mode: restart

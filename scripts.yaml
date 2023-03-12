@@ -1,1 +1,36 @@
-{}
+turn_off_all_lights:
+  alias: Turn Off All Lights
+  sequence:
+  - service: light.turn_off
+    data:
+      entity_id: all
+  mode: single
+turn_off_lights_common_areas:
+  alias: Turn Off Lights Common Areas
+  sequence:
+  - service: light.turn_off
+    data:
+      transition: 10
+    target:
+      entity_id:
+      - light.lamps_livingroom
+      - light.lamp_frontroom
+      - light.bookshelf
+      - light.laundry
+  mode: single
+turn_off_electronics:
+  alias: Turn Off Electronics
+  sequence:
+  - service: switch.turn_off
+    data: {}
+    target:
+      entity_id: switch.living_room_tv
+  mode: single
+turn_on_electronics:
+  alias: Turn On Electronics
+  sequence:
+  - service: switch.turn_on
+    data: {}
+    target:
+      entity_id: switch.living_room_tv
+  mode: single
