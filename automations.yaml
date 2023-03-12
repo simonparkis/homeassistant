@@ -503,7 +503,6 @@
     - binary_sensor.motion_master
     - binary_sensor.motion_frontroom
     - binary_sensor.motion_livingroom
-    - binary_sensor.motion_joseph
   - platform: state
     id: motion_off
     to: 'off'
@@ -512,12 +511,6 @@
     - binary_sensor.motion_master
     - binary_sensor.motion_frontroom
     - binary_sensor.motion_livingroom
-    - binary_sensor.motion_joseph
-  - platform: template
-    value_template: '{{ is_state(''media_player.all_chromecasts'', ''off'') }}
-
-      '
-    id: stopped
   condition:
   - condition: state
     entity_id: input_boolean.follow_me_audio
@@ -529,23 +522,6 @@
     value_template: '{{ states.zone.home.attributes.persons | list | count == 1 }}'
   action:
   - choose:
-    - conditions:
-      - condition: trigger
-        id: stopped
-      sequence:
-      - service: input_boolean.turn_off
-        target:
-          entity_id: input_boolean.follow_me_audio
-        data: {}
-      - service: media_player.volume_mute
-        data_template:
-          is_volume_muted: false
-          entity_id:
-          - media_player.display_kitchen
-          - media_player.speaker_livingroom
-          - media_player.speaker_frontroom
-          - media_player.speaker_bedroom
-          - media_player.speaker_joseph
     - conditions:
       - condition: trigger
         id: motion_on
@@ -562,10 +538,10 @@
       - condition: trigger
         id: motion_off
       - condition: template
-        value_template: "{% set count = namespace(not_muted = 0) %} {% for player
+        value_template: "{% set count = namespace(not_muted = 0) %}  {% for player
           in expand('group.all_chromecasts') | map(attribute='entity_id') %}\n  {%
           if state_attr(player, 'is_volume_muted') == False %}\n    {% set count.not_muted
-          = count.not_muted + 1 %}\n  {% endif %}\n{% endfor %}   {% if trigger.entity_id
+          = count.not_muted + 1 %}\n  {% endif %}\n{% endfor %}    {% if trigger.entity_id
           == 'binary_sensor.motion_livingroom' %}\n  {{ count.not_muted | int > 2
           }}\n{% else %}\n  {{ count.not_muted | int > 1 }}\n{% endif %}\n"
       sequence:
@@ -576,7 +552,6 @@
             \ media_player.speaker_bedroom\n{% elif trigger.entity_id == 'binary_sensor.motion_frontroom'
             %}\n  media_player.speaker_frontroom\n{% elif trigger.entity_id == 'binary_sensor.motion_livingroom'
             %}\n  media_player.display_kitchen, media_player.speaker_livingroom\n{%
-            elif trigger.entity_id == 'binary_sensor.motion_joseph' %}\n  media_player.speaker_joseph\n{%
             endif %}\n"
   mode: queued
   max_exceeded: silent

@@ -37,6 +37,9 @@
                   }
                 },
                 {
+                  "entity": "input_boolean.night_mode"
+                },
+                {
                   "entity": "input_boolean.sentry_mode"
                 },
                 {
