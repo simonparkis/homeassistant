@@ -273,7 +273,7 @@
   mode: single
   max_exceeded: silent
 - id: '1631706621274'
-  alias: Garage Door - Simon
+  alias: Garage Door - Auto Open Simon
   description: Automatically open the garage door on arrival
   trigger:
   - platform: zone
@@ -296,7 +296,7 @@
       entity_id: cover.garage_door
     data: {}
 - id: '1631706714864'
-  alias: Garage Door - Zoey
+  alias: Garage Door - Auto Open Zoey
   description: Automatically open the garage door on arrival
   trigger:
   - platform: zone
@@ -352,7 +352,7 @@
       media_content_type: audio/mp4
   mode: single
 - id: '1631870728951'
-  alias: Auto Close Garage Door
+  alias: Garage Door - Auto Close
   description: ''
   trigger:
   - platform: state
@@ -493,7 +493,7 @@
   mode: restart
   max_exceeded: silent
 - id: '1632476399006'
-  alias: Follow Me Audio
+  alias: Audio - Follow Me
   description: ''
   trigger:
   - platform: state
@@ -1204,7 +1204,7 @@
       sequence:
       - delay:
           seconds: "{% if is_state('binary_sensor.sleep_simon', 'on') or is_state('binary_sensor.sleep_zoey',
-            'on') %}\n  10\n{% else %}\n  180\n{% endif %}\n"
+            'on') %}\n  10\n{% else %}\n  300\n{% endif %}\n"
       - service: light.turn_off
         data:
           transition: 5
