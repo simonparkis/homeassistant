@@ -40,13 +40,13 @@
                   "entity": "input_boolean.night_mode"
                 },
                 {
-                  "entity": "input_boolean.sentry_mode"
+                  "entity": "input_boolean.vacancy_mode"
                 },
                 {
                   "entity": "input_boolean.guest_mode"
                 },
                 {
-                  "entity": "input_boolean.vacation_mode"
+                  "entity": "input_boolean.holiday_mode"
                 }
               ]
             },

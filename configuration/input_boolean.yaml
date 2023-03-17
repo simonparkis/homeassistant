@@ -1,9 +1,12 @@
 guest_mode:
   name: Guest Mode
   icon: mdi:account-multiple
-vacation_mode:
-  name: Vacation Mode
+holiday_mode:
+  name: Holiday Mode
   icon: mdi:airplane
+vacancy_mode:
+  name: Vacancy Mode
+  icon: mdi:home-remove-outline
 sentry_mode:
   name: Sentry Mode
   icon: mdi:shield-account

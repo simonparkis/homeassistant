@@ -108,7 +108,7 @@
           sound: doorbell.wav
   mode: single
 - id: '1631139553218'
-  alias: Modes - Vacation Mode
+  alias: Modes - Holiday Mode
   description: ''
   trigger:
   - platform: state
@@ -130,11 +130,13 @@
       sequence:
       - service: input_boolean.turn_on
         target:
-          entity_id: input_boolean.vacation_mode
+          entity_id: input_boolean.holiday_mode
+        data: {}
     default:
     - service: input_boolean.turn_off
       target:
-        entity_id: input_boolean.vacation_mode
+        entity_id: input_boolean.holiday_mode
+      data: {}
   mode: single
 - id: '1631318144171'
   alias: Lights - On arrival / transition sunset
@@ -890,15 +892,15 @@
     data: {}
   mode: restart
 - id: '1653202825683'
-  alias: Lights - Simulated Vacation Lighting
-  description: Random lighting to simulate occupancy during vacation mode
+  alias: Lights - Simulated Holiday Lighting
+  description: Random lighting to simulate occupancy during holiday mode
   trigger:
   - platform: state
     entity_id: sun.sun
     to: below_horizon
   condition:
   - condition: state
-    entity_id: input_boolean.vacation_mode
+    entity_id: input_boolean.holiday_mode
     state: 'on'
   action:
   - repeat:
@@ -909,7 +911,7 @@
       sequence:
       - service: light.toggle
         data:
-          entity_id: '{{ expand(''light.vacation_lights'') | map(attribute=''entity_id'')
+          entity_id: '{{ expand(''light.holiday_lights'') | map(attribute=''entity_id'')
             | list | random }}
 
             '
