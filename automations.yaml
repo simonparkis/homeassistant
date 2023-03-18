@@ -2158,3 +2158,70 @@
           entity_id: script.turn_on_electronics
         data: {}
   mode: restart
+- id: '1679094688218'
+  alias: Modes - Vacancy Mode
+  trigger:
+  - platform: state
+    entity_id: sensor.house_status
+    id: house_status
+  - platform: state
+    entity_id: input_boolean.vacancy_mode
+    from: 'off'
+    to: 'on'
+    id: house_vacant
+  - platform: state
+    entity_id: input_boolean.vacancy_mode
+    from: 'on'
+    to: 'off'
+    id: house_occupied
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id:
+        - house_status
+        - startup
+      - condition: state
+        entity_id: sensor.house_status
+        state: Vacant
+      sequence:
+      - alias: Wait until no motion detected
+        wait_template: '{{ states.binary_sensor | selectattr(''attributes.device_class'',
+          ''defined'') | selectattr(''attributes.device_class'', ''eq'', ''motion'')
+          | map(attribute=''state'') | select(''eq'', ''on'') | list | count == 0
+          }}'
+      - service: input_boolean.turn_on
+        target:
+          entity_id: input_boolean.vacancy_mode
+        data: {}
+    - conditions:
+      - condition: trigger
+        id:
+        - house_status
+        - startup
+      - condition: state
+        entity_id: sensor.house_status
+        state: Occupied
+      sequence:
+      - service: input_boolean.turn_off
+        target:
+          entity_id: input_boolean.vacancy_mode
+        data: {}
+    - conditions:
+      - condition: trigger
+        id: house_vacant
+      sequence:
+      - service: script.turn_on
+        target:
+          entity_id: script.turn_off_electronics
+        data: {}
+      - service: light.turn_off
+        entity_id: all
+    - conditions:
+      - condition: trigger
+        id: house_occupied
+      sequence:
+      - service: script.turn_on
+        target:
+          entity_id: script.turn_on_electronics
+        data: {}
