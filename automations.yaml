@@ -2078,7 +2078,16 @@
     - binary_sensor.motion_master_dsc
     from: 'off'
     to: 'on'
-    id: motion_bedrooms
+    id: motion_master
+  - platform: state
+    entity_id:
+    - binary_sensor.motion_sofia
+    - binary_sensor.motion_joseph
+    - binary_sensor.motion_theo
+    - binary_sensor.motion_theo_dsc
+    from: 'off'
+    to: 'on'
+    id: motion_kids
   - platform: state
     entity_id:
     - binary_sensor.motion_frontroom
@@ -2098,7 +2107,7 @@
   - choose:
     - conditions:
       - condition: trigger
-        id: motion_bedrooms
+        id: motion_master
       - condition: time
         after: '20:30:00'
         before: 09:00:00
@@ -2123,7 +2132,6 @@
         target:
           entity_id: input_boolean.night_mode
         data: {}
-  - choose:
     - conditions:
       - condition: trigger
         id: motion_elsewhere
@@ -2135,7 +2143,6 @@
         target:
           entity_id: input_boolean.night_mode
         data: {}
-  - choose:
     - conditions:
       - condition: trigger
         id: night_mode_enabled
@@ -2148,7 +2155,6 @@
         target:
           entity_id: script.turn_off_electronics
         data: {}
-  - choose:
     - conditions:
       - condition: trigger
         id: night_mode_disabled
