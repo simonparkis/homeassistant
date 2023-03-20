@@ -2152,7 +2152,8 @@
   alias: Modes - Vacancy Mode
   trigger:
   - platform: state
-    entity_id: sensor.house_status
+    entity_id:
+    - sensor.house_status
     to: Vacant
     for: 00:03:00
     id: house_vacant
