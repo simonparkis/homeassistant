@@ -2153,27 +2153,28 @@
   trigger:
   - platform: state
     entity_id: sensor.house_status
-    id: house_status
+    to: Vacant
+    for: 00:03:00
+    id: house_vacant
+  - platform: state
+    entity_id: sensor.house_status
+    to: Occupied
+    id: house_occupied
   - platform: state
     entity_id: input_boolean.vacancy_mode
     from: 'off'
     to: 'on'
-    id: house_vacant
+    id: mode_enabled
   - platform: state
     entity_id: input_boolean.vacancy_mode
     from: 'on'
     to: 'off'
-    id: house_occupied
+    id: mode_disabled
   action:
   - choose:
     - conditions:
       - condition: trigger
-        id:
-        - house_status
-        - startup
-      - condition: state
-        entity_id: sensor.house_status
-        state: Vacant
+        id: house_vacant
       sequence:
       - alias: Wait until no motion detected
         wait_template: '{{ states.binary_sensor | selectattr(''attributes.device_class'',
@@ -2186,12 +2187,7 @@
         data: {}
     - conditions:
       - condition: trigger
-        id:
-        - house_status
-        - startup
-      - condition: state
-        entity_id: sensor.house_status
-        state: Occupied
+        id: house_occupied
       sequence:
       - service: input_boolean.turn_off
         target:
@@ -2199,7 +2195,7 @@
         data: {}
     - conditions:
       - condition: trigger
-        id: house_vacant
+        id: mode_enabled
       sequence:
       - service: script.turn_on
         target:
@@ -2213,9 +2209,10 @@
         entity_id: all
     - conditions:
       - condition: trigger
-        id: house_occupied
+        id: mode_disabled
       sequence:
       - service: script.turn_on
         target:
           entity_id: script.turn_on_electronics
         data: {}
+  mode: queued
