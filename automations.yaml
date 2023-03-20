@@ -801,22 +801,6 @@
         target:
           entity_id: counter.sleep_motion_theo
   mode: restart
-- id: '1652053156471'
-  alias: House Vacant
-  description: ''
-  trigger:
-  - platform: state
-    entity_id: sensor.house_status
-    to: Vacant
-    for: 00:05:00
-  action:
-  - service: light.turn_off
-    entity_id: all
-  - service: climate.turn_off
-    entity_id: all
-  - service: fan.turn_off
-    entity_id: all
-  mode: single
 - id: '1652612892418'
   alias: Lights - Wake Up
   description: ''
@@ -2222,6 +2206,10 @@
           entity_id: script.turn_off_electronics
         data: {}
       - service: light.turn_off
+        entity_id: all
+      - service: climate.turn_off
+        entity_id: all
+      - service: fan.turn_off
         entity_id: all
     - conditions:
       - condition: trigger
