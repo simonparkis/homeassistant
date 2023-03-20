@@ -132,6 +132,9 @@
                   "icon": "mdi:run-fast"
                 },
                 {
+                  "entity": "binary_sensor.presence_livingroom"
+                },
+                {
                   "type": "divider",
                   "style": {
                     "height": "1px",
@@ -372,9 +375,6 @@
                     "name": "Motion Sensor",
                     "icon": "mdi:run-fast"
                   }
-                },
-                {
-                  "entity": "binary_sensor.presence_master"
                 },
                 {
                   "entity": "light.lamp_simon",

@@ -3,7 +3,8 @@
       state: >
         {% set zone_occupied = int(states('zone.home')) > 0 %}
         {% set guests = is_state('input_boolean.guest_mode', 'on') %}
-        {% if zone_occupied or guests %}
+        {% set presence = is_state('binary_sensor.presence_livingroom', 'on') %}
+        {% if zone_occupied or guests or presence %}
           Occupied
         {% else %}
           Vacant
