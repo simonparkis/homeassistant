@@ -270,6 +270,14 @@
                   "name": "Auto Lights"
                 }
               ]
+            },
+            {
+              "type": "entities",
+              "entities": [
+                "switch.energy_frontroom",
+                "switch.energy_livingroom",
+                "switch.energy_zoey_desk"
+              ]
             }
           ]
         },

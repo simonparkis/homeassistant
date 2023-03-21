@@ -21,18 +21,8 @@ turn_off_lights_common_areas:
 turn_off_electronics:
   alias: Energy Saver Overnight
   sequence:
-  - service: switch.turn_off
-    data: {}
-    target:
-      entity_id:
-      - switch.energy_frontroom
-      - switch.energy_livingroom
-      - switch.energy_zoey_desk
-  mode: single
-turn_on_electronics:
-  alias: Turn On Electronics
-  sequence:
-  - service: switch.turn_on
+  - service: "{% if mode == \"enable\" %} \n  switch.turn_off \n{% elif mode == \"disable\"
+      %}\n  switch.turn_on\n{% endif %}"
     data: {}
     target:
       entity_id:
