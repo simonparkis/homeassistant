@@ -2212,3 +2212,41 @@
       - service: script.energy_saver_vacant
         data:
           mode: disable
+- id: '1679390348928'
+  alias: iOS - Night Mode
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ios.action_fired
+    event_data:
+      actionName: night_mode
+    context:
+      user_id:
+      - 8cf5ca26368a47578d759264b2ceaf98
+      - 9a78e16d6589444cbdf82944e76f59fd
+  condition: []
+  action:
+  - service: input_boolean.toggle
+    data: {}
+    target:
+      entity_id: input_boolean.night_mode
+  mode: single
+- id: '1679390383812'
+  alias: iOS - Vacancy Mode
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ios.action_fired
+    event_data:
+      actionName: vacancy_mode
+    context:
+      user_id:
+      - 8cf5ca26368a47578d759264b2ceaf98
+      - 9a78e16d6589444cbdf82944e76f59fd
+  condition: []
+  action:
+  - service: input_boolean.toggle
+    data: {}
+    target:
+      entity_id: input_boolean.vacancy_mode
+  mode: single
