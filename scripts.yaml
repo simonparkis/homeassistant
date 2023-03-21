@@ -19,7 +19,7 @@ turn_off_lights_common_areas:
       - light.laundry
   mode: single
 turn_off_electronics:
-  alias: Turn Off Electronics
+  alias: Energy Saver Overnight
   sequence:
   - service: switch.turn_off
     data: {}

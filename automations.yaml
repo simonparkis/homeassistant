@@ -2137,7 +2137,7 @@
         data: {}
       - service: script.turn_on
         target:
-          entity_id: script.turn_off_electronics
+          entity_id: script.energy_saver_overnight
         data: {}
     - conditions:
       - condition: trigger
