@@ -18,8 +18,20 @@ turn_off_lights_common_areas:
       - light.bookshelf
       - light.laundry
   mode: single
-turn_off_electronics:
+energy_saver_overnight:
   alias: Energy Saver Overnight
+  sequence:
+  - service: "{% if mode == \"enable\" %} \n  switch.turn_off \n{% elif mode == \"disable\"
+      %}\n  switch.turn_on\n{% endif %}"
+    data: {}
+    target:
+      entity_id:
+      - switch.energy_frontroom
+      - switch.energy_livingroom
+      - switch.energy_zoey_desk
+  mode: single
+energy_saver_vacant:
+  alias: Energy Saver Vacant
   sequence:
   - service: "{% if mode == \"enable\" %} \n  switch.turn_off \n{% elif mode == \"disable\"
       %}\n  switch.turn_on\n{% endif %}"

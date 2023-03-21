@@ -2135,18 +2135,14 @@
         target:
           entity_id: script.turn_off_lights_common_areas
         data: {}
-      - service: script.turn_on
-        target:
-          entity_id: script.energy_saver_overnight
+      - service: script.energy_saver_overnight
         data:
           mode: enable
     - conditions:
       - condition: trigger
         id: night_mode_disabled
       sequence:
-      - service: script.turn_on
-        target:
-          entity_id: script.energy_saver_overnight
+      - service: script.energy_saver_overnight
         data:
           mode: disable
   mode: restart
@@ -2200,10 +2196,9 @@
       - condition: trigger
         id: mode_enabled
       sequence:
-      - service: script.turn_on
-        target:
-          entity_id: script.turn_off_electronics
-        data: {}
+      - service: script.energy_saver_vacant
+        data:
+          mode: enable
       - service: light.turn_off
         entity_id: all
       - service: climate.turn_off
@@ -2214,8 +2209,6 @@
       - condition: trigger
         id: mode_disabled
       sequence:
-      - service: script.turn_on
-        target:
-          entity_id: script.turn_on_electronics
-        data: {}
-  mode: queued
+      - service: script.energy_saver_vacant
+        data:
+          mode: disable
