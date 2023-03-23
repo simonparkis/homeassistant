@@ -287,11 +287,8 @@
     entity_id: cover.garage_door
     state: closed
   - condition: state
-    entity_id: sensor.simon_activity
-    state: Automotive
-  - condition: template
-    value_template: '{{ states.sensor.simon_battery_state.state != ''Not Charging''
-      }}'
+    entity_id: binary_sensor.simon_focus
+    state: 'on'
   action:
   - service: cover.open_cover
     target:
