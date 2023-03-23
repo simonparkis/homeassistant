@@ -2135,16 +2135,18 @@
         target:
           entity_id: script.turn_off_lights_common_areas
         data: {}
-      - service: script.energy_saver_overnight
+      - service: script.energy_saver
         data:
-          mode: enable
+          command: enable
+          mode: overnight
     - conditions:
       - condition: trigger
         id: night_mode_disabled
       sequence:
-      - service: script.energy_saver_overnight
+      - service: script.energy_saver
         data:
-          mode: disable
+          command: disable
+          mode: overnight
   mode: restart
 - id: '1679094688218'
   alias: Modes - Vacancy Mode
@@ -2196,9 +2198,10 @@
       - condition: trigger
         id: mode_enabled
       sequence:
-      - service: script.energy_saver_vacant
+      - service: script.energy_saver
         data:
-          mode: enable
+          command: enable
+          mode: vacant
       - service: light.turn_off
         entity_id: all
       - service: climate.turn_off
@@ -2209,9 +2212,10 @@
       - condition: trigger
         id: mode_disabled
       sequence:
-      - service: script.energy_saver_vacant
+      - service: script.energy_saver
         data:
-          mode: disable
+          command: disable
+          mode: vacant
 - id: '1679390348928'
   alias: iOS - Night Mode
   description: ''
