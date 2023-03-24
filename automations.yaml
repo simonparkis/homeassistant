@@ -535,6 +535,9 @@
     - binary_sensor.motion_livingroom
   condition:
   - condition: state
+    entity_id: media_player.all_chromecasts
+    state: playing
+  - condition: state
     entity_id: input_boolean.follow_me_audio
     state: 'on'
   - condition: template
