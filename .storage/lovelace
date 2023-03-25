@@ -130,7 +130,8 @@
                   }
                 },
                 {
-                  "entity": "automation.auto_lights_living_room"
+                  "entity": "automation.auto_lights_living_room",
+                  "name": "Auto Lights"
                 }
               ]
             },
@@ -201,7 +202,8 @@
                   }
                 },
                 {
-                  "entity": "automation.lights_auto_lights_front_room"
+                  "entity": "automation.auto_lights_front_room",
+                  "name": "Auto Lights"
                 }
               ]
             },
