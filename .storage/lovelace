@@ -683,6 +683,9 @@
               "type": "entities",
               "entities": [
                 {
+                  "entity": "media_player.music"
+                },
+                {
                   "entity": "media_player.all_chromecasts"
                 },
                 {
@@ -699,7 +702,8 @@
                   "entity": "media_player.display_kitchen"
                 },
                 {
-                  "entity": "media_player.living_room"
+                  "entity": "media_player.living_room",
+                  "name": "Living Room"
                 },
                 {
                   "entity": "media_player.speaker_frontroom"
