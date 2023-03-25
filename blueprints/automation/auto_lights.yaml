@@ -59,9 +59,10 @@ trigger:
     to: 'on'
 
 condition:
-  - condition: state
+  - condition: numeric_state
     entity_id: sun.sun
-    state: below_horizon
+    attribute: elevation
+    below: 7
 
 variables:
   begin_dim: !input begin_dim
