@@ -305,76 +305,9 @@
                   "icon": "mdi:thermometer"
                 },
                 {
-                  "type": "conditional",
-                  "conditions": [
-                    {
-                      "entity": "binary_sensor.motion_master_dsc",
-                      "state": "on"
-                    },
-                    {
-                      "entity": "binary_sensor.motion_master",
-                      "state": "off"
-                    }
-                  ],
-                  "row": {
-                    "entity": "binary_sensor.motion_master_dsc",
-                    "name": "Motion Sensor",
-                    "icon": "mdi:run-fast"
-                  }
-                },
-                {
-                  "type": "conditional",
-                  "conditions": [
-                    {
-                      "entity": "binary_sensor.motion_master",
-                      "state": "on"
-                    },
-                    {
-                      "entity": "binary_sensor.motion_master_dsc",
-                      "state": "off"
-                    }
-                  ],
-                  "row": {
-                    "entity": "binary_sensor.motion_master",
-                    "name": "Motion Sensor",
-                    "icon": "mdi:run-fast"
-                  }
-                },
-                {
-                  "type": "conditional",
-                  "conditions": [
-                    {
-                      "entity": "binary_sensor.motion_master",
-                      "state": "off"
-                    },
-                    {
-                      "entity": "binary_sensor.motion_master_dsc",
-                      "state": "off"
-                    }
-                  ],
-                  "row": {
-                    "entity": "binary_sensor.motion_master",
-                    "name": "Motion Sensor",
-                    "icon": "mdi:run-fast"
-                  }
-                },
-                {
-                  "type": "conditional",
-                  "conditions": [
-                    {
-                      "entity": "binary_sensor.motion_master",
-                      "state": "on"
-                    },
-                    {
-                      "entity": "binary_sensor.motion_master_dsc",
-                      "state": "on"
-                    }
-                  ],
-                  "row": {
-                    "entity": "binary_sensor.motion_master",
-                    "name": "Motion Sensor",
-                    "icon": "mdi:run-fast"
-                  }
+                  "entity": "binary_sensor.motion_master_dsc",
+                  "name": "Motion Sensor",
+                  "icon": "mdi:run-fast"
                 },
                 {
                   "entity": "light.lamp_simon",
