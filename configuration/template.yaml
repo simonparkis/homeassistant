@@ -34,4 +34,4 @@
         {% endif %}
     - name: Energy Cost Savings
       state: >
-        {{ float(states("sensor.timeoff_livingroom")) * 9.5 / 1000 * 0.28 + float(states("sensor.timeoff_frontroom")) * 4.6 / 1000 * 0.28 + float(states("sensor.timeoff_zoeydesk")) * 8.4 / 1000 * 0.28 }}
+        ${{ (float(states("sensor.timeoff_livingroom")) * 9.5 / 1000 * 0.28 + float(states("sensor.timeoff_frontroom")) * 4.6 / 1000 * 0.28 + float(states("sensor.timeoff_zoeydesk")) * 8.4 / 1000 * 0.28) | round(2, 'floor') }}

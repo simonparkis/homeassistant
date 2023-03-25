@@ -545,6 +545,21 @@
                 {
                   "entity": "sensor.disk_free",
                   "name": "Free Space"
+                },
+                {
+                  "type": "divider",
+                  "style": {
+                    "height": "1px",
+                    "width": "100%",
+                    "margin-left": "auto",
+                    "margin-right": "auto",
+                    "background": "#CC7C19"
+                  }
+                },
+                {
+                  "entity": "sensor.energy_cost_savings",
+                  "name": "Energy Cost Savings",
+                  "icon": "mdi:leaf"
                 }
               ]
             },
