@@ -74,9 +74,10 @@
       value_template: >-
         {{ states.sensor.voron.attributes['heater_bed']['temperature'] | float | round(1) if is_state('sensor.voron', 'OK') else None }}
     voron_state:
-      icon_template: mdi:printer-3d
+      icon_template: mdi:printer-3d-nozzle
+      friendly_name: 3D Printer
       value_template: >-
-        {{ states.sensor.voron.attributes['print_stats']['state'] if is_state('sensor.voron', 'OK') else None }}
+        {{ (states.sensor.voron.attributes['print_stats']['state'] | capitalize) if is_state('sensor.voron', 'OK') else None }}
     voron_current_print:
       value_template: >-
         {{ states.sensor.voron.attributes['print_stats']['filename'] if is_state('sensor.voron', 'OK') else None }}

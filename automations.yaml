@@ -238,11 +238,11 @@
     path: auto_lights.yaml
     input:
       light_entity: light.lamps_livingroom, light.bookshelf
-      motion_sensor: binary_sensor.motion_livingroom
       begin_dim: '22:30:00'
       end_dim: '23:59:00'
       no_motion_wait: 3600
       min_brightness: 25
+      motion_sensor: binary_sensor.occupancy_livingroom
 - id: '1631593521972'
   alias: Modes - Guest Mode
   description: Automatically Set and Reset (except when manualy set) Guest Mode when
@@ -1634,11 +1634,11 @@
     path: auto_lights.yaml
     input:
       light_entity: light.lamp_frontroom
-      motion_sensor: binary_sensor.motion_frontroom
       begin_dim: '22:00:00'
       end_dim: '23:59:00'
       no_motion_wait: 3600
       min_brightness: 5
+      motion_sensor: binary_sensor.occupancy_frontroom
 - id: '1674517769621'
   alias: Notify - Waste Collection
   description: ''

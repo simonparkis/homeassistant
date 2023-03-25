@@ -15,7 +15,6 @@ blueprint:
       selector:
         entity:
           domain: binary_sensor
-          device_class: motion
     begin_dim:
       name: Begin Dimming Time
       description: The time when the brightness of the light starts to drop from 100%

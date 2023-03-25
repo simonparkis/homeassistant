@@ -101,25 +101,17 @@
               "state_color": true,
               "entities": [
                 {
-                  "entity": "binary_sensor.tv_livingroom",
-                  "icon": "mdi:television",
-                  "name": "Television"
+                  "entity": "binary_sensor.tv_livingroom"
                 },
                 {
                   "entity": "media_player.tv_livingroom",
-                  "name": "Chromecast",
-                  "icon": "mdi:google-chrome",
                   "secondary_info": "none"
                 },
                 {
-                  "entity": "media_player.living_room",
-                  "name": "Audio",
-                  "icon": "mdi:speaker"
+                  "entity": "media_player.living_room"
                 },
                 {
-                  "entity": "light.lamps_livingroom",
-                  "icon": "mdi:lamps",
-                  "name": "Lounge Lamps"
+                  "entity": "light.lamps_livingroom"
                 },
                 {
                   "entity": "light.bookshelf"
@@ -138,9 +130,7 @@
                   }
                 },
                 {
-                  "entity": "automation.auto_lights_living_room",
-                  "name": "Auto Lights",
-                  "icon": "mdi:exit-run"
+                  "entity": "automation.auto_lights_living_room"
                 }
               ]
             },
