@@ -100,7 +100,7 @@
     - platform: state
       entity_id: binary_sensor.bedsensor_simon
       to_state: 'on'
-      prob_given_true: 0.75
+      prob_given_true: 0.70
       prob_given_false: 0.01
     - platform: template
       value_template: "{{ not is_state('sensor.simon_battery_state', 'Not Charging') and is_state('person.simon', 'home') }}"
