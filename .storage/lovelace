@@ -122,17 +122,10 @@
                   "name": "Lounge Lamps"
                 },
                 {
-                  "entity": "light.bookshelf",
-                  "icon": "mdi:wall-sconce-round-variant",
-                  "name": "Bookshelf Light"
+                  "entity": "light.bookshelf"
                 },
                 {
-                  "entity": "binary_sensor.motion_livingroom",
-                  "name": "Motion Sensor",
-                  "icon": "mdi:run-fast"
-                },
-                {
-                  "entity": "binary_sensor.presence_livingroom"
+                  "entity": "binary_sensor.occupancy_livingroom"
                 },
                 {
                   "type": "divider",
@@ -170,27 +163,13 @@
               "state_color": true,
               "entities": [
                 {
-                  "entity": "binary_sensor.desktop_simon"
-                },
-                {
-                  "entity": "binary_sensor.laptop_simon"
+                  "entity": "sensor.voron_state"
                 },
                 {
                   "entity": "binary_sensor.laptop_zoey"
                 },
                 {
-                  "type": "conditional",
-                  "conditions": [
-                    {
-                      "entity": "binary_sensor.motion_study",
-                      "state_not": "unavailable"
-                    }
-                  ],
-                  "row": {
-                    "entity": "binary_sensor.motion_study",
-                    "name": "Motion Sensor",
-                    "icon": "mdi:run-fast"
-                  }
+                  "entity": "binary_sensor.occupancy_study"
                 }
               ]
             },
@@ -201,28 +180,25 @@
               "state_color": true,
               "entities": [
                 {
-                  "entity": "binary_sensor.tv_frontroom",
-                  "icon": "mdi:television",
-                  "name": "Television"
+                  "entity": "binary_sensor.tv_frontroom"
                 },
                 {
-                  "entity": "media_player.tv_frontroom",
-                  "name": "Chromecast",
-                  "icon": "mdi:google-chrome"
+                  "entity": "media_player.tv_frontroom"
                 },
                 {
-                  "entity": "media_player.speaker_frontroom",
-                  "name": "Audio",
-                  "icon": "mdi:speaker"
+                  "entity": "media_player.speaker_frontroom"
                 },
                 {
-                  "entity": "light.lamp_frontroom",
-                  "name": "Lamp"
+                  "entity": "binary_sensor.desktop_simon"
                 },
                 {
-                  "entity": "binary_sensor.motion_frontroom",
-                  "name": "Motion Sensor",
-                  "icon": "mdi:run-fast"
+                  "entity": "binary_sensor.laptop_simon"
+                },
+                {
+                  "entity": "light.lamp_frontroom"
+                },
+                {
+                  "entity": "binary_sensor.occupancy_frontroom"
                 },
                 {
                   "type": "divider",
@@ -235,9 +211,7 @@
                   }
                 },
                 {
-                  "entity": "automation.lights_auto_lights_front_room",
-                  "name": "Auto Lights",
-                  "icon": "mdi:exit-run"
+                  "entity": "automation.lights_auto_lights_front_room"
                 }
               ]
             },
@@ -285,19 +259,13 @@
               "state_color": true,
               "entities": [
                 {
-                  "entity": "binary_sensor.tv_bedroom",
-                  "name": "Television",
-                  "icon": "mdi:television"
+                  "entity": "binary_sensor.tv_bedroom"
                 },
                 {
-                  "entity": "media_player.tv_bedroom",
-                  "name": "Chromecast",
-                  "icon": "mdi:google-chrome"
+                  "entity": "media_player.tv_bedroom"
                 },
                 {
-                  "entity": "media_player.speaker_bedroom",
-                  "name": "Audio",
-                  "icon": "mdi:speaker"
+                  "entity": "media_player.speaker_bedroom"
                 },
                 {
                   "entity": "climate.master_bedroom",
@@ -305,13 +273,10 @@
                   "icon": "mdi:thermometer"
                 },
                 {
-                  "entity": "binary_sensor.motion_master_dsc",
-                  "name": "Motion Sensor",
-                  "icon": "mdi:run-fast"
+                  "entity": "binary_sensor.occupancy_master"
                 },
                 {
-                  "entity": "light.lamp_simon",
-                  "name": "Simon's Lamp"
+                  "entity": "light.lamp_simon"
                 },
                 {
                   "entity": "light.lamp_zoey"
@@ -327,18 +292,6 @@
                   "row": {
                     "entity": "fan.master",
                     "name": "Fan"
-                  }
-                },
-                {
-                  "type": "conditional",
-                  "conditions": [
-                    {
-                      "entity": "binary_sensor.bedsensor_simon",
-                      "state_not": "unavailable"
-                    }
-                  ],
-                  "row": {
-                    "entity": "binary_sensor.bedsensor_simon"
                   }
                 },
                 {
@@ -384,6 +337,9 @@
                   "entity": "binary_sensor.motion_sofia",
                   "name": "Motion Sensor",
                   "icon": "mdi:run-fast"
+                },
+                {
+                  "entity": "binary_sensor.occupancy_sofia"
                 },
                 {
                   "entity": "light.lamp_sofia",
@@ -446,6 +402,9 @@
                   "icon": "mdi:run-fast"
                 },
                 {
+                  "entity": "binary_sensor.occupancy_joseph"
+                },
+                {
                   "entity": "light.lamp_joseph",
                   "name": "Lamp",
                   "icon": "mdi:floor-lamp"
@@ -504,6 +463,9 @@
                   "entity": "binary_sensor.motion_theo",
                   "name": "Motion Sensor",
                   "icon": "mdi:run-fast"
+                },
+                {
+                  "entity": "binary_sensor.occupancy_theo"
                 },
                 {
                   "entity": "light.lamp_theo",
