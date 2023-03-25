@@ -98,7 +98,7 @@
   probability_threshold: 0.95
   observations:
     - platform: state
-      entity_id: binary_sensor.bedsensor_simon
+      entity_id: binary_sensor.bed_simon
       to_state: 'on'
       prob_given_true: 0.70
       prob_given_false: 0.01
