@@ -1172,9 +1172,17 @@
   description: ''
   trigger:
   - platform: state
-    entity_id: binary_sensor.occupancy_master
+    entity_id:
+    - binary_sensor.motion_master
+    - binary_sensor.motion_master_dsc
     to: 'on'
-    id: occupied
+    id: motion
+  - platform: state
+    entity_id:
+    - binary_sensor.sleep_simon
+    - binary_sensor.sleep_zoey
+    to: 'on'
+    id: sleeping
   - platform: state
     entity_id: binary_sensor.occupancy_master
     to: 'off'
@@ -1193,7 +1201,7 @@
   - choose:
     - conditions:
       - condition: trigger
-        id: occupied
+        id: motion
       - condition: numeric_state
         entity_id: sensor.lux_master
         below: 15
@@ -1212,7 +1220,9 @@
           entity_id: light.bedroom_lamps
     - conditions:
       - condition: trigger
-        id: motion_off
+        id:
+        - motion_off
+        - sleeping
       - condition: template
         value_template: '{{ is_state(''binary_sensor.sleep_simon'', ''on'') or is_state(''binary_sensor.sleep_zoey'',
           ''on'') }}'
@@ -1649,7 +1659,7 @@
       light_entity: light.lamp_frontroom
       begin_dim: '22:00:00'
       end_dim: '23:59:00'
-      no_motion_wait: 3600
+      no_motion_wait: 180
       min_brightness: 5
       motion_sensor: binary_sensor.occupancy_frontroom
 - id: '1674517769621'
