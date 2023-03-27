@@ -968,7 +968,13 @@
   trigger:
   - platform: state
     entity_id: sensor.house_status
-    id: house_status
+    to: Vacant
+    for: 00:03:00
+    id: house_vacant
+  - platform: state
+    entity_id: sensor.house_status
+    to: Occupied
+    id: house_occupied
   - platform: template
     value_template: "{{ states.binary_sensor | selectattr('attributes.device_class',
       'defined') | selectattr(\"attributes.device_class\", \"eq\",\n    \"motion\")
@@ -1015,7 +1021,8 @@
     - conditions:
       - condition: trigger
         id:
-        - house_status
+        - house_vacant
+        - house_occupied
         - startup
       - condition: state
         entity_id: sensor.house_status
@@ -1033,7 +1040,8 @@
     - conditions:
       - condition: trigger
         id:
-        - house_status
+        - house_vacant
+        - house_occupied
         - startup
       - condition: state
         entity_id: sensor.house_status
