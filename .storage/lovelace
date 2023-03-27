@@ -43,6 +43,9 @@
                   "entity": "input_boolean.vacancy_mode"
                 },
                 {
+                  "entity": "input_boolean.sentry_mode"
+                },
+                {
                   "entity": "input_boolean.guest_mode"
                 },
                 {
