@@ -2034,8 +2034,8 @@
   - condition: template
     value_template: '{% set fan_off = is_state(''fan.master'', ''off'') %} {% set
       via_remote = states.fan.master.context.parent_id == none %} {% set sleeping
-      = is_state(''binary_sensor.sleep_master'', ''on'') %} {{ not (sleeping and fan_off
-      and via_remote) }}'
+      = is_state(''binary_sensor.sleep_simon'', ''on'') or is_state(''binary_sensor.sleep_zoey'',
+      ''on'') %} {{ not (sleeping and fan_off and via_remote) }}'
   action:
   - choose:
     - conditions:
@@ -2201,7 +2201,7 @@
         data:
           command: disable
           mode: overnight
-  mode: queued
+  mode: restart
 - id: '1679094688218'
   alias: Modes - Vacancy Mode
   trigger:
