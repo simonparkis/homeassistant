@@ -47,7 +47,7 @@
           - binary_sensor.motion_theo_dsc
         from: "off"
         to: "on"
-        id: bedrooms
+        id: bedroom
       - platform: state
         entity_id:
           - binary_sensor.motion_livingroom
@@ -57,7 +57,7 @@
           - binary_sensor.motion_garage_dsc
         from: "off"
         to: "on"
-        id: living
+        id: common
     sensor:
       - unique_id: last_motion
         name: Last Motion
