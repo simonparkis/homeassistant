@@ -2111,26 +2111,16 @@
   description: ''
   trigger:
   - platform: state
-    entity_id:
-    - binary_sensor.motion_master
-    - binary_sensor.motion_master_dsc
-    from: 'off'
-    to: 'on'
-    id: motion_master
-  - platform: state
-    entity_id:
-    - binary_sensor.motion_sofia
-    - binary_sensor.motion_joseph
-    - binary_sensor.motion_theo
-    - binary_sensor.motion_theo_dsc
-    from: 'off'
-    to: 'on'
-    id: motion_kids
+    entity_id: binary_sensor.motion_sensors
+    from: 'on'
+    to: 'off'
+    for: 00:03:00
+    id: no_motion
   - platform: state
     entity_id:
     - binary_sensor.motion_frontroom
     - binary_sensor.motion_livingroom
-    id: motion_elsewhere
+    id: motion
   - platform: state
     entity_id: input_boolean.night_mode
     from: 'off'
@@ -2145,34 +2135,30 @@
   - choose:
     - conditions:
       - condition: trigger
-        id: motion_master
+        id: no_motion
       - condition: time
         after: '20:30:00'
         before: 09:00:00
-      - condition: state
-        entity_id: sun.sun
-        state: below_horizon
+      - condition: template
+        value_template: '{{ state_attr(''sensor.last_motion'', ''room_type'') == ''Bedrooms''
+          }}'
       - condition: state
         entity_id:
         - binary_sensor.tv_livingroom
         - binary_sensor.tv_frontroom
         - group.computers
         state: 'off'
+      - condition: state
+        entity_id: input_boolean.night_mode
+        state: 'off'
       sequence:
-      - wait_for_trigger:
-        - platform: template
-          value_template: '{{ states.binary_sensor | selectattr(''attributes.device_class'',''defined'')
-            | selectattr(''attributes.device_class'', ''eq'', ''motion'') | rejectattr(''entity_id'',
-            ''eq'', ''binary_sensor.motion_garage'') | map(attribute=''state'') |
-            select(''eq'', ''on'') | list | count == 0 }}'
-          for: 00:03:00
       - service: input_boolean.turn_on
         target:
           entity_id: input_boolean.night_mode
         data: {}
     - conditions:
       - condition: trigger
-        id: motion_elsewhere
+        id: motion
       - condition: state
         entity_id: input_boolean.night_mode
         state: 'on'

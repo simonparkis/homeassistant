@@ -27,6 +27,9 @@
                   "entity": "person.zoey"
                 },
                 {
+                  "entity": "sensor.last_motion"
+                },
+                {
                   "type": "divider",
                   "style": {
                     "height": "1px",
