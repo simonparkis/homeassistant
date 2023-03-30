@@ -2120,6 +2120,8 @@
     entity_id:
     - binary_sensor.motion_frontroom
     - binary_sensor.motion_livingroom
+    from: 'off'
+    to: 'on'
     id: motion
   - platform: state
     entity_id: input_boolean.night_mode
