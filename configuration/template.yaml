@@ -35,3 +35,29 @@
     - name: Energy Cost Savings
       state: >
         {{ "$%.2f" | format((float(states("sensor.timeoff_livingroom")) * 8.7 / 1000 * 0.28 + float(states("sensor.timeoff_frontroom")) * 4.1 / 1000 * 0.28 + float(states("sensor.timeoff_zoeydesk")) * 7.0 / 1000 * 0.28))}}
+
+  trigger:
+    - platform: state
+      entity_id:
+        - binary_sensor.motion_master
+        - binary_sensor.motion_master_dsc
+        - binary_sensor.motion_sofia
+        - binary_sensor.motion_joseph
+        - binary_sensor.motion_theo
+        - binary_sensor.motion_theo_dsc
+      id: bedrooms
+    - platform: state
+        - binary_sensor.motion_livingroom
+        - binary_sensor.motion_frontroom
+        - binary_sensor.motion_laundry
+        - binary_sensor.motion_garage
+        - binary_sensor.motion_garage_dsc
+      id: common_areas
+  sensor:
+    - unique_id: last_motion
+      name: Last Motion Detected
+      icon: mdi:run-fast
+      state: "{{ area_name(trigger.entity_id) }}"
+      attributes:
+        category: "{{ trigger.id | capitalize }}"
+        entity_id: "{{ trigger.entity_id }}"
