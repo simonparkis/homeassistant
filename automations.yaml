@@ -2191,7 +2191,7 @@
         data:
           command: disable
           mode: overnight
-  mode: restart
+  mode: queued
 - id: '1679094688218'
   alias: Modes - Vacancy Mode
   trigger:
