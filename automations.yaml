@@ -2140,7 +2140,7 @@
         id: no_motion
       - condition: time
         after: '20:30:00'
-        before: 09:00:00
+        before: 06:00:00
       - condition: template
         value_template: '{{ state_attr(''sensor.last_motion'', ''room_type'') == ''Bedroom''
           }}'
