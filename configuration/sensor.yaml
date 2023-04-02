@@ -3,7 +3,7 @@
   entity_id: switch.frontroom
   state: "off"
   type: time
-  start: "{{ now().replace(month=int(now().month / 4)*3+1, day=27, hour=0, minute=0, second=0, microsecond=0 ) }}"
+  start: "{{ now().replace(month=1, day=1, hour=0, minute=0, second=0, microsecond=0 ) }}"
   duration:
     days: 90
 - platform: history_stats
@@ -11,7 +11,7 @@
   entity_id: switch.livingroom
   state: "off"
   type: time
-  start: "{{ now().replace(month=int(now().month / 4)*3+1, day=27, hour=0, minute=0, second=0, microsecond=0 ) }}"
+  start: "{{ now().replace(month=1, day=1, hour=0, minute=0, second=0, microsecond=0 ) }}"
   duration:
     days: 90
 - platform: history_stats
@@ -19,7 +19,7 @@
   entity_id: switch.zoey_desk
   state: "off"
   type: time
-  start: "{{ now().replace(month=int(now().month / 4)*3+1, day=27, hour=0, minute=0, second=0, microsecond=0 ) }}"
+  start: "{{ now().replace(month=1, day=1, hour=0, minute=0, second=0, microsecond=0 ) }}"
   duration:
     days: 90
 - platform: systemmonitor
