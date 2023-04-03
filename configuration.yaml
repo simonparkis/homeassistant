@@ -150,6 +150,49 @@ proximity:
       - person.zoey
     unit_of_measurement: km
 
+ios:
+  actions:
+    - name: toggle_garage
+      background_color: "#3498DA"
+      label:
+        text: "Garage Door"
+        color: "#ffffff"
+      icon:
+        icon: mdi:garage-variant
+        color: "#ffffff"
+    - name: guest_mode
+      background_color: "#F39C12"
+      label:
+        text: "Guest Mode"
+        color: "#ffffff"
+      icon:
+        icon: mdi:account-multiple
+        color: "#ffffff"
+    - name: night_mode
+      background_color: "#2C3E50"
+      label:
+        text: "Night Mode"
+        color: "#ffffff"
+      icon:
+        icon: mdi:weather-night
+        color: "#ffffff"
+    - name: sentry_mode
+      background_color: "#C0392B"
+      label:
+        text: "Sentry Mode"
+        color: "#ffffff"
+      icon:
+        icon: mdi:shield-account
+        color: "#ffffff"
+    - name: vacancy_mode
+      background_color: "#27AE60"
+      label:
+        text: "Vacancy Mode"
+        color: "#ffffff"
+      icon:
+        icon: mdi:home-remove-outline
+        color: "#ffffff"
+
 panel_iframe:
   vscode:
     title: "VSCode"
