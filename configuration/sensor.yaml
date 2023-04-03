@@ -4,24 +4,24 @@
   state: "off"
   type: time
   start: "{{ now().replace(month=1, day=1, hour=0, minute=0, second=0, microsecond=0 ) }}"
-  duration:
-    days: 90
+  end: "{{ now().replace(month=12, day=31, hour=23, minute=59, second=59, microsecond=0 ) }}"
+
 - platform: history_stats
   name: TimeOff LivingRoom
   entity_id: switch.livingroom
   state: "off"
   type: time
   start: "{{ now().replace(month=1, day=1, hour=0, minute=0, second=0, microsecond=0 ) }}"
-  duration:
-    days: 90
+  end: "{{ now().replace(month=12, day=31, hour=23, minute=59, second=59, microsecond=0 ) }}"
+  
 - platform: history_stats
   name: TimeOff ZoeyDesk
   entity_id: switch.zoey_desk
   state: "off"
   type: time
   start: "{{ now().replace(month=1, day=1, hour=0, minute=0, second=0, microsecond=0 ) }}"
-  duration:
-    days: 90
+  end: "{{ now().replace(month=12, day=31, hour=23, minute=59, second=59, microsecond=0 ) }}"
+
 - platform: systemmonitor
   resources:
     - type: last_boot

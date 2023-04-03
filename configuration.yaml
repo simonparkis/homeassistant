@@ -137,7 +137,7 @@ calendar:
         search: '.*'
       
 recorder:
-  purge_keep_days: 100
+  purge_keep_days: 365
 
 tts:
   - platform: google_translate
