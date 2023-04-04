@@ -333,7 +333,7 @@
     entity_id: sensor.zoey_activity
     state: Automotive
   - condition: template
-    value_template: '{{ states.sensor.zoeys_iphone_battery_state.state != ''Not Charging''
+    value_template: '{{ states.sensor.zoey_battery_state.state != ''Not Charging''
       }}'
   action:
   - service: cover.open_cover
