@@ -7,7 +7,7 @@
     john_wifi: 192.168.1.22
     maria_wifi: 192.168.1.52
     simon_wifi: 192.168.1.24
-    zoey_wifi: 192.168.1.57
+    zoey_wifi: 192.168.1.137
 - platform: bluetooth_tracker
   interval_seconds: 12
   consider_home: 60

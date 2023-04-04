@@ -330,7 +330,7 @@
     entity_id: cover.garage_door
     state: closed
   - condition: state
-    entity_id: sensor.zoeys_iphone_activity
+    entity_id: sensor.zoey_activity
     state: Automotive
   - condition: template
     value_template: '{{ states.sensor.zoeys_iphone_battery_state.state != ''Not Charging''

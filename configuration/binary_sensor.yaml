@@ -125,7 +125,7 @@
   probability_threshold: 0.92
   observations:
     - platform: template
-      value_template: "{{ not is_state('sensor.zoeys_iphone_battery_state', 'Not Charging') and is_state('person.zoey', 'home') }}"
+      value_template: "{{ not is_state('sensor.zoey_battery_state', 'Not Charging') and is_state('person.zoey', 'home') }}"
       prob_given_true: 0.99
       prob_given_false: 0.125
     - platform: state
