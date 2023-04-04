@@ -2299,3 +2299,22 @@
     target:
       entity_id: input_boolean.vacancy_mode
   mode: single
+- id: '1680568830618'
+  alias: iOS - Holiday Mode
+  description: ''
+  trigger:
+  - platform: event
+    event_type: ios.action_fired
+    event_data:
+      actionName: holiday_mode
+    context:
+      user_id:
+      - 8cf5ca26368a47578d759264b2ceaf98
+      - 9a78e16d6589444cbdf82944e76f59fd
+  condition: []
+  action:
+  - service: input_boolean.toggle
+    data: {}
+    target:
+      entity_id: input_boolean.holiday_mode
+  mode: single

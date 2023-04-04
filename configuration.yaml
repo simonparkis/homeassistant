@@ -192,6 +192,14 @@ ios:
       icon:
         icon: mdi:home-remove-outline
         color: "#ffffff"
+    - name: holiday_mode
+      background_color: "#9B59B6"
+      label:
+        text: "Holiday Mode"
+        color: "#ffffff"
+      icon:
+        icon: mdi:airplane
+        color: "#ffffff"
 
 panel_iframe:
   vscode:
