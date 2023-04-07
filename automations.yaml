@@ -2318,3 +2318,20 @@
     target:
       entity_id: input_boolean.holiday_mode
   mode: single
+- id: '1680833229703'
+  alias: Sync Volume - Music
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - media_player.display_kitchen
+    attribute: volume_level
+  condition: []
+  action:
+  - service: media_player.volume_set
+    data:
+      volume_level: '{{ state_attr(''media_player.display_kitchen'',''volume_level'')
+        }}'
+    target:
+      entity_id: media_player.living_room
+  mode: single
