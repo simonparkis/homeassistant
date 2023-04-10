@@ -63,7 +63,7 @@
               "state_color": true,
               "entities": [
                 {
-                  "entity": "sensor.dscalarm_partition_1_msg",
+                  "entity": "sensor.alarm_status",
                   "name": "Alarm Status",
                   "icon": "mdi:alarm-bell"
                 },
