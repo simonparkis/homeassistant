@@ -242,6 +242,89 @@
                   "name": "Auto Lights"
                 }
               ]
+            },
+            {
+              "type": "vertical-stack",
+              "cards": [
+                {
+                  "type": "tile",
+                  "entity": "person.simon",
+                  "icon": "mdi:account",
+                  "tap_action": {
+                    "action": "more-info"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "horizontal-stack",
+              "cards": [
+                {
+                  "show_name": false,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "entity": "input_boolean.night_mode",
+                  "show_state": false,
+                  "hold_action": {
+                    "action": "more-info"
+                  },
+                  "icon_height": "30px"
+                },
+                {
+                  "show_name": false,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "entity": "input_boolean.vacancy_mode",
+                  "icon_height": "30px",
+                  "show_state": false
+                },
+                {
+                  "show_name": false,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "entity": "input_boolean.sentry_mode",
+                  "icon_height": "30px",
+                  "hold_action": {
+                    "action": "more-info"
+                  },
+                  "show_state": false
+                },
+                {
+                  "show_name": false,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "entity": "input_boolean.guest_mode",
+                  "icon_height": "30px",
+                  "hold_action": {
+                    "action": "more-info"
+                  }
+                },
+                {
+                  "show_name": false,
+                  "show_icon": true,
+                  "type": "button",
+                  "tap_action": {
+                    "action": "toggle"
+                  },
+                  "entity": "input_boolean.holiday_mode",
+                  "icon_height": "30px",
+                  "hold_action": {
+                    "action": "more-info"
+                  }
+                }
+              ]
             }
           ]
         },
@@ -260,7 +343,8 @@
                   "entity": "binary_sensor.tv_bedroom"
                 },
                 {
-                  "entity": "media_player.tv_bedroom"
+                  "entity": "media_player.tv_bedroom",
+                  "icon": "mdi:google-chrome"
                 },
                 {
                   "entity": "media_player.speaker_bedroom"
