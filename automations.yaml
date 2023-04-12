@@ -317,29 +317,6 @@
       - service: cover.close_cover
         target:
           entity_id: cover.garage_door
-- id: '1631706714864'
-  alias: Garage Door - Auto Open Zoey
-  description: Automatically open the garage door on arrival
-  trigger:
-  - platform: zone
-    entity_id: person.zoey
-    zone: zone.home
-    event: enter
-  condition:
-  - condition: state
-    entity_id: cover.garage_door
-    state: closed
-  - condition: state
-    entity_id: sensor.zoey_activity
-    state: Automotive
-  - condition: template
-    value_template: '{{ states.sensor.zoey_battery_state.state != ''Not Charging''
-      }}'
-  action:
-  - service: cover.open_cover
-    target:
-      entity_id: cover.garage_door
-    data: {}
 - id: '1631854800555'
   alias: Grandfather Clock
   trigger:
@@ -2339,4 +2316,50 @@
         }}'
     target:
       entity_id: media_player.living_room
+  mode: single
+- id: '1681297500579'
+  alias: Garage Door - Auto Open Zoey
+  description: Automatically open the garage door on arrival
+  trigger:
+  - platform: zone
+    entity_id: person.zoey
+    zone: zone.home
+    event: enter
+    id: arriving
+  - platform: zone
+    entity_id: person.zoey
+    zone: zone.home
+    event: leave
+    id: leaving
+  condition:
+  - condition: state
+    entity_id: binary_sensor.zoey_focus
+    state: 'on'
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: arriving
+      - condition: state
+        entity_id: cover.garage_door
+        state: closed
+      sequence:
+      - service: cover.open_cover
+        target:
+          entity_id: cover.garage_door
+        data: {}
+    - conditions:
+      - condition: trigger
+        id: leaving
+      - condition: state
+        entity_id: sensor.house_status
+        state: Vacant
+      - condition: state
+        entity_id: cover.garage_door
+        state: open
+      sequence:
+      - service: cover.close_cover
+        target:
+          entity_id: cover.garage_door
+        data: {}
   mode: single
