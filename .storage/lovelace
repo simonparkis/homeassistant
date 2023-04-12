@@ -31,72 +31,22 @@
                     },
                     {
                       "entity": "sensor.last_motion"
-                    }
-                  ]
-                },
-                {
-                  "type": "horizontal-stack",
-                  "cards": [
-                    {
-                      "type": "button",
-                      "entity": "input_boolean.night_mode",
-                      "show_name": false,
-                      "icon_height": "30px",
-                      "tap_action": {
-                        "action": "toggle"
-                      },
-                      "hold_action": {
-                        "action": "more-info"
-                      }
                     },
                     {
-                      "type": "button",
-                      "entity": "input_boolean.vacancy_mode",
-                      "show_name": false,
-                      "icon_height": "30px",
-                      "tap_action": {
-                        "action": "toggle"
-                      },
-                      "hold_action": {
-                        "action": "more-info"
+                      "type": "divider",
+                      "style": {
+                        "height": "1px",
+                        "width": "100%",
+                        "margin-left": "auto",
+                        "margin-right": "auto",
+                        "background": "#CC7C19"
                       }
                     },
-                    {
-                      "type": "button",
-                      "entity": "input_boolean.sentry_mode",
-                      "show_name": false,
-                      "icon_height": "30px",
-                      "tap_action": {
-                        "action": "toggle"
-                      },
-                      "hold_action": {
-                        "action": "more-info"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "entity": "input_boolean.guest_mode",
-                      "show_name": false,
-                      "icon_height": "30px",
-                      "tap_action": {
-                        "action": "toggle"
-                      },
-                      "hold_action": {
-                        "action": "more-info"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "entity": "input_boolean.holiday_mode",
-                      "show_name": false,
-                      "icon_height": "30px",
-                      "tap_action": {
-                        "action": "toggle"
-                      },
-                      "hold_action": {
-                        "action": "more-info"
-                      }
-                    }
+                    "input_boolean.night_mode",
+                    "input_boolean.vacancy_mode",
+                    "input_boolean.sentry_mode",
+                    "input_boolean.guest_mode",
+                    "input_boolean.holiday_mode"
                   ]
                 }
               ]
