@@ -12,47 +12,92 @@
           "badges": [],
           "cards": [
             {
-              "title": "Presence Detection",
-              "type": "entities",
-              "show_header_toggle": false,
-              "state_color": true,
-              "entities": [
+              "type": "vertical-stack",
+              "cards": [
                 {
-                  "entity": "sensor.house_status"
+                  "title": "Presence Detection",
+                  "type": "entities",
+                  "show_header_toggle": false,
+                  "state_color": true,
+                  "entities": [
+                    {
+                      "entity": "sensor.house_status"
+                    },
+                    {
+                      "entity": "person.simon"
+                    },
+                    {
+                      "entity": "person.zoey"
+                    },
+                    {
+                      "entity": "sensor.last_motion"
+                    }
+                  ]
                 },
                 {
-                  "entity": "person.simon"
-                },
-                {
-                  "entity": "person.zoey"
-                },
-                {
-                  "entity": "sensor.last_motion"
-                },
-                {
-                  "type": "divider",
-                  "style": {
-                    "height": "1px",
-                    "width": "100%",
-                    "margin-left": "auto",
-                    "margin-right": "auto",
-                    "background": "#CC7C19"
-                  }
-                },
-                {
-                  "entity": "input_boolean.night_mode"
-                },
-                {
-                  "entity": "input_boolean.vacancy_mode"
-                },
-                {
-                  "entity": "input_boolean.sentry_mode"
-                },
-                {
-                  "entity": "input_boolean.guest_mode"
-                },
-                {
-                  "entity": "input_boolean.holiday_mode"
+                  "type": "horizontal-stack",
+                  "cards": [
+                    {
+                      "type": "button",
+                      "entity": "input_boolean.night_mode",
+                      "show_name": false,
+                      "icon_height": "30px",
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "hold_action": {
+                        "action": "more-info"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "entity": "input_boolean.vacancy_mode",
+                      "show_name": false,
+                      "icon_height": "30px",
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "hold_action": {
+                        "action": "more-info"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "entity": "input_boolean.sentry_mode",
+                      "show_name": false,
+                      "icon_height": "30px",
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "hold_action": {
+                        "action": "more-info"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "entity": "input_boolean.guest_mode",
+                      "show_name": false,
+                      "icon_height": "30px",
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "hold_action": {
+                        "action": "more-info"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "entity": "input_boolean.holiday_mode",
+                      "show_name": false,
+                      "icon_height": "30px",
+                      "tap_action": {
+                        "action": "toggle"
+                      },
+                      "hold_action": {
+                        "action": "more-info"
+                      }
+                    }
+                  ]
                 }
               ]
             },
