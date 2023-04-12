@@ -361,9 +361,12 @@
   action:
   - service: media_player.volume_set
     data_template:
-      entity_id: media_player.audio_only
+      entity_id:
+      - media_player.speaker_frontroom
+      - media_player.living_room
+      - media_player.livingroom_2
       volume_level: "{% if (now().strftime(\"%H\") | int) < 8 or (now().strftime(\"%H\")
-        | int) > 18 %}\n  0.1\n{% else %}\n  0.2\n{% endif %}\n"
+        | int) > 18 %}\n  0.1\n{% else %}\n  0.35\n{% endif %}\n"
   - delay: 00:00:01
   - service: media_player.play_media
     target:
@@ -2323,9 +2326,11 @@
   description: ''
   trigger:
   - platform: state
-    entity_id:
-    - media_player.display_kitchen
+    entity_id: media_player.display_kitchen
     attribute: volume_level
+  - platform: state
+    entity_id: media_player.music
+    to: playing
   condition: []
   action:
   - service: media_player.volume_set
