@@ -2232,6 +2232,8 @@
         entity_id: all
       - service: fan.turn_off
         entity_id: all
+      - service: media_player.turn_off
+        entity_id: all
     - conditions:
       - condition: trigger
         id: mode_disabled
@@ -2316,6 +2318,18 @@
         }}'
     target:
       entity_id: media_player.living_room
+  - service: media_player.volume_set
+    data:
+      volume_level: '{{ state_attr(''media_player.display_kitchen'',''volume_level'')
+        }}'
+    target:
+      entity_id: media_player.speaker_frontroom
+  - service: media_player.volume_set
+    data:
+      volume_level: '{{ state_attr(''media_player.display_kitchen'',''volume_level'')
+        | float + 2 }}'
+    target:
+      entity_id: media_player.speaker_bedroom
   mode: single
 - id: '1681297500579'
   alias: Garage Door - Auto Open Zoey
