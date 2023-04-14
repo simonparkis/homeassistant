@@ -195,7 +195,8 @@
                   }
                 },
                 {
-                  "entity": "binary_sensor.laptop_zoey"
+                  "entity": "binary_sensor.laptop_zoey",
+                  "icon": "mdi:laptop"
                 },
                 {
                   "entity": "binary_sensor.occupancy_study"

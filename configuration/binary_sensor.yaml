@@ -168,3 +168,10 @@
       friendly_name: Television
       value_template: "{{ float(states('sensor.power_sofia')) > 10 }}"
       entity_id: sensor.power_sofia
+      
+- platform: template
+  sensors:
+    laptop_zoey:
+      friendly_name: Laptop Zoey
+      value_template: "{{ float(states('sensor.power_zoeydesk')) > 60 }}"
+      entity_id: sensor.power_zoeydesk
