@@ -70,12 +70,12 @@
   - trigger:
       - platform: numeric_state
         entity_id: sensor.power_dishwasher
-        below: 50
+        below: 20
         for: "00:03:00"
         id: low_power
       - platform: numeric_state
         entity_id: sensor.power_dishwasher
-        above: 50
+        above: 20
         id: high_power
       - platform: homeassistant
         event: start
@@ -95,9 +95,9 @@
             Running
           {% elif trigger.id == "low_power" and is_state("sensor.dishwasher", "Running") %}
             Finished
-          {% elif trigger.id == "reboot" and float(states("sensor.power_dishwasher")) > 50 %}
+          {% elif trigger.id == "reboot" and float(states("sensor.power_dishwasher")) > 20 %}
             Running
-          {% elif trigger.id == "reboot" and float(states("sensor.power_dishwasher")) < 50 %}
+          {% elif trigger.id == "reboot" and float(states("sensor.power_dishwasher")) < 20 %}
             Idle
           {% else %}
             Unknown
@@ -106,12 +106,12 @@
   - trigger:
       - platform: numeric_state
         entity_id: sensor.power_washingmachine
-        below: 50
+        below: 20
         for: "00:03:00"
         id: low_power
       - platform: numeric_state
         entity_id: sensor.power_washingmachine
-        above: 50
+        above: 20
         id: high_power
       - platform: homeassistant
         event: start
@@ -131,9 +131,9 @@
             Running
           {% elif trigger.id == "low_power" and is_state("sensor.washing_machine", "Running") %}
             Finished
-          {% elif trigger.id == "reboot" and float(states("sensor.power_washingmachine")) > 50 %}
+          {% elif trigger.id == "reboot" and float(states("sensor.power_washingmachine")) > 20 %}
             Running
-          {% elif trigger.id == "reboot" and float(states("sensor.power_washingmachine")) < 50 %}
+          {% elif trigger.id == "reboot" and float(states("sensor.power_washingmachine")) < 20 %}
             Idle
           {% else %}
             Unknown

@@ -21,7 +21,10 @@
                   "state_color": true,
                   "entities": [
                     {
-                      "entity": "sensor.house_status"
+                      "entity": "sensor.house_status",
+                      "card_mod": {
+                        "style": ":host {\n  --card-mod-icon-color:\n    {% if states('sensor.house_status') == 'Occupied' %}\n      #FFC107\n    {% else %}\n      #5DC7F5\n    {% endif %}\n"
+                      }
                     },
                     {
                       "entity": "person.simon"
@@ -145,6 +148,12 @@
                 {
                   "entity": "media_player.display_kitchen",
                   "name": "Display"
+                },
+                {
+                  "entity": "sensor.dishwasher",
+                  "card_mod": {
+                    "style": ":host {\n  --card-mod-icon-color:\n    {% if states('sensor.dishwasher') == 'Running' %}\n      #FFC107\n    {% elif states('sensor.dishwasher') == 'Finished' %}\n      #4CAF50\n    {% else %}\n      #5DC7F5\n    {% endif %}\n}\n"
+                  }
                 }
               ]
             },
@@ -221,6 +230,12 @@
                 {
                   "entity": "binary_sensor.motion_laundry",
                   "name": "Motion Sensor"
+                },
+                {
+                  "entity": "sensor.washing_machine",
+                  "card_mod": {
+                    "style": ":host {\n  --card-mod-icon-color:\n    {% if states('sensor.washing_machine') == 'Running' %}\n      #FFC107\n    {% elif states('sensor.washing_machine') == 'Finished' %}\n      #4CAF50\n    {% else %}\n      #5DC7F5\n    {% endif %}\n}\n"
+                  }
                 },
                 {
                   "type": "divider",
