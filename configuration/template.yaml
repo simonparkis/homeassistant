@@ -67,3 +67,74 @@
           room_type: "{{ trigger.id | capitalize }}"
           entity_id: "{{ trigger.entity_id }}"
 
+  - trigger:
+      - platform: numeric_state
+        entity_id: sensor.power_dishwasher
+        below: 50
+        for: "00:03:00"
+        id: low_power
+      - platform: numeric_state
+        entity_id: sensor.power_dishwasher
+        above: 50
+        id: high_power
+      - platform: homeassistant
+        event: start
+        id: reboot
+      - platform: state
+        entity_id: binary_sensor.door_dishwasher
+        to: "on"
+        id: door_opened
+    sensor:
+      - unique_id: dishwasher_state
+        name: Dishwasher
+        icon: mdi:dishwasher
+        state: |
+          {% if trigger.id == "door_opened" and is_state("sensor.dishwasher", "Finished") %}
+            Idle
+          {% elif trigger.id == "high_power" %}
+            Running
+          {% elif trigger.id == "low_power" and is_state("sensor.dishwasher", "Running") %}
+            Finished
+          {% elif trigger.id == "reboot" and float(states("sensor.power_dishwasher")) > 50 %}
+            Running
+          {% elif trigger.id == "reboot" and float(states("sensor.power_dishwasher")) < 50 %}
+            Idle
+          {% else %}
+            Unknown
+          {% endif %}
+          
+  - trigger:
+      - platform: numeric_state
+        entity_id: sensor.power_washingmachine
+        below: 50
+        for: "00:03:00"
+        id: low_power
+      - platform: numeric_state
+        entity_id: sensor.power_washingmachine
+        above: 50
+        id: high_power
+      - platform: homeassistant
+        event: start
+        id: reboot
+      - platform: state
+        entity_id: binary_sensor.door_washingmachine
+        to: "on"
+        id: door_opened
+    sensor:
+      - unique_id: washing_machine_state
+        name: Washing Machine
+        icon: mdi:washing-machine
+        state: |
+          {% if trigger.id == "door_opened" and is_state("sensor.washing_machine", "Finished") %}
+            Idle
+          {% elif trigger.id == "high_power" %}
+            Running
+          {% elif trigger.id == "low_power" and is_state("sensor.washing_machine", "Running") %}
+            Finished
+          {% elif trigger.id == "reboot" and float(states("sensor.power_washingmachine")) > 50 %}
+            Running
+          {% elif trigger.id == "reboot" and float(states("sensor.power_washingmachine")) < 50 %}
+            Idle
+          {% else %}
+            Unknown
+          {% endif %}
