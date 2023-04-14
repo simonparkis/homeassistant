@@ -30,6 +30,22 @@
   start: "{{ now().replace(month=1, day=1, hour=0, minute=0, second=0, microsecond=0 ) }}"
   end: "{{ now().replace(month=12, day=31, hour=23, minute=59, second=59, microsecond=0 ) }}"
 
+- platform: history_stats
+  name: Month Dishwasher Loads
+  entity_id: sensor.dishwasher
+  state: "Running"
+  type: count
+  start: "{{ now().replace(day=1, hour=0, minute=0, second=0, microsecond=0 ) }}"
+  end: "{{ now() }}"
+
+- platform: history_stats
+  name: Month Laundry Loads
+  entity_id: sensor.washing_machine
+  state: "Running"
+  type: count
+  start: "{{ now().replace(day=1, hour=0, minute=0, second=0, microsecond=0 ) }}"
+  end: "{{ now() }}"
+  
 - platform: systemmonitor
   resources:
     - type: last_boot

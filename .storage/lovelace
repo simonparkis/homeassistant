@@ -151,6 +151,8 @@
                 },
                 {
                   "entity": "sensor.dishwasher",
+                  "type": "custom:secondaryinfo-entity-row",
+                  "secondary_info": "[[ sensor.month_dishwasher_loads ]] [[ if(sensor.month_dishwasher_loads > 1, 'loads', 'load') ]] this month",
                   "card_mod": {
                     "style": ":host {\n  --card-mod-icon-color:\n    {% if states('sensor.dishwasher') == 'Running' %}\n      #FFC107\n    {% elif states('sensor.dishwasher') == 'Finished' %}\n      #4CAF50\n    {% else %}\n      #5DC7F5\n    {% endif %}\n}\n"
                   }
@@ -233,6 +235,8 @@
                 },
                 {
                   "entity": "sensor.washing_machine",
+                  "type": "custom:secondaryinfo-entity-row",
+                  "secondary_info": "[[ sensor.month_laundry_loads ]] [[ if(sensor.month_laundry_loads > 1, \"loads\", \"load\") ]] this month",
                   "card_mod": {
                     "style": ":host {\n  --card-mod-icon-color:\n    {% if states('sensor.washing_machine') == 'Running' %}\n      #FFC107\n    {% elif states('sensor.washing_machine') == 'Finished' %}\n      #4CAF50\n    {% else %}\n      #5DC7F5\n    {% endif %}\n}\n"
                   }

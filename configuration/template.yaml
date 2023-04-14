@@ -77,13 +77,13 @@
         entity_id: sensor.power_dishwasher
         above: 20
         id: high_power
-      - platform: homeassistant
-        event: start
-        id: reboot
       - platform: state
         entity_id: binary_sensor.door_dishwasher
         to: "on"
         id: door_opened
+      - platform: state
+        entity_id: switch.dishwasher
+        id: switched
     sensor:
       - unique_id: dishwasher_state
         name: Dishwasher
@@ -95,12 +95,10 @@
             Running
           {% elif trigger.id == "low_power" and is_state("sensor.dishwasher", "Running") %}
             Finished
-          {% elif trigger.id == "reboot" and float(states("sensor.power_dishwasher")) > 20 %}
-            Running
-          {% elif trigger.id == "reboot" and float(states("sensor.power_dishwasher")) < 20 %}
+          {% elif  trigger.id == "switched" and is_state("switch.dishwasher", "off") %}
+            Off
+          {% elif  trigger.id == "switched" and is_state("switch.dishwasher", "on") %}
             Idle
-          {% else %}
-            Unknown
           {% endif %}
           
   - trigger:
@@ -113,13 +111,13 @@
         entity_id: sensor.power_washingmachine
         above: 20
         id: high_power
-      - platform: homeassistant
-        event: start
-        id: reboot
       - platform: state
         entity_id: binary_sensor.door_washingmachine
         to: "on"
         id: door_opened
+      - platform: state
+        entity_id: switch.washing_machine
+        id: switched
     sensor:
       - unique_id: washing_machine_state
         name: Washing Machine
@@ -131,10 +129,8 @@
             Running
           {% elif trigger.id == "low_power" and is_state("sensor.washing_machine", "Running") %}
             Finished
-          {% elif trigger.id == "reboot" and float(states("sensor.power_washingmachine")) > 20 %}
-            Running
-          {% elif trigger.id == "reboot" and float(states("sensor.power_washingmachine")) < 20 %}
+          {% elif  trigger.id == "switched" and is_state("switch.washing_machine", "off") %}
+            Off
+          {% elif  trigger.id == "switched" and is_state("switch.washing_machine", "on") %}
             Idle
-          {% else %}
-            Unknown
           {% endif %}

@@ -27,4 +27,32 @@ energy_saver:
     target:
       entity_id: "{% if mode == \"vacant\" %}\n  switch.energy_vacant\n{% elif mode
         == \"overnight\" %}\n  switch.energy_overnight\n{% endif %}"
+  - if:
+    - condition: template
+      value_template: '{{ not is_state(''sensor.dishwasher'', ''Running'') and command
+        == ''enable'' }}'
+    then:
+    - service: switch.turn_off
+      target:
+        entity_id: switch.dishwasher
+      data: {}
+  - if:
+    - condition: template
+      value_template: '{{ not is_state(''sensor.washing_machine'', ''Running'') and
+        command == ''enable'' }}'
+    then:
+    - service: switch.turn_off
+      target:
+        entity_id: switch.washing_machine
+      data: {}
+  - if:
+    - condition: template
+      value_template: '{{ command == ''disable'' }}'
+    then:
+    - service: switch.turn_on
+      target:
+        entity_id:
+        - switch.dishwasher
+        - switch.washing_machine
+      data: {}
   mode: single
