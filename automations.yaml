@@ -1587,23 +1587,21 @@
   mode: queued
   max_exceeded: silent
 - id: '1663132676550'
-  alias: Alarm - Auto Arm/Disarm Vacation Mode
+  alias: Alarm - Auto Arm/Disarm Sentry Mode
   description: ''
   trigger:
   - platform: state
     entity_id:
-    - input_boolean.vacation_mode
+    - input_boolean.sentry_mode
     from: 'off'
     to: 'on'
     id: arm
-    alias: Leave for Vacation
   - platform: state
     entity_id:
-    - input_boolean.vacation_mode
+    - input_boolean.sentry_mode
     from: 'on'
     to: 'off'
     id: disarm
-    alias: Return from Vacation
   condition: []
   action:
   - choose:
