@@ -33,7 +33,7 @@
 - platform: history_stats
   name: Month Dishwasher Loads
   entity_id: sensor.dishwasher
-  state: "Running"
+  state: "Finished"
   type: count
   start: "{{ now().replace(day=1, hour=0, minute=0, second=0, microsecond=0 ) }}"
   end: "{{ now() }}"
@@ -41,7 +41,7 @@
 - platform: history_stats
   name: Month Laundry Loads
   entity_id: sensor.washing_machine
-  state: "Running"
+  state: "Finished"
   type: count
   start: "{{ now().replace(day=1, hour=0, minute=0, second=0, microsecond=0 ) }}"
   end: "{{ now() }}"

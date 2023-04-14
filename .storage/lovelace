@@ -61,9 +61,11 @@
               "state_color": true,
               "entities": [
                 {
-                  "entity": "sensor.alarm_status",
+                  "entity": "sensor.alarm_armstatus",
                   "name": "Alarm Status",
-                  "icon": "mdi:alarm-bell"
+                  "card_mod": {
+                    "style": ":host {\n  --card-mod-icon-color:\n    {% if states('sensor.alarm_armstatus') == 'Armed' %}\n      #FFC107\n    {% elif states('sensor.alarm_armstatus') == 'Triggered' %}\n      #D22B2B\n    {% else %}\n      #5DC7F5\n    {% endif %}\n}\n"
+                  }
                 },
                 {
                   "entity": "binary_sensor.door_front"
