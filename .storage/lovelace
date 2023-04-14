@@ -149,7 +149,9 @@
               "entities": [
                 {
                   "entity": "media_player.display_kitchen",
-                  "name": "Display"
+                  "name": "Display",
+                  "icon": "mdi:youtube-tv",
+                  "secondary_info": "none"
                 },
                 {
                   "entity": "sensor.dishwasher",
@@ -168,7 +170,29 @@
               "state_color": true,
               "entities": [
                 {
-                  "entity": "sensor.voron_state"
+                  "type": "conditional",
+                  "conditions": [
+                    {
+                      "entity": "sensor.voron_state",
+                      "state": "Printing"
+                    }
+                  ],
+                  "row": {
+                    "entity": "sensor.voron_state"
+                  }
+                },
+                {
+                  "type": "conditional",
+                  "conditions": [
+                    {
+                      "entity": "sensor.voron_state",
+                      "state_not": "Printing"
+                    }
+                  ],
+                  "row": {
+                    "entity": "switch.printer_3d",
+                    "icon": "mdi:printer-3d-nozzle"
+                  }
                 },
                 {
                   "entity": "binary_sensor.laptop_zoey"
@@ -331,9 +355,18 @@
                   "entity": "input_boolean.enable_heater_master"
                 },
                 {
-                  "entity": "automation.auto_fan_master_bedroom",
-                  "name": "Auto Fan",
-                  "icon": "mdi:fan"
+                  "type": "conditional",
+                  "conditions": [
+                    {
+                      "entity": "input_boolean.fans",
+                      "state": "on"
+                    }
+                  ],
+                  "row": {
+                    "entity": "automation.auto_fan_master_bedroom",
+                    "name": "Auto Fan",
+                    "icon": "mdi:fan"
+                  }
                 }
               ]
             },
@@ -343,6 +376,10 @@
               "show_header_toggle": false,
               "state_color": true,
               "entities": [
+                {
+                  "entity": "binary_sensor.tv_sofia",
+                  "icon": "mdi:television"
+                },
                 {
                   "entity": "climate.sofia_bedroom",
                   "icon": "mdi:thermometer",
@@ -394,9 +431,18 @@
                   "entity": "input_boolean.enable_heater_sofia"
                 },
                 {
-                  "entity": "automation.fan_auto_fan_sofia",
-                  "name": "Auto Fan",
-                  "icon": "mdi:fan"
+                  "type": "conditional",
+                  "conditions": [
+                    {
+                      "entity": "input_boolean.fans",
+                      "state": "on"
+                    }
+                  ],
+                  "row": {
+                    "entity": "automation.fan_auto_fan_sofia",
+                    "name": "Auto Fan",
+                    "icon": "mdi:fan"
+                  }
                 }
               ]
             },
@@ -457,9 +503,18 @@
                   "entity": "input_boolean.enable_heater_joseph"
                 },
                 {
-                  "entity": "automation.fan_auto_fan_joseph",
-                  "name": "Auto Fan",
-                  "icon": "mdi:fan"
+                  "type": "conditional",
+                  "conditions": [
+                    {
+                      "entity": "input_boolean.fans",
+                      "state": "on"
+                    }
+                  ],
+                  "row": {
+                    "entity": "automation.fan_auto_fan_joseph",
+                    "name": "Auto Fan",
+                    "icon": "mdi:fan"
+                  }
                 }
               ]
             },
@@ -520,9 +575,18 @@
                   "entity": "input_boolean.enable_heater_theo"
                 },
                 {
-                  "entity": "automation.fan_auto_fan_theo",
-                  "name": "Auto Fan",
-                  "icon": "mdi:fan"
+                  "type": "conditional",
+                  "conditions": [
+                    {
+                      "entity": "input_boolean.fans",
+                      "state": "on"
+                    }
+                  ],
+                  "row": {
+                    "entity": "automation.fan_auto_fan_theo",
+                    "name": "Auto Fan",
+                    "icon": "mdi:fan"
+                  }
                 }
               ]
             }

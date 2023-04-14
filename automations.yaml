@@ -2386,14 +2386,18 @@
     - sensor.dishwasher
     - sensor.washing_machine
     to: Finished
+  - platform: state
+    entity_id: binary_sensor.tv_sofia
+    to: 'off'
   condition:
-  - condition: state
-    entity_id: sensor.house_status
-    state: Vacant
+  - condition: template
+    value_template: '{{ is_state(''input_boolean.vacancy_mode'', ''on'') or is_state(''input_boolean.night_mode'',
+      ''on'') }}'
   action:
   - service: switch.turn_off
     target:
       entity_id: "{% if trigger.entity_id == \"sensor.dishwasher\" %}\n  switch.dishwasher\n{%
         elif trigger.entity_id == \"sensor.washing_machine\" %}\n  switch.washing_machine\n{%
+        elif trigger.entity_id == \"binary_sensor.tv_sofia\" %}\n  switch.plug_sofia\n{%
         endif %}\n"
   mode: single
