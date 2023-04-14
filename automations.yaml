@@ -2378,7 +2378,7 @@
         data: {}
   mode: single
 - id: '1681447159003'
-  alias: Appliance Control - House Vacant
+  alias: Appliance Control - Night or Vacancy Mode
   description: Turn Off Appliances once cycle completed and house vacant
   trigger:
   - platform: state
@@ -2389,6 +2389,10 @@
   - platform: state
     entity_id: binary_sensor.tv_sofia
     to: 'off'
+  - platform: state
+    entity_id: sensor.voron_state
+    to: Complete
+    for: 00:30:00
   condition:
   - condition: template
     value_template: '{{ is_state(''input_boolean.vacancy_mode'', ''on'') or is_state(''input_boolean.night_mode'',
@@ -2399,5 +2403,6 @@
       entity_id: "{% if trigger.entity_id == \"sensor.dishwasher\" %}\n  switch.dishwasher\n{%
         elif trigger.entity_id == \"sensor.washing_machine\" %}\n  switch.washing_machine\n{%
         elif trigger.entity_id == \"binary_sensor.tv_sofia\" %}\n  switch.plug_sofia\n{%
+        elif trigger.entity_id == \"sensor.voron_state\" %}\n  switch.printer_3d\n{%
         endif %}\n"
   mode: single
