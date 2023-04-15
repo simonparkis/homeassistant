@@ -65,7 +65,7 @@
         state: "{{ area_name(trigger.entity_id) }}"
         attributes:
           room_type: "{{ trigger.id | capitalize }}"
-          entity_id: "{{ trigger.entity_id }}"
+          trigger_entity: "{{ trigger.entity_id }}"
 
   - trigger:
       - platform: numeric_state

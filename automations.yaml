@@ -2113,6 +2113,10 @@
     from: 'on'
     to: 'off'
     id: night_mode_disabled
+  condition:
+  - condition: state
+    entity_id: input_boolean.vacancy_mode
+    state: 'off'
   action:
   - choose:
     - conditions:
