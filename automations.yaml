@@ -955,6 +955,10 @@
     entity_id: sensor.house_status
     to: Occupied
     id: house_occupied
+  - platform: state
+    entity_id: sensor.alarm_armstatus
+    to: Triggered
+    id: alarm_triggered
   - platform: template
     value_template: "{{ states.binary_sensor | selectattr('attributes.device_class',
       'defined') | selectattr(\"attributes.device_class\", \"eq\",\n    \"motion\")
@@ -1034,9 +1038,7 @@
     - conditions:
       - condition: trigger
         id:
-        - motion
-        - door
-        - window
+        - alarm_triggered
       - condition: state
         entity_id: input_boolean.sentry_mode
         state: 'on'
