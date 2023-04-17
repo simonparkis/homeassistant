@@ -86,9 +86,9 @@
         name: Dishwasher
         icon: mdi:dishwasher
         state: |
-          {% if trigger.id == "door_opened" %}
+          {% if trigger.id == "door_opened" and is_state('sensor.dishwasher', 'Finished') %}
             Idle
-          {% elif trigger.id == "cycle_start" %}
+          {% elif trigger.id == "cycle_start" and is_state('sensor.dishwasher', 'Idle') %}
             Running
           {% elif trigger.id == "cycle_end" and is_state("sensor.dishwasher", "Running") %}
             Finished
@@ -107,11 +107,11 @@
   - trigger:
       - platform: numeric_state
         entity_id: sensor.power_washingmachine
-        above: 10
+        above: 20
         id: cycle_start
       - platform: numeric_state
         entity_id: sensor.power_washingmachine
-        below: 10
+        below: 20
         for: "00:01:00"
         id: cycle_end
       - platform: state
@@ -126,9 +126,9 @@
         name: Washing Machine
         icon: mdi:washing-machine
         state: |
-          {% if trigger.id == "door_opened" %}
+          {% if trigger.id == "door_opened" and is_state('sensor.washing_machine', 'Finished') %}
             Idle
-          {% elif trigger.id == "cycle_start" %}
+          {% elif trigger.id == "cycle_start" and is_state('sensor.washing_machine', 'Idle') %}
             Running
           {% elif trigger.id == "cycle_end" and is_state("sensor.washing_machine", "Running") %}
             Finished
