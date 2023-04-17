@@ -65,4 +65,6 @@ energy_saver:
         - switch.washing_machine
         - switch.plug_sofia
       data: {}
+  - delay: 00:00:08
+  - service: shell_command.sleep_displays
   mode: single

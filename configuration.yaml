@@ -4,8 +4,8 @@ homeassistant:
   longitude: !secret longitude
   elevation: !secret elevation
   country: AU
-  external_url: https://simonparkis.duckdns.org
-  internal_url: http://192.168.1.110:8123
+  external_url: !secret external_URL
+  internal_url: !secret internal_URL
   unit_system: metric
   time_zone: Australia/Sydney
   customize: !include ./customize/customize.yaml
@@ -18,6 +18,8 @@ zha:
     network:
       channel: 25
 
+shell_command:
+  sleep_displays: !secret sleep_displays_command
 
 zone:
   - name: Home

@@ -2130,9 +2130,6 @@
           }}'
       - condition: state
         entity_id:
-        - binary_sensor.tv_livingroom
-        - binary_sensor.tv_frontroom
-        - group.computers
         - binary_sensor.occupancy_frontroom
         - binary_sensor.occupancy_livingroom
         state: 'off'

@@ -23,7 +23,7 @@
                     {
                       "entity": "sensor.house_status",
                       "card_mod": {
-                        "style": ":host {\n    {% if states('sensor.house_status') == 'Occupied' %}\n      --card-mod-icon-color: #FFC107\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n"
+                        "style": ":host {\n    {% if states('sensor.house_status') == 'Occupied' %}\n      --card-mod-icon-color: #FFC107\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
                       }
                     },
                     {
@@ -167,7 +167,7 @@
                 {
                   "entity": "sensor.dishwasher",
                   "type": "custom:secondaryinfo-entity-row",
-                  "secondary_info": "[[ counter.loads_dishes ]] [[ if(counter.loads_dishes > 1, 'loads', 'load') ]] this month",
+                  "secondary_info": "[[ counter.loads_dishes ]] [[ if(counter.loads_dishes == 0, \"loads\", \"\") ]][[ if(counter.loads_dishes == 1, \"load\", \"\") ]][[ if(counter.loads_dishes > 1, \"loads\", \"\") ]] this month",
                   "card_mod": {
                     "style": ":host {\n    {% if states('sensor.dishwasher') == 'Running' %}\n      --card-mod-icon-color: #FFC107\n    {% elif states('sensor.dishwasher') == 'Finished' %}\n      --card-mod-icon-color: #4CAF50\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
                   }
@@ -270,7 +270,7 @@
                 {
                   "entity": "sensor.washing_machine",
                   "type": "custom:secondaryinfo-entity-row",
-                  "secondary_info": "[[ counter.loads_laundry ]] [[ if(counter.loads_laundry > 1, \"loads\", \"load\") ]] this month",
+                  "secondary_info": "[[ counter.loads_laundry ]] [[ if(counter.loads_laundry == 0, \"loads\", \"\") ]][[ if(counter.loads_laundry == 1, \"load\", \"\") ]][[ if(counter.loads_laundry > 1, \"loads\", \"\") ]] this month",
                   "card_mod": {
                     "style": ":host {\n    {% if states('sensor.washing_machine') == 'Running' %}\n      --card-mod-icon-color: #FFC107\n    {% elif states('sensor.washing_machine') == 'Finished' %}\n      --card-mod-icon-color: #4CAF50\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
                   }

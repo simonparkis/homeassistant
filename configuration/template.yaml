@@ -88,7 +88,7 @@
         state: |
           {% if trigger.id == "door_opened" and is_state('sensor.dishwasher', 'Finished') %}
             Idle
-          {% elif trigger.id == "cycle_start" and is_state('sensor.dishwasher', 'Idle') %}
+          {% elif trigger.id == "cycle_start" %}
             Running
           {% elif trigger.id == "cycle_end" and is_state("sensor.dishwasher", "Running") %}
             Finished
@@ -96,8 +96,6 @@
             Off
           {% elif  trigger.id == "switched" and is_state("switch.dishwasher", "on") %}
             {{ state_attr('sensor.dishwasher', 'last_state') }}
-          {% else %}
-            Unknown
           {% endif %}
         attributes:
           last_state: |
@@ -128,7 +126,7 @@
         state: |
           {% if trigger.id == "door_opened" and is_state('sensor.washing_machine', 'Finished') %}
             Idle
-          {% elif trigger.id == "cycle_start" and is_state('sensor.washing_machine', 'Idle') %}
+          {% elif trigger.id == "cycle_start" %}
             Running
           {% elif trigger.id == "cycle_end" and is_state("sensor.washing_machine", "Running") %}
             Finished
@@ -136,8 +134,6 @@
             Off
           {% elif  trigger.id == "switched" and is_state("switch.washing_machine", "on") %}
             {{ state_attr('sensor.washing_machine', 'last_state') }}
-          {% else %}
-            Unknown
           {% endif %}
         attributes:
           last_state: |
