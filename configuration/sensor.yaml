@@ -17,6 +17,7 @@
 - platform: min_max
   type: mean
   name: average temp
+  unique_id: inside_temp
   entity_ids:
     - sensor.temp_master
     - sensor.temp_sofia

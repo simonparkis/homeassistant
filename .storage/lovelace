@@ -64,7 +64,7 @@
                   "entity": "sensor.alarm_armstatus",
                   "name": "Alarm Status",
                   "card_mod": {
-                    "style": ":host {\n    {% if states('sensor.alarm_armstatus') == 'Armed' %}\n      --card-mod-icon-color: #FFC107\n    {% elif states('sensor.alarm_armstatus') == 'Triggered' %}\n      --card-mod-icon-color: #D22B2B\n    {% elif states('sensor.alarm_armstatus') == 'Disarmed' %}\n      --card-mod-icon-color: #4CAF50\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
+                    "style": ":host {\n    {% if states('sensor.alarm_armstatus') == 'Armed' %}\n      --card-mod-icon-color: #FFC107\n    {% elif states('sensor.alarm_armstatus') == 'Triggered' %}\n      --card-mod-icon-color: #9F2B00\n    {% elif states('sensor.alarm_armstatus') == 'Disarmed' %}\n      --card-mod-icon-color: #4CAF50\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
                   }
                 },
                 {
@@ -82,14 +82,15 @@
                   "entity": "sensor.temp_outside",
                   "name": "Outside Temperature",
                   "card_mod": {
-                    "style": ":host {\n    {% if int(states('sensor.temp_outside')) > 30 %}\n      --card-mod-icon-color: #D22B2B\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n"
+                    "style": ":host {\n    {% if float(states('sensor.temp_outside')) > 30 %}\n      --card-mod-icon-color: #9F2B00\n    {% elif float(states('sensor.temp_outside')) > 25 %}\n      --card-mod-icon-color: #D37506\n    {% elif float(states('sensor.temp_outside')) < 10 %}\n      --card-mod-icon-color: #FFFFFF\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n"
                   }
                 },
                 {
                   "entity": "sensor.average_temp",
+                  "icon": "mdi:home-thermometer-outline",
                   "name": "Inside Temperature",
                   "card_mod": {
-                    "style": ":host {\n    {% if int(states('sensor.average_temp')) > 30 %}\n      --card-mod-icon-color: #D22B2B\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %} \n"
+                    "style": ":host {\n    {% if float(states('sensor.average_temp')) > 30 %}\n      --card-mod-icon-color: #9F2B00\n    {% elif float(states('sensor.average_temp')) > 25 %}\n      --card-mod-icon-color: #D37506\n    {% elif float(states('sensor.average_temp')) < 10 %}\n      --card-mod-icon-color: #FFFFFF\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %} \n"
                   }
                 },
                 {
@@ -205,8 +206,7 @@
                   }
                 },
                 {
-                  "entity": "binary_sensor.laptop_zoey",
-                  "icon": "mdi:laptop"
+                  "entity": "binary_sensor.computer_zoey"
                 },
                 {
                   "entity": "binary_sensor.occupancy_study"
@@ -229,10 +229,7 @@
                   "entity": "media_player.speaker_frontroom"
                 },
                 {
-                  "entity": "binary_sensor.desktop_simon"
-                },
-                {
-                  "entity": "binary_sensor.laptop_simon"
+                  "entity": "binary_sensor.computer_simon"
                 },
                 {
                   "entity": "light.lamp_frontroom"
