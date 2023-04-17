@@ -32,9 +32,6 @@
           {% else %}
             0
           {% endif %}
-      - name: Energy Cost Savings
-        state: >
-          {{ "$%.2f" | format((float(states("sensor.timeoff_livingroom") | default(0)) * 8.7 / 1000 * 0.28 + float(states("sensor.timeoff_frontroom") | default(0)) * 4.1 / 1000 * 0.28 + float(states("sensor.timeoff_zoeydesk" | default(0))) * 7.0 / 1000 * 0.28))}}
 
   - trigger:
       - platform: state
@@ -70,13 +67,13 @@
   - trigger:
       - platform: numeric_state
         entity_id: sensor.power_dishwasher
-        below: 20
-        for: "00:03:00"
-        id: low_power
+        above: 20
+        id: cycle_start
       - platform: numeric_state
         entity_id: sensor.power_dishwasher
-        above: 20
-        id: high_power
+        below: 20
+        for: "00:03:00"
+        id: cycle_end
       - platform: state
         entity_id: binary_sensor.door_dishwasher
         to: "on"
@@ -91,26 +88,30 @@
         state: |
           {% if trigger.id == "door_opened" and is_state("sensor.dishwasher", "Finished") %}
             Idle
-          {% elif trigger.id == "high_power" %}
+          {% elif trigger.id == "cycle_start" %}
             Running
-          {% elif trigger.id == "low_power" and is_state("sensor.dishwasher", "Running") %}
+          {% elif trigger.id == "cycle_end" and is_state("sensor.dishwasher", "Running") %}
             Finished
           {% elif  trigger.id == "switched" and is_state("switch.dishwasher", "off") %}
             Off
           {% elif  trigger.id == "switched" and is_state("switch.dishwasher", "on") %}
-            Idle
+            {{ state_attr('sensor.dishwasher', 'last_state') }}
           {% endif %}
+        attributes:
+          last_state: |
+            {{ states('sensor.dishwasher') }}
+
           
   - trigger:
       - platform: numeric_state
         entity_id: sensor.power_washingmachine
-        below: 20
-        for: "00:03:00"
-        id: low_power
+        above: 20
+        id: cycle_start
       - platform: numeric_state
         entity_id: sensor.power_washingmachine
-        above: 20
-        id: high_power
+        below: 20
+        for: "00:03:00"
+        id: cycle_end
       - platform: state
         entity_id: binary_sensor.door_washingmachine
         to: "on"
@@ -125,12 +126,15 @@
         state: |
           {% if trigger.id == "door_opened" and is_state("sensor.washing_machine", "Finished") %}
             Idle
-          {% elif trigger.id == "high_power" %}
+          {% elif trigger.id == "cycle_start" %}
             Running
-          {% elif trigger.id == "low_power" and is_state("sensor.washing_machine", "Running") %}
+          {% elif trigger.id == "cycle_end" and is_state("sensor.washing_machine", "Running") %}
             Finished
           {% elif  trigger.id == "switched" and is_state("switch.washing_machine", "off") %}
             Off
           {% elif  trigger.id == "switched" and is_state("switch.washing_machine", "on") %}
-            Idle
+            {{ state_attr('sensor.washing_machine', 'last_state') }}
           {% endif %}
+        attributes:
+          last_state: |
+            {{ states('sensor.washing_machine') }}

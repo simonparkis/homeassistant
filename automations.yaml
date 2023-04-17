@@ -2411,3 +2411,48 @@
         elif trigger.entity_id == \"sensor.voron_state\" %}\n  switch.printer_3d\n{%
         endif %}\n"
   mode: single
+- id: '1681700556753'
+  alias: Track Dishes and Laundry
+  description: Tracks number of loads of laundry and dishes each month
+  trigger:
+  - platform: state
+    entity_id: sensor.dishwasher
+    from: Running
+    to: Finished
+    id: increment_dishes
+  - platform: state
+    entity_id: sensor.washing_machine
+    from: Running
+    to: Finished
+    id: increment_laundry
+  - platform: time
+    at: 00:00:01
+    id: reset_counter
+  action:
+    choose:
+    - conditions:
+      - condition: trigger
+        id: increment_dishes
+      sequence:
+      - service: counter.increment
+        target:
+          entity_id: counter.loads_dishes
+    - conditions:
+      - condition: trigger
+        id: increment_laundry
+      sequence:
+      - service: counter.increment
+        target:
+          entity_id: counter.loads_laundry
+    - conditions:
+      - condition: trigger
+        id: reset_counter
+      - condition: template
+        value_template: '{{ now().day == 1 }}'
+      sequence:
+      - service: counter.reset
+        target:
+          entity_id:
+          - counter.loads_dishes
+          - counter.loads_laundry
+  mode: single

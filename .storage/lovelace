@@ -64,7 +64,7 @@
                   "entity": "sensor.alarm_armstatus",
                   "name": "Alarm Status",
                   "card_mod": {
-                    "style": ":host {\n  --card-mod-icon-color:\n    {% if states('sensor.alarm_armstatus') == 'Armed' %}\n      #FFC107\n    {% elif states('sensor.alarm_armstatus') == 'Triggered' %}\n      #D22B2B\n    {% else %}\n      #5DC7F5\n    {% endif %}\n}\n"
+                    "style": ":host {\n  --card-mod-icon-color:\n    {% if states('sensor.alarm_armstatus') == 'Armed' %}\n      #FFC107\n    {% elif states('sensor.alarm_armstatus') == 'Triggered' %}\n      #D22B2B\n    {% elif states('sensor.alarm_armstatus') == 'Disarmed' %}\n      #4CAF50\n    {% else %}\n      #5DC7F5\n    {% endif %}\n}\n"
                   }
                 },
                 {
@@ -156,7 +156,7 @@
                 {
                   "entity": "sensor.dishwasher",
                   "type": "custom:secondaryinfo-entity-row",
-                  "secondary_info": "[[ sensor.month_dishwasher_loads ]] [[ if(sensor.month_dishwasher_loads > 1, 'loads', 'load') ]] this month",
+                  "secondary_info": "[[ counter.loads_dishes ]] [[ if(counter.loads_dishes > 1, 'loads', 'load') ]] this month",
                   "card_mod": {
                     "style": ":host {\n  --card-mod-icon-color:\n    {% if states('sensor.dishwasher') == 'Running' %}\n      #FFC107\n    {% elif states('sensor.dishwasher') == 'Finished' %}\n      #4CAF50\n    {% else %}\n      #5DC7F5\n    {% endif %}\n}\n"
                   }
@@ -263,7 +263,7 @@
                 {
                   "entity": "sensor.washing_machine",
                   "type": "custom:secondaryinfo-entity-row",
-                  "secondary_info": "[[ sensor.month_laundry_loads ]] [[ if(sensor.month_laundry_loads > 1, \"loads\", \"load\") ]] this month",
+                  "secondary_info": "[[ counter.loads_laundry ]] [[ if(counter.loads_laundry > 1, \"loads\", \"load\") ]] this month",
                   "card_mod": {
                     "style": ":host {\n  --card-mod-icon-color:\n    {% if states('sensor.washing_machine') == 'Running' %}\n      #FFC107\n    {% elif states('sensor.washing_machine') == 'Finished' %}\n      #4CAF50\n    {% else %}\n      #5DC7F5\n    {% endif %}\n}\n"
                   }
@@ -633,21 +633,6 @@
                 {
                   "entity": "sensor.disk_free",
                   "name": "Free Space"
-                },
-                {
-                  "type": "divider",
-                  "style": {
-                    "height": "1px",
-                    "width": "100%",
-                    "margin-left": "auto",
-                    "margin-right": "auto",
-                    "background": "#CC7C19"
-                  }
-                },
-                {
-                  "entity": "sensor.energy_cost_savings",
-                  "name": "Energy Cost Savings",
-                  "icon": "mdi:leaf"
                 }
               ]
             },
