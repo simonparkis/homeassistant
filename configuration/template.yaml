@@ -71,8 +71,8 @@
         id: cycle_start
       - platform: numeric_state
         entity_id: sensor.power_dishwasher
-        below: 20
-        for: "00:03:00"
+        below: 5
+        for: "00:01:00"
         id: cycle_end
       - platform: state
         entity_id: binary_sensor.door_dishwasher
@@ -86,7 +86,7 @@
         name: Dishwasher
         icon: mdi:dishwasher
         state: |
-          {% if trigger.id == "door_opened" and is_state("sensor.dishwasher", "Finished") %}
+          {% if trigger.id == "door_opened" %}
             Idle
           {% elif trigger.id == "cycle_start" %}
             Running
@@ -96,6 +96,8 @@
             Off
           {% elif  trigger.id == "switched" and is_state("switch.dishwasher", "on") %}
             {{ state_attr('sensor.dishwasher', 'last_state') }}
+          {% else %}
+            Unknown
           {% endif %}
         attributes:
           last_state: |
@@ -105,12 +107,12 @@
   - trigger:
       - platform: numeric_state
         entity_id: sensor.power_washingmachine
-        above: 20
+        above: 10
         id: cycle_start
       - platform: numeric_state
         entity_id: sensor.power_washingmachine
-        below: 20
-        for: "00:03:00"
+        below: 10
+        for: "00:01:00"
         id: cycle_end
       - platform: state
         entity_id: binary_sensor.door_washingmachine
@@ -124,7 +126,7 @@
         name: Washing Machine
         icon: mdi:washing-machine
         state: |
-          {% if trigger.id == "door_opened" and is_state("sensor.washing_machine", "Finished") %}
+          {% if trigger.id == "door_opened" %}
             Idle
           {% elif trigger.id == "cycle_start" %}
             Running
@@ -134,6 +136,8 @@
             Off
           {% elif  trigger.id == "switched" and is_state("switch.washing_machine", "on") %}
             {{ state_attr('sensor.washing_machine', 'last_state') }}
+          {% else %}
+            Unknown
           {% endif %}
         attributes:
           last_state: |

@@ -23,7 +23,7 @@
                     {
                       "entity": "sensor.house_status",
                       "card_mod": {
-                        "style": ":host {\n  --card-mod-icon-color:\n    {% if states('sensor.house_status') == 'Occupied' %}\n      #FFC107\n    {% else %}\n      #5DC7F5\n    {% endif %}\n"
+                        "style": ":host {\n    {% if states('sensor.house_status') == 'Occupied' %}\n      --card-mod-icon-color: #FFC107\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n"
                       }
                     },
                     {
@@ -64,7 +64,7 @@
                   "entity": "sensor.alarm_armstatus",
                   "name": "Alarm Status",
                   "card_mod": {
-                    "style": ":host {\n  --card-mod-icon-color:\n    {% if states('sensor.alarm_armstatus') == 'Armed' %}\n      #FFC107\n    {% elif states('sensor.alarm_armstatus') == 'Triggered' %}\n      #D22B2B\n    {% elif states('sensor.alarm_armstatus') == 'Disarmed' %}\n      #4CAF50\n    {% else %}\n      #5DC7F5\n    {% endif %}\n}\n"
+                    "style": ":host {\n    {% if states('sensor.alarm_armstatus') == 'Armed' %}\n      --card-mod-icon-color: #FFC107\n    {% elif states('sensor.alarm_armstatus') == 'Triggered' %}\n      --card-mod-icon-color: #D22B2B\n    {% elif states('sensor.alarm_armstatus') == 'Disarmed' %}\n      --card-mod-icon-color: #4CAF50\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
                   }
                 },
                 {
@@ -80,7 +80,17 @@
                 },
                 {
                   "entity": "sensor.temp_outside",
-                  "name": "Outside Temperature"
+                  "name": "Outside Temperature",
+                  "card_mod": {
+                    "style": ":host {\n    {% if int(states('sensor.temp_outside')) > 30 %}\n      --card-mod-icon-color: #D22B2B\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n"
+                  }
+                },
+                {
+                  "entity": "sensor.average_temp",
+                  "name": "Inside Temperature",
+                  "card_mod": {
+                    "style": ":host {\n    {% if int(states('sensor.average_temp')) > 30 %}\n      --card-mod-icon-color: #D22B2B\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %} \n"
+                  }
                 },
                 {
                   "type": "divider",
@@ -158,7 +168,7 @@
                   "type": "custom:secondaryinfo-entity-row",
                   "secondary_info": "[[ counter.loads_dishes ]] [[ if(counter.loads_dishes > 1, 'loads', 'load') ]] this month",
                   "card_mod": {
-                    "style": ":host {\n  --card-mod-icon-color:\n    {% if states('sensor.dishwasher') == 'Running' %}\n      #FFC107\n    {% elif states('sensor.dishwasher') == 'Finished' %}\n      #4CAF50\n    {% else %}\n      #5DC7F5\n    {% endif %}\n}\n"
+                    "style": ":host {\n    {% if states('sensor.dishwasher') == 'Running' %}\n      --card-mod-icon-color: #FFC107\n    {% elif states('sensor.dishwasher') == 'Finished' %}\n      --card-mod-icon-color: #4CAF50\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
                   }
                 }
               ]
@@ -265,7 +275,7 @@
                   "type": "custom:secondaryinfo-entity-row",
                   "secondary_info": "[[ counter.loads_laundry ]] [[ if(counter.loads_laundry > 1, \"loads\", \"load\") ]] this month",
                   "card_mod": {
-                    "style": ":host {\n  --card-mod-icon-color:\n    {% if states('sensor.washing_machine') == 'Running' %}\n      #FFC107\n    {% elif states('sensor.washing_machine') == 'Finished' %}\n      #4CAF50\n    {% else %}\n      #5DC7F5\n    {% endif %}\n}\n"
+                    "style": ":host {\n    {% if states('sensor.washing_machine') == 'Running' %}\n      --card-mod-icon-color: #FFC107\n    {% elif states('sensor.washing_machine') == 'Finished' %}\n      --card-mod-icon-color: #4CAF50\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
                   }
                 },
                 {
