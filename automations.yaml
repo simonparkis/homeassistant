@@ -2461,3 +2461,29 @@
           - counter.loads_dishes
           - counter.loads_laundry
   mode: single
+- id: '1681809985937'
+  alias: Notify - Dishwasher and Washing Machine
+  description: ''
+  trigger:
+  - platform: state
+    entity_id:
+    - sensor.washing_machine
+    from: Running
+    to: Finished
+    id: laundry
+  - platform: state
+    entity_id:
+    - sensor.dishwasher
+    id: dishes
+    from: Running
+    to: Finished
+  condition:
+  - condition: state
+    entity_id: input_boolean.mobile_notifications
+    state: 'on'
+  action:
+  - service: notify.simon_zoey
+    data:
+      title: '{{ state_attr(trigger.entity_id, ''friendly_name'') }}'
+      message: Cycle Completed
+  mode: single
