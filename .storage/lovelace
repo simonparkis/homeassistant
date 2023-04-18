@@ -200,15 +200,10 @@
                       "state_not": "Printing"
                     }
                   ],
-                  "row": [
-                    {
-                      "entity": "switch.printer_3d",
-                      "icon": "mdi:printer-3d-nozzle",
-                      "card_mod": {
-                        "style": ":host {\n    {% if states('sensor.voron_state') == 'Printing' %}\n      --card-mod-icon-color: #FFC107\n    {% elif states('sensor.voron_state') == 'Completed' %}\n      --card-mod-icon-color: #4CAF50\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}    \n"
-                      }
-                    }
-                  ]
+                  "row": {
+                    "entity": "switch.printer_3d",
+                    "icon": "mdi:printer-3d-nozzle"
+                  }
                 },
                 {
                   "entity": "binary_sensor.computer_zoey"
