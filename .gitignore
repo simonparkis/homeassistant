@@ -18,3 +18,4 @@ zigbee.db-shm
 zigbee.db-wal
 create_simon_laptop.sh
 computer_state.sh
+ssh_keys
