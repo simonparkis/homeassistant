@@ -1060,6 +1060,9 @@
         entity_id: input_boolean.sentry_mode
         state: 'on'
       sequence:
+      - service: notify.sms_simon
+        data:
+          message: Alarm System Triggered
       - service: notify.mobile_app_simon
         data:
           title: Sentry Mode
