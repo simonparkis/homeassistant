@@ -1003,7 +1003,7 @@
           else %}\n  notify.simon_zoey\n{% endif %}\n"
         data:
           title: Sentry Mode
-          message: Activating in 3 minutes
+          message: Activating in 3 minutes, tap and hold for options
           data:
             actions:
             - action: SENTRY_GUEST
@@ -1063,11 +1063,9 @@
       - service: notify.mobile_app_simon
         data:
           title: Sentry Mode
-          message: Motion detected in the house, tap and hold for options
+          message: Security Alarm Triggered, tap and hold for options
           data:
             actions:
-            - action: SENTRY_DISMISS
-              title: Dismiss
             - action: SENTRY_GUEST
               title: Enable Guest Mode
               authenticationRequired: true
