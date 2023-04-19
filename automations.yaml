@@ -2399,7 +2399,7 @@
   - platform: state
     entity_id: sensor.voron_state
     to: Complete
-    for: 00:30:00
+    for: 00:50:00
   condition:
   - condition: template
     value_template: '{{ is_state(''input_boolean.vacancy_mode'', ''on'') or is_state(''input_boolean.night_mode'',
