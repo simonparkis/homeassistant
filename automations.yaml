@@ -957,7 +957,6 @@
   - platform: state
     entity_id: sensor.house_status
     to: Vacant
-    for: 00:03:00
     id: house_vacant
   - platform: state
     entity_id: sensor.house_status
@@ -967,32 +966,6 @@
     entity_id: sensor.alarm_armstatus
     to: Triggered
     id: alarm_triggered
-  - platform: template
-    value_template: "{{ states.binary_sensor | selectattr('attributes.device_class',
-      'defined') | selectattr(\"attributes.device_class\", \"eq\",\n    \"motion\")
-      | map(attribute=\"state\") | select(\"eq\", \"on\") | list |\n    count > 0
-      }}"
-    id: motion
-  - platform: template
-    value_template: '{{ states.binary_sensor | selectattr(''attributes.device_class'',
-      ''defined'')  | selectattr(''attributes.device_class'', ''eq'', ''door'')  |
-      map(attribute=''state'') | select(''eq'', ''on'') | list | count > 0 }}'
-    id: door
-  - platform: template
-    value_template: '{{ states.binary_sensor | selectattr(''attributes.device_class'',
-      ''defined'')  | selectattr(''attributes.device_class'', ''eq'', ''window'')  |
-      map(attribute=''state'') | select(''eq'', ''on'') | list | count > 0 }}'
-    id: window
-  - platform: template
-    value_template: '{{ states.cover | selectattr(''attributes.device_class'', ''defined'')  |
-      selectattr(''attributes.device_class'', ''eq'', ''garage'')  | map(attribute=''state'')
-      | select(''eq'', ''open'') | list | count > 0 }}'
-    id: window_disabled
-  - platform: event
-    event_type: mobile_app_notification_action
-    event_data:
-      action: SENTRY_ALARM
-    id: sound_alarm
   - platform: event
     event_type: mobile_app_notification_action
     event_data:
@@ -1025,10 +998,43 @@
           ''defined'') | selectattr(''attributes.device_class'', ''eq'', ''motion'')
           | map(attribute=''state'') | select(''eq'', ''on'') | list | count == 0
           }}'
-      - service: input_boolean.turn_on
-        target:
-          entity_id: input_boolean.sentry_mode
-        data: {}
+      - service: notify.mobile_app_simon
+        data:
+          title: Sentry Mode
+          message: Activating in 3 minutes
+          data:
+            actions:
+            - action: SENTRY_GUEST
+              title: Enable Guest Mode
+              authenticationRequired: true
+            - action: SENTRY_DISARM
+              title: Cancel Senty Mode
+              authenticationRequired: true
+            - action: SENTRY_DISMISS
+              title: Dismiss
+            push:
+            sound:
+              name: default
+              critical: 1
+              volume: 1
+      - wait_for_trigger:
+        - platform: event
+          event_type: mobile_app_notification_action
+          event_data:
+            action: SENTRY_DISARM
+        - platform: event
+          event_type: mobile_app_notification_action
+          event_data:
+            action: SENTRY_GUEST
+        timeout: 00:03:00
+      - if:
+        - condition: template
+          value_template: '{{ wait.trigger.idx is not defined }}'
+        then:
+        - service: input_boolean.turn_on
+          target:
+            entity_id: input_boolean.sentry_mode
+          data: {}
     - conditions:
       - condition: trigger
         id:
@@ -1065,12 +1071,6 @@
             - action: SENTRY_DISARM
               title: Disable Senty Mode
               authenticationRequired: true
-            - action: NOTIFY_SIMON
-              title: Notify Maria
-              destructive: true
-            - action: SENTRY_ALARM
-              title: Sound Alarm
-              destructive: true
             push:
             sound:
               name: default
@@ -1096,11 +1096,6 @@
         target:
           entity_id: input_boolean.sentry_mode
         data: {}
-    - conditions:
-      - condition: trigger
-        id: sound_alarm
-      sequence:
-      - delay: 5
   mode: queued
 - id: '1654433824986'
   alias: Modes - Audible Notifications
