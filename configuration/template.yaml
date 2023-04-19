@@ -110,7 +110,7 @@
       - platform: numeric_state
         entity_id: sensor.power_washingmachine
         below: 20
-        for: "00:01:30"
+        for: "00:02:00"
         id: cycle_end
       - platform: state
         entity_id: binary_sensor.door_washingmachine
