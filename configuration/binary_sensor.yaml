@@ -168,31 +168,3 @@
       friendly_name: Television
       value_template: "{{ float(states('sensor.power_sofia')) > 10 }}"
       entity_id: sensor.power_sofia
-      
-- platform: template
-  sensors:
-    computer_zoey:
-      unique_id: computer_zoey
-      friendly_name: Zoey's Computer
-      value_template: "{{ float(states('sensor.power_zoeydesk')) > 40 }}"
-      entity_id: sensor.power_zoeydesk
-      icon_template: |
-        {% if is_state('binary_sensor.computer_zoey', 'on') %}
-          mdi:monitor-dashboard
-        {% else %}
-          mdi:monitor
-        {% endif %}
-
-- platform: template
-  sensors:
-    computer_simon:
-      unique_id: computer_simon
-      friendly_name: Simon's Computer
-      value_template: "{{ float(states('sensor.power_simondesk')) > 55 }}"
-      entity_id: sensor.power_simondesk
-      icon_template: |
-        {% if is_state('binary_sensor.computer_simon', 'on') %}
-          mdi:monitor-dashboard
-        {% else %}
-          mdi:monitor
-        {% endif %}

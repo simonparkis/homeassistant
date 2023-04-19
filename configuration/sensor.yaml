@@ -1,12 +1,3 @@
-- platform: filter
-  name: Power SimonDesk
-  entity_id: sensor.power_simondesk_raw
-  unique_id: power_simondesk
-  filters:
-    - filter: outlier
-      window_size: 1
-      radius: 80
-
 - platform: systemmonitor
   resources:
     - type: last_boot

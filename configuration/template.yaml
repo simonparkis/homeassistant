@@ -138,3 +138,33 @@
         attributes:
           last_state: |
             {{ states('sensor.washing_machine') }}
+            
+  - trigger:
+      - platform: state
+        entity_id: sensor.power_simondesk
+    binary_sensor:
+      - name: Computer Simon
+        unique_id: computer_simon
+        delay_off: "00:00:02"
+        state: "{{ int(states('sensor.power_simondesk')) > 45 }}"
+        icon: |
+          {% if int(states('sensor.power_simondesk')) > 45 %}
+            mdi:monitor-dashboard
+          {% else %}
+            mdi:monitor
+          {% endif %}
+
+  - trigger:
+      - platform: state
+        entity_id: sensor.power_zoeydesk
+    binary_sensor:
+      - name: Computer Zoey
+        unique_id: computer_zoey
+        delay_off: "00:00:02"
+        state: "{{ int(states('sensor.power_zoeydesk')) > 45 }}"
+        icon: |
+          {% if int(states('sensor.power_zoeydesk')) > 45 %}
+            mdi:monitor-dashboard
+          {% else %}
+            mdi:monitor
+          {% endif %}
