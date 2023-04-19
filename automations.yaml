@@ -998,7 +998,9 @@
           ''defined'') | selectattr(''attributes.device_class'', ''eq'', ''motion'')
           | map(attribute=''state'') | select(''eq'', ''on'') | list | count == 0
           }}'
-      - service: notify.mobile_app_simon
+      - service: "{% if last_home == 'Simon' %}\n  notify.mobile_app_simon\n{% elif
+          last_home == 'Zoey' %}\n  notify.mobile_app_zoey\n{% else %}\n  notify.simon_zoey\n{%
+          endif %}\n"
         data:
           title: Sentry Mode
           message: Activating in 3 minutes
@@ -1026,6 +1028,9 @@
           event_type: mobile_app_notification_action
           event_data:
             action: SENTRY_GUEST
+        - platform: state
+          entity_id: sensor.house_status
+          to: Occupied
         timeout: 00:03:00
       - if:
         - condition: template

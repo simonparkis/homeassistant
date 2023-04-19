@@ -170,21 +170,13 @@
           {% endif %}
 
   - trigger:
-      - platform: state
-        entity_id: zone.home
-        to: '2'
-        id: last_two
-      - platform: state
-        entity_id: zone.home
-        to: '1'
+      - platform: template
+        value_template: "{{ states('zone.home') == '1' }}"
         id: last
     sensor:
       - name: Last Home
         unique_id: last_home
         state: |
-          {% if trigger == "last" %}
-            {{ state_attr('zone.home', 'persons') | last }}
-          {% else %}
-            {{ states('sensor.last_home') }}
-          {% endif %}
+            {{ state_attr(state_attr('zone.home', 'persons') | first, 'friendly_name') }}
+
         
