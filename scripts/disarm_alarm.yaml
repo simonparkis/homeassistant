@@ -1,0 +1,7 @@
+disarm_alarm:
+  alias: Disarm Alarm
+  mode: single
+  sequence:
+    - service: esphome.dscalarm_alarm_disarm
+      data:
+        code: !secret alarm_code

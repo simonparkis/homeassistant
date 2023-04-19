@@ -1621,9 +1621,7 @@
       - condition: trigger
         id: disarm
       sequence:
-      - service: esphome.dscalarm_alarm_disarm
-        data:
-          code: '1749'
+      - service: script.disarm_alarm
   mode: single
 - id: '1664341044791'
   alias: Sunset
