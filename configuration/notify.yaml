@@ -3,3 +3,16 @@
   services:
     - service: mobile_app_simon
     - service: mobile_app_zoeys_iphone
+
+- platform: smtp
+  name: "SMS_Simon"
+  server: "smtp.gmail.com"
+  port: 587
+  timeout: 15
+  sender: "s.parkis1986@gmail.com"
+  encryption: starttls
+  username: "s.parkis1986@gmail.com"
+  password: "vxziyripfxbujiwv"
+  recipient:
+    - "0404309929@sms.tim.telstra.con"
+  sender_name: "HomeAssistant"
