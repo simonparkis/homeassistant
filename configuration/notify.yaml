@@ -6,13 +6,53 @@
 
 - platform: smtp
   name: "SMS_Simon"
-  server: "smtp.gmail.com"
+  server: "smtp.mail.me.com"
   port: 587
-  timeout: 15
-  sender: "s.parkis1986@gmail.com"
+  timeout: 3
   encryption: starttls
-  username: "s.parkis1986@gmail.com"
-  password: "vxziyripfxbujiwv"
+  sender: !secret email
+  username: !secret email
+  password: !secret sms_password
   recipient:
-    - "0404309929@sms.tim.telstra.con"
-  sender_name: "HomeAssistant"
+    - !secret simon_sms
+  sender_name: "HOMEASSISTANT:"
+
+- platform: smtp
+  name: "SMS_Zoey"
+  server: "smtp.mail.me.com"
+  port: 587
+  timeout: 3
+  encryption: starttls
+  sender: !secret email
+  username: !secret email
+  password: !secret sms_password
+  recipient:
+    - !secret zoey_sms
+  sender_name: "HOMEASSISTANT:"
+
+- platform: smtp
+  name: "SMS_Maria"
+  server: "smtp.mail.me.com"
+  port: 587
+  timeout: 3
+  encryption: starttls
+  sender: !secret email
+  username: !secret email
+  password: !secret sms_password
+  recipient:
+    - !secret maria_sms
+  sender_name: "HOMEASSISTANT:"
+
+- platform: smtp
+  name: "SMS_Simon_Zoey"
+  server: "smtp.mail.me.com"
+  port: 587
+  timeout: 3
+  encryption: starttls
+  sender: !secret email
+  username: !secret email
+  password: !secret sms_password
+  recipient:
+    - !secret simon_sms
+    - !secret zoey_sms
+  sender_name: "HOMEASSISTANT:"
