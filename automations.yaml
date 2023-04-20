@@ -1627,7 +1627,8 @@
         id: disarm
       sequence:
       - service: script.disarm_alarm
-  mode: single
+        data: {}
+  mode: queued
 - id: '1664341044791'
   alias: Sunset
   description: ''
