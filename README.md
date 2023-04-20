@@ -7,3 +7,4 @@ Decided to upload my homeassistant config for backup reasons and also to share w
 ![Screenshot](screenshot_system.png)
 ![Screenshot](screenshot_audio.png)
 ![Screenshot](screenshot_cameras.png)
+![Screenshot](screenshot_tablet.png)
