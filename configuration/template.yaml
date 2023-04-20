@@ -145,7 +145,7 @@
     binary_sensor:
       - name: Computer Simon
         unique_id: computer_simon
-        delay_off: "00:00:12"
+        delay_off: "00:00:30"
         state: "{{ int(states('sensor.power_simondesk')) > 45 }}"
         icon: |
           {% if int(states('sensor.power_simondesk')) > 45 %}
@@ -160,7 +160,7 @@
     binary_sensor:
       - name: Computer Zoey
         unique_id: computer_zoey
-        delay_off: "00:00:12"
+        delay_off: "00:00:30"
         state: "{{ int(states('sensor.power_zoeydesk')) > 45 }}"
         icon: |
           {% if int(states('sensor.power_zoeydesk')) > 45 %}

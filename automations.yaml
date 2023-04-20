@@ -1004,7 +1004,7 @@
           %}\n  notify.mobile_app_zoey\n{% else %}\n  notify.simon_zoey\n{% endif
           %}\n"
         data:
-          title: Sentry Mode
+          title: Sentry Mode - Arming
           message: Activating in 3 minutes, tap and hold for options
           data:
             actions:
@@ -1067,7 +1067,7 @@
           message: Alarm System Triggered
       - service: notify.mobile_app_simon
         data:
-          title: Sentry Mode
+          title: Sentry Mode - Triggered
           message: Security Alarm Triggered, tap and hold for options
           data:
             actions:

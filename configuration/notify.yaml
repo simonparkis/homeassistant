@@ -8,46 +8,42 @@
   name: "SMS_Simon"
   server: "smtp.mail.me.com"
   port: 587
-  timeout: 3
   encryption: starttls
   sender: !secret email
   username: !secret email
   password: !secret sms_password
   recipient:
     - !secret simon_sms
-  sender_name: "HOMEASSISTANT:"
-
+  sender_name: "Home Assistant"
+  
 - platform: smtp
   name: "SMS_Zoey"
   server: "smtp.mail.me.com"
   port: 587
-  timeout: 3
   encryption: starttls
   sender: !secret email
   username: !secret email
   password: !secret sms_password
   recipient:
     - !secret zoey_sms
-  sender_name: "HOMEASSISTANT:"
-
+  sender_name: "Home Assistant"
+  
 - platform: smtp
   name: "SMS_Maria"
   server: "smtp.mail.me.com"
   port: 587
-  timeout: 3
   encryption: starttls
   sender: !secret email
   username: !secret email
   password: !secret sms_password
   recipient:
     - !secret maria_sms
-  sender_name: "HOMEASSISTANT:"
+  sender_name: "Home Assistant"
 
 - platform: smtp
   name: "SMS_Simon_Zoey"
   server: "smtp.mail.me.com"
   port: 587
-  timeout: 3
   encryption: starttls
   sender: !secret email
   username: !secret email
@@ -55,4 +51,4 @@
   recipient:
     - !secret simon_sms
     - !secret zoey_sms
-  sender_name: "HOMEASSISTANT:"
+  sender_name: "Home Assistant"
