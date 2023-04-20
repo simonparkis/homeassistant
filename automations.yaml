@@ -2399,10 +2399,6 @@
   - platform: state
     entity_id: binary_sensor.tv_sofia
     to: 'off'
-  - platform: state
-    entity_id: sensor.voron_state
-    to: Complete
-    for: 00:50:00
   condition:
   - condition: template
     value_template: '{{ is_state(''input_boolean.vacancy_mode'', ''on'') or is_state(''input_boolean.night_mode'',
@@ -2413,7 +2409,6 @@
       entity_id: "{% if trigger.entity_id == \"sensor.dishwasher\" %}\n  switch.dishwasher\n{%
         elif trigger.entity_id == \"sensor.washing_machine\" %}\n  switch.washing_machine\n{%
         elif trigger.entity_id == \"binary_sensor.tv_sofia\" %}\n  switch.plug_sofia\n{%
-        elif trigger.entity_id == \"sensor.voron_state\" %}\n  switch.printer_3d\n{%
         endif %}\n"
   mode: single
 - id: '1681700556753'
@@ -2486,4 +2481,18 @@
     data:
       title: '{{ state_attr(trigger.entity_id, ''friendly_name'') }}'
       message: Cycle Completed
+  mode: single
+- id: '1682030384432'
+  alias: Auto Turn Off 3d Printer
+  description: Turns off 3D Printer once a print is complete and the bed and hotend
+    temperatures are less than 40 degrees
+  trigger:
+  - platform: template
+    value_template: '{{ is_state(''sensor.voron_state'', ''Complete'') and float(states(''sensor.voron_bed_actual''))
+      < 40 and float(states(''sensor.voron_hotend_actual'')) < 40 }}'
+    id: print_complete
+  action:
+  - service: switch.turn_off
+    target:
+      entity_id: switch.printer_3d
   mode: single
