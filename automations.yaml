@@ -998,9 +998,11 @@
           ''defined'') | selectattr(''attributes.device_class'', ''eq'', ''motion'')
           | map(attribute=''state'') | select(''eq'', ''on'') | list | count == 0
           }}'
-      - service: "{% if states('sensor.last_home') == 'Simon' %}\n  notify.mobile_app_simon\n{%
-          elif states('sensor.last_home') == 'Zoey' %}\n  notify.mobile_app_zoey\n{%
-          else %}\n  notify.simon_zoey\n{% endif %}\n"
+      - service: "{% if int(state_attr('sensor.last_home', 'delta_minutes')) < 5 %}\n
+          \ notify.mobile_app_simon\n{% elif states('sensor.last_home') == 'Simon'
+          %}\n  notify.mobile_app_simon\n{% elif states('sensor.last_home') == 'Zoey'
+          %}\n  notify.mobile_app_zoey\n{% else %}\n  notify.simon_zoey\n{% endif
+          %}\n"
         data:
           title: Sentry Mode
           message: Activating in 3 minutes, tap and hold for options

@@ -173,10 +173,36 @@
       - platform: template
         value_template: "{{ states('zone.home') == '1' }}"
         id: last
+      - platform: template
+        value_template: "{{ states('zone.home') == '0' }}"
+        id: vacant
     sensor:
       - name: Last Home
         unique_id: last_home
         state: |
+          {% if trigger.id == 'last' %}
             {{ state_attr(state_attr('zone.home', 'persons') | first, 'friendly_name') }}
+          {% else %}
+            {{ states('sensor.last_home') }}
+          {% endif %}
+        attributes:
+          timestamp_last: |
+            {% if trigger.id == 'vacant' %}
+              {{ now() }}
+            {% else %}
+              {{ state_attr('sensor.last_home', 'timestamp_last') }}
+            {% endif %}
+          timestamp_second_last: |
+            {% if trigger.id == 'last' %}
+              {{ now() }}
+            {% else %}
+              {{ state_attr('sensor.last_home', 'timestamp_second_last') }}
+            {% endif %}
+          delta_minutes: |
+            {% if trigger.id == 'vacant' %}
+              {{ int((as_timestamp(now()) - as_timestamp(state_attr('sensor.last_home', 'timestamp_second_last'))) / 60) | abs }}
+            {% else %}
+              {{ state_attr('sensor.last_home', 'delta_minutes') }}
+            {% endif %}
 
         
