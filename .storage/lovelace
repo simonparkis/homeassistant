@@ -753,6 +753,34 @@
               ],
               "title": "Internet Speeds",
               "days_to_show": 14
+            },
+            {
+              "type": "entities",
+              "entities": [
+                {
+                  "entity": "switch.livingroom"
+                },
+                {
+                  "entity": "switch.frontroom"
+                },
+                {
+                  "entity": "switch.zoey_desk"
+                },
+                {
+                  "entity": "switch.plug_simondesk"
+                },
+                {
+                  "entity": "switch.plug_sofia"
+                },
+                {
+                  "entity": "switch.bookshelf"
+                },
+                {
+                  "entity": "switch.masterbedroom"
+                }
+              ],
+              "title": "Energy Saver",
+              "show_header_toggle": false
             }
           ]
         },
