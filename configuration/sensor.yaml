@@ -108,3 +108,10 @@
   name: VPN IP
   command: "cat /shared/vpn_ip"
   scan_interval: 30
+
+- platform: mqtt_room
+  device_id: "tile:ff33c4222e80"
+  name: 'Garbage Bin'
+  state_topic: 'espresence/rooms'
+  timeout: 60
+  away_timeout: 120
