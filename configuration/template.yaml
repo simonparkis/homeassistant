@@ -95,6 +95,8 @@
             Off
           {% elif  trigger.id == "switched" and is_state("switch.dishwasher", "on") %}
             {{ state_attr('sensor.dishwasher', 'last_state') }}
+          {% else %}
+            {{ states('sensor.dishwasher') }}
           {% endif %}
         attributes:
           last_state: |
