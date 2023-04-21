@@ -71,8 +71,7 @@
         id: cycle_start
       - platform: numeric_state
         entity_id: sensor.power_dishwasher
-        below: 80
-        for: "00:44:20"
+        below: 20
         id: cycle_end
       - platform: state
         entity_id: binary_sensor.door_dishwasher
@@ -90,7 +89,7 @@
             Idle
           {% elif trigger.id == "cycle_start" %}
             Running
-          {% elif trigger.id == "cycle_end" and is_state("sensor.dishwasher", "Running") %}
+          {% elif trigger.id == "cycle_end" and is_state("sensor.dishwasher", "Running") and is_state('timer.dishwasher', 'idle') %}
             Finished
           {% elif  trigger.id == "switched" and is_state("switch.dishwasher", "off") %}
             Off
@@ -110,7 +109,7 @@
       - platform: numeric_state
         entity_id: sensor.power_washingmachine
         below: 20
-        for: "00:00:10"
+        for: "00:00:05"
         id: cycle_end
       - platform: state
         entity_id: binary_sensor.door_washingmachine
@@ -128,7 +127,7 @@
             Idle
           {% elif trigger.id == "cycle_start" %}
             Running
-          {% elif trigger.id == "cycle_end" and is_state("sensor.washing_machine", "Running") and (int(as_timestamp(now()) - as_timestamp(state_attr("sensor.washing_machine", "cycle_started"))) > 2880) %}
+          {% elif trigger.id == "cycle_end" and is_state("sensor.washing_machine", "Running") and is_state('timer.washing_machine', 'idle') %}
             Finished
           {% elif  trigger.id == "switched" and is_state("switch.washing_machine", "off") %}
             Off
@@ -140,12 +139,6 @@
         attributes:
           last_state: |
             {{ states('sensor.washing_machine') }}
-          cycle_started: |
-            {% if trigger.id == "cycle_start" %}
-              {{ now() }}
-            {% else %}
-              {{ state_attr('sensor.washing_machine', 'cycle_started') }}
-            {% endif %}
             
   - trigger:
       - platform: state
@@ -169,9 +162,9 @@
       - name: Computer Zoey
         unique_id: computer_zoey
         delay_off: "00:00:30"
-        state: "{{ int(states('sensor.power_zoeydesk')) > 45 }}"
+        state: "{{ int(states('sensor.power_zoeydesk')) > 80 }}"
         icon: |
-          {% if int(states('sensor.power_zoeydesk')) > 45 %}
+          {% if int(states('sensor.power_zoeydesk')) > 80 %}
             mdi:monitor-dashboard
           {% else %}
             mdi:monitor

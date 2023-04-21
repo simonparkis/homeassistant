@@ -182,10 +182,13 @@
               "entities": [
                 {
                   "type": "conditional",
+                  "card_mod": {
+                    "style": ":host {\n    {% if states('sensor.voron_state') == 'Printing' %}\n      --card-mod-icon-color: #FFC107\n    {% elif states('sensor.voron_state') == 'Complete' and is_state('switch.printer_3d', 'on') %}\n      --card-mod-icon-color: #4CAF50\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
+                  },
                   "conditions": [
                     {
-                      "entity": "sensor.voron_state",
-                      "state": "Printing"
+                      "entity": "switch.printer_3d",
+                      "state": "on"
                     }
                   ],
                   "row": {
@@ -194,13 +197,10 @@
                 },
                 {
                   "type": "conditional",
-                  "card_mod": {
-                    "style": ":host {\n    {% if states('sensor.voron_state') == 'Printing' %}\n      --card-mod-icon-color: #FFC107\n    {% elif states('sensor.voron_state') == 'Completed' %}\n      --card-mod-icon-color: #4CAF50\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
-                  },
                   "conditions": [
                     {
-                      "entity": "sensor.voron_state",
-                      "state_not": "Printing"
+                      "entity": "switch.printer_3d",
+                      "state": "off"
                     }
                   ],
                   "row": {
@@ -209,10 +209,16 @@
                   }
                 },
                 {
-                  "entity": "binary_sensor.computer_zoey"
+                  "entity": "binary_sensor.computer_zoey",
+                  "card_mod": {
+                    "style": ":host {\n    {% if states('binary_sensor.computer_zoey') == 'on' %}\n      --card-mod-icon-color: #FFC107\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
+                  }
                 },
                 {
-                  "entity": "binary_sensor.occupancy_study"
+                  "entity": "binary_sensor.occupancy_study",
+                  "card_mod": {
+                    "style": ":host {\n    {% if states('binary_sensor.occupancy_study') == 'on' %}\n      --card-mod-icon-color: #FFC107\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
+                  }
                 }
               ]
             },

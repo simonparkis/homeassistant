@@ -2428,8 +2428,34 @@
   - platform: time
     at: 00:00:01
     id: reset_counter
+  - platform: state
+    entity_id: sensor.washing_machine
+    from: Idle
+    to: Running
+    id: washing_machine_started
+  - platform: state
+    entity_id: sensor.dishwasher
+    from: Idle
+    to: Running
+    id: dishwasher_started
   action:
-    choose:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: washing_machine_started
+      sequence:
+      - service: timer.start
+        target:
+          entity_id: timer.washing_machine
+        data: {}
+    - conditions:
+      - condition: trigger
+        id: dishwasher_started
+      sequence:
+      - service: timer.start
+        target:
+          entity_id: timer.dishwasher
+        data: {}
     - conditions:
       - condition: trigger
         id: increment_dishes
@@ -2437,6 +2463,7 @@
       - service: counter.increment
         target:
           entity_id: counter.loads_dishes
+        data: {}
     - conditions:
       - condition: trigger
         id: increment_laundry
@@ -2444,6 +2471,7 @@
       - service: counter.increment
         target:
           entity_id: counter.loads_laundry
+        data: {}
     - conditions:
       - condition: trigger
         id: reset_counter
@@ -2455,6 +2483,7 @@
           entity_id:
           - counter.loads_dishes
           - counter.loads_laundry
+        data: {}
   mode: single
 - id: '1681809985937'
   alias: Notify - Dishwasher and Washing Machine
