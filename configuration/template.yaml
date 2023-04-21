@@ -110,7 +110,7 @@
       - platform: numeric_state
         entity_id: sensor.power_washingmachine
         below: 20
-        for: "00:02:00"
+        for: "00:00:10"
         id: cycle_end
       - platform: state
         entity_id: binary_sensor.door_washingmachine
@@ -128,16 +128,24 @@
             Idle
           {% elif trigger.id == "cycle_start" %}
             Running
-          {% elif trigger.id == "cycle_end" and is_state("sensor.washing_machine", "Running") %}
+          {% elif trigger.id == "cycle_end" and is_state("sensor.washing_machine", "Running") and (int(as_timestamp(now()) - as_timestamp(state_attr("sensor.washing_machine", "cycle_started"))) > 2880) %}
             Finished
           {% elif  trigger.id == "switched" and is_state("switch.washing_machine", "off") %}
             Off
           {% elif  trigger.id == "switched" and is_state("switch.washing_machine", "on") %}
             {{ state_attr('sensor.washing_machine', 'last_state') }}
+          {% else %}
+            {{ states("sensor.washing_machine") }}
           {% endif %}
         attributes:
           last_state: |
             {{ states('sensor.washing_machine') }}
+          cycle_started: |
+            {% if trigger.id == "cycle_start" %}
+              {{ now() }}
+            {% else %}
+              {{ state_attr('sensor.washing_machine', 'cycle_started') }}
+            {% endif %}
             
   - trigger:
       - platform: state
