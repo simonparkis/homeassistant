@@ -2539,12 +2539,6 @@
     - sensor.dishwasher
     from: Running
     to: Finished
-  - platform: state
-    entity_id:
-    - sensor.washing_machine
-    - sensor.dishwasher
-    from: 'Off'
-    to: Finished
   condition:
   - condition: state
     entity_id: sensor.house_status
