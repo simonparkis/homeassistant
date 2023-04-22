@@ -387,10 +387,12 @@
     event_data:
       action: GARAGE_CLOSE
     id: close_garage
+  - platform: state
+    entity_id: cover.garage_door
+    from: open
+    to: closed
+    id: door_closed
   condition:
-  - condition: state
-    entity_id: input_boolean.auto_garage_door
-    state: 'on'
   action:
   - wait_template: '{{ is_state(''binary_sensor.ford_escape'', ''off'') }}
 
@@ -401,6 +403,9 @@
       '
   - choose:
     - conditions:
+      - condition: state
+        entity_id: input_boolean.auto_garage_door
+        state: 'on'
       - condition: trigger
         id: close_garage
       sequence:
@@ -410,6 +415,9 @@
         data: {}
       - delay: 00:00:40
     - conditions:
+      - condition: state
+        entity_id: input_boolean.auto_garage_door
+        state: 'on'
       - condition: trigger
         id: closed
       sequence:
@@ -439,6 +447,9 @@
                 volume: 1
     - conditions:
       - condition: state
+        entity_id: input_boolean.auto_garage_door
+        state: 'on'
+      - condition: state
         entity_id: cover.garage_door
         state: open
       - condition: state
@@ -449,6 +460,16 @@
         target:
           entity_id: cover.garage_door
         data: {}
+    - conditions:
+      - condition: trigger
+        id: door_closed
+      - condition: state
+        entity_id: input_boolean.auto_garage_door
+        state: 'off'
+      sequence:
+      - service: input_boolean.turn_on
+        target:
+          entity_id: input_boolean.auto_garage_door
   mode: queued
   max_exceeded: silent
 - id: '1631939546843'
