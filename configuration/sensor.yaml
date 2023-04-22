@@ -112,6 +112,6 @@
 - platform: mqtt_room
   device_id: "tile:ff33c4222e80"
   name: 'Garbage Bin'
-  state_topic: 'espresence/rooms'
+  state_topic: 'espresense/devices/tile:ff33c4222e80'
   timeout: 60
   away_timeout: 120
