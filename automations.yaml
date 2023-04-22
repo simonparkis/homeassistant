@@ -1531,9 +1531,32 @@
     type: remote_button_short_press
     subtype: turn_off
     id: garage_close
+  - device_id: fb5d4966b1db5d9ab488158888ef7a0b
+    domain: zha
+    platform: device
+    type: remote_button_long_press
+    subtype: dim_up
+    id: disable_auto_door
   condition: []
   action:
   - choose:
+    - conditions:
+      - condition: trigger
+        id: disable_auto_door
+      sequence:
+      - if:
+        - condition: state
+          entity_id: cover.garage_door
+          state: closed
+        then:
+        - service: cover.open_cover
+          target:
+            entity_id: cover.garage_door
+          data: {}
+      - service: input_boolean.turn_off
+        target:
+          entity_id: input_boolean.auto_garage_door
+        data: {}
     - conditions:
       - condition: trigger
         id: garage_open
