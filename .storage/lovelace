@@ -125,7 +125,9 @@
                   "icon": "mdi:google-chrome"
                 },
                 {
-                  "entity": "media_player.living_room"
+                  "entity": "media_player.living_room",
+                  "name": "Audio",
+                  "icon": "mdi:speaker"
                 },
                 {
                   "entity": "light.lamps_livingroom"
@@ -240,10 +242,13 @@
                   "entity": "binary_sensor.tv_frontroom"
                 },
                 {
-                  "entity": "media_player.tv_frontroom"
+                  "entity": "media_player.tv_frontroom",
+                  "icon": "mdi:google-chrome"
                 },
                 {
-                  "entity": "media_player.speaker_frontroom"
+                  "entity": "media_player.speaker_frontroom",
+                  "icon": "mdi:speaker",
+                  "name": "Audio"
                 },
                 {
                   "entity": "light.lamp_frontroom"
@@ -326,7 +331,9 @@
                   "icon": "mdi:google-chrome"
                 },
                 {
-                  "entity": "media_player.speaker_bedroom"
+                  "entity": "media_player.speaker_bedroom",
+                  "name": "Audio",
+                  "icon": "mdi:speaker"
                 },
                 {
                   "entity": "climate.master_bedroom",
@@ -827,17 +834,20 @@
                   }
                 },
                 {
-                  "entity": "media_player.display_kitchen"
+                  "entity": "media_player.display_kitchen",
+                  "name": "Kitchen"
                 },
                 {
                   "entity": "media_player.living_room",
                   "name": "Living Room"
                 },
                 {
-                  "entity": "media_player.speaker_frontroom"
+                  "entity": "media_player.speaker_frontroom",
+                  "name": "Front Room"
                 },
                 {
-                  "entity": "media_player.speaker_bedroom"
+                  "entity": "media_player.speaker_bedroom",
+                  "name": "Master Bedroom"
                 },
                 {
                   "type": "divider",
