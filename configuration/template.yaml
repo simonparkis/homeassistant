@@ -208,4 +208,7 @@
               {{ state_attr('sensor.last_home', 'delta_minutes') }}
             {% endif %}
 
-        
+  - sensor:
+      - name: Bin Distance
+        state: "{{ state_attr('sensor.garbage_bin', 'distance') }}"
+      
