@@ -102,6 +102,8 @@ http:
 
 frontend:
   themes: !include themes.yaml
+  extra_module_url:
+    - /local/components/custom-brand-icons.js
 
 lovelace:
   mode: storage

@@ -161,8 +161,7 @@
                 {
                   "entity": "media_player.display_kitchen",
                   "name": "Display",
-                  "icon": "mdi:youtube-tv",
-                  "secondary_info": "none"
+                  "icon": "phu:nest-hub"
                 },
                 {
                   "entity": "sensor.dishwasher",
@@ -181,10 +180,19 @@
               "state_color": true,
               "entities": [
                 {
-                  "type": "conditional",
+                  "entity": "binary_sensor.computer_simon",
                   "card_mod": {
-                    "style": ":host {\n    {% if states('sensor.voron_state') == 'Printing' %}\n      --card-mod-icon-color: #FFC107\n    {% elif states('sensor.voron_state') == 'Complete' and is_state('switch.printer_3d', 'on') %}\n      --card-mod-icon-color: #4CAF50\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
-                  },
+                    "style": ":host {\n    {% if states('binary_sensor.computer_simon') == 'on' %}\n      --card-mod-icon-color: #FFC107\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
+                  }
+                },
+                {
+                  "entity": "binary_sensor.computer_zoey",
+                  "card_mod": {
+                    "style": ":host {\n    {% if states('binary_sensor.computer_zoey') == 'on' %}\n      --card-mod-icon-color: #FFC107\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
+                  }
+                },
+                {
+                  "type": "conditional",
                   "conditions": [
                     {
                       "entity": "switch.printer_3d",
@@ -192,7 +200,12 @@
                     }
                   ],
                   "row": {
-                    "entity": "sensor.voron_state"
+                    "entity": "sensor.voron_state",
+                    "icon": "phu:voron",
+                    "name": "VORON"
+                  },
+                  "card_mod": {
+                    "style": ":host {\n    {% if states('sensor.voron_state') == 'Printing' %}\n      --card-mod-icon-color: #FFC107\n    {% elif states('sensor.voron_state') == 'Complete' and is_state('switch.printer_3d', 'on') %}\n      --card-mod-icon-color: #4CAF50\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
                   }
                 },
                 {
@@ -205,13 +218,8 @@
                   ],
                   "row": {
                     "entity": "switch.printer_3d",
-                    "icon": "mdi:printer-3d-nozzle"
-                  }
-                },
-                {
-                  "entity": "binary_sensor.computer_zoey",
-                  "card_mod": {
-                    "style": ":host {\n    {% if states('binary_sensor.computer_zoey') == 'on' %}\n      --card-mod-icon-color: #FFC107\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
+                    "icon": "phu:voron",
+                    "name": "VORON"
                   }
                 },
                 {
@@ -236,9 +244,6 @@
                 },
                 {
                   "entity": "media_player.speaker_frontroom"
-                },
-                {
-                  "entity": "binary_sensor.computer_simon"
                 },
                 {
                   "entity": "light.lamp_frontroom"
