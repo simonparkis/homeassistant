@@ -65,8 +65,9 @@ energy_saver:
         - switch.washing_machine
         - switch.plug_sofia
       data: {}
-  - delay: 00:00:08
+  - delay: 00:00:15
   - service: shell_command.sleep_displays
+    data: {}
   mode: single
 disable_cast_chime:
   alias: Disable Cast Chime
