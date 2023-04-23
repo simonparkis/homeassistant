@@ -210,5 +210,5 @@
 
   - sensor:
       - name: Bin Distance
-        state: "{{ state_attr('sensor.garbage_bin', 'distance') }}"
+        state: "{{ float(state_attr('sensor.garbage_bin', 'distance')) }}"
       
