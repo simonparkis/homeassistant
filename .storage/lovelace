@@ -792,7 +792,7 @@
                   "entity": "switch.plug_sofia"
                 },
                 {
-                  "entity": "switch.bookshelf"
+                  "entity": "switch.plug_bookshelf"
                 },
                 {
                   "entity": "switch.masterbedroom"
