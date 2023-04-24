@@ -2433,8 +2433,8 @@
   action:
   - service: switch.turn_off
     target:
-      entity_id: "{% if trigger.entity_id == \"sensor.dishwasher\" %}\n  switch.dishwasher\n{%
-        elif trigger.entity_id == \"sensor.washing_machine\" %}\n  switch.washing_machine\n{%
+      entity_id: "{% if trigger.entity_id == \"sensor.dishwasher\" %}\n  switch.plug_dishwasher\n{%
+        elif trigger.entity_id == \"sensor.washing_machine\" %}\n  switch.plug_washing_machine\n{%
         elif trigger.entity_id == \"binary_sensor.tv_sofia\" %}\n  switch.plug_sofia\n{%
         endif %}\n"
   mode: single
@@ -2561,5 +2561,5 @@
   action:
   - service: switch.turn_off
     target:
-      entity_id: switch.printer_3d
+      entity_id: switch.plug_voron
   mode: single

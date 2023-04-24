@@ -148,7 +148,6 @@
     binary_sensor:
       - name: Computer Simon
         unique_id: computer_simon
-        delay_off: "00:00:30"
         state: "{{ int(states('sensor.power_simondesk')) > 45 }}"
         icon: |
           {% if int(states('sensor.power_simondesk')) > 45 %}
@@ -216,42 +215,108 @@
       - platform: state
         entity_id: sensor.power_simondesk_raw
         id: raw_data
+      - platform: time_pattern
+        seconds: "/7"
     sensor:
       - name: Power SimonDesk
         unique_id: power_simondesk
         unit_of_measurement: W
         device_class: power
         state: |
-          {% if (state_attr('sensor.power_simondesk', 'previous_value') | float(0) == 0) and (states('sensor.power_simondesk_raw') | float(0)) == 0 %}
-            0
-          {% elif (states('sensor.power_simondesk_raw') | float(0)) == 0 %}
-            {{ states('sensor.power_simondesk') }}
+          {% if (states('sensor.power_simondesk_raw') | float(0)) == 0 %}
+            {% if (state_attr('sensor.power_simondesk', 'previous_raw_value') | float(0) == 0) %}
+              0
+            {% else %}
+              {{ states('sensor.power_simondesk') }}
+            {% endif %}
           {% else %}
             {{ states('sensor.power_simondesk_raw') }}
           {% endif %}
         attributes:
-          previous_value: |
-            {{ states('sensor.power_simondesk') }}
+          raw_value: |
+            {{ states('sensor.power_simondesk_raw') }}
+          previous_raw_value: |
+            {{ state_attr('sensor.power_simondesk', 'raw_value') }}
+            
+  - trigger:
+      - platform: state
+        entity_id: sensor.power_zoeydesk_raw
+        id: raw_data
+      - platform: time_pattern
+        seconds: "/7"
+    sensor:
+      - name: Power ZoeyDesk
+        unique_id: power_zoeydesk
+        unit_of_measurement: W
+        device_class: power
+        state: |
+          {% if (states('sensor.power_zoeydesk_raw') | float(0)) == 0 %}
+            {% if (state_attr('sensor.power_zoeydesk', 'previous_raw_value') | float(0) == 0) %}
+              0
+            {% else %}
+              {{ states('sensor.power_zoeydesk') }}
+            {% endif %}
+          {% else %}
+            {{ states('sensor.power_zoeydesk_raw') }}
+          {% endif %}
+        attributes:
+          raw_value: |
+            {{ states('sensor.power_zoeydesk_raw') }}
+          previous_raw_value: |
+            {{ state_attr('sensor.power_zoeydesk', 'raw_value') }}
 
   - trigger:
       - platform: state
         entity_id: sensor.power_washingmachine_raw
         id: raw_data
+      - platform: time_pattern
+        seconds: "/7"
     sensor:
       - name: Power WashingMachine
         unique_id: power_washingmachine
         unit_of_measurement: W
         device_class: power
         state: |
-          {% if (state_attr('sensor.power_washingmachine', 'previous_value') | float(0) == 0) and (states('sensor.power_washingmachine_raw') | float(0)) == 0 %}
-            0
-          {% elif (states('sensor.power_washingmachine_raw') | float(0)) == 0 %}
-            {{ states('sensor.power_washingmachine') }}
+          {% if (states('sensor.power_washingmachine_raw') | float(0)) == 0 %}
+            {% if (state_attr('sensor.power_washingmachine', 'previous_raw_value') | float(0) == 0) %}
+              0
+            {% else %}
+              {{ states('sensor.power_washingmachine') }}
+            {% endif %}
           {% else %}
             {{ states('sensor.power_washingmachine_raw') }}
           {% endif %}
         attributes:
-          previous_value: |
-            {{ states('sensor.power_washingmachine') }}
+          raw_value: |
+            {{ states('sensor.power_washingmachine_raw') }}
+          previous_raw_value: |
+            {{ state_attr('sensor.power_washingmachine', 'raw_value') }}
+
+  - trigger:
+      - platform: state
+        entity_id: sensor.power_dishwasher_raw
+        id: raw_data
+      - platform: time_pattern
+        seconds: "/7"
+    sensor:
+      - name: Power Dishwasher
+        unique_id: power_dishwasher
+        unit_of_measurement: W
+        device_class: power
+        state: |
+          {% if (states('sensor.power_dishwasher_raw') | float(0)) == 0 %}
+            {% if (state_attr('sensor.power_dishwasher', 'previous_raw_value') | float(0) == 0) %}
+              0
+            {% else %}
+              {{ states('sensor.power_dishwasher') }}
+            {% endif %}
+          {% else %}
+            {{ states('sensor.power_dishwasher_raw') }}
+          {% endif %}
+        attributes:
+          raw_value: |
+            {{ states('sensor.power_dishwasher_raw') }}
+          previous_raw_value: |
+            {{ state_attr('sensor.power_dishwasher', 'raw_value') }}
  
 
