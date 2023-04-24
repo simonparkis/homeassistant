@@ -71,14 +71,14 @@
         id: cycle_start
       - platform: numeric_state
         entity_id: sensor.power_dishwasher
-        below: 20
+        below: 1
         id: cycle_end
       - platform: state
         entity_id: binary_sensor.door_dishwasher
         to: "on"
         id: door_opened
       - platform: state
-        entity_id: switch.dishwasher
+        entity_id: switch.plug_dishwasher
         id: switched
     sensor:
       - unique_id: dishwasher_state
@@ -89,11 +89,11 @@
             Idle
           {% elif trigger.id == "cycle_start" %}
             Running
-          {% elif trigger.id == "cycle_end" and is_state("sensor.dishwasher", "Running") and is_state('timer.dishwasher', 'idle') %}
+          {% elif trigger.id == "cycle_end" and is_state("sensor.dishwasher", "Running") %}
             Finished
-          {% elif  trigger.id == "switched" and is_state("switch.dishwasher", "off") %}
+          {% elif  trigger.id == "switched" and is_state("switch.plug_dishwasher", "off") %}
             Off
-          {% elif  trigger.id == "switched" and is_state("switch.dishwasher", "on") %}
+          {% elif  trigger.id == "switched" and is_state("switch.plug_dishwasher", "on") %}
             {{ state_attr('sensor.dishwasher', 'last_state') }}
           {% else %}
             {{ states('sensor.dishwasher') }}
@@ -117,7 +117,7 @@
         to: "on"
         id: door_opened
       - platform: state
-        entity_id: switch.washing_machine
+        entity_id: switch.plug_washingmachine
         id: switched
     sensor:
       - unique_id: washing_machine_state
@@ -130,9 +130,9 @@
             Running
           {% elif trigger.id == "cycle_end" and is_state("sensor.washing_machine", "Running") %}
             Finished
-          {% elif  trigger.id == "switched" and is_state("switch.washing_machine", "off") %}
+          {% elif  trigger.id == "switched" and is_state("switch.plug_washingmachine", "off") %}
             Off
-          {% elif  trigger.id == "switched" and is_state("switch.washing_machine", "on") %}
+          {% elif  trigger.id == "switched" and is_state("switch.plug_washingmachine", "on") %}
             {{ state_attr('sensor.washing_machine', 'last_state') }}
           {% else %}
             {{ states("sensor.washing_machine") }}
