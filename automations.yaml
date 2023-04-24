@@ -498,6 +498,9 @@
   - condition: state
     entity_id: input_boolean.audible_notifications
     state: 'on'
+  - condition: state
+    entity_id: sensor.garbage_bin
+    state: garage
   action:
   - wait_for_trigger:
     - platform: state
@@ -1239,7 +1242,8 @@
         - motion_off
         - sleeping
       sequence:
-      - delay: 00:00:10
+      - delay: "{% if is_state('binary_sensor.sleep_simon', 'on') or is_state('binary_sensor.sleep_zoey',
+          'on') %}\n  10\n{% else %}\n  300\n{% endif %}\n"
       - service: light.turn_off
         data:
           transition: 5
