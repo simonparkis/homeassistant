@@ -2174,6 +2174,7 @@
         entity_id:
         - binary_sensor.occupancy_frontroom
         - binary_sensor.occupancy_livingroom
+        - binary_sensor.occupancy_study
         state: 'off'
       - condition: state
         entity_id: input_boolean.night_mode
@@ -2441,7 +2442,7 @@
   - service: switch.turn_off
     target:
       entity_id: "{% if trigger.entity_id == \"sensor.dishwasher\" %}\n  switch.plug_dishwasher\n{%
-        elif trigger.entity_id == \"sensor.washing_machine\" %}\n  switch.plug_washing_machine\n{%
+        elif trigger.entity_id == \"sensor.washing_machine\" %}\n  switch.plug_washingmachine\n{%
         elif trigger.entity_id == \"binary_sensor.tv_sofia\" %}\n  switch.plug_sofia\n{%
         endif %}\n"
   mode: single
@@ -2562,11 +2563,12 @@
     temperatures are less than 40 degrees
   trigger:
   - platform: template
-    value_template: '{{ is_state(''sensor.voron_state'', ''Complete'') and float(states(''sensor.voron_bed_actual''))
+    value_template: '{{ (not is_state(''sensor.voron_state'', ''Printing'')) and float(states(''sensor.voron_bed_actual''))
       < 40 and float(states(''sensor.voron_hotend_actual'')) < 40 }}'
     id: print_complete
   action:
   - service: switch.turn_off
     target:
       entity_id: switch.plug_voron
+    data: {}
   mode: single
