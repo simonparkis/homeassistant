@@ -2547,15 +2547,6 @@
       data:
         title: '{{ state_attr(trigger.entity_id, ''friendly_name'') }}'
         message: Cycle Completed
-  - if:
-    - condition: state
-      entity_id: person.zoey
-      state: home
-    then:
-    - service: notify.mobile_app_zoey
-      data:
-        title: '{{ state_attr(trigger.entity_id, ''friendly_name'') }}'
-        message: Cycle Completed
   mode: single
 - id: '1682030384432'
   alias: Auto Turn Off 3d Printer
