@@ -14,7 +14,7 @@
   password: !secret sms_password
   recipient:
     - !secret simon_sms
-  sender_name: "Home Assistant"
+  sender_name: ""
   
 - platform: smtp
   name: "SMS_Zoey"
