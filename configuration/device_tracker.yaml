@@ -9,4 +9,7 @@
     simon_wifi: 192.168.1.24
     zoey_wifi: 192.168.1.137
 - platform: bluetooth_tracker
+  device_id: 2
+  request_rssi: true
 - platform: bluetooth_le_tracker
+  track_new_devices: false
