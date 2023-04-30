@@ -115,3 +115,12 @@
   state_topic: 'espresense/devices/tile:ff33c4222e80'
   timeout: 60
   away_timeout: 120
+
+- platform: history_stats
+  name: Dishwasher Zero Count
+  entity_id: sensor.power_dishwasher
+  state: 0
+  type: count
+  end: "{{ now() }}"
+  duration:
+    minutes: 15
