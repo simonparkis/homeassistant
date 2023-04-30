@@ -886,7 +886,7 @@
               "type": "conditional",
               "conditions": [
                 {
-                  "entity": "switch.printer_3d",
+                  "entity": "switch.plug_voron",
                   "state": "on"
                 }
               ],
