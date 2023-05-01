@@ -64,10 +64,15 @@ energy_saver:
     then:
     - service: switch.turn_on
       target:
-        entity_id:
-        - switch.plug_dishwasher
-        - switch.plug_washingmachine
-        - switch.plug_sofia
+        entity_id: switch.plug_dishwasher
+    - delay: 00:00:01
+    - service: switch.turn_on
+      target:
+        entity_id: switch.plug_washingmachine
+    - delay: 00:00:01
+    - service: switch.turn_on
+      target:
+        entity_id: switch.plug_sofia
       data: {}
   - delay: 00:00:10
   - service: shell_command.sleep_displays
