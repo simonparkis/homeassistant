@@ -27,6 +27,7 @@ energy_saver:
     target:
       entity_id: "{% if mode == \"vacant\" %}\n  switch.energy_vacant\n{% elif mode
         == \"overnight\" %}\n  switch.energy_overnight\n{% endif %}"
+  - delay: 00:00:01
   - if:
     - condition: template
       value_template: '{{ not is_state(''sensor.dishwasher'', ''Running'') and command
@@ -36,6 +37,7 @@ energy_saver:
       target:
         entity_id: switch.plug_dishwasher
       data: {}
+  - delay: 00:00:01
   - if:
     - condition: template
       value_template: '{{ not is_state(''sensor.washing_machine'', ''Running'') and
@@ -45,6 +47,7 @@ energy_saver:
       target:
         entity_id: switch.plug_washingmachine
       data: {}
+  - delay: 00:00:01
   - if:
     - condition: template
       value_template: '{{ is_state(''binary_sensor.tv_sofia'', ''off'') and command
@@ -54,6 +57,7 @@ energy_saver:
       target:
         entity_id: switch.plug_sofia
       data: {}
+  - delay: 00:00:01
   - if:
     - condition: template
       value_template: '{{ command == ''disable'' }}'
@@ -65,7 +69,7 @@ energy_saver:
         - switch.plug_washingmachine
         - switch.plug_sofia
       data: {}
-  - delay: 00:00:15
+  - delay: 00:00:10
   - service: shell_command.sleep_displays
     data: {}
   mode: single
