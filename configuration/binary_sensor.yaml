@@ -14,9 +14,6 @@
   host: 192.168.1.76
   name: Inkjet Printer
   scan_interval: 60
-- platform: workday
-  country: AU
-  province: NSW
 - platform: bayesian
   name: Sleep Sofia
   prior: 0.3
