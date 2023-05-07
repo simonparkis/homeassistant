@@ -117,7 +117,7 @@
         {% set workday = is_state('binary_sensor.workday_sensor', 'on') %}
         {% set workday_times = states('sensor.time') > '21:30' or states('sensor.time') < '07:00' %}
         {% set weekend_times = states('sensor.time') > '21:30' or states('sensor.time') < '08:30' %}
-        {{ (workday and workday_times) or (weekend_times) }}
+        {{ (workday and workday_times) or ((not workday) and weekend_times) }}
       prob_given_true: 0.9
       prob_given_false: 0.01
 - platform: bayesian
@@ -143,7 +143,7 @@
         {% set workday = is_state('binary_sensor.workday_sensor', 'on') %}
         {% set workday_times = states('sensor.time') > '21:30' or states('sensor.time') < '07:00' %}
         {% set weekend_times = states('sensor.time') > '21:30' or states('sensor.time') < '08:30' %}
-        {{ (workday and workday_times) or (weekend_times) }}
+        {{ (workday and workday_times) or ((not workday) and weekend_times) }}
       prob_given_true: 0.9
       prob_given_false: 0.01
 
