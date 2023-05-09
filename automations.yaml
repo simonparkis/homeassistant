@@ -351,7 +351,7 @@
       - media_player.living_room
       - media_player.livingroom_2
       volume_level: "{% if (now().strftime(\"%H\") | int) < 8 or (now().strftime(\"%H\")
-        | int) > 18 %}\n  0.1\n{% else %}\n  0.35\n{% endif %}\n"
+        | int) > 18 %}\n  0.15\n{% else %}\n  0.35\n{% endif %}\n"
   - delay: 00:00:01
   - service: media_player.play_media
     target:
