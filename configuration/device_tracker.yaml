@@ -8,6 +8,7 @@
     maria_wifi: 192.168.1.52
     simon_wifi: 192.168.1.24
     zoey_wifi: 192.168.1.137
+    judi_wifi: 192.168.1.25
 - platform: bluetooth_tracker
   consider_home: 48
 - platform: bluetooth_le_tracker
