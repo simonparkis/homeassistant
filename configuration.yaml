@@ -26,6 +26,18 @@ zone:
     latitude: !secret latitude
     longitude: !secret longitude
     radius: 65
+  - name: Work
+    latitude: !secret sew_latitude
+    longitude: !secret sew_longitude
+  - name: School
+    latitude: !secret school_latitude
+    longitude: !secret school_longitude
+  - name: Daycare
+    latitude: !secret daycare_latitude
+    longitude: !secret daycare_longitude
+  - name: Work
+    latitude: !secret altus_latitude
+    longitude: !secret altus_longitude
 
 logger:
   default: info
