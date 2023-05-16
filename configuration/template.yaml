@@ -162,9 +162,9 @@
     binary_sensor:
       - name: Computer Zoey
         unique_id: computer_zoey
-        state: "{{ int(states('sensor.power_zoeydesk')) > 80 }}"
+        state: "{{ int(states('sensor.power_zoeydesk')) > 45 }}"
         icon: |
-          {% if int(states('sensor.power_zoeydesk')) > 80 %}
+          {% if int(states('sensor.power_zoeydesk')) > 45 %}
             mdi:monitor-dashboard
           {% else %}
             mdi:monitor
