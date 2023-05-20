@@ -2474,45 +2474,19 @@
   trigger:
   - platform: state
     entity_id: sensor.dishwasher
-    from: Running
-    to: Finished
+    from: Finished
+    to: Idle
     id: increment_dishes
   - platform: state
     entity_id: sensor.washing_machine
-    from: Running
-    to: Finished
+    from: Finished
+    to: Idle
     id: increment_laundry
   - platform: time
     at: 00:00:01
     id: reset_counter
-  - platform: state
-    entity_id: sensor.washing_machine
-    from: Idle
-    to: Running
-    id: washing_machine_started
-  - platform: state
-    entity_id: sensor.dishwasher
-    from: Idle
-    to: Running
-    id: dishwasher_started
   action:
   - choose:
-    - conditions:
-      - condition: trigger
-        id: washing_machine_started
-      sequence:
-      - service: timer.start
-        target:
-          entity_id: timer.washing_machine
-        data: {}
-    - conditions:
-      - condition: trigger
-        id: dishwasher_started
-      sequence:
-      - service: timer.start
-        target:
-          entity_id: timer.dishwasher
-        data: {}
     - conditions:
       - condition: trigger
         id: increment_dishes
