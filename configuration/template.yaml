@@ -71,8 +71,8 @@
         id: cycle_start
       - platform: numeric_state
         entity_id: sensor.power_dishwasher
-        below: 100
-        for: "00:36:00"
+        below: 250
+        for: "00:15:00"
         id: cycle_end
       - platform: state
         entity_id: binary_sensor.door_dishwasher
@@ -121,7 +121,7 @@
       - platform: numeric_state
         entity_id: sensor.power_washingmachine
         below: 1
-        for: "00:01:00"
+        for: '00:00:30'
         id: cycle_end
       - platform: state
         entity_id: binary_sensor.door_washingmachine
