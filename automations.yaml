@@ -2483,7 +2483,7 @@
     to: Idle
     id: increment_laundry
   - platform: time
-    at: 00:00:01
+    at: 00:00:03
     id: reset_counter
   action:
   - choose:

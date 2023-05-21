@@ -81,6 +81,9 @@
       - platform: state
         entity_id: switch.plug_dishwasher
         id: switched
+      - platform: time
+        at: '00:00:01'
+        id: reset_month
     sensor:
       - unique_id: dishwasher_state
         name: Dishwasher
@@ -102,16 +105,23 @@
         attributes:
           last_state: |
             {{ states('sensor.dishwasher') }}
+          loads_last_month: |
+            {% if trigger.id == 'reset_month' and now().day == 1 %}
+              {{ states('counter.loads_dishes') }}
+            {% else %}
+              {{ state_attr('sensor.dishwasher', 'loads_last_month') }}
+            {% endif %}
 
           
   - trigger:
       - platform: numeric_state
         entity_id: sensor.power_washingmachine
-        above: 20
+        above: 5
         id: cycle_start
       - platform: numeric_state
         entity_id: sensor.power_washingmachine
         below: 1
+        for: "00:01:00"
         id: cycle_end
       - platform: state
         entity_id: binary_sensor.door_washingmachine
@@ -120,6 +130,9 @@
       - platform: state
         entity_id: switch.plug_washingmachine
         id: switched
+      - platform: time
+        at: "00:00:01"
+        id: reset_month
     sensor:
       - unique_id: washing_machine_state
         name: Washing Machine
@@ -141,6 +154,13 @@
         attributes:
           last_state: |
             {{ states('sensor.washing_machine') }}
+          loads_last_month: |
+            {% if trigger.id == 'reset_month' and now().day == 1 %}
+              {{ states('counter.loads_laundry') }}
+            {% else %}
+              {{ state_attr('sensor.washing_machine', 'loads_last_month') }}
+            {% endif %}
+              
             
   - trigger:
       - platform: state
