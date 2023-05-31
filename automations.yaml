@@ -2553,6 +2553,7 @@
     value_template: '{{ (not is_state(''sensor.voron_state'', ''Printing'')) and float(states(''sensor.voron_bed_actual''))
       < 40 and float(states(''sensor.voron_hotend_actual'')) < 40 }}'
     id: print_complete
+    for: 00:03:00
   action:
   - service: switch.turn_off
     target:
