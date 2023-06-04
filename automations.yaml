@@ -2452,7 +2452,7 @@
     - sensor.dishwasher
     - sensor.washing_machine
     to: Finished
-    for: 00:10:00
+    for: 00:50:00
   - platform: state
     entity_id: binary_sensor.tv_sofia
     to: 'off'
