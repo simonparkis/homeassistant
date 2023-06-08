@@ -6,7 +6,7 @@
     input:
       climate_entity: climate.master_bedroom
       time_start: '21:00:00'
-      time_end: 08:00:00
+      time_end: 07:00:00
       house_occupancy: sensor.house_status
       enable_switch: input_boolean.enable_heater_master
       smart_plug: switch.heater_master
@@ -20,7 +20,7 @@
     input:
       climate_entity: climate.sofia_bedroom
       time_start: '19:00:00'
-      time_end: 08:00:00
+      time_end: 07:00:00
       house_occupancy: sensor.house_status
       enable_switch: input_boolean.enable_heater_sofia
       smart_plug: switch.heater_sofia
@@ -37,7 +37,7 @@
       enable_switch: input_boolean.enable_heater_joseph
       smart_plug: switch.heater_joseph
       time_start: '19:00:00'
-      time_end: 08:00:00
+      time_end: 07:00:00
       demand_power: 1000
       power_meter: sensor.power_heater_joseph
 - id: '1630971763040'
@@ -48,7 +48,7 @@
     input:
       climate_entity: climate.theo_bedroom
       time_start: '19:00:00'
-      time_end: 08:00:00
+      time_end: 07:00:00
       house_occupancy: sensor.house_status
       enable_switch: input_boolean.enable_heater_theo
       smart_plug: switch.heater_theo
