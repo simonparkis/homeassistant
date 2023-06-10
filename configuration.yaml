@@ -96,6 +96,7 @@ switch: !include configuration/switch.yaml
 template: !include configuration/template.yaml
 group: !include groups.yaml
 cover: !include configuration/cover.yaml
+command_line: !include configuration/command_line.yaml
 
 ########### SCRIPTS, AUTOMATIONS & SCENES ################
 script manual: !include_dir_merge_named scripts
@@ -128,12 +129,6 @@ homekit:
       - switch
       - media_player
       - input_boolean
-
-apple_tv:
-  - host: 192.168.1.60
-    login_id: !secret appletv_login_id
-    credentials: !secret appletv_credentials
-    start_off: true
     
 calendar:
   - platform: caldav

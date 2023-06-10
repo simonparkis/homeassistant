@@ -1,0 +1,11 @@
+- sensor:
+    name: WAN IP
+    command: "curl https://checkip.amazonaws.com"
+    scan_interval: 30
+    unique_id: wan_ip
+
+- sensor:
+    name: VPN IP
+    command: "cat /shared/vpn_ip"
+    scan_interval: 30
+    unique_id: vpn_ip
