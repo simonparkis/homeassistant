@@ -79,7 +79,7 @@
                   "icon": "mdi:run-fast"
                 },
                 {
-                  "entity": "sensor.temp_outside",
+                  "entity": "sensor.temp_garage",
                   "name": "Outside Temperature",
                   "card_mod": {
                     "style": ":host {\n    {% if float(states('sensor.temp_outside')) > 30 %}\n      --card-mod-icon-color: #9F2B00\n    {% elif float(states('sensor.temp_outside')) > 25 %}\n      --card-mod-icon-color: #D37506\n    {% elif float(states('sensor.temp_outside')) < 10 %}\n      --card-mod-icon-color: #FFFFFF\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n"

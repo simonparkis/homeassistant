@@ -104,6 +104,7 @@
       title: Ding Dong!
       message: Doorbell Pressed
       data:
+        tag: notify_doorbell
         push:
           sound: doorbell.wav
   mode: single
@@ -1038,6 +1039,7 @@
               title: Cancel Senty Mode
               authenticationRequired: true
             push:
+            tag: notify_sentry_arming
             sound:
               name: default
               critical: 1
@@ -1063,6 +1065,11 @@
           target:
             entity_id: input_boolean.sentry_mode
           data: {}
+        - service: notify.simon_zoey
+          data:
+            message: clear_notification
+            data:
+              tag: notify_sentry_arming
     - conditions:
       - condition: trigger
         id:
@@ -2525,6 +2532,14 @@
     - sensor.dishwasher
     from: Running
     to: Finished
+    id: Completed
+  - platform: state
+    entity_id:
+    - sensor.washing_machine
+    - sensor.dishwasher
+    from: Finished
+    to: Idle
+    id: Emptied
   condition:
   - condition: state
     entity_id: sensor.house_status
@@ -2533,15 +2548,26 @@
     entity_id: input_boolean.mobile_notifications
     state: 'on'
   action:
-  - if:
-    - condition: state
-      entity_id: person.simon
-      state: home
-    then:
-    - service: notify.mobile_app_simon
-      data:
-        title: '{{ state_attr(trigger.entity_id, ''friendly_name'') }}'
-        message: Cycle Completed
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: Completed
+      sequence:
+      - service: notify.mobile_app_simon
+        data:
+          title: '{{ state_attr(trigger.entity_id, ''friendly_name'') }}'
+          message: Cycle Completed
+          data:
+            tag: notify.{{ trigger.entity_id }}
+    - conditions:
+      - condition: trigger
+        id: Emptied
+      sequence:
+      - service: notify.mobile_app_simon
+        data:
+          message: clear_notification
+          data:
+            tag: notify.{{ trigger.entity_id }}
   mode: single
 - id: '1682030384432'
   alias: Auto Turn Off 3d Printer
