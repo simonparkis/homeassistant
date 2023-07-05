@@ -75,7 +75,7 @@
                 },
                 {
                   "entity": "binary_sensor.occupancy_garage",
-                  "name": "Motion Sensor"
+                  "name": "Occupancy"
                 },
                 {
                   "entity": "sensor.temp_garage",
