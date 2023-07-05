@@ -74,9 +74,8 @@
                   "entity": "cover.garage_door"
                 },
                 {
-                  "entity": "binary_sensor.motion_garage",
-                  "name": "Motion Sensor",
-                  "icon": "mdi:run-fast"
+                  "entity": "binary_sensor.occupancy_garage",
+                  "name": "Motion Sensor"
                 },
                 {
                   "entity": "sensor.temp_garage",

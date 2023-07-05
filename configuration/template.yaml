@@ -17,7 +17,7 @@
           {% endif %}
 
       - name: "Garage No Motion"
-        state: '{{ ((as_timestamp(now()) - as_timestamp(states.binary_sensor.motion_garage.last_updated)) / 60) | int}}'
+        state: '{{ ((as_timestamp(now()) - as_timestamp(states.binary_sensor.occupancy_garage.last_updated)) / 60) | int}}'
       - name: 'Calendar Location'
         state: >
           {% if states.calendar.family_family.attributes.location is defined %}
