@@ -816,9 +816,9 @@
         - service: light.turn_on
           data:
             rgb_color:
-            - 181
-            - 26
-            - 0
+            - 17
+            - 5
+            - 59
             brightness_pct: 20
           target:
             entity_id: light.lamp_theo
