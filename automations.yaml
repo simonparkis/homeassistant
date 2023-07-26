@@ -733,11 +733,7 @@
         - service: light.turn_on
           data:
             transition: 3
-            brightness_pct: 28
-            rgb_color:
-            - 1
-            - 47
-            - 123
+            brightness_pct: 20
           target:
             entity_id: light.lamp_joseph
         else:
