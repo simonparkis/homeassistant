@@ -12,6 +12,7 @@
       smart_plug: switch.heater_master
       power_meter: sensor.power_heater_master
       demand_power: 2500
+      temp_sensor: sensor.temp_master
 - id: '1630971683566'
   alias: Climate - Auto Heater Sofia
   description: ''
@@ -26,6 +27,7 @@
       smart_plug: switch.heater_sofia
       power_meter: sensor.power_heater_sofia
       demand_power: 1000
+      temp_sensor: sensor.temp_sofia
 - id: '1630971724133'
   alias: Climate - Auto Heater Joseph
   description: ''
@@ -40,6 +42,7 @@
       time_end: 07:00:00
       demand_power: 1000
       power_meter: sensor.power_heater_joseph
+      temp_sensor: sensor.temp_joseph
 - id: '1630971763040'
   alias: Climate - Auto Heater Theo
   description: ''
@@ -54,6 +57,7 @@
       smart_plug: switch.heater_theo
       power_meter: sensor.power_heater_theo
       demand_power: 1000
+      temp_sensor: sensor.temp_theo
 - id: '1631099598325'
   alias: Silence Doorbell
   description: ''

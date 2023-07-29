@@ -42,6 +42,11 @@ blueprint:
       default: {}
       selector:
         number:
+    temp_sensor:
+      name: Temperature Sensor
+      selector:
+        entity:
+          domain: sensor
 
 variables:
   smart_plug: !input smart_plug
@@ -66,6 +71,8 @@ action:
       - conditions:
           - condition: trigger
             id: heating
+          - condition: template
+            value_template: "{{ states(temp_sensor) != 'unavailable' }}"
         sequence:
           - wait_template: "{{ (states(power_meter) | int) > (demand_power | int) }}"
             timeout: '00:00:20'
@@ -86,6 +93,8 @@ action:
           - condition: state
             entity_id: !input enable_switch
             state: "on"
+          - condition: template
+            value_template: "{{ states(temp_sensor) != 'unavailable' }}"
         sequence:
           - service: climate.turn_on
             target:
