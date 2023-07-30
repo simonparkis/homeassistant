@@ -159,7 +159,7 @@
 
 - platform: tod
   name: Joseph Bedtime
-  after: '19:30:00'
+  after: '19:00:00'
   before: '06:30:00'
 
 - platform: tod
