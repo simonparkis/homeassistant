@@ -782,12 +782,6 @@
                   "entity": "switch.plug_frontroom"
                 },
                 {
-                  "entity": "switch.plug_zoeydesk"
-                },
-                {
-                  "entity": "switch.plug_simondesk"
-                },
-                {
                   "entity": "switch.plug_sofia"
                 },
                 {
