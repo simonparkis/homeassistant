@@ -53,7 +53,7 @@ variables:
   power_meter: !input power_meter
   demand_power: !input demand_power
   climate_entity: !input climate_entity
-
+  temp_sensor: !input temp_sensor
 trigger:
   - platform: state
     entity_id: !input house_occupancy
