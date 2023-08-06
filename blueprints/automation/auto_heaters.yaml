@@ -33,13 +33,13 @@ blueprint:
           domain: switch
     power_meter:
       name: Power Meter
-      default: {}
+      default: []
       selector:
         entity:
           domain: sensor
     demand_power:
       name: Demand Power
-      default: {}
+      default: []
       selector:
         number:
     temp_sensor:
@@ -47,6 +47,13 @@ blueprint:
       selector:
         entity:
           domain: sensor
+    presence_sensor:
+      name: Presence Sensor
+      default: []
+      selector:
+        entity:
+          domain: binary_sensor
+      
 
 variables:
   smart_plug: !input smart_plug
@@ -54,9 +61,13 @@ variables:
   demand_power: !input demand_power
   climate_entity: !input climate_entity
   temp_sensor: !input temp_sensor
+  presence_sensor: !input presence_sensor
+
 trigger:
   - platform: state
     entity_id: !input house_occupancy
+  - platform: state
+    entity_id: !input presence_sensor
   - platform: state
     entity_id: !input enable_switch
   - platform: time_pattern
@@ -73,6 +84,8 @@ action:
             id: heating
           - condition: template
             value_template: "{{ states(temp_sensor) != 'unavailable' }}"
+          - condition: template
+            value_template: "{{ (presence_sensor == []) or (is_state(presence_sensor, 'on')) }}"
         sequence:
           - wait_template: "{{ (states(power_meter) | int) > (demand_power | int) }}"
             timeout: '00:00:20'
@@ -95,6 +108,8 @@ action:
             state: "on"
           - condition: template
             value_template: "{{ states(temp_sensor) != 'unavailable' }}"
+          - condition: template
+            value_template: "{{ (presence_sensor == []) or (is_state(presence_sensor, 'on')) }}"
         sequence:
           - service: climate.turn_on
             target:

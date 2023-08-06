@@ -50,7 +50,7 @@
     path: auto_heaters.yaml
     input:
       climate_entity: climate.theo_bedroom
-      time_start: '19:00:00'
+      time_start: '12:00:00'
       time_end: 07:00:00
       house_occupancy: sensor.house_status
       enable_switch: input_boolean.enable_heater_theo
@@ -58,6 +58,7 @@
       power_meter: sensor.power_heater_theo
       demand_power: 1000
       temp_sensor: sensor.temp_theo
+      presence_sensor: binary_sensor.presence_theo
 - id: '1631099598325'
   alias: Silence Doorbell
   description: ''
