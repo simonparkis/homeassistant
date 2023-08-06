@@ -58,7 +58,6 @@
       power_meter: sensor.power_heater_theo
       demand_power: 1000
       temp_sensor: sensor.temp_theo
-      presence_sensor: binary_sensor.occupancy_theo
 - id: '1631099598325'
   alias: Silence Doorbell
   description: ''
