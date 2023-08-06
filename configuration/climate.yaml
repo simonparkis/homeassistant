@@ -4,7 +4,7 @@
   target_sensor: sensor.temp_master
   target_temp: 17.0
   min_temp: 16
-  max_temp: 20
+  max_temp: 25
   hot_tolerance: 0.1
   cold_tolerance: 0.5
   initial_hvac_mode: "off"
@@ -14,7 +14,7 @@
   target_sensor: sensor.temp_sofia
   target_temp: 17.0
   min_temp: 16
-  max_temp: 20
+  max_temp: 25
   hot_tolerance: 0.1
   cold_tolerance: 0.5
   initial_hvac_mode: "off"
@@ -24,7 +24,7 @@
   target_sensor: sensor.temp_joseph
   target_temp: 17.0
   min_temp: 16
-  max_temp: 20
+  max_temp: 25
   hot_tolerance: 0.1
   cold_tolerance: 0.5
   initial_hvac_mode: "off"
@@ -34,7 +34,7 @@
   target_sensor: sensor.temp_theo
   target_temp: 17.0
   min_temp: 16
-  max_temp: 20
+  max_temp: 25
   hot_tolerance: 0.1
   cold_tolerance: 0.5
   initial_hvac_mode: "off"
