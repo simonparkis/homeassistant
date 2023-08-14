@@ -794,7 +794,7 @@
                   "entity": "switch.plug_washingmachine"
                 },
                 {
-                  "entity": "switch.plug_dishwasher"
+                  "entity": "switch.dishwasher"
                 }
               ],
               "title": "Energy Saver",
