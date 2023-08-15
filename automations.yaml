@@ -2490,6 +2490,7 @@
   - platform: numeric_state
     entity_id: sensor.power_dishwasher
     below: 1.5
+    for: 00:00:30
     id: low_power
   action:
   - choose:
@@ -2512,6 +2513,7 @@
       - service: counter.reset
         target:
           entity_id: counter.dishwasher_power_low
+        data: {}
     - conditions:
       - condition: trigger
         id: increment_laundry
