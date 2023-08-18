@@ -67,19 +67,18 @@
   - trigger:
       - platform: numeric_state
         entity_id: sensor.power_dishwasher
-        above: 1.5
+        above: 0
         id: cycle_start
       - platform: numeric_state
-        entity_id: sensor.power_dishwasher
-        below: 1.5
-        for: "00:00:10"
+        entity_id: sensor.current_dishwasher
+        below: 0.003
         id: cycle_end
       - platform: state
         entity_id: binary_sensor.door_dishwasher
         to: "on"
         id: door_opened
       - platform: state
-        entity_id: switch.plug_dishwasher
+        entity_id: switch.dishwasher
         id: switched
       - platform: time
         at: '00:00:01'
@@ -93,7 +92,7 @@
             Idle
           {% elif trigger.id == "cycle_start" %}
             Running
-          {% elif trigger.id == "cycle_end" and is_state("sensor.dishwasher", "Running") and int(states("counter.dishwasher_power_low")) > 2 %}
+          {% elif trigger.id == "cycle_end" and is_state("sensor.dishwasher", "Running") %}
             Finished
           {% elif  trigger.id == "switched" and is_state("switch.plug_dishwasher", "off") %}
             Off
