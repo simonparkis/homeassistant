@@ -30,16 +30,6 @@ energy_saver:
   - delay: 00:00:01
   - if:
     - condition: template
-      value_template: '{{ is_state(''binary_sensor.tv_sofia'', ''off'') and command
-        == ''enable'' }}'
-    then:
-    - service: switch.turn_off
-      target:
-        entity_id: switch.plug_sofia
-      data: {}
-  - delay: 00:00:01
-  - if:
-    - condition: template
       value_template: '{{ command == ''disable'' }}'
     then:
     - service: switch.turn_on
