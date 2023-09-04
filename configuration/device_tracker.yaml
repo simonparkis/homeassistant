@@ -10,3 +10,6 @@
     zoey_wifi: 192.168.1.137
     judi_wifi: 192.168.1.25
     valerie_wifi: 192.168.1.186
+
+- platform: bluetooth_le_tracker
+- platform: bluetooth_tracker

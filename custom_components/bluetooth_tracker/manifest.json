@@ -1,0 +1,10 @@
+{
+  "domain": "bluetooth_tracker",
+  "name": "Bluetooth Tracker",
+  "codeowners": [],
+  "documentation": "https://www.home-assistant.io/integrations/bluetooth_tracker",
+  "iot_class": "local_polling",
+  "loggers": ["bluetooth", "bt_proximity"],
+  "requirements": ["bt-proximity==0.2.1", "git+https://github.com/pybluez/pybluez.git#pybluez==0.30"],
+  "version": "1.0.0"
+}
