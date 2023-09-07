@@ -13,6 +13,11 @@
     valerie_wifi: 192.168.1.186
     zoey_watch: 192.168.1.29
 
-- platform: bluetooth_tracker
+- platform: bluetooth_le_tracker
+  track_new_devices: false
+
+- platform: custom_bluetooth_tracker
+  consider_home: 60
+  interval_seconds: 7
   new_device_defaults:
     track_new_devices: false
