@@ -1,7 +1,3 @@
-- platform: bluetooth_tracker
-  new_device_defaults:
-    track_new_devices: true
-    
 - platform: iphonedetect
   consider_home: 60
   scan_interval: 12
@@ -17,3 +13,6 @@
     valerie_wifi: 192.168.1.186
     zoey_watch: 192.168.1.29
 
+- platform: bluetooth_tracker
+  new_device_defaults:
+    track_new_devices: false
