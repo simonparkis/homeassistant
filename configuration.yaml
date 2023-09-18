@@ -93,7 +93,7 @@ http:
     - 10.0.0.0/8
     - 169.254.0.0/16
     - 172.16.0.0/12
-    - 192.168.0.0/24
+    - 192.168.1.0/24
     - 172.26.0.0/24
     - 172.30.33.0/24
 
@@ -202,3 +202,7 @@ panel_iframe:
     title: "VSCode"
     url: !secret vscodeURL
     icon: mdi:microsoft-visual-studio-code
+  esphome:
+    title: "ESPHome"
+    url: !secret esphomeURL
+    icon: mdi:chip
