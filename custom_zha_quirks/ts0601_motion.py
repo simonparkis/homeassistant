@@ -255,6 +255,7 @@ class TuyaMmwRadarOccupancy(CustomDevice):
             ("_TZE200_mrf6vtua", "TS0601"),
             ("_TZE200_ztc6ggyl", "TS0601"),
             ("_TZE204_ztc6ggyl", "TS0601"),
+            ("_TZE204_sxm7l9xa", "TS0601"),
         ],
         ENDPOINTS: {
             1: {
