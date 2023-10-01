@@ -2358,7 +2358,7 @@
     entity_id: media_player.display_kitchen
     attribute: volume_level
   - platform: state
-    entity_id: media_player.audio
+    entity_id: media_player.music
     to: playing
   - platform: state
     entity_id: media_player.all_chromecasts
@@ -2369,8 +2369,8 @@
     state: playing
   action:
   - if:
-      condition: state
-      entity_id: media_player.audio
+    - condition: state
+      entity_id: media_player.music
       state: playing
     then:
     - service: media_player.volume_set
