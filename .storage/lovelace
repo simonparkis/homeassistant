@@ -228,6 +228,9 @@
                   "card_mod": {
                     "style": ":host {\n    {% if states('binary_sensor.occupancy_study') == 'on' %}\n      --card-mod-icon-color: #FFC107\n    {% else %}\n      --card-mod-icon-color: #5DC7F5\n    {% endif %}\n}\n"
                   }
+                },
+                {
+                  "entity": "input_boolean.simon_headphones"
                 }
               ]
             },

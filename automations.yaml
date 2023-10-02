@@ -2613,3 +2613,40 @@
     data:
       message: Movement
   mode: single
+- id: '1696205395905'
+  alias: Monitor Headphones
+  description: ''
+  trigger:
+  - platform: webhook
+    allowed_methods:
+    - POST
+    - PUT
+    local_only: false
+    webhook_id: simon_headphones_on
+    id: simon_headphones_on
+  - platform: webhook
+    allowed_methods:
+    - POST
+    - PUT
+    local_only: false
+    webhook_id: simon_headphones_off
+    id: simon_headphones_off
+  action:
+  - choose:
+    - conditions:
+      - condition: trigger
+        id: simon_headphones_on
+      sequence:
+      - service: input_boolean.turn_on
+        target:
+          entity_id: input_boolean.simon_headphones
+        data: {}
+    - conditions:
+      - condition: trigger
+        id: simon_headphones_off
+      sequence:
+      - service: input_boolean.turn_off
+        target:
+          entity_id: input_boolean.simon_headphones
+        data: {}
+  mode: single
