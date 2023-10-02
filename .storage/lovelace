@@ -138,6 +138,10 @@
                   "entity": "binary_sensor.occupancy_livingroom"
                 },
                 {
+                  "entity": "switch.fan_livingroom",
+                  "name": "Fan"
+                },
+                {
                   "type": "divider",
                   "style": {
                     "height": "1px",
