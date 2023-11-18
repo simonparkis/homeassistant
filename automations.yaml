@@ -1484,10 +1484,26 @@
       - 8cf5ca26368a47578d759264b2ceaf98
       - 9a78e16d6589444cbdf82944e76f59fd
   action:
-  - service: input_boolean.toggle
-    data: {}
-    target:
-      entity_id: input_boolean.sentry_mode
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: sensor.house_status
+        state: Occupied
+      - condition: state
+        entity_id: input_boolean.sentry_mode
+        state: 'on'
+      sequence:
+      - service: input_boolean.turn_off
+        target:
+          entity_id: input_boolean.sentry_mode
+    - conditions:
+      - condition: state
+        entity_id: sensor.house_status
+        state: Vacant
+      sequence:
+      - service: input_boolean.toggle
+        target:
+          entity_id: input_boolean.sentry_mode
   mode: single
 - id: '1655524543280'
   alias: iOS - Guest Mode
@@ -2326,10 +2342,28 @@
       - 9a78e16d6589444cbdf82944e76f59fd
   condition: []
   action:
-  - service: input_boolean.toggle
-    data: {}
-    target:
-      entity_id: input_boolean.vacancy_mode
+  - choose:
+    - conditions:
+      - condition: state
+        entity_id: sensor.house_status
+        state: Occupied
+      - condition: state
+        entity_id: input_boolean.vacancy_mode
+        state: 'on'
+      sequence:
+      - service: input_boolean.turn_off
+        target:
+          entity_id: input_boolean.vacancy_mode
+        data: {}
+    - conditions:
+      - condition: state
+        entity_id: sensor.house_status
+        state: Vacant
+      sequence:
+      - service: input_boolean.toggle
+        target:
+          entity_id: input_boolean.vacancy_mode
+        data: {}
   mode: single
 - id: '1680568830618'
   alias: iOS - Holiday Mode
